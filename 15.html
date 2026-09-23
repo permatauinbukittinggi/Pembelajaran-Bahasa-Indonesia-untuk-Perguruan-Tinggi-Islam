@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 15: Profesionalisme Karier | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .letter-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(21, 30, 50, 0.6));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+        .correct { color: #4ade80; font-weight: 500; }
+        .incorrect { color: #f87171; text-decoration: line-through; }
+        .tip-card {
+            background: linear-gradient(135deg, rgba(74, 222, 128, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(74, 222, 128, 0.3);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin: 0.5rem 0;
+        }
+        .warning-card {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 15</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Profesionalisme <br><span class="gold-gradient-text">Karier</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Merancang surat lamaran kerja dan CV yang profesional, serta menguasai etika wawancara kerja — tiga pilar kompetensi profesional yang menjadi jembatan antara dunia akademik dan dunia kerja bagi calon pendidik Islam.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="14.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="16.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Setelah menempuh perjalanan akademik selama 14 pertemuan, mahasiswa kini memasuki pintu gerbang dunia profesional. <strong>Surat lamaran kerja, CV (Curriculum Vitae), dan wawancara kerja</strong> adalah tiga instrumen utama yang menjembatani kompetensi akademik dengan peluang karier nyata. Ketiganya bukan sekadar dokumen administratif — melainkan <strong>cermin profesionalisme</strong> seorang calon pendidik.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bagi mahasiswa S1 Pendidikan Agama Islam, penguasaan ketiga keterampilan ini memiliki dimensi ganda: di satu sisi, ia adalah <strong>keterampilan teknis</strong> yang harus dikuasai untuk memasuki dunia kerja; di sisi lain, ia adalah <strong>manifestasi nilai-nilai Islam</strong> tentang kerja keras, kejujuran, dan komunikasi yang santun. Seorang guru PAI yang mampu menyusun surat lamaran yang profesional dan menjalani wawancara dengan integritas akan menjadi teladan bagi siswa-siswanya kelak.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) pengertian dan hakikat surat lamaran kerja</strong>, <strong>(2) struktur dan format surat lamaran</strong>, <strong>(3) hal-hal yang harus diperhatikan dan dihindarkan</strong>, <strong>(4) penyusunan CV profesional</strong>, <strong>(5) etika dan teknik wawancara kerja</strong>, dan <strong>(6) penerapan profesionalisme karier</strong> dalam konteks Pendidikan Agama Islam.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam — Kerja Sungguh-sungguh</p>
+            <p class="ayat-arab">وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ وَرَسُولُهُ وَالْمُؤْمِنُونَ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Dan katakanlah, 'Bekerjalah kamu, maka Allah dan Rasul-Nya serta orang-orang mukmin akan melihat pekerjaanmu itu...'"</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. At-Taubah [9]: 105</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini adalah <strong>landasan spiritual profesionalisme</strong>. Allah memerintahkan umat-Nya untuk bekerja dengan sungguh-sungguh, karena setiap pekerjaan akan dilihat oleh Allah, Rasul-Nya, dan orang-orang mukmin. Dalam konteks surat lamaran dan wawancara, ayat ini mengajarkan bahwa kita harus menyajikan diri secara <strong>jujur dan profesional</strong> — tidak melebih-lebihkan kemampuan (ghurūr), tidak menyembunyikan kekurangan yang relevan, dan bekerja keras mempersiapkan diri. Surat lamaran yang baik adalah cerminan dari <em>amal</em> (kerja) yang dilakukan dengan penuh kesungguhan.</p>
+        </section>
+
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam — Kelancaran Berbicara</p>
+            <p class="ayat-arab">رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي يَفْقَهُوا قَوْلِي</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Ya Tuhanku, lapangkanlah dadaku, mudahkanlah urusanku, dan lancarkanlah lidahku agar mereka mengerti perkataanku."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Thaha [20]: 25-28</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Doa Nabi Musa a.s. ini adalah <strong>landasan spiritual wawancara kerja</strong>. Sebelum menghadapi Firaun (situasi yang jauh lebih menegangkan daripada wawancara kerja), Musa berdoa agar Allah melapangkan dadanya (ketenangan), memudahkan urusannya (kelancaran), dan melancarkan lidahnya (komunikasi efektif). Dalam konteks wawancara, doa ini mengajarkan kita untuk <strong>mengawali dengan doa, menjaga ketenangan, dan berkomunikasi dengan jelas</strong> agar pewawancara memahami maksud kita.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Surat Lamaran Kerja</h3>
+                    <p class="text-luxury-cream/70 text-sm">Dokumen resmi yang ditulis oleh pencari kerja untuk mengajukan diri sebagai calon pegawai pada suatu instansi/perusahaan, berisi identitas, kualifikasi, dan harapan untuk diterima.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">CV (Curriculum Vitae)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Dokumen yang memuat riwayat hidup profesional seseorang secara sistematis, mencakup pendidikan, pengalaman, keterampilan, dan prestasi yang relevan dengan posisi yang dilamar.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Wawancara Kerja</h3>
+                    <p class="text-luxury-cream/70 text-sm">Proses tanya jawab antara pelamar dan pewawancara untuk menilai kesesuaian kompetensi, kepribadian, dan motivasi pelamar dengan posisi yang ditawarkan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Etika Profesional</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kumpulan norma dan nilai yang mengatur perilaku dalam dunia kerja, mencakup kejujuran, tanggung jawab, kesantunan, dan integritas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Surat Lamaran yang Ditolak</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang lulusan S1 PAI mengirim surat lamaran ke sebuah madrasah dengan format berikut: <em>"Yth. Kepala Sekolah. Saya mau melamar jadi guru agama di sekolah bapak. Saya lulusan UIN Bukittinggi. Saya bisa ngajar dengan baik. Tolong diterima ya. Makasih."</em> Surat ini ditolak karena: (1) tidak ada alamat lengkap dan tanggal, (2) bahasa terlalu santai ("mau", "ngajar", "bapak" tanpa kapital, "Makasih"), (3) tidak mencantumkan kualifikasi spesifik, (4) tidak ada lampiran, dan (5) tidak ada salam pembuka/penutup yang formal.
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Surat lamaran adalah <strong>kesan pertama</strong> yang menentukan apakah pelamar akan dipanggil wawancara atau tidak. Bahasa yang tidak baku, format yang tidak lengkap, dan ketiadaan informasi penting menunjukkan <strong>ketidakseriusan</strong> pelamar. Dalam dunia profesional, detail kecil menentukan penilaian besar.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: surat lamaran dan CV yang Anda susun adalah cerminan dari <strong>integritas dan profesionalisme</strong> Anda. Ingatlah Q.S. At-Taubah: 105 — Allah, Rasul-Nya, dan orang-orang mukmin akan melihat pekerjaan Anda. Jangan melebih-lebihkan kemampuan yang tidak Anda miliki (jujur), jangan menyembunyikan kekurangan yang relevan (amanah), dan persiapkan diri dengan sungguh-sungguh (ikhlas). Saat wawancara, bacalah doa Nabi Musa (Q.S. Thaha: 25-28) — mintalah ketenangan hati dan kelancaran lidah, karena kesuksesan bukan hanya hasil usaha, tetapi juga pertolongan Allah.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">15.1 Landasan Teoretis Profesionalisme Karier</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Penulisan surat lamaran, CV, dan wawancara kerja berakar pada teori <strong>komunikasi profesional</strong> dan <strong>psikologi industri</strong>. Pemahaman teoretis ini akan membantu kita menyusun dokumen dan menjalani wawancara yang tidak hanya benar secara teknis, tetapi juga efektif secara persuasif.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.1.1 Teori Komunikasi Profesional (Semi, 2009)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Atar Semi (2009) dalam <em>Terampil Menulis Surat</em> menegaskan bahwa surat lamaran adalah <strong>surat dinas yang bersifat persuasif</strong>. Ia harus memenuhi prinsip <strong>7C komunikasi efektif</strong>:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Prinsip 7C</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                            <th class="text-luxury-gold">Implementasi dalam Surat Lamaran</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Completeness</strong></td>
+                            <td>Lengkap dan utuh</td>
+                            <td>Memuat semua informasi yang diminta: identitas, kualifikasi, lampiran</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Concreteness</strong></td>
+                            <td>Konkret dan spesifik</td>
+                            <td>Menyebutkan kualifikasi dengan angka/fakta (IPK 3,75; pengalaman mengajar 2 tahun)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Courtesy</strong></td>
+                            <td>Santun dan hormat</td>
+                            <td>Menggunakan bahasa formal, sapaan hormat (Yth., Bapak/Ibu)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clarity</strong></td>
+                            <td>Jelas dan tidak ambigu</td>
+                            <td>Kalimat singkat, struktur logis, tidak bertele-tele</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Conciseness</strong></td>
+                            <td>Ringkas dan padat</td>
+                            <td>Maksimal 1 halaman, tidak mengulang informasi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Correctness</strong></td>
+                            <td>Benar secara ejaan dan tata bahasa</td>
+                            <td>Sesuai EYD, tidak ada typo, tata bahasa baku</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consideration</strong></td>
+                            <td>Mempertimbangkan sudut pandang pembaca</td>
+                            <td>Menonjolkan manfaat bagi instansi, bukan hanya keinginan pelamar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.1.2 Teori Impression Management (Goffman, 1959)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Erving Goffman (1959) dalam <em>The Presentation of Self in Everyday Life</em> mengembangkan teori <strong>Impression Management</strong> — seni mengelola kesan yang terbentuk di benak orang lain. Dalam konteks lamaran kerja:
+            </p>
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📄 Surat Lamaran</h4>
+                    <p class="text-luxury-cream/70 text-sm">Kesan pertama secara tertulis — menunjukkan profesionalisme dan ketelitian.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📋 CV</h4>
+                    <p class="text-luxury-cream/70 text-sm">Potret profesional — menunjukkan kompetensi dan pencapaian.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🎤 Wawancara</h4>
+                    <p class="text-luxury-cream/70 text-sm">Kesan langsung — menunjukkan kepribadian, komunikasi, dan kesesuaian budaya.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.1.3 Teori STAR Interview (Behavioral Interview)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Metode <strong>STAR</strong> adalah teknik menjawab pertanyaan wawancara berbasis perilaku:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Elemen</th>
+                            <th class="text-luxury-gold">Arti</th>
+                            <th class="text-luxury-gold">Contoh Jawaban</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>S — Situation</strong></td>
+                            <td>Situasi/konteks yang dihadapi</td>
+                            <td>"Saat mengajar di MTs X, saya menemukan 60% siswa tidak tertarik pada pelajaran Fiqih."</td>
+                        </tr>
+                        <tr>
+                            <td><strong>T — Task</strong></td>
+                            <td>Tugas/tanggung jawab Anda</td>
+                            <td>"Saya bertugas meningkatkan minat dan hasil belajar siswa."</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A — Action</strong></td>
+                            <td>Tindakan yang Anda lakukan</td>
+                            <td>"Saya menerapkan metode Problem Based Learning dengan studi kasus kehidupan nyata."</td>
+                        </tr>
+                        <tr>
+                            <td><strong>R — Result</strong></td>
+                            <td>Hasil yang dicapai</td>
+                            <td>"Dalam 3 bulan, minat belajar naik 40% dan rata-rata nilai meningkat dari 65 menjadi 80."</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Surat lamaran yang baik tidak hanya mengatakan 'saya butuh pekerjaan', melainkan 'saya bisa memberikan nilai bagi instansi Anda'."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Prinsip Komunikasi Profesional Modern</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Surat Lamaran Kerja -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">15.2 Surat Lamaran Kerja</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Surat lamaran kerja</strong> adalah surat resmi yang ditulis oleh pencari kerja untuk mengajukan diri sebagai calon pegawai pada suatu instansi/perusahaan. Surat ini berfungsi sebagai <strong>alat perkenalan pertama</strong> dan <strong>alat persuasi</strong> untuk mendapatkan panggilan wawancara.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.2.1 Struktur Surat Lamaran Kerja</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Surat lamaran yang baik terdiri atas <strong>sembilan bagian utama</strong>:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">No.</th>
+                            <th class="text-luxury-gold">Bagian</th>
+                            <th class="text-luxury-gold">Fungsi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td><strong>Kop Surat</strong> (opsional)</td>
+                            <td>Identitas pelamar (jika menggunakan kop pribadi)</td>
+                            <td>Nama, alamat, kontak</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td><strong>Tempat & Tanggal</strong></td>
+                            <td>Waktu pembuatan surat</td>
+                            <td>Bukittinggi, 23 September 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td><strong>Alamat Tujuan</strong></td>
+                            <td>Penerima surat</td>
+                            <td>Yth. Kepala MAN 1 Bukittinggi</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td><strong>Salam Pembuka</strong></td>
+                            <td>Sapaan hormat</td>
+                            <td>Dengan hormat,</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td><strong>Paragraf Pembuka</strong></td>
+                            <td>Sumber informasi & posisi yang dilamar</td>
+                            <td>"Berdasarkan informasi dari..."</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td><strong>Isi (Data Diri & Kualifikasi)</strong></td>
+                            <td>Identitas dan kompetensi pelamar</td>
+                            <td>Nama, TTL, pendidikan, keterampilan</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7</td>
+                            <td><strong>Paragraf Penutup</strong></td>
+                            <td>Harapan dan ucapan terima kasih</td>
+                            <td>"Besar harapan saya..."</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">8</td>
+                            <td><strong>Salam Penutup</strong></td>
+                            <td>Penutup hormat</td>
+                            <td>Hormat saya,</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">9</td>
+                            <td><strong>Tanda Tangan & Nama Jelas</strong></td>
+                            <td>Autentikasi</td>
+                            <td>(tanda tangan) + Diyan Permata Yanda</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.2.2 Contoh Surat Lamaran Kerja yang Baik</h3>
+            <div class="letter-box">
+                <p class="text-right text-luxury-cream/80">Bukittinggi, 23 September 2026</p>
+                <br>
+                <p class="text-luxury-cream/80">Hal: Lamaran Pekerjaan</p>
+                <p class="text-luxury-cream/80">Lampiran: 1 (satu) berkas</p>
+                <br>
+                <p class="text-luxury-cream/80">Yth. Kepala MAN 1 Bukittinggi</p>
+                <p class="text-luxury-cream/80">di Bukittinggi</p>
+                <br>
+                <p class="text-luxury-cream/80">Dengan hormat,</p>
+                <br>
+                <p class="text-luxury-cream/80">Berdasarkan informasi dari website resmi Kementerian Agama RI tanggal 20 September 2026 tentang penerimaan guru Pendidikan Agama Islam, dengan ini saya mengajukan diri untuk mengisi posisi tersebut di MAN 1 Bukittinggi.</p>
+                <br>
+                <p class="text-luxury-cream/80">Berikut data diri saya:</p>
+                <p class="text-luxury-cream/80">Nama : Diyan Permata Yanda, S.Pd.</p>
+                <p class="text-luxury-cream/80">Tempat, Tanggal Lahir : Bukittinggi, 15 Mei 1998</p>
+                <p class="text-luxury-cream/80">Pendidikan Terakhir : S1 Pendidikan Agama Islam, UIN Sjech M. Djamil Djambek Bukittinggi</p>
+                <p class="text-luxury-cream/80">IPK : 3,75 (Cumlaude)</p>
+                <p class="text-luxury-cream/80">No. HP : 0812-xxxx-xxxx</p>
+                <p class="text-luxury-cream/80">Email : diyan_yanda@yahoo.com</p>
+                <br>
+                <p class="text-luxury-cream/80">Saya memiliki pengalaman mengajar sebagai guru magang di MTs Nurul Huda selama 6 bulan, serta aktif dalam berbagai kegiatan keorganisasian dan penelitian di bidang Pendidikan Agama Islam. Saya menguasai Microsoft Office, Mendeley, dan memiliki sertifikasi kompetensi pedagogik.</p>
+                <br>
+                <p class="text-luxury-cream/80">Sebagai bahan pertimbangan, bersama ini saya lampirkan:</p>
+                <p class="text-luxury-cream/80">1. Curriculum Vitae (CV)</p>
+                <p class="text-luxury-cream/80">2. Fotokopi ijazah S1 dan transkrip nilai</p>
+                <p class="text-luxury-cream/80">3. Fotokopi sertifikat kompetensi</p>
+                <p class="text-luxury-cream/80">4. Pas foto terbaru</p>
+                <br>
+                <p class="text-luxury-cream/80">Besar harapan saya untuk dapat diberikan kesempatan wawancara guna menjelaskan potensi diri saya lebih rinci. Atas perhatian Bapak/Ibu, saya ucapkan terima kasih.</p>
+                <br>
+                <p class="text-luxury-cream/80">Hormat saya,</p>
+                <br>
+                <br>
+                <p class="text-luxury-cream/80"><strong>Diyan Permata Yanda, S.Pd.</strong></p>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.2.3 Hal-hal yang Harus Diperhatikan</h3>
+            <div class="tip-card">
+                <h4 class="text-green-400 font-semibold mb-2">✅ Yang Harus Dilakukan</h4>
+                <ul class="text-luxury-cream/80 text-sm space-y-1 list-disc list-inside">
+                    <li>Gunakan <strong>bahasa baku</strong> sesuai EYD Edisi V</li>
+                    <li>Format <strong>rapi dan konsisten</strong> (font, spasi, margin)</li>
+                    <li>Sertakan <strong>informasi spesifik</strong> yang relevan dengan posisi</li>
+                    <li>Tonjolkan <strong>kualifikasi dan prestasi</strong> yang mendukung</li>
+                    <li>Periksa <strong>ejaan dan tata bahasa</strong> sebelum mengirim</li>
+                    <li>Sesuaikan isi surat dengan <strong>instansi yang dituju</strong></li>
+                    <li>Gunakan <strong>kertas putih bersih</strong> (jika cetak) atau <strong>PDF</strong> (jika digital)</li>
+                </ul>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.2.4 Hal-hal yang Harus Dihindarkan</h3>
+            <div class="warning-card">
+                <h4 class="text-red-400 font-semibold mb-2">❌ Yang Harus Dihindari</h4>
+                <ul class="text-luxury-cream/80 text-sm space-y-1 list-disc list-inside">
+                    <li>Bahasa <strong>gaul, santai, atau tidak baku</strong> ("mau", "ngajar", "makasih")</li>
+                    <li><strong>Typo</strong> atau kesalahan ejaan</li>
+                    <li>Informasi yang <strong>tidak relevan</strong> atau berlebihan</li>
+                    <li><strong>Melebih-lebihkan kemampuan</strong> (bohong dalam CV)</li>
+                    <li>Format yang <strong>berantakan</strong> atau tidak konsisten</li>
+                    <li>Menyebutkan <strong>kelemahan pribadi</strong> yang tidak perlu</li>
+                    <li>Menggunakan <strong>template generik</strong> tanpa penyesuaian</li>
+                    <li>Menyertakan <strong>foto tidak profesional</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- CV (Curriculum Vitae) -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">15.3 Curriculum Vitae (CV) Profesional</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>CV</strong> adalah dokumen yang memuat <strong>riwayat hidup profesional</strong> seseorang secara sistematis. Berbeda dengan biodata biasa, CV dirancang khusus untuk <strong>menonjolkan kompetensi dan pencapaian</strong> yang relevan dengan posisi yang dilamar.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.3.1 Struktur CV yang Efektif</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">No.</th>
+                            <th class="text-luxury-gold">Bagian</th>
+                            <th class="text-luxury-gold">Isi</th>
+                            <th class="text-luxury-gold">Tips</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td><strong>Data Diri</strong></td>
+                            <td>Nama, kontak, email profesional, LinkedIn (opsional)</td>
+                            <td>Gunakan email profesional (nama.anda@email.com)</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td><strong>Profil Singkat</strong></td>
+                            <td>2-3 kalimat ringkasan kompetensi dan tujuan karier</td>
+                            <td>Sesuaikan dengan posisi yang dilamar</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td><strong>Pendidikan</strong></td>
+                            <td>Riwayat pendidikan formal (terbaru dulu)</td>
+                            <td>Sertakan IPK jika > 3,00 dan predikat kelulusan</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td><strong>Pengalaman Kerja/Mengajar</strong></td>
+                            <td>Riwayat pekerjaan atau magang (terbaru dulu)</td>
+                            <td>Gunakan kata kerja aksi: "mengajar", "merancang", "mengembangkan"</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td><strong>Organisasi & Kepanitiaan</strong></td>
+                            <td>Pengalaman organisasi dan peran di dalamnya</td>
+                            <td>Tonjolkan kepemimpinan dan kontribusi</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td><strong>Keterampilan</strong></td>
+                            <td>Kemampuan teknis dan non-teknis</td>
+                            <td>Kelompokkan: teknis, bahasa, soft skills</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7</td>
+                            <td><strong>Prestasi & Penghargaan</strong></td>
+                            <td>Penghargaan akademik/non-akademik</td>
+                            <td>Sertakan tahun dan pemberi penghargaan</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">8</td>
+                            <td><strong>Publikasi & Penelitian</strong></td>
+                            <td>Artikel, makalah, atau penelitian yang telah dilakukan</td>
+                            <td>Gunakan format sitasi yang baku</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">9</td>
+                            <td><strong>Sertifikasi</strong></td>
+                            <td>Sertifikat kompetensi yang dimiliki</td>
+                            <td>Sertakan nomor sertifikat dan tahun terbit</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">10</td>
+                            <td><strong>Referensi</strong> (opsional)</td>
+                            <td>Nama dan kontak pemberi referensi</td>
+                            <td>"Tersedia atas permintaan" juga dapat digunakan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Tips CV yang Menonjol</h4>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                    <li><strong>Maksimal 2 halaman</strong> untuk fresh graduate, 3 halaman untuk berpengalaman</li>
+                    <li><strong>Gunakan format ATS-friendly</strong> (Applicant Tracking System) — hindari grafik berlebihan</li>
+                    <li><strong>Kuantifikasi pencapaian</strong>: "Meningkatkan minat belajar siswa sebesar 40%" lebih baik daripada "Meningkatkan minat belajar"</li>
+                    <li><strong>Sesuaikan CV dengan posisi</strong> yang dilamar — jangan gunakan CV generik</li>
+                    <li><strong>Simpan dalam format PDF</strong> agar tidak berantakan saat dibuka di perangkat lain</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Wawancara Kerja -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">15.4 Wawancara Kerja</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Wawancara kerja</strong> adalah tahap krusial dalam proses rekrutmen di mana pelamar berhadapan langsung dengan pewawancara. Wawancara bukan sekadar tanya jawab, melainkan <strong>proses persuasi dua arah</strong> — pelamar meyakinkan perusahaan tentang kompetensinya, sementara perusahaan menilai kesesuaian pelamar dengan budaya organisasi.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.4.1 Jenis-Jenis Wawancara Kerja</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis</th>
+                            <th class="text-luxury-gold">Karakteristik</th>
+                            <th class="text-luxury-gold">Contoh Pertanyaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Wawancara Terstruktur</strong></td>
+                            <td>Pertanyaan sama untuk semua pelamar, dinilai dengan rubrik</td>
+                            <td>"Ceritakan pengalaman Anda mengajar!"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wawancara Tidak Terstruktur</strong></td>
+                            <td>Pertanyaan fleksibel, mengalir seperti percakapan</td>
+                            <td>"Apa yang memotivasi Anda menjadi guru PAI?"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wawancara Behavioral</strong></td>
+                            <td>Berfokus pada perilaku masa lalu sebagai prediktor kinerja</td>
+                            <td>"Ceritakan saat Anda menghadapi siswa bermasalah!"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wawancara Situasional</strong></td>
+                            <td>Memberikan skenario hipotetis untuk direspons</td>
+                            <td>"Apa yang akan Anda lakukan jika orang tua siswa komplain?"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wawancara Panel</strong></td>
+                            <td>Dihadiri oleh beberapa pewawancara sekaligus</td>
+                            <td>Pertanyaan bergantian dari berbagai pihak</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wawancara Kelompok</strong></td>
+                            <td>Beberapa pelamar diwawancara bersama</td>
+                            <td>Diskusi kasus untuk menilai kerja sama</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.4.2 Persiapan Wawancara (Konsep 5P)</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📚 1. Pahami Instansi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Pelajari visi-misi, budaya, program unggulan instansi yang dilamar.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">👤 2. Pahami Diri</h4>
+                    <p class="text-luxury-cream/70 text-sm">Kuasai CV sendiri, siapkan cerita STAR untuk setiap pengalaman.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🎯 3. Persiapkan Jawaban</h4>
+                    <p class="text-luxury-cream/70 text-sm">Latih jawaban untuk 20 pertanyaan umum wawancara kerja.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">👔 4. Penampilan</h4>
+                    <p class="text-luxury-cream/70 text-sm">Pakaian rapi, formal, sesuai budaya instansi (batik/jas).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🤲 5. Persiapan Spiritual</h4>
+                    <p class="text-luxury-cream/70 text-sm">Berdoa (Q.S. Thaha: 25-28), niatkan untuk beribadah melalui pekerjaan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📋 Bonus: Bawa Dokumen</h4>
+                    <p class="text-luxury-cream/70 text-sm">CV cetak, pulpen, bloknot, dan dokumen pendukung lainnya.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.4.3 Pertanyaan Umum Wawancara & Strategi Menjawab</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Pertanyaan</th>
+                            <th class="text-luxury-gold">Tujuan Pewawancara</th>
+                            <th class="text-luxury-gold">Strategi Menjawab</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"Ceritakan tentang diri Anda!"</td>
+                            <td>Ice breaking & gambaran umum</td>
+                            <td>Ringkasan 2 menit: latar belakang + kompetensi + motivasi</td>
+                        </tr>
+                        <tr>
+                            <td>"Mengapa Anda melamar di sini?"</td>
+                            <td>Memahami motivasi & riset pelamar</td>
+                            <td>Hubungkan visi instansi dengan nilai dan tujuan karier Anda</td>
+                        </tr>
+                        <tr>
+                            <td>"Apa kelebihan dan kekurangan Anda?"</td>
+                            <td>Menilai kesadaran diri</td>
+                            <td>Kelebihan: relevan dengan posisi. Kekurangan: sebutkan + cara mengatasinya</td>
+                        </tr>
+                        <tr>
+                            <td>"Ceritakan pengalaman mengajar Anda!"</td>
+                            <td>Menilai kompetensi & refleksi</td>
+                            <td>Gunakan metode STAR: Situation, Task, Action, Result</td>
+                        </tr>
+                        <tr>
+                            <td>"Di mana Anda melihat diri Anda 5 tahun ke depan?"</td>
+                            <td>Menilai visi & komitmen</td>
+                            <td>Jawaban realistis yang selaras dengan jenjang karier di instansi</td>
+                        </tr>
+                        <tr>
+                            <td>"Berapa gaji yang Anda harapkan?"</td>
+                            <td>Negosiasi & ekspektasi</td>
+                            <td>Riset standar gaji, berikan range, buka ruang negosiasi</td>
+                        </tr>
+                        <tr>
+                            <td>"Apakah Anda punya pertanyaan untuk kami?"</td>
+                            <td>Menilai antusiasme & keingintahuan</td>
+                            <td>Siapkan 2-3 pertanyaan cerdas tentang budaya/program instansi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">15.4.4 Etika Wawancara Kerja</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="tip-card">
+                    <h4 class="text-green-400 font-semibold mb-2">✅ Etika yang Harus Dilakukan</h4>
+                    <ul class="text-luxury-cream/80 text-sm space-y-1 list-disc list-inside">
+                        <li>Datang <strong>10-15 menit lebih awal</strong></li>
+                        <li>Berjabat tangan dengan <strong>tegas dan sopan</strong></li>
+                        <li>Duduk tegak, <strong>jangan bersandar malas</strong></li>
+                        <li>Jaga <strong>kontak mata</strong> dengan pewawancara</li>
+                        <li>Dengarkan pertanyaan <strong>sampai selesai</strong> sebelum menjawab</li>
+                        <li>Jawab dengan <strong>jelas, tenang, dan percaya diri</strong></li>
+                        <li>Ucapkan <strong>terima kasih</strong> di akhir wawancara</li>
+                        <li>Kirim <strong>email ucapan terima kasih</strong> dalam 24 jam</li>
+                    </ul>
+                </div>
+                <div class="warning-card">
+                    <h4 class="text-red-400 font-semibold mb-2">❌ Etika yang Harus Dihindari</h4>
+                    <ul class="text-luxury-cream/80 text-sm space-y-1 list-disc list-inside">
+                        <li><strong>Terlambat</strong> tanpa pemberitahuan</li>
+                        <li>Memainkan <strong>HP</strong> selama wawancara</li>
+                        <li><strong>Memotong pembicaraan</strong> pewawancara</li>
+                        <li>Menjelekkan <strong>instansi/atasan sebelumnya</strong></li>
+                        <li>Memberikan <strong>informasi palsu</strong></li>
+                        <li>Bersikap <strong>terlalu santai atau arogan</strong></li>
+                        <li>Tidak menyiapkan <strong>pertanyaan balik</strong></li>
+                        <li><strong>Mengeluh</strong> atau menunjukkan sikap negatif</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">15.5 Penerapan bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, profesionalisme karier memiliki dimensi khusus yang memadukan kompetensi teknis dengan nilai-nilai keislaman:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Penerapan Profesionalisme</th>
+                            <th class="text-luxury-gold">Nilai Islam yang Diterapkan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Menyusun Surat Lamaran ke Madrasah</td>
+                            <td>Bahasa baku, format resmi, menonjolkan kompetensi PAI</td>
+                            <td><em>Shidq</em> (kejujuran) — tidak melebih-lebihkan</td>
+                        </tr>
+                        <tr>
+                            <td>Menyusun CV Akademik</td>
+                            <td>Menonjolkan publikasi, penelitian, dan pengalaman mengajar PAI</td>
+                            <td><em>Amanah</em> — menyajikan data diri apa adanya</td>
+                        </tr>
+                        <tr>
+                            <td>Wawancara di Kementerian Agama</td>
+                            <td>Pakaian formal, jawaban terstruktur, pengetahuan tentang visi Kemenag</td>
+                            <td><em>Ihsan</em> — berbuat sebaik mungkin</td>
+                        </tr>
+                        <tr>
+                            <td>Wawancara di Yayasan Islam</td>
+                            <td>Menonjolkan nilai-nilai keislaman, visi dakwah melalui pendidikan</td>
+                            <td><em>Niat</em> — bekerja sebagai ibadah</td>
+                        </tr>
+                        <tr>
+                            <td>Wawancara di Sekolah Umum</td>
+                            <td>Menonjolkan kemampuan adaptasi dan kontribusi lintas budaya</td>
+                            <td><em>Tasamuh</em> (toleransi) — menghargai keberagaman</td>
+                        </tr>
+                        <tr>
+                            <td>Mengikuti Tes CPNS Guru</td>
+                            <td>Persiapan matang, integritas saat tes, doa dan tawakkal</td>
+                            <td><em>Ikhtiar + Tawakkal</em> — usaha + berserah diri</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📝 Contoh Jawaban Wawancara Bertema PAI</h3>
+            <div class="example-box">
+                <p class="text-luxury-goldLight text-xs">❓ Pertanyaan: "Mengapa Anda ingin menjadi guru PAI di madrasah kami?"</p>
+                <br>
+                <p class="text-luxury-cream/80 text-sm">✅ <strong>Jawaban Efektif:</strong></p>
+                <p class="text-luxury-cream/80 text-sm italic">"Saya memiliki panggilan hati untuk menjadi guru PAI karena saya percaya bahwa pendidikan agama adalah fondasi karakter generasi muda. Madrasah Bapak/Ibu dikenal dengan program tahfiz dan integrasi nilai-nilai Al-Qur'an dalam pembelajaran — hal ini sejalan dengan visi saya untuk mengembangkan pendidikan Islam yang holistik. Dengan latar belakang S1 PAI dari UIN Sjech M. Djamil Djambek dan pengalaman magang di MTs Nurul Huda, saya yakin dapat berkontribusi dalam memperkuat program keagamaan di madrasah ini, sekaligus belajar dari para senior yang lebih berpengalaman."</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Profesionalisme karier adalah <strong>jembatan antara kompetensi akademik dan dunia kerja nyata</strong>. Tiga pilar utamanya — <strong>surat lamaran, CV, dan wawancara kerja</strong> — masing-masing memiliki peran strategis: surat lamaran sebagai kesan pertama, CV sebagai potret profesional, dan wawancara sebagai pembuktian langsung.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Prinsip <strong>7C komunikasi efektif</strong> (Completeness, Concreteness, Courtesy, Clarity, Conciseness, Correctness, Consideration) menjadi pedoman dalam menyusun surat lamaran dan CV, sementara metode <strong>STAR</strong> menjadi teknik ampuh untuk menjawab pertanyaan wawancara berbasis perilaku.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, profesionalisme karier adalah manifestasi dari <strong>Q.S. At-Taubah: 105</strong> — bekerja dengan sungguh-sungguh karena Allah, Rasul-Nya, dan orang-orang mukmin melihatnya. Dan saat menghadapi wawancara, doa <strong>Q.S. Thaha: 25-28</strong> menjadi sandaran spiritual: memohon kelapangan dada, kemudahan urusan, dan kelancaran lidah. Sebagai calon pendidik PAI, mari kita masuki dunia kerja dengan integritas, profesionalisme, dan niat ibadah — karena pekerjaan yang baik adalah bagian dari dakwah.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 15</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 246-265)</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset. (Hal. 331-394)</li>
+                <li>Semi, A. (2009). <em>Terampil Menulis Surat</em>. Bandung: Titian Ilmu. (Hal. 1-89)</li>
+                <li>Widjono. (2005). <em>Bahasa Indonesia Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Gramedia. (Hal. 270-305)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Goffman, E. (1959). <em>The Presentation of Self in Everyday Life</em>. New York: Doubleday.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Semi, A. (2009). <em>Terampil Menulis Surat</em>. Bandung: Titian Ilmu.</li>
+                <li>Widjono, H. S. (2005). <em>Bahasa Indonesia: Mata Kuliah Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Grasindo.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 15</h2>
+                <p class="text-luxury-cream/70 text-sm">Profesionalisme Karier (Surat Lamaran, CV, Wawancara)</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Q.S. At-Taubah ayat 105 yang menjadi landasan spiritual profesionalisme karier mengajarkan tentang...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Larangan bekerja di hari Jumat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Perintah bekerja dengan sungguh-sungguh karena Allah, Rasul-Nya, dan orang-orang mukmin akan melihatnya</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Perintah mencari kekayaan sebanyak-banyaknya</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Larangan memiliki lebih dari satu pekerjaan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Doa Nabi Musa a.s. dalam Q.S. Thaha ayat 25-28 yang relevan dengan wawancara kerja berisi permohonan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Kekayaan dan kekuasaan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Kelapangan dada, kemudahan urusan, dan kelancaran lidah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Kemenangan atas musuh</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Panjang umur dan banyak anak</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Prinsip 7C dalam komunikasi profesional meliputi Completeness, Concreteness, Courtesy, Clarity, Conciseness, Correctness, dan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Creativity</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Consideration</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Charity</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Courage</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Bagian surat lamaran yang berisi identitas, kualifikasi, dan harapan pelamar disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Kop surat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Isi surat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Salam pembuka</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Lampiran</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Metode STAR dalam wawancara kerja merupakan singkatan dari...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Situation, Task, Action, Result</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Skill, Talent, Ability, Result</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Strategy, Target, Achievement, Review</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Strength, Threat, Action, Response</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Dalam CV, bagian yang paling menonjolkan kompetensi dan pencapaian pelamar adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Data diri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Pengalaman kerja/mengajar dan prestasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Hobi dan minat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Alamat rumah</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Hal yang harus DIHINDARI dalam surat lamaran kerja adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Menggunakan bahasa baku sesuai EYD</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Menyertakan kualifikasi yang relevan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Menggunakan bahasa gaul dan typo</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Format yang rapi dan konsisten</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Jenis wawancara yang berfokus pada perilaku masa lalu pelamar sebagai prediktor kinerja masa depan disebut wawancara...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Struktural</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Behavioral</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Situasional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Panel</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Etika yang harus dilakukan saat wawancara kerja adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Datang terlambat tanpa pemberitahuan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Datang 10-15 menit lebih awal dan berpakaian rapi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Memainkan HP selama wawancara</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Menjelekkan atasan sebelumnya</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Teori Impression Management dari Goffman (1959) dalam konteks lamaran kerja bermakna...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Seni memanipulasi data diri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Seni mengelola kesan yang terbentuk di benak pewawancara melalui surat lamaran, CV, dan wawancara</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Teknik berbohong dengan meyakinkan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Cara menghindari pertanyaan sulit</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan sembilan bagian struktur surat lamaran kerja! Berikan contoh konkret untuk masing-masing bagian dalam konteks melamar posisi guru PAI di madrasah!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah prinsip 7C komunikasi efektif dalam penyusunan surat lamaran kerja! Berikan contoh penerapan masing-masing prinsip dalam konteks melamar posisi guru PAI!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Rancanglah struktur CV profesional untuk lulusan S1 PAI yang ingin melamar sebagai guru di madrasah! Sertakan minimal 8 bagian dengan contoh isi yang relevan!</p>
+                            <textarea id="essay3" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Jelaskan metode STAR dalam menjawab pertanyaan wawancara kerja! Berikan contoh jawaban lengkap menggunakan metode STAR untuk pertanyaan: "Ceritakan pengalaman Anda menghadapi tantangan dalam mengajar!"</p>
+                            <textarea id="essay4" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Hubungkan Q.S. At-Taubah ayat 105 dan Q.S. Thaha ayat 25-28 dengan profesionalisme karier! Bagaimana kedua ayat tersebut menjadi landasan spiritual bagi seorang calon pendidik Islam dalam menyusun surat lamaran, CV, dan menjalani wawancara? Rancanglah "Protokol Karier Islami" yang akan Anda terapkan dalam mencari pekerjaan!</p>
+                            <textarea id="essay5" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Perintah bekerja sungguh-sungguh
+                q2: 'b',  // Kelapangan dada, kemudahan, kelancaran lidah
+                q3: 'b',  // Consideration
+                q4: 'b',  // Isi surat
+                q5: 'a',  // Situation, Task, Action, Result
+                q6: 'b',  // Pengalaman kerja & prestasi
+                q7: 'c',  // Bahasa gaul dan typo (yang harus dihindari)
+                q8: 'b',  // Behavioral
+                q9: 'b',  // Datang 10-15 menit lebih awal
+                q10: 'b'  // Seni mengelola kesan di benak pewawancara
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

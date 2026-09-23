@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 1: Kontrak Perkuliahan & Lingkup Materi | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 01</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Kontrak Perkuliahan, Lingkup Materi, <br>dan <span class="gold-gradient-text">Komposisi Penilaian</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Memahami kesepakatan akademik, peta perjalanan pembelajaran, dan sistem penilaian berbasis <em>Outcome-Based Education</em> (OBE) untuk menciptakan suasana belajar yang kondusif, terarah, dan bermakna.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="index.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Kembali ke Daftar Bab</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="2.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kontrak perkuliahan bukan sekadar dokumen administratif, melainkan sebuah <strong>perjanjian akademik</strong> yang disepakati bersama antara dosen dan mahasiswa di awal semester. Dalam paradigma <em>Outcome-Based Education</em> (OBE), kontrak ini berfungsi sebagai peta jalan (<em>roadmap</em>) yang menjamin transparansi tujuan pembelajaran, metode yang digunakan, serta standar penilaian yang objektif.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Di lingkungan Universitas Islam Negeri (UIN), kontrak perkuliahan juga mengintegrasikan nilai-nilai keislaman dan kependidikan, memastikan bahwa proses pembelajaran Bahasa Indonesia tidak hanya membentuk kompetensi akademik, tetapi juga karakter calon pendidik yang profesional dan berakhlak mulia. Hal ini sejalan dengan visi UIN sebagai perguruan tinggi yang mengintegrasikan ilmu pengetahuan, teknologi, dan nilai-nilai keislaman (<em>integration of science and Islamic values</em>).
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif tiga pilar utama pertemuan pertama: <strong>(1) kontrak perkuliahan</strong> sebagai fondasi kesepakatan akademik, <strong>(2) lingkup materi</strong> sebagai peta perjalanan pembelajaran selama 16 pertemuan, dan <strong>(3) komposisi penilaian</strong> sebagai instrumen evaluasi yang transparan dan akuntabel.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَقُولُوا قَوْلًا سَدِيدًا</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Wahai orang-orang yang beriman, bertakwalah kepada Allah dan ucapkanlah perkataan yang benar (lurus/tepat)."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Ahzab [33]: 70</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menjadi landasan spiritual pembelajaran Bahasa Indonesia: kemampuan berkomunikasi dengan <em>qaulan sadidan</em> (perkataan yang tepat, benar, dan efektif) adalah manifestasi ketakwaan seorang muslim, khususnya calon pendidik.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kontrak Perkuliahan</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kesepakatan tertulis yang mengatur hak dan kewajiban dosen-mahasiswa, mencakup capaian pembelajaran, materi, metode, dan sistem penilaian selama satu semester.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Outcome-Based Education (OBE)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Pendekatan pembelajaran yang berfokus pada capaian lulusan (CPL) yang diturunkan menjadi capaian mata kuliah (CPMK), diukur melalui indikator yang terukur.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">RPS (Rencana Pembelajaran Semester)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Dokumen resmi yang menjadi acuan utama penyusunan kontrak perkuliahan, memuat CPL, CPMK, Sub-CPMK, materi, metode, dan penilaian.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Constructive Alignment</h3>
+                    <p class="text-luxury-cream/70 text-sm">Prinsip penyelarasan antara tujuan pembelajaran (CPMK), kegiatan pembelajaran, dan asesmen agar saling mendukung (Biggs & Tang, 2014).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Kebingungan di Tengah Semester</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa semester 1 di Prodi PAI FTIK UIN Sjech M. Djamil Djambek Bukittinggi merasa kecewa saat menerima nilai UTS. Ia mengaku tidak tahu bahwa tugas presentasi dan partisipasi diskusi memiliki bobot 30% dari nilai akhir, karena ia hanya fokus menghafal materi untuk ujian tulis. Akibatnya, strateginya belajar tidak sejalan dengan komposisi penilaian yang sebenarnya.
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Pemahaman yang mendalam terhadap kontrak perkuliahan sejak minggu pertama sangat krusial agar mahasiswa dapat menyusun strategi belajar yang efektif dan proporsional.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, bagaimana Anda dapat meneladani sifat <em>Fathonah</em> (cerdas), <em>Amanah</em> (dapat dipercaya), dan <em>Istiqamah</em> (konsisten) dalam memenuhi komitmen yang telah disepakati dalam kontrak perkuliahan ini? Renungkanlah bagaimana integritas akademik yang Anda bangun hari ini akan menjadi teladan bagi murid-murid Anda di masa depan.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">1.1 Landasan Teoretis Kontrak Perkuliahan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Penyusunan kontrak perkuliahan yang efektif berlandaskan pada beberapa teori pendidikan yang telah teruji secara empiris. Pemahaman terhadap landasan teoretis ini akan membantu dosen dan mahasiswa mengimplementasikan kontrak perkuliahan secara bermakna, bukan sekadar formalitas administratif.
+            </p>
+
+            <!-- Teori Andragogi -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">1.1.1 Teori Andragogi (Malcolm Knowles)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Malcolm Knowles (1984) mengembangkan teori <strong>Andragogi</strong> yang menegaskan bahwa orang dewasa (dalam hal ini mahasiswa) belajar secara berbeda dengan anak-anak. Terdapat lima asumsi utama andragogi yang relevan dengan kontrak perkuliahan:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Asumsi Andragogi</th>
+                            <th class="text-luxury-gold">Implikasi dalam Kontrak Perkuliahan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Konsep Diri (Self-Concept)</strong></td>
+                            <td>Mahasiswa perlu dilibatkan dalam perencanaan dan evaluasi pembelajaran</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pengalaman (Experience)</strong></td>
+                            <td>Pengalaman mahasiswa menjadi sumber belajar yang berharga</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesiapan Belajar (Readiness to Learn)</strong></td>
+                            <td>Materi harus relevan dengan kebutuhan akademik dan profesional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Orientasi Belajar (Orientation to Learning)</strong></td>
+                            <td>Pembelajaran berorientasi pada pemecahan masalah, bukan hafalan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Motivasi (Motivation)</strong></td>
+                            <td>Motivasi internal lebih kuat daripada motivasi eksternal (nilai)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Teori Constructive Alignment -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">1.1.2 Teori Constructive Alignment (John Biggs)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                John Biggs dan Catherine Tang (2014) mengembangkan prinsip <strong>Constructive Alignment</strong> yang menekankan keselarasan antara tiga komponen utama:
+            </p>
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border mb-4">
+                <p class="text-luxury-cream/80 text-sm text-center">
+                    <span class="text-luxury-gold font-bold">Tujuan Pembelajaran (CPMK)</span> <br>
+                    <span class="text-luxury-cream/50">⇅ selaras dengan ⇅</span> <br>
+                    <span class="text-luxury-gold font-bold">Kegiatan Pembelajaran</span> <br>
+                    <span class="text-luxury-cream/50">⇅ selaras dengan ⇅</span> <br>
+                    <span class="text-luxury-gold font-bold">Asesmen/Penilaian</span>
+                </p>
+            </div>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Dalam konteks mata kuliah Bahasa Indonesia, prinsip ini menjamin bahwa setiap kegiatan pembelajaran (seperti diskusi, penugasan, presentasi) secara langsung mendukung pencapaian CPMK, dan instrumen penilaian dirancang untuk mengukur capaian tersebut secara valid dan reliabel.
+            </p>
+
+            <!-- Teori Konstruktivisme -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">1.1.3 Teori Konstruktivisme (Vygotsky & Piaget)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Lev Vygotsky (1978) dengan konsep <em>Zone of Proximal Development</em> (ZPD) dan Jean Piaget (1950) dengan teori perkembangan kognitifnya menekankan bahwa pengetahuan dibangun secara aktif oleh pembelajar melalui interaksi sosial dan refleksi. Kontrak perkuliahan yang baik harus menyediakan ruang bagi mahasiswa untuk mengkonstruksi pengetahuannya sendiri melalui kegiatan kolaboratif, reflektif, dan kontekstual.
+            </p>
+
+            <!-- Kutipan -->
+            <div class="quote-block my-6">
+                <p>"Tell me and I forget, teach me and I may remember, involve me and I learn."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Benjamin Franklin (sering dikutip dalam konteks andragogi)</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Komponen Kontrak Perkuliahan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">1.2 Komponen Utama Kontrak Perkuliahan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan RPS Mata Kuliah Bahasa Indonesia FTIK UIN Sjech M. Djamil Djambek Bukittinggi, terdapat enam komponen utama yang harus dipahami dan disepakati bersama:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">No.</th>
+                            <th class="text-luxury-gold">Komponen</th>
+                            <th class="text-luxury-gold">Deskripsi</th>
+                            <th class="text-luxury-gold">Contoh Konkret</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td><strong>Identitas Mata Kuliah</strong></td>
+                            <td>Nama, kode, SKS, semester, dan dosen pengampu</td>
+                            <td>Bahasa Indonesia | Kode: 21.1.01.04.25 | 2 SKS | Semester 1 | Diyan Permata Yanda, M.Pd</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td><strong>Capaian Pembelajaran</strong></td>
+                            <td>Penjabaran CPL Prodi menjadi CPMK dan Sub-CPMK yang terukur</td>
+                            <td>CPMK 1: Menulis esai/artikel bertema PAI dengan struktur runtut dan bahasa sesuai EYD</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td><strong>Lingkup Materi</strong></td>
+                            <td>Peta materi dari Pertemuan 1 s.d. 16</td>
+                            <td>Sejarah bahasa, ejaan, diksi, paragraf, esai, karya ilmiah, presentasi, surat lamaran</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td><strong>Metode Pembelajaran</strong></td>
+                            <td>Kombinasi pendekatan yang digunakan</td>
+                            <td>Ceramah interaktif, diskusi kelompok, penugasan, presentasi, <em>problem-based learning</em></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td><strong>Komposisi Penilaian</strong></td>
+                            <td>Bobot persentase setiap instrumen</td>
+                            <td>Kehadiran 10%, Partisipasi 10%, Tugas 30%, UTS 25%, UAS 25%</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td><strong>Tata Tertib</strong></td>
+                            <td>Aturan kehadiran, batas waktu tugas, integritas akademik</td>
+                            <td>Maks. toleransi absen 3x, tugas terlambat dikurangi 10%/hari, anti-plagiarisme</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Hierarki Capaian Pembelajaran -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">1.3 Hierarki Capaian Pembelajaran (CPL → CPMK → Sub-CPMK)</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Dalam sistem OBE, terdapat hierarki yang jelas dari capaian lulusan hingga capaian per tahapan belajar. Memahami hierarki ini penting agar mahasiswa mengetahui posisi mata kuliah ini dalam kurikulum Prodi PAI.
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Level</th>
+                            <th class="text-luxury-gold">Kode</th>
+                            <th class="text-luxury-gold">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">CPL-Prodi</td>
+                            <td>CPL</td>
+                            <td>Mampu mengkomunikasikan hasil pemikiran, kritik ilmiah, dan data hasil penelitian secara lisan dan tertulis sesuai kaidah akademik</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">CPMK</td>
+                            <td>CPMK 1</td>
+                            <td>Mahasiswa mampu menulis esai atau artikel singkat bertema Pendidikan Agama Islam dengan struktur yang runtut, bahasa yang sesuai kaidah EYD, dan memanfaatkan sumber pustaka yang tepat</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">CPMK</td>
+                            <td>CPMK 2</td>
+                            <td>Mahasiswa mampu menyampaikan presentasi singkat terkait topik Pendidikan Agama Islam menggunakan bahasa Indonesia yang jelas, sopan, dan mudah dipahami audiens</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">Sub-CPMK</td>
+                            <td>Sub-CPMK 1</td>
+                            <td>Menjelaskan sejarah pertumbuhan bahasa Indonesia serta kedudukan dan fungsinya dalam konteks akademik dan profesional</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">Sub-CPMK</td>
+                            <td>Sub-CPMK 2</td>
+                            <td>Mengidentifikasi ragam bahasa dan menerapkan kaidah kebahasaan (ejaan, diksi, definisi, kamus) secara tepat</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">Sub-CPMK</td>
+                            <td>Sub-CPMK 3</td>
+                            <td>Menyusun paragraf dan esai akademik bertema PAI secara sistematis, logis, dan sesuai kaidah penulisan ilmiah</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">Sub-CPMK</td>
+                            <td>Sub-CPMK 4</td>
+                            <td>Merancang kerangka karya ilmiah sederhana dengan memanfaatkan sumber pustaka yang relevan</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">Sub-CPMK</td>
+                            <td>Sub-CPMK 5</td>
+                            <td>Menyusun dan menyampaikan presentasi ilmiah bertema PAI dengan bahasa Indonesia yang jelas, sopan, dan mudah dipahami</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">Sub-CPMK</td>
+                            <td>Sub-CPMK 6</td>
+                            <td>Membuat dokumen profesional (surat lamaran kerja dan CV) serta menerapkan etika wawancara kerja secara efektif</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                <h4 class="font-serif text-lg text-luxury-gold mb-3">📊 Matriks Keterkaitan Sub-CPMK dengan CPMK</h4>
+                <div class="overflow-x-auto">
+                    <table class="text-sm text-luxury-cream/80">
+                        <thead>
+                            <tr>
+                                <th class="text-luxury-gold">Sub-CPMK</th>
+                                <th class="text-luxury-gold">CPMK 1 (Menulis)</th>
+                                <th class="text-luxury-gold">CPMK 2 (Presentasi)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Sub-CPMK 1</td><td class="text-center text-luxury-gold">✓</td><td class="text-center">—</td></tr>
+                            <tr><td>Sub-CPMK 2</td><td class="text-center text-luxury-gold">✓</td><td class="text-center">—</td></tr>
+                            <tr><td>Sub-CPMK 3</td><td class="text-center text-luxury-gold">✓</td><td class="text-center">—</td></tr>
+                            <tr><td>Sub-CPMK 4</td><td class="text-center text-luxury-gold">✓</td><td class="text-center">—</td></tr>
+                            <tr><td>Sub-CPMK 5</td><td class="text-center">—</td><td class="text-center text-luxury-gold">✓</td></tr>
+                            <tr><td>Sub-CPMK 6</td><td class="text-center">—</td><td class="text-center text-luxury-gold">✓</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Peta Lingkup Materi -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">1.4 Peta Lengkap Lingkup Materi (16 Pertemuan)</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Mata kuliah ini dirancang secara sistematis untuk membekali mahasiswa dengan kemampuan berbahasa Indonesia akademik dan profesional. Berikut adalah peta lengkap 16 pertemuan:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Pertemuan</th>
+                            <th class="text-luxury-gold">Topik Utama</th>
+                            <th class="text-luxury-gold">Sub-CPMK Terkait</th>
+                            <th class="text-luxury-gold">Integrasi Nilai Islam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td>Kontrak Perkuliahan & Lingkup Materi</td>
+                            <td>Sub-CPMK 1</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td>Sejarah Pertumbuhan Bahasa Indonesia</td>
+                            <td>Sub-CPMK 1</td>
+                            <td>Q.S. Al-Hujurat: 13</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td>Ragam Bahasa Indonesia</td>
+                            <td>Sub-CPMK 2</td>
+                            <td>Q.S. Al-Ahzab: 70</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td>Perkembangan Ejaan Bahasa Indonesia</td>
+                            <td>Sub-CPMK 2</td>
+                            <td>Q.S. Al-Alaq: 1-5</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td>Penerapan Kaidah Ejaan Bahasa Indonesia</td>
+                            <td>Sub-CPMK 2</td>
+                            <td>Q.S. Al-Alaq: 1-5</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td>Diksi, Definisi, dan Kamus</td>
+                            <td>Sub-CPMK 2</td>
+                            <td>Q.S. Al-Baqarah: 31</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7</td>
+                            <td>Kalimat Efektif</td>
+                            <td>Sub-CPMK 3</td>
+                            <td>Q.S. Ibrahim: 4</td>
+                        </tr>
+                        <tr class="bg-luxury-gold/10">
+                            <td class="text-luxury-gold font-bold">8</td>
+                            <td><strong>UJIAN TENGAH SEMESTER (UTS)</strong></td>
+                            <td>Sub-CPMK 1, 2, 3</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">9</td>
+                            <td>Pola Pengembangan Paragraf</td>
+                            <td>Sub-CPMK 3</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">10</td>
+                            <td>Menulis Esai Akademik</td>
+                            <td>Sub-CPMK 3</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">11</td>
+                            <td>Konsep dan Wujud Karangan Ilmiah</td>
+                            <td>Sub-CPMK 4</td>
+                            <td>Q.S. Al-Qalam: 1; Al-A'raf: 154</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">12</td>
+                            <td>Manajemen Referensi (Mendeley)</td>
+                            <td>Sub-CPMK 4</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">13</td>
+                            <td>Penyusunan Artikel Ilmiah</td>
+                            <td>Sub-CPMK 4</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">14</td>
+                            <td>Seni Presentasi Ilmiah</td>
+                            <td>Sub-CPMK 5</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">15</td>
+                            <td>Profesionalisme Karier (Surat Lamaran & Wawancara)</td>
+                            <td>Sub-CPMK 6</td>
+                            <td>Q.S. At-Taubah: 105; Thaha: 25-28</td>
+                        </tr>
+                        <tr class="bg-luxury-gold/10">
+                            <td class="text-luxury-gold font-bold">16</td>
+                            <td><strong>UJIAN AKHIR SEMESTER (UAS)</strong></td>
+                            <td>CPMK 1, 2</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Komposisi Penilaian -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">1.5 Komposisi Penilaian yang Transparan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Sistem penilaian mata kuliah ini dirancang berdasarkan prinsip <strong>asesmen autentik</strong> dan <strong>penilaian berkelanjutan</strong> (<em>continuous assessment</em>). Berikut adalah komposisi penilaian yang disepakati:
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Instrumen Penilaian</th>
+                            <th class="text-luxury-gold">Bobot (%)</th>
+                            <th class="text-luxury-gold">Bentuk Instrumen</th>
+                            <th class="text-luxury-gold">Kriteria Penilaian</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kehadiran & Keaktifan</strong></td>
+                            <td class="text-center text-luxury-gold font-bold">10%</td>
+                            <td>Observasi, absensi</td>
+                            <td>Min. 75% kehadiran, partisipasi aktif dalam diskusi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Partisipasi & Tugas Rutin</strong></td>
+                            <td class="text-center text-luxury-gold font-bold">20%</td>
+                            <td>Tugas individu/kelompok, kuis, latihan</td>
+                            <td>Ketepatan, kelengkapan, kreativitas, ketepatan waktu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tugas Besar (Esai/Artikel)</strong></td>
+                            <td class="text-center text-luxury-gold font-bold">20%</td>
+                            <td>Produk esai/artikel ilmiah bertema PAI</td>
+                            <td>Struktur, kaidah EYD, kualitas argumen, referensi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ujian Tengah Semester (UTS)</strong></td>
+                            <td class="text-center text-luxury-gold font-bold">25%</td>
+                            <td>Ujian tulis / studi kasus / proyek</td>
+                            <td>Materi pertemuan 1-7</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ujian Akhir Semester (UAS)</strong></td>
+                            <td class="text-center text-luxury-gold font-bold">25%</td>
+                            <td>Proyek akhir / studi kasus komprehensif</td>
+                            <td>Materi pertemuan 1-15 (kecuali UTS)</td>
+                        </tr>
+                        <tr class="bg-luxury-gold/10">
+                            <td><strong>TOTAL</strong></td>
+                            <td class="text-center text-luxury-gold font-bold">100%</td>
+                            <td colspan="2">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Konversi Nilai -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📊 Skala Konversi Nilai Akhir</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Rentang Nilai</th>
+                            <th class="text-luxury-gold">Huruf Mutu</th>
+                            <th class="text-luxury-gold">Nilai Angka</th>
+                            <th class="text-luxury-gold">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>85 – 100</td><td class="text-center text-luxury-gold font-bold">A</td><td class="text-center">4,0</td><td>Istimewa</td></tr>
+                        <tr><td>80 – 84</td><td class="text-center text-luxury-gold font-bold">A-</td><td class="text-center">3,7</td><td>Sangat Baik</td></tr>
+                        <tr><td>75 – 79</td><td class="text-center text-luxury-gold font-bold">B+</td><td class="text-center">3,3</td><td>Baik Sekali</td></tr>
+                        <tr><td>70 – 74</td><td class="text-center text-luxury-gold font-bold">B</td><td class="text-center">3,0</td><td>Baik</td></tr>
+                        <tr><td>65 – 69</td><td class="text-center text-luxury-gold font-bold">B-</td><td class="text-center">2,7</td><td>Cukup Baik</td></tr>
+                        <tr><td>60 – 64</td><td class="text-center text-luxury-gold font-bold">C+</td><td class="text-center">2,3</td><td>Cukup</td></tr>
+                        <tr><td>55 – 59</td><td class="text-center text-luxury-gold font-bold">C</td><td class="text-center">2,0</td><td>Kurang</td></tr>
+                        <tr><td>40 – 54</td><td class="text-center text-luxury-gold font-bold">D</td><td class="text-center">1,0</td><td>Sangat Kurang</td></tr>
+                        <tr><td>0 – 39</td><td class="text-center text-luxury-gold font-bold">E</td><td class="text-center">0,0</td><td>Gagal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Metode Pembelajaran -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">1.6 Metode Pembelajaran yang Digunakan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Mata kuliah ini menggunakan pendekatan <strong>Student-Centered Learning</strong> (SCL) dengan variasi metode yang disesuaikan dengan karakteristik setiap pertemuan:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Metode</th>
+                            <th class="text-luxury-gold">Deskripsi</th>
+                            <th class="text-luxury-gold">Penerapan pada Pertemuan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ceramah Interaktif</strong></td>
+                            <td>Penyampaian materi dengan dialog dua arah</td>
+                            <td>Pertemuan 1, 2, 4, 6, 7, 9</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Diskusi Kelompok</strong></td>
+                            <td>Kolaborasi mahasiswa dalam menganalisis masalah</td>
+                            <td>Pertemuan 3, 5, 9, 10, 13</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Penugasan (Task-Based)</strong></td>
+                            <td>Pemberian tugas individu/kelompok berbasis produk</td>
+                            <td>Pertemuan 5, 7, 10, 11, 13, 15</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Presentasi</strong></td>
+                            <td>Penyampaian hasil karya di depan kelas</td>
+                            <td>Pertemuan 10, 13, 14</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Problem-Based Learning (PBL)</strong></td>
+                            <td>Pembelajaran berbasis pemecahan masalah nyata</td>
+                            <td>Pertemuan 7, 11, 15</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Praktik Langsung</strong></td>
+                            <td>Penerapan keterampilan dalam konteks nyata</td>
+                            <td>Pertemuan 5, 12, 14, 15</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peer Review</strong></td>
+                            <td>Umpan balik sebaya terhadap karya tulis</td>
+                            <td>Pertemuan 10, 13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Tata Tertib -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">1.7 Tata Tertib dan Integritas Akademik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Integritas akademik adalah harga mati dalam dunia pendidikan. Sebagai calon pendidik Islam, mahasiswa wajib menjunjung tinggi nilai-nilai kejujuran (<em>shidq</em>), amanah, dan anti-plagiarisme.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-lg text-luxury-gold mb-3">✅ Kewajiban Mahasiswa</h3>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Menghadiri minimal 75% dari total pertemuan</li>
+                        <li>Mengumpulkan tugas tepat waktu</li>
+                        <li>Berpartisipasi aktif dalam diskusi</li>
+                        <li>Menjunjung tinggi integritas akademik</li>
+                        <li>Menggunakan bahasa Indonesia yang santun</li>
+                        <li>Menjaga etika komunikasi di kelas dan daring</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-lg text-luxury-gold mb-3">⚠️ Larangan & Sanksi</h3>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Plagiarisme → nilai 0 pada tugas/ujian</li>
+                        <li>Keterlambatan tugas → pengurangan 10%/hari</li>
+                        <li>Kecurangan saat ujian → nilai E dan laporan ke Prodi</li>
+                        <li>Absensi melebihi 25% → tidak berhak ikut UAS</li>
+                        <li>Perilaku tidak etis → sanksi akademik sesuai aturan UIN</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Integritas adalah melakukan hal yang benar, bahkan ketika tidak ada orang yang melihat."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— C.S. Lewis</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">1.8 Referensi Utama Mata Kuliah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berikut adalah daftar pustaka utama yang akan digunakan selama perkuliahan. Mahasiswa disarankan untuk memiliki atau mengakses minimal satu buku utama:
+            </p>
+
+            <h3 class="font-serif text-lg text-luxury-cream mt-4 mb-3">📚 Pustaka Utama</h3>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Hasjim, N. & Tasai, A. (1992). <em>Komposisi dalam Bahasa Indonesia</em>. Jakarta: Pusat Pembinaan dan Pengembangan Bahasa.</li>
+                <li>Sasangka, S. S. T. W. (2014). <em>Kalimat</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Sriyanto. (2014). <em>Seri Penyuluhan Bahasa Indonesia: Ejaan</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Sugiyono. (2016). <em>Pedoman Umum Ejaan Bahasa Indonesia</em> [ebook]. Jakarta: Tim Pengembang Pedoman Bahasa Indonesia.</li>
+                <li>Suladi. (2014). <em>Paragraf</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Tarigan, D. (1986). <em>Membina Keterampilan Menulis Paragraf dan Pengembangannya</em>. Bandung: Angkasa.</li>
+            </ol>
+
+            <h3 class="font-serif text-lg text-luxury-cream mt-6 mb-3">📖 Pustaka Pendukung Terpilih</h3>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Alwi, H., dkk. (2000). <em>Tata Bahasa Baku Bahasa Indonesia</em> (Edisi Ketiga). Jakarta: Balai Pustaka.</li>
+                <li>Chaer, A. <em>Pembinaan Bahasa Indonesia</em>. Jakarta: Rineka Cipta.</li>
+                <li>Keraf, G. (1990). <em>Diksi dan Gaya Bahasa</em>. Jakarta: Gramedia.</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset.</li>
+                <li>Muslich, M. (2012). <em>Bahasa Indonesia pada Era Globalisasi</em>. Jakarta: Bumi Aksara.</li>
+                <li>Olii, H. (2008). <em>Public Speaking</em>. Jakarta: Macanan Jaya Cemerlang.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kontrak perkuliahan adalah fondasi dari keberhasilan proses pembelajaran berbasis OBE. Dengan memahami lingkup materi dan komposisi penilaian sejak awal, mahasiswa dapat mengambil peran aktif (<em>student-centered</em>) dalam mengelola pembelajarannya. Komitmen terhadap tata tertib dan integritas akademik akan membentuk calon pendidik Islam yang tidak hanya cerdas secara intelektual, tetapi juga profesional dan amanah.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Pertemuan pertama ini menjadi momentum krusial untuk membangun <strong>kesepakatan akademik</strong> yang transparan, <strong>komitmen belajar</strong> yang konsisten, dan <strong>integritas</strong> yang kokoh. Mari kita mulai perjalanan akademik ini dengan semangat <em>bismillah</em>, niat yang ikhlas, dan tekad untuk menjadi pendidik Islam yang unggul dalam komunikasi akademik dan profesional.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Biggs, J., & Tang, C. (2014). <em>Teaching for Quality Learning at University</em> (4th ed.). McGraw-Hill Education.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Knowles, M. S. (1984). <em>Andragogy in Action</em>. Jossey-Bass.</li>
+                <li>Piaget, J. (1950). <em>The Psychology of Intelligence</em>. London: Routledge.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Spady, W. G. (1994). <em>Outcome-Based Education: Critical Issues and Answers</em>. American Association of School Administrators.</li>
+                <li>Vygotsky, L. S. (1978). <em>Mind in Society: The Development of Higher Psychological Processes</em>. Harvard University Press.</li>
+                <li>Yanda, D. P., & Ramadhanti, D. (2024). E-Modul Pembelajaran Menulis Esai Berbasis Problem Based Learning untuk Perguruan Tinggi. <em>Jurnal Belajar Bahasa</em>, 9(2).</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 1</h2>
+                <p class="text-luxury-cream/70 text-sm">Kontrak Perkuliahan, Lingkup Materi, dan Komposisi Penilaian</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Apa tujuan utama dari penyusunan kontrak perkuliahan dalam sistem OBE?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Sebagai formalitas administrasi belaka</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Menyepakati target, aturan, dan sistem penilaian secara transparan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Memberikan tugas sebanyak-banyaknya kepada mahasiswa</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Mengganti peran dosen sebagai satu-satunya sumber belajar</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. OBE adalah singkatan dari...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Outcome-Based Education</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Output-Based Evaluation</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Objective-Based Examination</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Organizational Behavior Education</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Manakah yang termasuk dalam lingkup materi mata kuliah Bahasa Indonesia di Perguruan Tinggi?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Sastra klasik dan puisi modern</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Ejaan, diksi, kalimat efektif, dan karya ilmiah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Tata bahasa Arab dan terjemahannya</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Jurnalistik dan penyiaran radio</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. CPL dalam dokumen RPS merupakan singkatan dari...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Capaian Pembelajaran Lulusan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Catatan Pembelajaran Harian</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Kemampuan Penilaian Lokal</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Kurikulum Pendidikan Luar biasa</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Berdasarkan RPS, CPMK 1 mata kuliah ini berkaitan dengan kemampuan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Berpidato di depan umum</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Menulis esai atau artikel singkat bertema Pendidikan Agama Islam</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Menerjemahkan teks Arab ke Indonesia</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Membuat desain grafis poster</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Mengapa pemahaman terhadap komposisi penilaian penting sejak awal perkuliahan?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Agar mahasiswa bisa mencari jalan pintas untuk mendapat nilai</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Agar mahasiswa dapat mengelola strategi belajar dan prioritas tugas secara proporsional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Agar mahasiswa bisa protes jika nilai jelek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Tidak penting, yang penting hadir</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Pertemuan ke-8 dan ke-16 dalam RPS ini secara khusus dialokasikan untuk...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Libur semester</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Ujian Tengah Semester (UTS) dan Ujian Akhir Semester (UAS)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Studi banding ke luar negeri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Nonton film bersama</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Dalam konteks UIN, pembelajaran Bahasa Indonesia juga mengintegrasikan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Nilai-nilai keislaman dan kependidikan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Teknologi coding dan pemrograman</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Bahasa asing wajib</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Teori ekonomi makro</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Apa yang sebaiknya dilakukan mahasiswa jika terdapat ketidakjelasan dalam kontrak perkuliahan?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Mengabaikannya dan belajar sendiri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Berdiskusi dan mengonfirmasi secara santun kepada dosen pengampu</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Melaporkan ke pihak kepolisian</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Mengundurkan diri dari mata kuliah</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Prinsip Constructive Alignment yang dikemukakan oleh Biggs & Tang (2014) menekankan keselarasan antara...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Dosen, mahasiswa, dan kurikulum</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Tujuan pembelajaran, kegiatan pembelajaran, dan asesmen</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. UTS, UAS, dan tugas harian</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Teori, praktik, dan evaluasi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan pentingnya kontrak perkuliahan dalam sistem pembelajaran Outcome-Based Education (OBE)!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Sebutkan dan jelaskan minimal 4 (empat) komponen utama yang harus terdapat dalam sebuah kontrak perkuliahan!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Bagaimana hubungan hierarkis antara CPL (Capaian Pembelajaran Lulusan), CPMK, dan Sub-CPMK dalam mata kuliah ini? Berikan contoh konkretnya!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Analisis secara singkat lingkup materi Bahasa Indonesia untuk mahasiswa S1 Pendidikan Agama Islam berdasarkan RPS yang telah dipelajari! Mengapa materi tersebut relevan bagi calon pendidik?</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Rancang strategi pribadi Anda untuk mencapai nilai optimal dalam mata kuliah ini berdasarkan pemahaman Anda terhadap komposisi penilaian! Jelaskan bagaimana Anda akan membagi waktu dan prioritas!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',
+                q2: 'a',
+                q3: 'b',
+                q4: 'a',
+                q5: 'b',
+                q6: 'b',
+                q7: 'b',
+                q8: 'a',
+                q9: 'b',
+                q10: 'b'
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

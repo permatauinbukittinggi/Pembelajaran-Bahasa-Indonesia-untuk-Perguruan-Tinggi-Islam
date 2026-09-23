@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 7: Kalimat Efektif | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .correct { color: #4ade80; font-weight: 500; }
+        .incorrect { color: #f87171; text-decoration: line-through; }
+        .correction-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+        }
+        .arrow-icon { color: #D4AF37; font-weight: bold; margin: 0 0.5rem; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 07</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                <span class="gold-gradient-text">Kalimat Efektif</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menguasai prinsip penyusunan kalimat yang tepat, logis, dan hemat — fondasi utama komunikasi tulis akademik yang mampu menyampaikan gagasan secara jernih, padat, dan berdampak.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="6.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="8.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kalimat adalah satuan gramatikal terbesar yang mampu berdiri sendiri dan menyampaikan gagasan secara utuh. Namun, tidak semua kalimat yang terbentuk secara gramatikal mampu menyampaikan pesan secara efektif. Di sinilah konsep <strong>kalimat efektif</strong> menjadi krusial — khususnya dalam komunikasi tulis akademik.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kalimat efektif bukan sekadar kalimat yang "benar" secara tata bahasa, melainkan kalimat yang <strong>mampu menyampaikan gagasan penulis kepada pembaca secara tepat, jelas, dan tanpa ambiguitas</strong>. Sebuah kalimat yang panjang dan rumit belum tentu efektif; sebaliknya, kalimat yang singkat namun padat makna dapat menjadi sangat efektif.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bagi mahasiswa, khususnya calon pendidik Islam, penguasaan kalimat efektif adalah <strong>keterampilan fundamental</strong>. Setiap kalimat yang kita tulis di RPP, karya ilmiah, atau surat dinas akan dibaca dan dipahami oleh orang lain. Ketidakefektifan kalimat dapat menyebabkan kesalahpahaman, kerancuan berpikir, bahkan hilangnya kredibilitas penulis. Bab ini akan menguraikan secara komprehensif: <strong>(1) pengertian kalimat efektif</strong>, <strong>(2) unsur-unsur kalimat</strong>, <strong>(3) ciri-ciri kalimat efektif</strong>, <strong>(4) faktor penyebab ketidakefektifan</strong>, dan <strong>(5) latihan koreksi</strong> kalimat.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">وَمَآ أَرۡسَلۡنَا مِن رَّسُولٍ إِلَّا بِلِسَانِ قَوۡمِهِۦ لِيُبَيِّنَ لَهُمۡۖ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Dan Kami tidak mengutus seorang rasul pun, melainkan dengan bahasa kaumnya, agar dia dapat memberi penjelasan kepada mereka..."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Ibrahim [14]: 4</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menegaskan prinsip fundamental komunikasi: <strong>bahasa harus dipahami oleh penerima pesan</strong>. Allah mengutus rasul dengan bahasa kaumnya agar pesan dapat disampaikan dengan jelas (<em>li-yubayyina lahum</em>). Dalam konteks kalimat efektif, prinsip ini bermakna bahwa kalimat yang baik adalah kalimat yang <strong>sesuai dengan kapasitas pemahaman pembaca</strong> — tidak terlalu rumit, tidak ambigu, dan mampu menyampaikan gagasan secara jernih. Kalimat efektif adalah manifestasi dari prinsip <em>bayān</em> (penjelasan yang jelas) yang diajarkan Al-Qur'an.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kalimat Efektif</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kalimat yang mampu menyampaikan gagasan penulis kepada pembaca secara tepat, jelas, dan sesuai dengan yang dimaksudkan, tanpa menimbulkan tafsir ganda.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Subjek (S) dan Predikat (P)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Dua unsur inti kalimat. Setiap kalimat minimal harus memiliki S dan P. Tanpa keduanya, kalimat menjadi tidak lengkap atau rancu.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kehematan (Economy)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Prinsip tidak menggunakan kata, bentuk kata, atau unsur lain yang tidak diperlukan secara berlebihan (menghindari pleonasme).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kelogisan (Logic)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Gagasan dalam kalimat harus dapat diterima oleh akal sehat dan sesuai dengan kaidah logika berpikir.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Kalimat Rancu dalam Skripsi Mahasiswa</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa PAI menulis dalam skripsinya: <em>"Bagi para guru diharapkan dapat menerapkan metode pembelajaran yang bervariasi."</em> Kalimat ini tampaknya benar, tetapi sebenarnya <strong>tidak memiliki subjek</strong> karena diawali kata depan "bagi". Setelah dikoreksi menjadi: <em>"Para guru diharapkan dapat menerapkan metode pembelajaran yang bervariasi."</em> — kalimat ini menjadi efektif karena memiliki subjek yang jelas ("Para guru").
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Kesalahan ketidakefektifan seperti ini sangat umum terjadi dalam karya tulis akademik. Seorang reviewer yang teliti akan langsung menandai kalimat tersebut sebagai kelemahan struktural. Penguasaan kalimat efektif adalah syarat mutlak bagi penulis akademik yang kredibel.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: setiap kalimat yang Anda tulis di papan tulis, di RPP, atau di karya ilmiah akan membentuk cara berpikir siswa Anda. Kalimat yang rancu akan menghasilkan pemahaman yang rancu; kalimat yang efektif akan melahirkan pemikiran yang jernih. Ingatlah prinsip <em>bayān</em> dari Q.S. Ibrahim: 4 — tugas Anda adalah menjelaskan, bukan membingungkan. Jadikan setiap kalimat yang Anda tulis sebagai sarana <em>tabyīn</em> (penjelasan) yang membawa kebaikan bagi pembaca.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">7.1 Landasan Teoretis Kalimat Efektif</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kajian kalimat efektif berakar pada cabang linguistik yang disebut <strong>sintaksis</strong> (ilmu tentang struktur kalimat). Pemahaman teoretis ini akan membantu kita menyusun kalimat yang tidak hanya benar secara gramatikal, tetapi juga efektif secara komunikatif.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.1.1 Teori Sintaksis (Suhardi, 2013)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Suhardi (2013) dalam <em>Dasar-dasar Ilmu Sintaksis Bahasa Indonesia</em> menegaskan bahwa kalimat adalah satuan gramatikal terbesar yang memiliki makna lengkap. Sebuah kalimat minimal harus memiliki <strong>subjek (S) dan predikat (P)</strong>. Tanpa keduanya, satuan bahasa tersebut belum dapat disebut kalimat.
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Unsur Kalimat</th>
+                            <th class="text-luxury-gold">Fungsi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Subjek (S)</strong></td>
+                            <td>Unsur yang menjadi pokok pembicaraan</td>
+                            <td><em>Mahasiswa PAI</em> sedang belajar.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Predikat (P)</strong></td>
+                            <td>Unsur yang menjelaskan tindakan/keadaan subjek</td>
+                            <td>Mahasiswa PAI <em>sedang belajar</em>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Objek (O)</strong></td>
+                            <td>Unsur yang dikenai tindakan (wajib pada verba transitif)</td>
+                            <td>Ia membaca <em>buku</em>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pelengkap (Pel)</strong></td>
+                            <td>Unsur pelengkap yang tidak dapat menjadi subjek dalam pasif</td>
+                            <td>Ia bersikap <em>jujur</em>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Keterangan (K)</strong></td>
+                            <td>Unsur tambahan (waktu, tempat, cara, sebab)</td>
+                            <td>Ia belajar <em>di perpustakaan</em>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.1.2 Teori Kalimat Efektif (Alwi et al., 2000)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Alwi dkk. (2000) dalam <em>Tata Bahasa Baku Bahasa Indonesia</em> merumuskan bahwa kalimat efektif adalah kalimat yang <strong>memenuhi syarat-syarat berikut</strong>:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">1. Kesepadanan Struktur</h4>
+                    <p class="text-luxury-cream/70 text-sm">Struktur S-P-O-Pel-K harus sepadan dan jelas batasannya.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">2. Keparalelan (Parallelism)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Unsur-unsur yang setara harus memiliki bentuk gramatikal yang sama.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">3. Ketegasan (Emphasis)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Gagasan utama harus mendapat penekanan yang sesuai.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">4. Kehematan (Economy)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Tidak menggunakan kata yang berlebihan (pleonasme).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">5. Kecermatan (Precision)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Tidak menimbulkan tafsir ganda (ambigu).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">6. Kepaduan (Coherence)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Unsur-unsur kalimat saling berkaitan secara padu.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">7. Kelogisan (Logic)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Gagasan dalam kalimat dapat diterima oleh akal sehat.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">8. Kesesuaian Aspek</h4>
+                    <p class="text-luxury-cream/70 text-sm">Keseragaman bentuk gramatikal dalam satu kalimat.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.1.3 Prinsip Kerja Sama Grice (1975)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Paul Grice (1975) mengembangkan <strong>Prinsip Kerja Sama</strong> (<em>Cooperative Principle</em>) yang terdiri dari empat maksim, salah satunya adalah <strong>Maksim Kualitas</strong> dan <strong>Maksim Cara</strong>:
+            </p>
+            <div class="quote-block my-6">
+                <p>"Berbicaralah secara efektif — hindari kabur, hindari ambiguitas, hindari bertele-tele, dan urutkanlah dengan tertib."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Grice, Maxim of Manner (1975)</p>
+            </div>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Prinsip ini sangat relevan dengan kalimat efektif: penulis harus menyampaikan gagasan secara <strong>jelas, ringkas, dan tertib</strong> agar pembaca dapat memproses informasi dengan optimal.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengertian Kalimat Efektif -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">7.2 Pengertian Kalimat Efektif</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Kalimat efektif</strong> adalah kalimat yang disusun untuk memenuhi hak-hak pembaca dan mampu menyampaikan gagasan penulis secara tepat, jelas, dan sesuai dengan yang dimaksudkan. Kalimat efektif memiliki karakteristik sebagai berikut:
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Segi Penulis</strong></td>
+                            <td>Kalimat mampu menyampaikan gagasan penulis secara tepat</td>
+                            <td>Penulis bermaksud menegaskan bahwa pendidikan Islam penting → kalimatnya jelas menegaskan hal tersebut</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Segi Pembaca</strong></td>
+                            <td>Kalimat dipahami oleh pembaca sesuai yang dimaksudkan penulis</td>
+                            <td>Pembaca memahami pesan tanpa perlu menebak-nebak makna</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Segi Situasi</strong></td>
+                            <td>Kalimat sesuai dengan konteks penggunaannya</td>
+                            <td>Kalimat akademik di karya ilmiah berbeda dengan kalimat di media sosial</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Perbedaan Kalimat Efektif vs. Tidak Efektif</h4>
+                <div class="space-y-2 text-sm">
+                    <p><span class="incorrect">"Bagi semua mahasiswa diharapkan agar mengikuti kuliah ini."</span> <span class="arrow-icon">→</span> <span class="correct">"Semua mahasiswa diharapkan mengikuti kuliah ini."</span></p>
+                    <p><span class="incorrect">"Waktu dan tempat kami persilakan."</span> <span class="arrow-icon">→</span> <span class="correct">"Kepada Bapak pemateri, kami persilakan."</span></p>
+                    <p><span class="incorrect">"Dia naik ke atas tangga."</span> <span class="arrow-icon">→</span> <span class="correct">"Dia naik tangga."</span></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Unsur-Unsur Kalimat -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">7.3 Unsur-Unsur Kalimat</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Setiap kalimat terdiri dari lima unsur utama. Pemahaman terhadap unsur-unsur ini sangat penting untuk menyusun kalimat efektif.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.3.1 Subjek (S)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Subjek adalah unsur yang menjadi pokok pembicaraan. Ciri-ciri subjek:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Ciri-Ciri Subjek</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                        <li>Menjawab pertanyaan "apa" atau "siapa"</li>
+                        <li>Berupa nomina atau frasa nomina</li>
+                        <li>Didahului kata <em>bahwa</em> dalam kalimat kompleks</li>
+                        <li>Tidak didahului kata depan (di, ke, dari, pada, dalam, untuk, bagi)</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Contoh</h4>
+                    <div class="text-luxury-cream/70 text-sm space-y-1">
+                        <p><strong>Mahasiswa PAI</strong> sedang belajar.</p>
+                        <p><strong>Buku itu</strong> sangat bermanfaat.</p>
+                        <p><strong>Kedatangan guru</strong> disambut gembira.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.3.2 Predikat (P)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Predikat adalah unsur yang menjelaskan tindakan atau keadaan subjek. Predikat dapat berupa:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis Predikat</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Verba (kata kerja)</td><td>Mahasiswa <em>belajar</em>.</td></tr>
+                        <tr><td>Adjektiva (kata sifat)</td><td>Rumah itu <em>besar</em>.</td></tr>
+                        <tr><td>Nomina (kata benda)</td><td>Ayah saya <em>guru</em>.</td></tr>
+                        <tr><td>Numeralia (kata bilangan)</td><td>Peserta <em>lima puluh orang</em>.</td></tr>
+                        <tr><td>Frasa preposisional</td><td>Ibu <em>di dapur</em>.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.3.3 Objek, Pelengkap, dan Keterangan</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Unsur</th>
+                            <th class="text-luxury-gold">Ciri Utama</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Objek (O)</strong></td>
+                            <td>Ikut serta dalam kalimat pasif; langsung setelah verba transitif</td>
+                            <td>Ia membaca <em>buku</em>. → <em>Buku</em> dibaca olehnya.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pelengkap (Pel)</strong></td>
+                            <td>Tidak dapat menjadi subjek dalam pasif; melengkapi verba tertentu</td>
+                            <td>Ia bersikap <em>jujur</em>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Keterangan (K)</strong></td>
+                            <td>Unsur tambahan (waktu, tempat, cara, sebab, tujuan)</td>
+                            <td>Ia belajar <em>di perpustakaan</em> <em>dengan tekun</em>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Ciri-Ciri Kalimat Efektif -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">7.4 Ciri-Ciri Kalimat Efektif</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan teori Alwi et al. (2000) dan Rastuti (2008), kalimat efektif memiliki <strong>tujuh ciri utama</strong>. Berikut adalah penjelasan lengkap beserta contoh:
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.4.1 Kesepadanan Struktur</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Kalimat efektif harus memiliki keseimbangan antara pikiran (gagasan) dan struktur bahasa yang digunakan. Subjek dan predikat harus jelas batasannya.
+            </p>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Bagi semua mahasiswa diharapkan mengikuti kuliah ini."</span> <span class="arrow-icon">→</span> <span class="correct">"Semua mahasiswa diharapkan mengikuti kuliah ini."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Kata depan "bagi" membuat subjek tidak jelas. Hapus "bagi" agar "Semua mahasiswa" menjadi subjek yang jelas.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Dalam rapat itu memutuskan jadwal baru."</span> <span class="arrow-icon">→</span> <span class="correct">"Rapat itu memutuskan jadwal baru."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Kata depan "dalam" membuat "rapat itu" menjadi keterangan, bukan subjek.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.4.2 Keparalelan (Kesejajaran Bentuk)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Unsur-unsur yang memiliki fungsi sama harus memiliki bentuk gramatikal yang sama (sejajar).
+            </p>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Langkah-langkah penelitian adalah pengumpulan data, menganalisis data, dan pelaporan."</span> <span class="arrow-icon">→</span> <span class="correct">"Langkah-langkah penelitian adalah pengumpulan data, penganalisisan data, dan pelaporan."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Semua unsur harus berbentuk nomina: pengumpulan, penganalisisan, pelaporan.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Dia pandai menyanyi, menari, dan bermain piano."</span> <span class="arrow-icon">→</span> <span class="correct">"Dia pandai menyanyi, menari, dan memainkan piano."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Semua unsur harus berbentuk verba: menyanyi, menari, memainkan.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.4.3 Ketegasan (Penekanan)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Kalimat efektif memberikan penekanan pada gagasan yang dianggap penting. Penekanan dapat dilakukan melalui:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Teknik Penekanan</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Meletakkan unsur yang ditekankan di awal kalimat</td>
+                            <td><strong>Harapan kami</strong>, Anda dapat hadir pada acara tersebut.</td>
+                        </tr>
+                        <tr>
+                            <td>Menggunakan partikel penegas (-lah, -pun)</td>
+                            <td>Dialah <strong>yang bertanggung jawab</strong> atas kejadian itu.</td>
+                        </tr>
+                        <tr>
+                            <td>Menggunakan repetisi</td>
+                            <td>Kita harus <strong>bersatu, bersatu, dan bersatu</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td>Menggunakan pertentangan</td>
+                            <td>Bukan <strong>sedikit</strong>, melainkan <strong>banyak</strong> mahasiswa yang lulus.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.4.4 Kehematan</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Kalimat efektif tidak menggunakan kata-kata yang berlebihan (pleonasme). Kehematan bukan berarti menghilangkan kata yang penting, melainkan menghindari pengulangan yang tidak perlu.
+            </p>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Dia naik ke atas tangga."</span> <span class="arrow-icon">→</span> <span class="correct">"Dia naik tangga."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Naik" sudah bermakna "ke atas", sehingga "ke atas" berlebihan.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Mereka turun ke bawah."</span> <span class="arrow-icon">→</span> <span class="correct">"Mereka turun."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Turun" sudah bermakna "ke bawah".</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Sangat amat penting."</span> <span class="arrow-icon">→</span> <span class="correct">"Sangat penting."</span> atau <span class="correct">"Amat penting."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Sangat" dan "amat" memiliki makna yang sama; pilih salah satu.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Para bapak-bapak sekalian."</span> <span class="arrow-icon">→</span> <span class="correct">"Bapak-bapak sekalian."</span> atau <span class="correct">"Para bapak."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Para" dan "-bak" (jamak) sama-sama menunjukkan pluralitas.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.4.5 Kecermatan</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Kalimat efektif tidak menimbulkan tafsir ganda (ambigu). Setiap kata harus memiliki makna yang jelas dalam konteks kalimat.
+            </p>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Mahasiswa perguruan tinggi yang terkenal itu mendapat beasiswa."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Ambigu: yang terkenal itu mahasiswanya atau perguruan tingginya?</p>
+                    <p class="text-sm mt-2"><span class="correct">Versi 1: "Mahasiswa dari perguruan tinggi yang terkenal itu mendapat beasiswa."</span> (perguruan tingginya yang terkenal)</p>
+                    <p class="text-sm"><span class="correct">Versi 2: "Mahasiswa yang terkenal dari perguruan tinggi itu mendapat beasiswa."</span> (mahasiswanya yang terkenal)</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.4.6 Kepaduan (Koherensi)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Unsur-unsur kalimat harus saling berkaitan secara padu. Informasi baru harus ditempatkan di akhir kalimat, sedangkan informasi lama di awal.
+            </p>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Buku itu saya baca di perpustakaan kemarin."</span> <span class="arrow-icon">→</span> <span class="correct">"Kemarin saya membaca buku itu di perpustakaan."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Urutan informasi lebih padu: waktu → pelaku → tindakan → objek → tempat.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">7.4.7 Kelogisan</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Kalimat efektif dapat diterima oleh akal sehat dan sesuai dengan kaidah logika.
+            </p>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Waktu dan tempat kami persilakan."</span> <span class="arrow-icon">→</span> <span class="correct">"Kepada Bapak pemateri, kami persilakan."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Waktu dan tempat" tidak dapat dipersilakan; yang dipersilakan adalah orang.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Untuk mempersingkat waktu, mari kita mulai."</span> <span class="arrow-icon">→</span> <span class="correct">"Untuk menghemat waktu, mari kita mulai."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Waktu tidak dapat "dipersingkat"; yang dapat adalah "menghemat waktu".</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">"Apakah Anda setuju?"</span> <span class="arrow-icon">→</span> <span class="correct">"Apakah Anda setuju dengan usulan tersebut?"</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Setuju" adalah verba intransitif yang memerlukan pelengkap; tidak dapat langsung diikuti objek.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Faktor Penyebab Ketidakefektifan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">7.5 Faktor Penyebab Ketidakefektifan Kalimat</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan penelitian Rastuti (2008) dan Suhardi (2013), terdapat beberapa faktor utama yang menyebabkan kalimat menjadi tidak efektif:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">No.</th>
+                            <th class="text-luxury-gold">Faktor</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td><strong>Ketidakjelasan subjek</strong></td>
+                            <td>Subjek diawali kata depan sehingga kehilangan fungsi subjek</td>
+                            <td><span class="incorrect">"Bagi mahasiswa diharapkan hadir."</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td><strong>Pleonasme</strong></td>
+                            <td>Penggunaan kata berlebihan yang tidak perlu</td>
+                            <td><span class="incorrect">"Mundur ke belakang"</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td><strong>Kerancuan struktur</strong></td>
+                            <td>Pencampuran dua struktur kalimat dalam satu kalimat</td>
+                            <td><span class="incorrect">"Bagi mahasiswa yang terlambat tidak diperkenankan masuk."</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td><strong>Ketidaksejajaran bentuk</strong></td>
+                            <td>Unsur-unsur setara tidak memiliki bentuk gramatikal yang sama</td>
+                            <td><span class="incorrect">"Tugasnya mengajar, penelitian, dan mengabdi."</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td><strong>Ambiguitas</strong></td>
+                            <td>Kalimat menimbulkan tafsir ganda</td>
+                            <td><span class="incorrect">"Istri guru yang nakal itu..."</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td><strong>Ketidaklogisan</strong></td>
+                            <td>Gagasan tidak dapat diterima akal sehat</td>
+                            <td><span class="incorrect">"Waktu dan tempat kami persilakan."</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7</td>
+                            <td><strong>Preposisi yang salah</strong></td>
+                            <td>Penggunaan kata depan yang keliru</td>
+                            <td><span class="incorrect">"Menurut menurut saya..."</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">8</td>
+                            <td><strong>Kontaminasi</strong></td>
+                            <td>Pencampuran dua bentuk yang tidak seharusnya digabung</td>
+                            <td><span class="incorrect">"Dia amongst para mahasiswa."</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Latihan Koreksi -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">7.6 Latihan Koreksi Kalimat</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Berikut adalah latihan koreksi kalimat tidak efektif yang sering muncul dalam karya tulis akademik mahasiswa:</p>
+            
+            <div class="space-y-4">
+                <div class="correction-card">
+                    <p class="text-xs text-luxury-gold uppercase tracking-wider mb-1">Latihan 1</p>
+                    <p class="text-sm"><span class="incorrect">"Melalui metode ini dapat meningkatkan hasil belajar siswa."</span></p>
+                    <p class="text-sm mt-2"><span class="correct">"Metode ini dapat meningkatkan hasil belajar siswa."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Kata depan "melalui" membuat subjek tidak jelas.</p>
+                </div>
+
+                <div class="correction-card">
+                    <p class="text-xs text-luxury-gold uppercase tracking-wider mb-1">Latihan 2</p>
+                    <p class="text-sm"><span class="incorrect">"Dia sangat sekali rajin belajar."</span></p>
+                    <p class="text-sm mt-2"><span class="correct">"Dia sangat rajin belajar."</span> atau <span class="correct">"Dia sekali rajin belajar."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Sangat" dan "sekali" memiliki makna yang sama; pilih salah satu.</p>
+                </div>
+
+                <div class="correction-card">
+                    <p class="text-xs text-luxury-gold uppercase tracking-wider mb-1">Latihan 3</p>
+                    <p class="text-sm"><span class="incorrect">"Para siswa-siswa sedang belajar di kelas."</span></p>
+                    <p class="text-sm mt-2"><span class="correct">"Para siswa sedang belajar di kelas."</span> atau <span class="correct">"Siswa-siswa sedang belajar di kelas."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Para" dan "-siswa" (jamak) sama-sama menunjukkan pluralitas.</p>
+                </div>
+
+                <div class="correction-card">
+                    <p class="text-xs text-luxury-gold uppercase tracking-wider mb-1">Latihan 4</p>
+                    <p class="text-sm"><span class="incorrect">"Kegiatan penelitian meliputi pengumpulan data, menganalisis data, dan pelaporan."</span></p>
+                    <p class="text-sm mt-2"><span class="correct">"Kegiatan penelitian meliputi pengumpulan data, penganalisisan data, dan pelaporan."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Semua unsur harus berbentuk nomina (sejajar).</p>
+                </div>
+
+                <div class="correction-card">
+                    <p class="text-xs text-luxury-gold uppercase tracking-wider mb-1">Latihan 5</p>
+                    <p class="text-sm"><span class="incorrect">"Agar supaya lulus ujian, mahasiswa harus belajar dengan giat."</span></p>
+                    <p class="text-sm mt-2"><span class="correct">"Agar lulus ujian, mahasiswa harus belajar dengan giat."</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"Agar" dan "supaya" memiliki makna yang sama; pilih salah satu.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">7.7 Penerapan Kalimat Efektif bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Sebagai calon guru Pendidikan Agama Islam, penguasaan kalimat efektif akan diterapkan dalam berbagai konteks profesional:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Penerapan Kalimat Efektif</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Penulisan RPP/Modul Ajar</td>
+                            <td>Tujuan pembelajaran harus jelas subjek-predikatnya</td>
+                            <td><span class="correct">"Peserta didik mampu menganalisis ayat Al-Qur'an tentang toleransi."</span></td>
+                        </tr>
+                        <tr>
+                            <td>Penyampaian Materi di Kelas</td>
+                            <td>Penjelasan harus logis dan tidak ambigu</td>
+                            <td><span class="correct">"Shalat lima waktu wajib dilaksanakan oleh setiap muslim."</span></td>
+                        </tr>
+                        <tr>
+                            <td>Penulisan Karya Ilmiah</td>
+                            <td>Kalimat harus hemat, padu, dan sejajar</td>
+                            <td><span class="correct">"Penelitian ini menggunakan metode kualitatif dengan teknik wawancara, observasi, dan dokumentasi."</span></td>
+                        </tr>
+                        <tr>
+                            <td>Surat Dinas Sekolah</td>
+                            <td>Kalimat harus jelas dan sopan</td>
+                            <td><span class="correct">"Kami mengharapkan kehadiran Bapak/Ibu pada rapat tersebut."</span></td>
+                        </tr>
+                        <tr>
+                            <td>Transkrip Ayat/Hadis</td>
+                            <td>Kalimat harus logis dan tidak rancu</td>
+                            <td><span class="correct">"Q.S. Al-Baqarah ayat 31 mengajarkan tentang pentingnya ilmu."</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kalimat efektif adalah fondasi komunikasi tulis akademik yang mampu menyampaikan gagasan secara tepat, jelas, dan tanpa ambiguitas. Tujuh ciri utama kalimat efektif — <strong>kesepadanan struktur, keparalelan, ketegasan, kehematan, kecermatan, kepaduan, dan kelogisan</strong> — menjadi pedoman dalam menyusun kalimat yang berkualitas.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Faktor penyebab ketidakefektifan seperti ketidakjelasan subjek, pleonasme, kerancuan struktur, dan ambiguitas harus dihindari melalui latihan yang konsisten. Penguasaan kalimat efektif bukan sekadar keterampilan linguistik, melainkan <strong>kompetensi intelektual</strong> yang membedakan penulis biasa dengan penulis handal.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, kalimat efektif adalah manifestasi dari prinsip <em>bayān</em> (penjelasan yang jelas) yang diajarkan dalam Q.S. Ibrahim: 4. Sebagai calon pendidik, mari kita jadikan setiap kalimat yang kita tulis sebagai sarana <em>tabyīn</em> yang membawa kebaikan bagi pembaca — kalimat yang tidak hanya benar secara gramatikal, tetapi juga efektif secara komunikatif.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 7</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Alwi, H., dkk. (2000). <em>Tata Bahasa Baku Bahasa Indonesia</em> (Edisi Ketiga). Jakarta: Balai Pustaka. (Hal. 317-374)</li>
+                <li>Rastuti, H. P. (2008). <em>Menjelajahi dan Mempelajari Kalimat</em>. Klaten: Intan Pariwara. (Hal. 1-88)</li>
+                <li>Sasangka, S. S. T. W. (2014). <em>Kalimat</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Suhardi. (2013). <em>Dasar-dasar Ilmu Sintaksis Bahasa Indonesia</em>. Jogjakarta: Ar-Ruzz. (Hal. 61-79)</li>
+                <li>Tarigan, H. G. (2009). <em>Pengajaran Sintaksis</em>. Bandung: Angkasa. (Hal. 5-74)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Alwi, H., dkk. (2000). <em>Tata Bahasa Baku Bahasa Indonesia</em> (Edisi Ketiga). Jakarta: Balai Pustaka.</li>
+                <li>Grice, H. P. (1975). Logic and conversation. In P. Cole & J. L. Morgan (Eds.), <em>Syntax and Semantics</em>. New York: Academic Press.</li>
+                <li>Helda, T., dkk. (2018). <em>Pengajaran Sintaksis Berbasis Problem Based Learning</em>. Padang: STKIP PGRI Press.</li>
+                <li>Rastuti, H. P. (2008). <em>Menjelajahi dan Mempelajari Kalimat</em>. Klaten: Intan Pariwara.</li>
+                <li>Sasangka, S. S. T. W. (2014). <em>Kalimat</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Suhardi. (2013). <em>Dasar-dasar Ilmu Sintaksis Bahasa Indonesia</em>. Jogjakarta: Ar-Ruzz.</li>
+                <li>Tarigan, H. G. (2009). <em>Pengajaran Sintaksis</em>. Bandung: Angkasa.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 7</h2>
+                <p class="text-luxury-cream/70 text-sm">Kalimat Efektif</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Kalimat efektif adalah kalimat yang...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Memiliki struktur yang panjang dan rumit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Mampu menyampaikan gagasan secara tepat, jelas, dan tanpa ambiguitas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Menggunakan banyak kata asing untuk terkesan ilmiah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Selalu menggunakan kalimat pasif</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Unsur inti yang harus ada dalam setiap kalimat adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Subjek dan Predikat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Subjek dan Objek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Predikat dan Keterangan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Objek dan Pelengkap</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Prinsip kehematan dalam kalimat efektif bermakna...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Menggunakan kata sesedikit mungkin tanpa memperhatikan makna</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Menghilangkan semua kata sifat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Tidak menggunakan kata yang berlebihan (pleonasme)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Menggunakan kalimat pendek saja</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Kalimat "Waktu dan tempat kami persilakan" tidak efektif karena...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Subjeknya tidak jelas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Tidak logis — waktu dan tempat tidak dapat dipersilakan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Terlalu panjang</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Tidak memiliki predikat</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Kalimat berikut yang memenuhi prinsip keparalelan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. "Tugas guru adalah mengajar, mendidik, dan pembinaan."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. "Tugas guru adalah mengajar, mendidik, dan membina."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. "Tugas guru adalah pengajaran, mendidik, dan membina."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. "Tugas guru adalah mengajar, pendidikan, dan membina."</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Kalimat "Bagi semua mahasiswa diharapkan hadir" tidak efektif karena...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Predikatnya tidak jelas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Terlalu pendek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Subjek tidak jelas karena diawali kata depan "bagi"</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Menggunakan kata asing</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Kata "mundur ke belakang" termasuk kesalahan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Ambiguitas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Pleonasme (pemborosan kata)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Kerancuan struktur</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Ketidaklogisan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Kalimat "Mahasiswa perguruan tinggi yang terkenal itu mendapat beasiswa" termasuk kalimat tidak efektif karena...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Ambigu — yang terkenal mahasiswanya atau perguruan tingginya</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Tidak memiliki predikat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Terlalu pendek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Menggunakan kata asing</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Kalimat "Kegiatan meliputi pengumpulan data, menganalisis data, dan pelaporan" tidak efektif karena...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Subjeknya tidak jelas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Tidak logis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Tidak sejajar — campuran nomina dan verba</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Terlalu panjang</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Q.S. Ibrahim ayat 4 yang menjadi landasan spiritual kalimat efektif mengajarkan tentang...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Perintah menggunakan bahasa Arab saja</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Bahasa harus dipahami oleh penerima pesan agar dapat menjelaskan dengan baik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Larangan menggunakan bahasa daerah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Perintah menggunakan kalimat panjang</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan tujuh ciri utama kalimat efektif berdasarkan teori Alwi et al. (2000)! Berikan contoh konkret untuk masing-masing ciri!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah perbedaan antara Subjek (S) dan Objek (O) dalam kalimat! Berikan masing-masing 3 contoh kalimat yang menunjukkan perbedaan tersebut!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Koreksilah kalimat-kalimat berikut agar menjadi kalimat efektif, dan jelaskan kesalahan yang terjadi: <br>(a) "Melalui metode ini dapat meningkatkan hasil belajar siswa." <br>(b) "Para siswa-siswa sedang belajar di kelas." <br>(c) "Dia sangat sekali rajin belajar."</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Jelaskan hubungan antara Q.S. Ibrahim ayat 4 dengan prinsip kalimat efektif! Bagaimana ayat tersebut menjadi landasan spiritual dalam penyusunan kalimat yang baik?</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Sebagai calon guru PAI, rancanglah strategi konkret untuk mengajarkan kalimat efektif kepada siswa SMP! Jelaskan langkah-langkah yang akan Anda lakukan dan hubungkan dengan nilai-nilai Islam tentang <em>bayān</em> (penjelasan yang jelas)!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Mampu menyampaikan gagasan secara tepat, jelas, tanpa ambiguitas
+                q2: 'a',  // Subjek dan Predikat
+                q3: 'c',  // Tidak menggunakan kata berlebihan (pleonasme)
+                q4: 'b',  // Tidak logis — waktu dan tempat tidak dapat dipersilakan
+                q5: 'b',  // "mengajar, mendidik, dan membina" (semua verba, sejajar)
+                q6: 'c',  // Subjek tidak jelas karena diawali "bagi"
+                q7: 'b',  // Pleonasme
+                q8: 'a',  // Ambigu
+                q9: 'c',  // Tidak sejajar — campuran nomina dan verba
+                q10: 'b'  // Bahasa harus dipahami oleh penerima pesan
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

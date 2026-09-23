@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 5: Penerapan Kaidah Ejaan Bahasa Indonesia | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .correct { color: #4ade80; font-weight: 500; }
+        .incorrect { color: #f87171; text-decoration: line-through; }
+        .correction-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+        }
+        .arrow-icon { color: #D4AF37; font-weight: bold; margin: 0 0.5rem; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 05</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Penerapan Kaidah <span class="gold-gradient-text">Ejaan Bahasa Indonesia</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Mengasah ketelitian dan konsistensi dalam menerapkan kaidah EYD Edisi V pada teks akademik — dari penulisan huruf, kata, hingga tanda baca — sebagai fondasi integritas intelektual seorang calon pendidik.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="4.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="6.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Jika Bab 4 membahas <em>sejarah dan konsep</em> ejaan, maka Bab 5 ini berfokus pada <strong>penerapan praktis</strong> kaidah ejaan dalam konteks nyata — khususnya dalam teks akademik. Memahami aturan ejaan saja tidak cukup; yang lebih penting adalah <strong>konsistensi</strong> dalam menerapkannya di setiap tulisan yang kita hasilkan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Penelitian Kadariyah (2015) menunjukkan bahwa <strong>lebih dari 70% guru SD/MI</strong> di Indonesia masih melakukan kesalahan ejaan dalam dokumen resmi mereka. Ironi ini menjadi peringatan keras bagi kita: jika guru saja salah menulis ejaan, bagaimana mungkin siswa akan belajar dengan benar? Sebagai calon pendidik PAI, Anda memiliki tanggung jawab moral untuk menjadi <strong>model kebahasaan</strong> yang akurat bagi generasi penerus.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) prinsip penerapan ejaan dalam teks akademik</strong>, <strong>(2) analisis kesalahan umum</strong> beserta koreksinya, <strong>(3) penerapan ejaan dalam konteks spesifik</strong> (sitasi, judul, transkrip ayat/hadis), dan <strong>(4) strategi membangun konsistensi ejaan</strong> dalam menulis akademik.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ ۝ عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan. Dia telah menciptakan manusia dari segumpal darah. Bacalah, dan Tuhanmulah Yang Mahamulia. Yang mengajar (manusia) dengan pena. Dia mengajarkan manusia apa yang tidak diketahuinya."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Alaq [96]: 1-5</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menegaskan bahwa <em>al-qalam</em> (pena) adalah anugerah ilahi. Dalam konteks Bab 5, penerapan ejaan yang benar adalah bentuk <strong>penghormatan terhadap anugerah pena</strong> tersebut. Ketika seorang guru menulis dengan ejaan yang tepat, ia sedang menjalankan amanah <em>iqra'</em> secara bertanggung jawab — menyampaikan ilmu dengan benar, teliti, dan penuh <em>ihsan</em>. Kesalahan ejaan yang dibiarkan adalah bentuk kelalaian terhadap amanah ilmu.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Penyuntingan (Editing)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Proses pemeriksaan dan perbaikan naskah untuk memastikan kesesuaian dengan kaidah ejaan, tata bahasa, dan kelogisan isi.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Analisis Kesalahan Berbahasa</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kajian sistematis terhadap penyimpangan kaidah bahasa untuk mengidentifikasi pola kesalahan dan merumuskan solusinya.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Konsistensi Ejaan</h3>
+                    <p class="text-luxury-cream/70 text-sm">Penerapan kaidah ejaan yang seragam dan berkelanjutan dalam seluruh bagian sebuah tulisan, tanpa kontradiksi internal.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Interferensi Bahasa</h3>
+                    <p class="text-luxury-cream/70 text-sm">Pengaruh bahasa daerah atau bahasa asing yang menyebabkan penyimpangan kaidah bahasa Indonesia baku.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Esai Mahasiswa yang Penuh Kesalahan Ejaan</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa semester 3 Prodi PAI mengumpulkan esai berjudul <em>"Pengaruh Metode Pembelajaran Terhadap Minat Belajar Siswa di Mts Nurul Huda"</em>. Dalam esai sepanjang 10 halaman tersebut, terdapat <strong>47 kesalahan ejaan</strong>, di antaranya:
+            </p>
+            <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside mb-3">
+                <li>"di pengaruhi" (seharusnya <em>dipengaruhi</em>) — 8 kali</li>
+                <li>"di Mts" (seharusnya <em>di MTs</em>) — 5 kali</li>
+                <li>"sistim" (seharusnya <em>sistem</em>) — 6 kali</li>
+                <li>"praktek" (seharusnya <em>praktik</em>) — 4 kali</li>
+                <li>"aktifitas" (seharusnya <em>aktivitas</em>) — 3 kali</li>
+                <li>"analisa" (seharusnya <em>analisis</em>) — 3 kali</li>
+                <li>"resiko" (seharusnya <em>risiko</em>) — 2 kali</li>
+                <li>"Jokowido" (seharusnya <em>Jokowi</em>) — 1 kali</li>
+            </ul>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Kesalahan ejaan yang berulang menunjukkan <strong>kebiasaan buruk</strong> yang belum diperbaiki sejak dini. Seorang dosen tidak hanya menilai isi, tetapi juga ketelitian penulis. Esai yang penuh kesalahan ejaan akan kehilangan kredibilitas akademik, meskipun isinya brilian.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: setiap tulisan yang Anda hasilkan — baik itu RPP, modul ajar, surat dinas, maupun karya ilmiah — akan dibaca oleh orang lain dan mungkin ditiru. Ketelitian Anda dalam menerapkan ejaan adalah cerminan dari sifat <em>Amanah</em> (menjaga kepercayaan) dan <em>Ihsan</em> (berbuat sebaik mungkin). Jangan biarkan kesalahan ejaan yang sepele merusak integritas intelektual Anda. Ingatlah bahwa <strong>"tulisan yang baik dimulai dari ejaan yang baik."</strong>
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">5.1 Landasan Teoretis Penerapan Ejaan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Penerapan ejaan dalam teks akademik tidak hanya bersifat mekanis, tetapi juga memerlukan pemahaman teoretis yang mendalam tentang bagaimana kesalahan berbahasa terjadi dan bagaimana cara memperbaikinya secara sistematis.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">5.1.1 Teori Analisis Kesalahan (Error Analysis)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                S. P. Corder (1967) mengembangkan teori <strong>Error Analysis</strong> yang menyatakan bahwa kesalahan berbahasa bukan sekadar kegagalan, melainkan <strong>bukti proses pembelajaran</strong>. Dalam konteks ejaan, kesalahan dapat dikategorikan menjadi:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis Kesalahan</th>
+                            <th class="text-luxury-gold">Penyebab</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kesalahan Interlingual</strong></td>
+                            <td>Pengaruh bahasa asing/daerah</td>
+                            <td>"analisa" (dari <em>analyse</em> Inggris), "resiko" (pengaruh lafal Minang)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesalahan Intralingual</strong></td>
+                            <td>Ketidaktahuan kaidah bahasa Indonesia</td>
+                            <td>"di makan" (salah membedakan kata depan/imbuhan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesalahan Pengembangan</strong></td>
+                            <td>Generalisasi aturan yang keliru</td>
+                            <td>"merubah" (menganggap semua meN- + r = mer-, padahal seharusnya <em>mengubah</em>)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesalahan Induksi</strong></td>
+                            <td>Keliruan dalam menarik kesimpulan dari pola</td>
+                            <td>"mensukseskan" (seharusnya <em>menyukseskan</em>)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">5.1.2 Teori Penyuntingan (Editing Theory)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Rahardi (2009) mengemukakan bahwa penyuntingan bahasa melibatkan <strong>empat dimensi pemeriksaan</strong>:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">1. Dimensi Ejaan</h4>
+                    <p class="text-luxury-cream/70 text-sm">Pemeriksaan huruf kapital, huruf miring, tanda baca, penulisan kata.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">2. Dimensi Tata Bahasa</h4>
+                    <p class="text-luxury-cream/70 text-sm">Pemeriksaan struktur kalimat, kesesuaian subjek-predikat, keefektifan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">3. Dimensi Diksi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Pemeriksaan ketepatan dan kesesuaian pilihan kata.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">4. Dimensi Logika Isi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Pemeriksaan koherensi, konsistensi argumen, dan kelogisan gagasan.</p>
+                </div>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Kesalahan ejaan yang dibiarkan dalam tulisan akademik adalah bentuk <em>khianat</em> terhadap ilmu — karena ia mengajarkan pembaca untuk menerima kesalahan sebagai kebenaran."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari Prinsip Integritas Akademik</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Analisis Kesalahan Umum -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">5.2 Analisis Kesalahan Ejaan Umum dalam Teks Akademik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan penelitian Agustinus (2015) dan Febriantika (2016), terdapat beberapa pola kesalahan ejaan yang paling sering muncul dalam tulisan akademik mahasiswa. Berikut adalah analisis dan koreksi terhadap kesalahan-kesalahan tersebut:
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">5.2.1 Kesalahan Penulisan Kata Baku</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Banyak mahasiswa masih menggunakan bentuk tidak baku karena pengaruh bahasa daerah atau kebiasaan lama. Berikut adalah daftar kata yang sering salah ditulis:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">❌ Salah (Tidak Baku)</th>
+                            <th class="text-luxury-gold">✅ Benar (Baku)</th>
+                            <th class="text-luxury-gold">Penyebab Kesalahan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><span class="incorrect">analisa</span></td><td><span class="correct">analisis</span></td><td>Pengaruh bahasa Belanda <em>analyse</em></td></tr>
+                        <tr><td><span class="incorrect">aktifitas</span></td><td><span class="correct">aktivitas</span></td><td>Pengaruh lafal /f/ yang tidak ada dalam bahasa daerah tertentu</td></tr>
+                        <tr><td><span class="incorrect">apapun</span></td><td><span class="correct">apa pun</span></td><td>"pun" yang berarti "juga" ditulis terpisah</td></tr>
+                        <tr><td><span class="incorrect">atlit</span></td><td><span class="correct">atlet</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">cidera</span></td><td><span class="correct">cedera</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">disain</span></td><td><span class="correct">desain</span></td><td>Pengaruh ejaan Inggris <em>design</em></td></tr>
+                        <tr><td><span class="incorrect">fihak</span></td><td><span class="correct">pihak</span></td><td>Bentuk arkais yang masih digunakan</td></tr>
+                        <tr><td><span class="incorrect">hadits</span></td><td><span class="correct">hadis</span></td><td>Pengaruh transliterasi Arab</td></tr>
+                        <tr><td><span class="incorrect">hakekat</span></td><td><span class="correct">hakikat</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">ijazah</span></td><td><span class="correct">ijazah</span> (baku) / <span class="incorrect">ijas ah</span></td><td>Sering salah tulis</td></tr>
+                        <tr><td><span class="incorrect">kharisma</span></td><td><span class="correct">karisma</span></td><td>Pengaruh transliterasi Arab</td></tr>
+                        <tr><td><span class="incorrect">kreatif</span></td><td><span class="correct">kreatif</span> (baku) / <span class="incorrect">kreatif</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">metoda</span></td><td><span class="correct">metode</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">obyek</span></td><td><span class="correct">objek</span></td><td>Pengaruh ejaan lama</td></tr>
+                        <tr><td><span class="incorrect">pelecehan</span></td><td><span class="correct">pelecehan</span> (baku) / <span class="incorrect">pelecchan</span></td><td>Kesalahan penulisan ganda</td></tr>
+                        <tr><td><span class="incorrect">praktek</span></td><td><span class="correct">praktik</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">resiko</span></td><td><span class="correct">risiko</span></td><td>Pengaruh lafal Minang/Jawa</td></tr>
+                        <tr><td><span class="incorrect">sistim</span></td><td><span class="correct">sistem</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">subyek</span></td><td><span class="correct">subjek</span></td><td>Pengaruh ejaan lama</td></tr>
+                        <tr><td><span class="incorrect">tehnik</span></td><td><span class="correct">teknik</span></td><td>Pengaruh lafal</td></tr>
+                        <tr><td><span class="incorrect">universitet</span></td><td><span class="correct">universitas</span></td><td>Pengaruh ejaan Belanda</td></tr>
+                        <tr><td><span class="incorrect">wahyu</span></td><td><span class="correct">wahyu</span> (baku)</td><td>—</td></tr>
+                        <tr><td><span class="incorrect">zaman</span></td><td><span class="correct">zaman</span> (baku) / <span class="incorrect">jaman</span></td><td>"jaman" tidak baku</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">5.2.2 Kesalahan Penulisan Kata Depan vs. Imbuhan</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Kesalahan ini adalah yang paling umum terjadi. Mahasiswa sering keliru membedakan kapan "di-" dan "ke-" harus dipisah atau diserangkaikan.
+            </p>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">di pengaruhi</span> <span class="arrow-icon">→</span> <span class="correct">dipengaruhi</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"di-" di sini adalah imbuhan pembentuk kata kerja pasif, bukan kata depan.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">dirumah</span> <span class="arrow-icon">→</span> <span class="correct">di rumah</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"di" di sini adalah kata depan yang menunjukkan tempat, harus dipisah.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">dimana</span> <span class="arrow-icon">→</span> <span class="correct">di mana</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"di mana" sebagai kata tanya ditulis terpisah. Namun, hindari penggunaan "di mana" sebagai terjemahan <em>where</em> dalam kalimat bukan tanya.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">kesekolah</span> <span class="arrow-icon">→</span> <span class="correct">ke sekolah</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"ke" sebagai kata depan menunjukkan arah, harus dipisah.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">di ajar</span> <span class="arrow-icon">→</span> <span class="correct">diajar</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">"di-" di sini adalah imbuhan, harus diserangkaikan dengan kata kerja "ajar".</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">5.2.3 Kesalahan Penulisan Huruf Kapital</h3>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">universitas Islam Negeri</span> <span class="arrow-icon">→</span> <span class="correct">Universitas Islam Negeri</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Nama instansi resmi harus diawali huruf kapital pada setiap kata.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">qur'an</span> <span class="arrow-icon">→</span> <span class="correct">Al-Qur'an</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Nama kitab suci harus diawali huruf kapital, termasuk partikel "Al-".</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">selamat pagi, bapak</span> <span class="arrow-icon">→</span> <span class="correct">Selamat pagi, Bapak</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Kata sapaan "Bapak/Ibu" yang digunakan untuk menyapa langsung harus kapital.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">Pembelajaran Bahasa Indonesia Di Perguruan Tinggi</span> <span class="arrow-icon">→</span> <span class="correct">Pembelajaran Bahasa Indonesia di Perguruan Tinggi</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Dalam judul, kata tugas (di, ke, dari, pada, dalam, yang, untuk) yang tidak terletak di awal tetap huruf kecil.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">jawa barat</span> <span class="arrow-icon">→</span> <span class="correct">Jawa Barat</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Nama geografi yang diikuti nama diri geografi harus kapital.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">5.2.4 Kesalahan Penggunaan Tanda Baca</h3>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">Saya membeli buku, dan pensil.</span> <span class="arrow-icon">→</span> <span class="correct">Saya membeli buku dan pensil.</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Tanda koma tidak digunakan sebelum "dan" dalam pemerincian dua unsur.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">Karena hujan ia tidak datang.</span> <span class="arrow-icon">→</span> <span class="correct">Karena hujan, ia tidak datang.</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Anak kalimat yang mendahului induk kalimat harus diikuti tanda koma.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">Ia lahir di Bukittinggi, sumatera barat.</span> <span class="arrow-icon">→</span> <span class="correct">Ia lahir di Bukittinggi, Sumatera Barat.</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Nama geografi harus diawali huruf kapital.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">Menurut Yanda (2024), "E-Modul Pembelajaran" sangat bermanfaat.</span> <span class="arrow-icon">→</span> <span class="correct">Menurut Yanda (2024), <em>E-Modul Pembelajaran</em> sangat bermanfaat.</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Judul buku dalam teks ditulis miring, bukan dengan tanda petik.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">Rp 1.500.000</span> <span class="arrow-icon">→</span> <span class="correct">Rp1.500.000,00</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Tidak ada spasi setelah "Rp"; jika ada desimal, gunakan ",00".</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">5.2.5 Kesalahan Penulisan Gabungan Kata dan Kata Ulang</h3>
+            <div class="space-y-3">
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">mata hari</span> <span class="arrow-icon">→</span> <span class="correct">matahari</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Gabungan kata yang sudah padu ditulis serangkai.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">tanggungjawab</span> <span class="arrow-icon">→</span> <span class="correct">tanggung jawab</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Gabungan kata yang belum padu ditulis terpisah.</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">anak2</span> <span class="arrow-icon">→</span> <span class="correct">anak-anak</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Kata ulang dalam tulisan formal harus menggunakan tanda hubung, bukan angka "2".</p>
+                </div>
+                <div class="correction-card">
+                    <p class="text-sm"><span class="incorrect">mengubah2</span> <span class="arrow-icon">→</span> <span class="correct">mengubah-ubah</span></p>
+                    <p class="text-xs text-luxury-cream/60 mt-1">Kata ulang berimbuhan tetap menggunakan tanda hubung.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan dalam Konteks Spesifik -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">5.3 Penerapan Ejaan dalam Konteks Spesifik Akademik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Selain kesalahan umum, terdapat beberapa konteks spesifik dalam penulisan akademik yang memerlukan perhatian khusus terhadap kaidah ejaan.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">5.3.1 Penulisan Sitasi dan Daftar Pustaka</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Dalam penulisan sitasi dan daftar pustaka, ejaan nama orang, gelar, dan institusi harus diperhatikan dengan cermat:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Aturan EYD</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nama orang dalam sitasi</td>
+                            <td>Diikuti kaidah nama aslinya; gelar akademik tidak dicantumkan</td>
+                            <td>(Yanda, 2024) — bukan (Yanda, M.Pd, 2024)</td>
+                        </tr>
+                        <tr>
+                            <td>Nama orang dalam daftar pustaka</td>
+                            <td>Nama dibalik (belakang, depan); gelar tetap dicantumkan</td>
+                            <td>Yanda, Diyan Permata. (2024). ...</td>
+                        </tr>
+                        <tr>
+                            <td>Judul buku</td>
+                            <td>Dicetak miring; huruf kapital hanya pada awal kata (kecuali kata tugas)</td>
+                            <td><em>Bahasa Indonesia pengembang kepribadian di perguruan tinggi</em></td>
+                        </tr>
+                        <tr>
+                            <td>Judul artikel</td>
+                            <td>Ditetap (tidak miring); huruf kapital hanya pada awal kata</td>
+                            <td>"E-Modul pembelajaran menulis esai berbasis problem based learning..."</td>
+                        </tr>
+                        <tr>
+                            <td>Nama jurnal</td>
+                            <td>Dicetak miring; huruf kapital pada setiap kata utama</td>
+                            <td><em>Jurnal Belajar Bahasa</em></td>
+                        </tr>
+                        <tr>
+                            <td>Nama instansi</td>
+                            <td>Huruf kapital pada setiap kata utama</td>
+                            <td>Universitas Islam Negeri Sjech M. Djamil Djambek</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">5.3.2 Penulisan Transkrip Ayat Al-Qur'an dan Hadis</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Dalam konteks Pendidikan Agama Islam, penulisan transkrip ayat dan hadis memerlukan perlakuan khusus:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Aturan</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Penyebutan surah</td>
+                            <td>Diawali huruf kapital; dicetak miring atau tegak</td>
+                            <td>Q.S. Al-Baqarah atau <em>Q.S. Al-Baqarah</em></td>
+                        </tr>
+                        <tr>
+                            <td>Penulisan ayat</td>
+                            <td>Angka Arab, tanpa spasi antara surah dan ayat</td>
+                            <td>Q.S. Al-Baqarah [2]: 31</td>
+                        </tr>
+                        <tr>
+                            <td>Transliterasi kata Arab</td>
+                            <td>Mengikuti pedoman transliterasi yang konsisten</td>
+                            <td><em>shidq</em> (bukan <em>shidiq</em>), <em>taqwa</em> (bukan <em>takwa</em> — keduanya baku)</td>
+                        </tr>
+                        <tr>
+                            <td>Sebutan Allah dan Nabi</td>
+                            <td>Huruf kapital; disertai sapaan hormat</td>
+                            <td>Allah Swt., Nabi Muhammad Saw.</td>
+                        </tr>
+                        <tr>
+                            <td>Penyebutan hadis</td>
+                            <td>Sebutkan kitab, nomor hadis, dan perawi</td>
+                            <td>(H.R. Bukhari no. 1)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">5.3.3 Penulisan Istilah Asing dan Daerah</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Istilah asing atau daerah yang belum diserap ke dalam bahasa Indonesia harus ditulis <strong>miring</strong>:
+            </p>
+            <div class="example-box">
+                <span class="text-luxury-goldLight">• <em>Outcome-Based Education</em> (OBE) — istilah asing, ditulis miring</span><br>
+                <span class="text-luxury-goldLight">• <em>undha-usuk</em> — istilah Jawa, ditulis miring</span><br>
+                <span class="text-luxury-goldLight">• <em>ta'aruf</em> — istilah Arab yang sudah lazim, bisa tegak atau miring</span><br>
+                <span class="text-luxury-goldLight">• <em>qaulan sadidan</em> — frasa Arab, ditulis miring</span>
+            </div>
+            <p class="text-luxury-cream/80 leading-relaxed mt-3">
+                Namun, istilah yang sudah <strong>diserap sempurna</strong> ke dalam bahasa Indonesia ditulis tegak:
+            </p>
+            <div class="example-box">
+                <span class="text-luxury-goldLight">• kurikulum, universitas, metode, sistem — sudah baku, ditulis tegak</span>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Strategi Konsistensi -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">5.4 Strategi Membangun Konsistensi Ejaan</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Konsistensi ejaan tidak datang secara instan, melainkan melalui latihan dan kebiasaan. Berikut adalah strategi praktis yang dapat diterapkan:</p>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📚 1. Rujuk KBBI Daring</h4>
+                    <p class="text-luxury-cream/70 text-sm">Selalu verifikasi ejaan kata di <em>kbbi.kemdikbud.go.id</em> sebelum menulis. Jadikan ini kebiasaan, bukan beban.</p>
+                </div>
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📖 2. Miliki EYD Edisi V</h4>
+                    <p class="text-luxury-cream/70 text-sm">Unduh EYD Edisi V dari laman Badan Bahasa. Jadikan sebagai rujukan utama dalam setiap penulisan.</p>
+                </div>
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🔄 3. Lakukan Penyuntingan Mandiri</h4>
+                    <p class="text-luxury-cream/70 text-sm">Setelah menulis, sisihkan waktu 15-30 menit untuk menyunting sendiri. Baca tulisan dengan suara keras untuk menemukan kesalahan.</p>
+                </div>
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">👥 4. Manfaatkan Peer Review</h4>
+                    <p class="text-luxury-cream/70 text-sm">Mintalah teman sejawat untuk menyunting tulisan Anda. Mata yang berbeda akan menemukan kesalahan yang tidak Anda lihat.</p>
+                </div>
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📝 5. Buat Catatan Kesalahan Pribadi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Catat kesalahan ejaan yang sering Anda lakukan. Tempel di meja kerja sebagai pengingat.</p>
+                </div>
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🛠️ 6. Gunakan Alat Bantu Digital</h4>
+                    <p class="text-luxury-cream/70 text-sm">Manfaatkan fitur <em>spell-check</em> di pengolah kata, atau aplikasi seperti Grammarly (untuk bahasa Inggris) dan KBBI mobile.</p>
+                </div>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Konsistensi ejaan adalah tanda hormat seorang penulis terhadap pembacanya. Ketika Anda teliti dalam menulis, pembaca merasa dihargai."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Prinsip Penulisan Akademik Profesional</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">5.5 Penerapan bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Sebagai calon guru Pendidikan Agama Islam, penguasaan ejaan akan diterapkan dalam berbagai konteks profesional yang menuntut ketelitian tinggi:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks Profesional</th>
+                            <th class="text-luxury-gold">Penerapan Ejaan yang Diperlukan</th>
+                            <th class="text-luxury-gold">Dampak Jika Salah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Penulisan RPP/Modul Ajar</td>
+                            <td>Huruf kapital pada tujuan pembelajaran; tanda baca pada instruksi; ejaan istilah pedagogis</td>
+                            <td>Modul tidak diakui oleh pengawas; siswa meniru kesalahan</td>
+                        </tr>
+                        <tr>
+                            <td>Penulisan Transkrip Ayat & Hadis</td>
+                            <td>Penulisan Q.S., H.R., nama surah, nomor ayat, transliterasi</td>
+                            <td>Kesalahan dalam menisbatkan ayat/hadis dapat berakibat fatal secara teologis</td>
+                        </tr>
+                        <tr>
+                            <td>Surat Dinas Sekolah</td>
+                            <td>Huruf kapital pada sapaan, jabatan, nama instansi; tanda baca resmi</td>
+                            <td>Surat dianggap tidak resmi; citra sekolah terganggu</td>
+                        </tr>
+                        <tr>
+                            <td>Karya Ilmiah (Skripsi/Jurnal)</td>
+                            <td>Sitasi, daftar pustaka, ejaan istilah teknis</td>
+                            <td>Ditolak reviewer; reputasi akademik tercoreng</td>
+                        </tr>
+                        <tr>
+                            <td>Penulisan di Papan Tulis</td>
+                            <td>Konsistensi ejaan agar siswa tidak salah meniru</td>
+                            <td>Kesalahan menular ke generasi penerus</td>
+                        </tr>
+                        <tr>
+                            <td>Komunikasi Digital (WA/Email)</td>
+                            <td>Ejaan baku dalam komunikasi formal dengan orang tua/dinas</td>
+                            <td>Dianggap tidak profesional</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Penerapan kaidah ejaan dalam teks akademik bukan sekadar kewajiban mekanis, melainkan <strong>manifestasi integritas intelektual</strong>. Setiap kesalahan ejaan yang dibiarkan adalah bentuk pengkhianatan terhadap ilmu — karena ia mengajarkan pembaca untuk menerima kesalahan sebagai kebenaran.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Melalui analisis kesalahan umum, penerapan kontekstual, dan strategi konsistensi yang telah diuraikan dalam bab ini, diharapkan mahasiswa mampu: <strong>(1) mengidentifikasi kesalahan ejaan</strong> dalam tulisan sendiri maupun orang lain, <strong>(2) mengoreksi kesalahan</strong> secara sistematis, dan <strong>(3) membangun kebiasaan menulis</strong> yang konsisten dengan kaidah EYD Edisi V.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Sebagai calon pendidik Islam, ingatlah bahwa setiap huruf yang Anda tulis di papan tulis, di RPP, atau di karya ilmiah akan dibaca dan mungkin ditiru oleh siswa Anda. Ketelitian Anda dalam menulis adalah cerminan dari sifat <em>Ihsan</em> dan <em>Amanah</em>. Mari kita jadikan EYD sebagai pedoman setia dalam setiap tulisan yang kita hasilkan — sebagai bentuk <em>ihsan</em> dalam berilmu dan beramal.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 5</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 26-87)</li>
+                <li>Sriyanto. (2014). <em>Seri Penyuluhan Bahasa Indonesia: Ejaan</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Sugiyono. (2016). <em>Pedoman Umum Ejaan Bahasa Indonesia</em> [ebook]. Jakarta: Tim Pengembang Pedoman Bahasa Indonesia.</li>
+                <li>Rahardi, K. (2009). <em>Penyuntingan Bahasa Bahasa Indonesia untuk Karang Mengarang</em>. Jakarta: Erlangga.</li>
+                <li>Sugono, D. (2009). <em>1001 Kesalahan Berbahasa</em>. Jakarta: Akademi Pressindo.</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya. (Hal. 36-52)</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset. (Hal. 19-50)</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset. (Hal. 151-225)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Agustinus, J. W. (2015). Analisis Kalimat Efektif dan Ejaan yang Disempurnakan dalam Surat Bisnis. <em>Jurnal Ilmiah Ilmu Administrasi dan Sekretari</em>.</li>
+                <li>Alwi, H., dkk. (2000). <em>Tata Bahasa Baku Bahasa Indonesia</em> (Edisi Ketiga). Jakarta: Balai Pustaka.</li>
+                <li>Arifin, E. Z. & Tasai, S. A. (1992). <em>Komposisi dalam Bahasa Indonesia</em>. Jakarta: Pusat Pembinaan dan Pengembangan Bahasa.</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya.</li>
+                <li>Badan Pengembangan dan Pembinaan Bahasa. (2022). <em>Ejaan Bahasa Indonesia yang Disempurnakan (EYD) Edisi V</em>. Jakarta: Kemendikbudristek.</li>
+                <li>Corder, S. P. (1967). The significance of learner's errors. <em>International Review of Applied Linguistics</em>, 5(4), 161-170.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Febriantika, R. (2016). Keefektifan Kalimat pada Tajuk Rencana Surat Kabar Lampung Post. <em>Jurnal Kata</em>.</li>
+                <li>Kadariyah, N. L. (2015). Kesalahan Bahasa Indonesia dan Penggunaan Ejaan Yang Disempurnakan Guru Kelas MIN di Banjarmasin. <em>Jurnal Tashwir</em>, 3(7).</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset.</li>
+                <li>Rahardi, K. (2009). <em>Penyuntingan Bahasa Bahasa Indonesia untuk Karang Mengarang</em>. Jakarta: Erlangga.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Sriyanto. (2014). <em>Seri Penyuluhan Bahasa Indonesia: Ejaan</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Sugiyono. (2016). <em>Pedoman Umum Ejaan Bahasa Indonesia</em> [ebook]. Jakarta: Tim Pengembang Pedoman Bahasa Indonesia.</li>
+                <li>Sugono, D. (2009). <em>1001 Kesalahan Berbahasa</em>. Jakarta: Akademi Pressindo.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 5</h2>
+                <p class="text-luxury-cream/70 text-sm">Penerapan Kaidah Ejaan Bahasa Indonesia</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Penulisan kata baku yang tepat di bawah ini adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Analisa, sistim, praktek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Analisis, sistem, praktik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Analisa, sistem, praktek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Analisis, sistim, praktik</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Kalimat berikut yang penulisan kata depan "di" dan imbuhan "di-" sudah benar adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Buku itu di baca oleh siswa di perpustakaan.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Buku itu dibaca oleh siswa di perpustakaan.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Buku itu di baca oleh siswa diperpustakaan.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Buku itu dibaca oleh siswa diperpustakaan.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Penulisan judul buku yang sesuai dengan EYD Edisi V dalam daftar pustaka adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. "Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi"</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. <em>Bahasa Indonesia pengembang kepribadian di perguruan tinggi</em></label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. BAHASA INDONESIA PENGEMBANG KEPRIBADIAN DI PERGURUAN TINGGI</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Penulisan transkrip ayat Al-Qur'an yang sesuai dengan kaidah akademik adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. q.s. al-baqarah ayat 31</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Q.S. Al-Baqarah [2]: 31</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. QS Al Baqarah : 31</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Q.S. al baqarah:31</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Kalimat berikut yang penggunaan tanda bacanya <em>benar</em> adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Karena hujan, ia tidak datang.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Karena hujan ia tidak datang.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Karena, hujan ia tidak datang.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Karena hujan; ia tidak datang.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Penulisan gabungan kata yang <em>salah</em> di bawah ini adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. matahari</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. olahraga</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. tanggung jawab</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. mata hati</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Kata "aktifitas" dalam bahasa Indonesia baku seharusnya ditulis...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. aktifitas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. aktivitas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. aktipitas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. aktipitas</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Penulisan sitasi dalam teks yang benar adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Menurut Yanda, M.Pd (2024)...</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Menurut Yanda (2024)...</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Menurut yanda (2024)...</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Menurut YANDA (2024)...</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Penulisan kata ulang yang benar dalam kalimat formal adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Siswa2 sedang belajar di kelas.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Siswa siswa sedang belajar di kelas.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Siswa-siswa sedang belajar di kelas.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Siswa–siswa sedang belajar di kelas.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Teori yang menyatakan bahwa kesalahan berbahasa merupakan bukti proses pembelajaran (bukan sekadar kegagalan) dikemukakan oleh...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Noam Chomsky</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. S. P. Corder</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. B. F. Skinner</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Lev Vygotsky</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Koreksilah teks berikut agar sesuai dengan EYD Edisi V, dan jelaskan kesalahan yang terjadi pada setiap bagian: <br><em>"Pada hari senin, 15 mei 2023, para siswa di Mts Nurul Huda mengikuti ujian akhir semester. Mereka di uji tentang materi yang sudah di pelajari selama satu semester. Kepala Mts, Bapak Ahmad, S.Pd, mengharapkan semua siswa lulus dengan nilai yang memuaskan."</em></p>
+                            <textarea id="essay1" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Jelaskan perbedaan antara kesalahan ejaan jenis <em>interlingual</em> dan <em>intralingual</em>! Berikan masing-masing 3 contoh yang sering terjadi dalam tulisan mahasiswa PAI!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Analisislah mengapa kata-kata berikut sering salah ditulis oleh mahasiswa: (a) "analisa", (b) "resiko", (c) "praktek". Jelaskan asal-usul kesalahannya dan berikan bentuk bakunya!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Rancanglah sebuah strategi pribadi untuk membangun konsistensi ejaan dalam menulis karya ilmiah! Jelaskan langkah-langkah konkret yang akan Anda lakukan sebelum, saat, dan setelah menulis!</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Sebagai calon guru PAI, bagaimana Anda akan mengajarkan ejaan yang benar kepada siswa SMP yang terbiasa menggunakan bahasa gaul di media sosial? Hubungkan dengan nilai-nilai Islam tentang <em>ihsan</em> dan <em>amanah</em> dalam menulis!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Analisis, sistem, praktik (semua baku)
+                q2: 'b',  // dibaca (imbuhan serangkai) + di perpustakaan (kata depan terpisah)
+                q3: 'c',  // Judul buku dalam daftar pustaka dicetak miring, huruf kapital hanya di awal
+                q4: 'b',  // Q.S. Al-Baqarah [2]: 31
+                q5: 'a',  // Anak kalimat di awal + koma sebelum induk kalimat
+                q6: 'd',  // "mata hati" seharusnya "matahati" (sudah padu) — tapi ini contoh salah
+                q7: 'b',  // aktivitas (baku)
+                q8: 'b',  // Menurut Yanda (2024) — tanpa gelar dalam sitasi
+                q9: 'c',  // Siswa-siswa (dengan tanda hubung)
+                q10: 'b'  // S. P. Corder (Error Analysis)
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

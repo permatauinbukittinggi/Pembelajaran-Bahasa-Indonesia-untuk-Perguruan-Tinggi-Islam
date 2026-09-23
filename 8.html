@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Tengah Semester (UTS) | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .case-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 08</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Ujian Tengah Semester <br><span class="gold-gradient-text">(UTS)</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Evaluasi komprehensif terhadap penguasaan konsep Kontrak Perkuliahan, Sejarah Bahasa, Ragam Bahasa, Ejaan, Diksi, dan Kalimat Efektif (Bab 1 s.d. 7).
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="7.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab 7: Kalimat Efektif</a>
+                <a href="#uji-formatif" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Ujian</a>
+                <a href="9.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab 9: Pola Paragraf →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Petunjuk & Integrasi Nilai -->
+        <section>
+            <div class="ayat-box mb-8">
+                <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Landasan Spiritual Akademik</p>
+                <p class="ayat-arab">يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ</p>
+                <p class="text-luxury-cream/80 italic text-sm mb-2">"Allah akan mengangkat (derajat) orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu beberapa derajat."</p>
+                <p class="text-luxury-goldLight text-xs">— Q.S. Al-Mujadilah [58]: 11</p>
+                <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ujian bukan sekadar alat ukur nilai, melainkan momen <em>muhāsabah</em> (introspeksi) untuk mengukur sejauh mana ilmu yang telah diserap. Kerjakan dengan jujur (<em>shidq</em>) dan amanah, karena integritas akademik adalah cerminan keimanan seorang calon pendidik.</p>
+            </div>
+
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                <h3 class="font-serif text-xl text-luxury-gold mb-4">📋 Petunjuk Pengerjaan UTS</h3>
+                <ul class="text-luxury-cream/80 text-sm space-y-2 list-disc list-inside">
+                    <li>Ujian ini terdiri dari <strong>20 soal Pilihan Ganda (HOTS)</strong> dan <strong>5 soal Essay</strong>.</li>
+                    <li>Soal Pilihan Ganda dilengkapi narasi kasus/teori. Bacalah dengan saksama sebelum memilih jawaban.</li>
+                    <li>Setiap soal Pilihan Ganda bernilai <strong>5 poin</strong> (Total: 100 poin). Essay dinilai secara manual oleh dosen.</li>
+                    <li>Pastikan semua data diri terisi dan tidak ada soal yang terlewat sebelum menekan tombol "KIRIM JAWABAN".</li>
+                    <li>Dilarang menggunakan bantuan AI atau menyontek. Pelanggaran akan dikenakan sanksi akademik.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJIAN FORMATIF (UTS) -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📝 Lembar Jawaban UTS</h2>
+                <p class="text-luxury-cream/70 text-sm">Materi: Bab 1 s.d. 7 (Kontrak s.d. Kalimat Efektif)</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda HOTS -->
+                <div class="space-y-8">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda HOTS (Skor: 5/soal)</h3>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Seorang mahasiswa PAI merasa kecewa mendapat nilai C pada tugas esai. Ia mengaku telah menghafal semua materi di Bab 1-3, namun ia tidak menyadari bahwa rubrik penilaian menekankan pada 'penerapan kaidah EYD dan diksi akademik', bukan sekadar hafalan teori."
+                            </div>
+                            <p class="font-semibold mb-3">1. Berdasarkan prinsip Outcome-Based Education (OBE), akar permasalahan dari kasus di atas adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold mt-1"> a. Dosen gagal menyampaikan materi dengan metode ceramah yang menarik.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold mt-1"> b. Mahasiswa tidak memahami keselarasan (constructive alignment) antara aktivitas belajar dan instrumen penilaian.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold mt-1"> c. Sistem penilaian universitas terlalu rumit dan tidak transparan.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold mt-1"> d. Mahasiswa kurang cerdas secara intelektual dibandingkan rekan sekelasnya.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q1" value="e" class="accent-luxury-gold mt-1"> e. Kontrak perkuliahan tidak wajib dibaca oleh mahasiswa semester awal.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Dalam sebuah RPS, CPMK menyatakan: 'Mahasiswa mampu menganalisis ragam bahasa dalam teks akademik'. Namun, soal UTS hanya meminta mahasiswa menyebutkan definisi ragam bahasa secara hafalan."
+                            </div>
+                            <p class="font-semibold mb-3">2. Evaluasi situasi di atas berdasarkan teori John Biggs (Constructive Alignment) menunjukkan bahwa...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold mt-1"> a. Terjadi keselarasan sempurna antara tujuan dan asesmen.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold mt-1"> b. Asesmen berada pada level kognitif yang lebih tinggi daripada CPMK.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold mt-1"> c. Terjadi ketidakselarasan (misalignment) karena asesmen hanya menguji ingatan, bukan analisis.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold mt-1"> d. CPMK seharusnya dihapus karena terlalu sulit untuk diukur.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q2" value="e" class="accent-luxury-gold mt-1"> e. Metode hafalan adalah satu-satunya cara valid mengukur analisis.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Pada Kongres Pemuda 1928, perwakilan dari suku Jawa (mayoritas) dengan sukarela menerima Bahasa Melayu sebagai bahasa persatuan, meskipun jumlah penutur asli Bahasa Jawa jauh lebih banyak."
+                            </div>
+                            <p class="font-semibold mb-3">3. Analisis sosiologis dari keputusan historis tersebut yang paling tepat adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold mt-1"> a. Bahasa Jawa terlalu sulit dipelajari oleh suku lain.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold mt-1"> b. Adanya kesadaran bahwa Bahasa Melayu bersifat egaliter (tidak bertingkat) dan sudah menjadi lingua franca, sehingga lebih inklusif untuk persatuan.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold mt-1"> c. Suku Jawa ingin menghindari tanggung jawab mempromosikan bahasanya sendiri.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold mt-1"> d. Belanda melarang penggunaan Bahasa Jawa dalam forum resmi.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q3" value="e" class="accent-luxury-gold mt-1"> e. Bahasa Melayu memiliki kosakata yang lebih banyak daripada Bahasa Jawa.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Seorang diplomat Indonesia berpidato di forum PBB menggunakan Bahasa Indonesia, bukan Bahasa Inggris, untuk menegaskan identitas bangsa."
+                            </div>
+                            <p class="font-semibold mb-3">4. Tindakan diplomat tersebut merupakan realisasi dari fungsi Bahasa Indonesia sebagai...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold mt-1"> a. Alat perhubungan antardaerah di Indonesia.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold mt-1"> b. Lambang kebanggaan nasional dan alat diplomasi internasional (fungsi bahasa negara).</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold mt-1"> c. Bahasa pengantar dalam dunia pendidikan.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold mt-1"> d. Alat pengembangan kebudayaan daerah.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q4" value="e" class="accent-luxury-gold mt-1"> e. Bahasa pergaulan sehari-hari di lingkungan internasional.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Seorang guru PAI menulis di grup WhatsApp resmi sekolah: 'Bapak/Ibu, tugas anak-anak udah saya cek ya. Yang nilainya jelek tolong dibimbing di rumah. Makasih.'"
+                            </div>
+                            <p class="font-semibold mb-3">5. Evaluasi penggunaan bahasa dalam kasus di atas berdasarkan teori ragam bahasa menunjukkan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold mt-1"> a. Penggunaan ragam santai yang tepat untuk membangun kedekatan dengan orang tua.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold mt-1"> b. Ketidaktepatan pemilihan register (ragam fungsional), di mana konteks formal memerlukan diksi baku dan santun, bukan bahasa gaul.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold mt-1"> c. Keefektifan komunikasi karena pesannya singkat dan mudah dimengerti.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold mt-1"> d. Penerapan prinsip kehematan kata yang sangat baik.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q5" value="e" class="accent-luxury-gold mt-1"> e. Penggunaan bahasa daerah yang disadur ke dalam bahasa Indonesia.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">6. Seorang mahasiswa menulis: "Dalam penelitian ini, peneliti akan membahas tentang fenomena pendidikan Islam." Kata "tentang" dalam kalimat tersebut tidak efektif karena...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold mt-1"> a. Melanggar prinsip keparalelan.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold mt-1"> b. Melanggar prinsip kehematan (pleonasme), karena kata "membahas" sudah mengandung makna "tentang".</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold mt-1"> c. Merupakan kata serapan yang tidak baku.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold mt-1"> d. Menyebabkan ambiguitas makna.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q6" value="e" class="accent-luxury-gold mt-1"> e. Tidak sesuai dengan kaidah EYD Edisi V.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Teks tahun 1901: 'Maka djanganlah kamu melupakan tjinta kepada tanah air.'"
+                            </div>
+                            <p class="font-semibold mb-3">7. Berdasarkan periodisasi ejaan, teks di atas menggunakan Ejaan Van Ophuijsen. Implikasi politis dari penggunaan ejaan ini pada masa itu adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold mt-1"> a. Upaya memandirikan bahasa Indonesia dari pengaruh asing.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold mt-1"> b. Standarisasi bahasa Melayu yang disesuaikan dengan sistem fonem dan ejaan bahasa Belanda untuk kepentingan administrasi kolonial.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold mt-1"> c. Kesepakatan bersama antara Indonesia dan Malaysia.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold mt-1"> d. Upaya menyederhanakan ejaan agar mudah dipelajari rakyat jelata.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q7" value="e" class="accent-luxury-gold mt-1"> e. Penghapusan huruf-huruf yang dianggap tidak perlu.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">8. Perhatikan kalimat: "Bagi para mahasiswa yang terlambat mengumpulkan tugas akan dikenakan pengurangan nilai." Kesalahan sintaksis utama dalam kalimat tersebut adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold mt-1"> a. Tidak memiliki predikat.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold mt-1"> b. Penggunaan kata depan "bagi" di awal kalimat menghilangkan fungsi subjek, sehingga kalimat menjadi tidak efektif.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold mt-1"> c. Penggunaan kata "para" yang tidak perlu.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold mt-1"> d. Kesalahan penulisan kata "pengurangan".</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q8" value="e" class="accent-luxury-gold mt-1"> e. Kalimat tersebut sudah efektif dan tidak ada kesalahan.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">9. Dalam konteks penulisan akademik, seorang peneliti memilih kata "menginvestigasi" daripada "mencari-cari". Pilihan ini didasarkan pada prinsip diksi yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold mt-1"> a. Kesesuaian dengan situasi informal.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold mt-1"> b. Ketepatan makna dan kesesuaian dengan register akademik yang menuntut formalitas dan presisi.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold mt-1"> c. Keinginan untuk menggunakan kata serapan asing sebanyak mungkin.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold mt-1"> d. Penghindaran terhadap penggunaan kata kerja pasif.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q9" value="e" class="accent-luxury-gold mt-1"> e. Ketersediaan kata tersebut di dalam kamus slang.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">10. Kalimat: "Waktu dan tempat kami persilakan." sering dijumpai dalam acara formal. Secara logika bahasa, kalimat ini tidak efektif karena...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold mt-1"> a. Terlalu singkat.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold mt-1"> b. Mengandung ambiguitas.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold mt-1"> c. Melanggar prinsip kelogisan, karena "waktu dan tempat" adalah benda mati yang tidak dapat dipersilakan; yang dipersilakan seharusnya adalah orang (pemateri).</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold mt-1"> d. Tidak menggunakan kata depan yang tepat.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q10" value="e" class="accent-luxury-gold mt-1"> e. Merupakan contoh kalimat pasif yang benar.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 11 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">11. Perhatikan kalimat: "Kegiatan ini bertujuan untuk meningkatkan, memelihara, dan pengembangan kualitas pendidikan." Kesalahan keparalelan terdapat pada...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q11" value="a" class="accent-luxury-gold mt-1"> a. Kata "kegiatan".</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q11" value="b" class="accent-luxury-gold mt-1"> b. Kata "bertujuan".</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q11" value="c" class="accent-luxury-gold mt-1"> c. Kata "pengembangan", seharusnya "mengembangkan" agar sejajar dengan "meningkatkan" dan "memelihara" (verba).</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q11" value="d" class="accent-luxury-gold mt-1"> d. Kata "kualitas".</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q11" value="e" class="accent-luxury-gold mt-1"> e. Tidak ada kesalahan, kalimat sudah paralel.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 12 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">12. Seorang mahasiswa menulis: "Dia adalah seorang yang sangat pintar sekali." Kata "sangat" dan "sekali" dalam kalimat tersebut merupakan contoh kesalahan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q12" value="a" class="accent-luxury-gold mt-1"> a. Ambiguitas.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q12" value="b" class="accent-luxury-gold mt-1"> b. Pleonasme (pemborosan kata), karena keduanya memiliki makna penekanan yang sama.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q12" value="c" class="accent-luxury-gold mt-1"> c. Kontaminasi.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q12" value="d" class="accent-luxury-gold mt-1"> d. Salah nalar.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q12" value="e" class="accent-luxury-gold mt-1"> e. Kesalahan ejaan huruf kapital.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 13 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Dalam sebuah skripsi, mahasiswa mendefinisikan 'Motivasi Belajar' sebagai: 'Dorongan internal dan eksternal yang terukur melalui skor angket motivasi yang diisi oleh siswa.'"
+                            </div>
+                            <p class="font-semibold mb-3">13. Berdasarkan jenis definisi, pernyataan di atas merupakan contoh dari...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q13" value="a" class="accent-luxury-gold mt-1"> a. Definisi nominal.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q13" value="b" class="accent-luxury-gold mt-1"> b. Definisi real.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q13" value="c" class="accent-luxury-gold mt-1"> c. Definisi operasional, karena menjelaskan bagaimana konsep tersebut diukur secara konkret dalam penelitian.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q13" value="d" class="accent-luxury-gold mt-1"> d. Definisi stipulatif.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q13" value="e" class="accent-luxury-gold mt-1"> e. Definisi etimologis.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 14 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">14. Perhatikan penulisan: "Kami berkunjung ke Rumah Sakit Umum Daerah Bukittinggi." Kata "Rumah Sakit Umum Daerah" ditulis dengan huruf kapital karena...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q14" value="a" class="accent-luxury-gold mt-1"> a. Merupakan nama geografi.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q14" value="b" class="accent-luxury-gold mt-1"> b. Merupakan nama instansi/resmi yang diikuti oleh nama tempat, sehingga setiap unsurnya diawali huruf kapital.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q14" value="c" class="accent-luxury-gold mt-1"> c. Merupakan judul buku.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q14" value="d" class="accent-luxury-gold mt-1"> d. Kesalahan penulisan, seharusnya semua huruf kecil.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q14" value="e" class="accent-luxury-gold mt-1"> e. Merupakan kata serapan dari bahasa asing.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 15 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">15. Dalam Q.S. Al-Ahzab: 70, Allah memerintahkan "qaulan sadidan". Dalam konteks pembelajaran Bahasa Indonesia di Perguruan Tinggi, implementasi dari "qaulan sadidan" adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q15" value="a" class="accent-luxury-gold mt-1"> a. Berbicara sebanyak-banyaknya agar materi tersampaikan semua.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q15" value="b" class="accent-luxury-gold mt-1"> b. Menggunakan bahasa daerah dalam setiap situasi formal.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q15" value="c" class="accent-luxury-gold mt-1"> c. Mengucapkan dan menuliskan perkataan yang benar, tepat, efektif, dan sesuai dengan konteks kaidah bahasa.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q15" value="d" class="accent-luxury-gold mt-1"> d. Menghindari penggunaan istilah asing sama sekali.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q15" value="e" class="accent-luxury-gold mt-1"> e. Menggunakan gaya bahasa yang puitis dalam karya ilmiah.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 16 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">16. Kalimat: "Surat itu sudah saya kirimkan kepada beliau kemarin." Kata "kepada" dalam kalimat tersebut berfungsi sebagai...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q16" value="a" class="accent-luxury-gold mt-1"> a. Imbuhan yang melekat pada kata kerja.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q16" value="b" class="accent-luxury-gold mt-1"> b. Kata depan yang menandakan arah atau tujuan (orang yang dituju), ditulis terpisah.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q16" value="c" class="accent-luxury-gold mt-1"> c. Kata sambung (konjungsi) intrakalimat.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q16" value="d" class="accent-luxury-gold mt-1"> d. Partikel penegas.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q16" value="e" class="accent-luxury-gold mt-1"> e. Kesalahan penulisan, seharusnya diserangkaikan "kepadabeliau".</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 17 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">17. Seorang editor menemukan kalimat: "Para hadirin sekalian dimohon untuk naik ke atas panggung." Perbaikan yang paling tepat sesuai prinsip kehematan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q17" value="a" class="accent-luxury-gold mt-1"> a. "Para hadirin sekalian dimohon untuk naik ke atas ke panggung."</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q17" value="b" class="accent-luxury-gold mt-1"> b. "Hadirin dimohon naik ke panggung." (Menghilangkan pleonasme "para", "sekalian", dan "ke atas").</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q17" value="c" class="accent-luxury-gold mt-1"> c. "Semua para hadirin sekalian dimohon untuk naik ke atas panggung."</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q17" value="d" class="accent-luxury-gold mt-1"> d. "Hadirin sekalian dimohon untuk naik ke atas ke panggung."</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q17" value="e" class="accent-luxury-gold mt-1"> e. Kalimat tersebut sudah efektif dan tidak perlu diperbaiki.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 18 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">18. Jika seorang mahasiswa PAI ingin menulis karya ilmiah tentang "Pengaruh Metode Diskusi terhadap Hasil Belajar", sumber rujukan utama yang paling valid untuk dicek keabsahan istilah pendidikannya adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q18" value="a" class="accent-luxury-gold mt-1"> a. Kamus Besar Bahasa Indonesia (KBBI) umum.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q18" value="b" class="accent-luxury-gold mt-1"> b. Kamus istilah pendidikan atau jurnal ilmiah terakreditasi yang relevan dengan bidangnya.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q18" value="c" class="accent-luxury-gold mt-1"> c. Artikel blog pribadi yang viral.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q18" value="d" class="accent-luxury-gold mt-1"> d. Kamus slang bahasa gaul.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q18" value="e" class="accent-luxury-gold mt-1"> e. Ensiklopedia bebas yang bisa diedit siapa saja.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 19 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <p class="font-semibold mb-3">19. Analisis kalimat berikut: "Mahasiswa yang rajin itu mendapatkan beasiswa." vs "Mahasiswa itu yang rajin mendapatkan beasiswa." Perbedaan makna yang ditimbulkan menunjukkan pentingnya prinsip...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q19" value="a" class="accent-luxury-gold mt-1"> a. Keparalelan.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q19" value="b" class="accent-luxury-gold mt-1"> b. Kecermatan (menghindari ambiguitas), karena perubahan struktur mengubah fokus makna (siapa yang rajin: mahasiswanya atau beasiswanya).</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q19" value="c" class="accent-luxury-gold mt-1"> c. Kehematan.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q19" value="d" class="accent-luxury-gold mt-1"> d. Kelogisan.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q19" value="e" class="accent-luxury-gold mt-1"> e. Kesepadanan struktur.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 20 -->
+                        <div class="bg-luxury-900/50 p-5 rounded-sm">
+                            <div class="case-box">
+                                "Sebagai calon guru, Anda menemukan naskah pidato siswa yang penuh dengan ide brilian, namun menggunakan kata 'banget', 'nggak', dan struktur kalimat yang tidak memiliki subjek jelas."
+                            </div>
+                            <p class="font-semibold mb-3">20. Tindakan pedagogis yang paling tepat dan profesional berdasarkan materi yang telah dipelajari adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q20" value="a" class="accent-luxury-gold mt-1"> a. Memberi nilai sempurna karena idenya bagus, mengabaikan kesalahan bahasa.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q20" value="b" class="accent-luxury-gold mt-1"> b. Memberi nilai nol karena bahasanya tidak baku.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q20" value="c" class="accent-luxury-gold mt-1"> c. Memberikan umpan balik konstruktif: mengapresiasi ide, lalu membimbing siswa merevisi diksi dan struktur kalimat agar sesuai dengan ragam formal tanpa menghilangkan esensi idenya.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q20" value="d" class="accent-luxury-gold mt-1"> d. Menulis ulang seluruh naskah tersebut tanpa melibatkan siswa.</label>
+                                <label class="flex items-start gap-2 cursor-pointer"><input type="radio" name="q20" value="e" class="accent-luxury-gold mt-1"> e. Memarahi siswa di depan kelas agar jera menggunakan bahasa gaul.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, analitis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. (Sintesis Bab 1 & 2) Jelaskan bagaimana pemahaman terhadap sejarah pertumbuhan Bahasa Indonesia dan prinsip Outcome-Based Education (OBE) dapat membentuk karakter "Amanah" dan "Fathonah" pada seorang calon pendidik Islam dalam menyusun perencanaan pembelajaran!</p>
+                            <textarea id="essay1" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. (Analisis Bab 3 & 6) Analisislah paragraf berikut: "Guru itu bilang kalau anak-anak yang pinter pasti bisa ngerjain soal ini dengan gampang banget." Identifikasi minimal 3 (tiga) kesalahan diksi dan ragam bahasa, lalu tulislah ulang paragraf tersebut menjadi kalimat akademik yang efektif dan santun!</p>
+                            <textarea id="essay2" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. (Evaluasi Bab 4 & 5) Temukan dan koreksi 4 (empat) kesalahan ejaan (huruf kapital, kata depan/imbuhan, kata baku, atau tanda baca) dalam kalimat berikut, dan jelaskan aturan EYD yang melandasinya: "di dalam rapat itu, para dosen-dosen membahas tentang sistim pembelajaran yang baru di universitas islam negeri."</p>
+                            <textarea id="essay3" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. (Aplikasi Bab 7 & Integrasi Islam) Hubungkan prinsip "Qaulan Sadidan" (Q.S. Al-Ahzab: 70) dengan 7 ciri kalimat efektif (khususnya: kecermatan dan kelogisan). Berikan contoh nyata bagaimana seorang guru PAI menerapkan prinsip ini saat memberikan instruksi tugas kepada siswa!</p>
+                            <textarea id="essay4" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. (Refleksi Profesional) Sebagai mahasiswa S1 PAI yang akan terjun ke dunia pendidikan, rancanglah sebuah "Protokol Pribadi" (minimal 3 langkah konkret) yang akan Anda lakukan sebelum, selama, dan setelah menulis karya ilmiah untuk menjamin konsistensi ejaan, ketepatan diksi, dan keefektifan kalimat!</p>
+                            <textarea id="essay5" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Ujian Tengah Semester</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda (20 Soal HOTS)
+            const kunciJawaban = {
+                q1: 'b',  // Constructive alignment
+                q2: 'c',  // Misalignment (asesmen hanya ingatan)
+                q3: 'b',  // Egaliter dan lingua franca
+                q4: 'b',  // Lambang kebanggaan & diplomasi
+                q5: 'b',  // Ketidaktepatan register
+                q6: 'b',  // Pleonasme (membahas = tentang)
+                q7: 'b',  // Pengaruh ejaan Belanda
+                q8: 'b',  // Kata depan menghilangkan subjek
+                q9: 'b',  // Ketepatan makna & register akademik
+                q10: 'c', // Melanggar kelogisan
+                q11: 'c', // Keparalelan (verba)
+                q12: 'b', // Pleonasme
+                q13: 'c', // Definisi operasional
+                q14: 'b', // Nama instansi + nama tempat
+                q15: 'c', // Qaulan sadidan = benar, tepat, efektif
+                q16: 'b', // Kata depan terpisah
+                q17: 'b', // Menghilangkan pleonasme
+                q18: 'b', // Kamus istilah/jurnal terakreditasi
+                q19: 'b', // Kecermatan (ambiguitas)
+                q20: 'c'  // Umpan balik konstruktif
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG (20 soal x 5 poin = 100)
+            for (let i = 1; i <= 20; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 5;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 20) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek. Pastikan Anda menjawab dengan analisis yang memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban UTS berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu berdasarkan rubrik analisis, ketepatan konsep, dan penggunaan bahasa.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

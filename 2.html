@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 2: Sejarah Pertumbuhan Bahasa Indonesia | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .timeline-line {
+            position: absolute;
+            left: 1.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, #D4AF37, transparent);
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 0.85rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: #D4AF37;
+            border-radius: 50%;
+            border: 3px solid #0B1120;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 02</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Sejarah Pertumbuhan <br><span class="gold-gradient-text">Bahasa Indonesia</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menelusuri perjalanan panjang bahasa pemersatu bangsa — dari bahasa Melayu pasar di Nusantara hingga menjadi bahasa nasional dan bahasa negara yang menjembatani ribuan suku, budaya, dan peradaban di Indonesia.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="1.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="3.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Indonesia adalah negara kepulauan terbesar di dunia yang terdiri dari lebih dari <strong>17.000 pulau</strong> dan <strong>700+ bahasa daerah</strong>. Dalam keragaman yang luar biasa ini, terdapat satu bahasa yang mampu menyatukan seluruh bangsa: <strong>Bahasa Indonesia</strong>. Keunikan ini menjadi fenomena langka dalam sejarah peradaban dunia — sebuah bahasa yang secara sukarela diterima sebagai bahasa pemersatu oleh ratusan suku bangsa tanpa adanya penjajahan linguistik.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Memahami sejarah pertumbuhan Bahasa Indonesia bukan sekadar mempelajari masa lalu, melainkan sebuah <em>investasi intelektual</em> bagi setiap mahasiswa, khususnya calon pendidik Islam. Dengan mengetahui akar sejarah, kedudukan, dan fungsi bahasa ini, kita akan memiliki <strong>kesadaran linguistik</strong> (<em>linguistic awareness</em>) yang menjadi fondasi dalam menggunakan bahasa Indonesia secara baik, benar, dan bertanggung jawab.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif empat pilar utama: <strong>(1) sejarah pertumbuhan bahasa Indonesia</strong> dari masa ke masa, <strong>(2) pengikraran bahasa Melayu sebagai bahasa Indonesia</strong> pada Sumpah Pemuda 1928, <strong>(3) faktor-faktor keberterimaan bahasa Melayu</strong> sebagai cikal bakal bahasa Indonesia, dan <strong>(4) kedudukan serta fungsi bahasa Indonesia</strong> dalam konteks akademik dan profesional.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Wahai manusia! Sungguh, Kami telah menciptakan kamu dari seorang laki-laki dan seorang perempuan, kemudian Kami jadikan kamu berbangsa-bangsa dan bersuku-suku agar kamu saling mengenal..."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Hujurat [49]: 13</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menjadi landasan spiritual bagi keberadaan Bahasa Indonesia: sebagai <em>lisān al-taʿāruf</em> (bahasa untuk saling mengenal). Dalam keragaman bangsa dan suku, Bahasa Indonesia hadir sebagai jembatan komunikasi yang memungkinkan <em>taʿāruf</em> antar anak bangsa tanpa menghilangkan identitas kesukuan masing-masing — sebuah manifestasi sunnatullah dalam keberagaman.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Bahasa Melayu</h3>
+                    <p class="text-luxury-cream/70 text-sm">Bahasa Austronesia yang berkembang di wilayah Nusantara dan menjadi <em>lingua franca</em> (bahasa perhubungan) selama berabad-abad sebelum akhirnya berkembang menjadi Bahasa Indonesia.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Sumpah Pemuda (1928)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Momen bersejarah pada 28 Oktober 1928 ketika para pemuda Indonesia mengikrarkan "menjunjung bahasa persatuan, bahasa Indonesia" — tonggak lahirnya Bahasa Indonesia secara politis.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Lingua Franca</h3>
+                    <p class="text-luxury-cream/70 text-sm">Bahasa perhubungan yang digunakan oleh penutur bahasa berbeda untuk berkomunikasi, khususnya dalam perdagangan dan diplomasi di Nusantara.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kedudukan vs. Fungsi</h3>
+                    <p class="text-luxury-cream/70 text-sm"><strong>Kedudukan</strong> = posisi bahasa (nasional/negara). <strong>Fungsi</strong> = peran konkret yang dimainkan dalam kehidupan (pendidikan, administrasi, kebudayaan, dll).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Mengapa Bukan Bahasa Jawa?</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Dalam Kongres Pemuda II (1928), seorang peserta dari etnis Jawa — yang merupakan suku terbesar di Nusantara — dengan ikhlas menerima Bahasa Melayu sebagai bahasa persatuan, meskipun jumlah penutur asli bahasa Jawa jauh lebih banyak. Keputusan ini bukan kebetulan, melainkan hasil pertimbangan matang: Bahasa Melayu telah menjadi <em>lingua franca</em> selama berabad-abad, tidak memiliki sistem tingkatan (<em>undha-usuk</em>) yang feodalistik, dan telah digunakan dalam berbagai naskah diplomasi kerajaan.
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Sejarah membuktikan bahwa pemilihan bahasa persatuan didasarkan pada nilai egaliter, fungsional, dan visioner — bukan pada dominasi jumlah penutur. Ini adalah teladan <em>tasamuh</em> (toleransi) dan <em>taʿawun</em> (tolong-menolong) antar suku bangsa.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah bagaimana nilai <em>ukhuwah</em> (persaudaraan) termanifestasi dalam keberadaan Bahasa Indonesia. Bagaimana Anda dapat menggunakan bahasa ini sebagai sarana dakwah dan pendidikan yang mempersatukan, bukan memecah belah? Ingatlah bahwa setiap kata yang Anda ucapkan di depan kelas kelak akan membentuk cara berpikir generasi penerus bangsa.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">2.1 Landasan Teoretis Sejarah Bahasa</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kajian sejarah pertumbuhan bahasa Indonesia tidak dapat dilepaskan dari beberapa teori sosiolinguistik dan politik bahasa yang telah teruji. Pemahaman teoretis ini akan membantu kita menginterpretasi fenomena kebahasaan secara lebih mendalam.
+            </p>
+
+            <!-- Teori Sosiolinguistik -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">2.1.1 Teori Sosiolinguistik (Fishman & Holmes)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Joshua Fishman (1972) dan Janet Holmes (2013) menekankan bahwa bahasa tidak dapat dipisahkan dari konteks sosialnya. Bahasa tumbuh, berkembang, dan bahkan punah berdasarkan dinamika masyarakat yang menuturkannya. Dalam konteks Nusantara, Bahasa Melayu tumbuh sebagai <em>lingua franca</em> karena kebutuhan sosial-ekonomi masyarakat pesisir yang heterogen.
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konsep Sosiolinguistik</th>
+                            <th class="text-luxury-gold">Relevansi dengan Sejarah Bahasa Indonesia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Lingua Franca</strong></td>
+                            <td>Bahasa Melayu sebagai alat komunikasi antar-suku di jalur perdagangan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bilingualisme</strong></td>
+                            <td>Masyarakat Nusantara terbiasa menggunakan bahasa daerah + bahasa Melayu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Diglosia</strong></td>
+                            <td>Pembedaan ragam tinggi (sastra) dan rendah (pasar) dalam Bahasa Melayu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Language Planning</strong></td>
+                            <td>Upaya sadar para pemuda 1928 dalam "merancang" bahasa persatuan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Teori Nasionalisme -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">2.1.2 Teori Nasionalisme Bahasa (Benedict Anderson)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Benedict Anderson (2006) dalam karyanya yang monumental <em>Imagined Communities</em> menegaskan bahwa bahasa memiliki peran sentral dalam pembentukan <em>imagined community</em> (komunitas terbayang). Bahasa Indonesia menjadi salah satu pilar utama yang memungkinkan jutaan orang yang tidak saling mengenal merasa sebagai satu bangsa: <strong>Bangsa Indonesia</strong>.
+            </p>
+
+            <div class="quote-block my-6">
+                <p>"Bahasa bukan sekadar alat komunikasi, melainkan jiwa sebuah bangsa."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari Wilhelm von Humboldt</p>
+            </div>
+
+            <!-- Teori Planned Language -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">2.1.3 Teori Perencanaan Bahasa (Language Planning)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Einar Haugen (1966) dan Heinz Kloss (1967) mengembangkan teori <strong>perencanaan bahasa</strong> yang terdiri dari dua aspek utama:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Corpus Planning</h4>
+                    <p class="text-luxury-cream/70 text-sm">Perencanaan isi bahasa: pembakuan ejaan, tata bahasa, istilah, kamus. Contoh: Pembakuan EYD (1972) dan PUEBI (2015).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Status Planning</h4>
+                    <p class="text-luxury-cream/70 text-sm">Perencanaan kedudukan bahasa: pengangkatan bahasa Melayu menjadi bahasa nasional (1928) dan bahasa negara (1945).</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Periodisasi Sejarah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">2.2 Periodisasi Sejarah Pertumbuhan Bahasa Indonesia</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-6">
+                Sejarah pertumbuhan Bahasa Indonesia dapat dibagi menjadi beberapa periode penting yang membentuknya menjadi bahasa yang kita kenal saat ini. Berikut adalah periodisasi lengkapnya:
+            </p>
+
+            <!-- Timeline Visual -->
+            <div class="relative pl-12 space-y-8">
+                <div class="timeline-line"></div>
+
+                <!-- Periode 1 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-luxury-gold text-luxury-900 text-xs font-bold px-3 py-1 rounded-sm">ABAD KE-7</span>
+                            <h3 class="font-serif text-lg text-luxury-gold">Periode Bahasa Melayu Kuno</h3>
+                        </div>
+                        <p class="text-luxury-cream/70 text-sm leading-relaxed mb-2">Bahasa Melayu mulai dikenal melalui <strong>prasasti-prasasti Sriwijaya</strong> (683-686 M) yang ditemukan di Palembang, Bangka, dan Jambi. Prasasti Kedukan Bukit (683 M) merupakan bukti tertua penggunaan Bahasa Melayu Kuno sebagai bahasa administrasi kerajaan.</p>
+                        <p class="text-luxury-cream/50 text-xs italic">Bukti: Prasasti Kedukan Bukit, Talang Tuo, Kota Kapur, Karang Brahi</p>
+                    </div>
+                </div>
+
+                <!-- Periode 2 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-luxury-gold text-luxury-900 text-xs font-bold px-3 py-1 rounded-sm">ABAD 13-15</span>
+                            <h3 class="font-serif text-lg text-luxury-gold">Periode Bahasa Melayu Klasik</h3>
+                        </div>
+                        <p class="text-luxury-cream/70 text-sm leading-relaxed mb-2">Bahasa Melayu berkembang sebagai bahasa sastra dan agama dengan masuknya Islam ke Nusantara. Karya-karya besar seperti <em>Hikayat Raja-Raja Pasai</em>, <em>Sejarah Melayu</em> (Tun Sri Lanang), dan terjemahan Al-Qur'an pertama kali ditulis dalam bahasa Melayu.</p>
+                        <p class="text-luxury-cream/50 text-xs italic">Bukti: Hikayat Hang Tuah, Bustanus Salatin, karya Hamzah Fansuri</p>
+                    </div>
+                </div>
+
+                <!-- Periode 3 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-luxury-gold text-luxury-900 text-xs font-bold px-3 py-1 rounded-sm">ABAD 16-19</span>
+                            <h3 class="font-serif text-lg text-luxury-gold">Periode Bahasa Melayu Pasar</h3>
+                        </div>
+                        <p class="text-luxury-cream/70 text-sm leading-relaxed mb-2">Bahasa Melayu menjadi <em>lingua franca</em> di pelabuhan-pelabuhan Nusantara. Versi yang digunakan adalah <strong>Bahasa Melayu Pasar</strong> (<em>Bazaar Malay</em>) yang disederhanakan dan dicampur dengan bahasa lokal. Para pedagang Tionghoa, Arab, India, dan Eropa menggunakan bahasa ini sebagai alat transaksi.</p>
+                        <p class="text-luxury-cream/50 text-xs italic">Bukti: Catatan pedagang Eropa, kamus Melayu-Eropa pertama (1603) oleh Augustin de Rhodes</p>
+                    </div>
+                </div>
+
+                <!-- Periode 4 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-luxury-gold text-luxury-900 text-xs font-bold px-3 py-1 rounded-sm">1901</span>
+                            <h3 class="font-serif text-lg text-luxury-gold">Periode Bahasa Melayu Tinggi vs Rendah</h3>
+                        </div>
+                        <p class="text-luxury-cream/70 text-sm leading-relaxed mb-2">Ch. A. van Ophuijsen menyusun <strong>Ejaan Van Ophuijsen</strong> (1901), menandai pembakuan bahasa Melayu pertama oleh Belanda. Muncul dikotomi <em>Bahasa Melayu Tinggi</em> (sastra, istana) dan <em>Bahasa Melayu Rendah</em> (pasar, sehari-hari).</p>
+                        <p class="text-luxury-cream/50 text-xs italic">Bukti: Kitab Logat Melayu (1901), karya Raja Ali Haji</p>
+                    </div>
+                </div>
+
+                <!-- Periode 5 - PENTING -->
+                <div class="relative">
+                    <div class="timeline-dot" style="width: 2rem; height: 2rem; left: 0.6rem; background: #F3E5AB;"></div>
+                    <div class="bg-luxury-gold/10 p-6 rounded-sm border-2 border-luxury-gold">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-luxury-gold text-luxury-900 text-xs font-bold px-3 py-1 rounded-sm">28 OKTOBER 1928</span>
+                            <h3 class="font-serif text-lg text-luxury-gold">Periode Sumpah Pemuda (Lahirnya Bahasa Indonesia)</h3>
+                        </div>
+                        <p class="text-luxury-cream/80 text-sm leading-relaxed mb-2">Dalam <strong>Kongres Pemuda II</strong> di Jakarta, para pemuda dari seluruh Nusantara mengikrarkan <em>Sumpah Pemuda</em> yang salah satu butirnya menyatakan: <strong>"Kami putra dan putri Indonesia menjunjung bahasa persatuan, bahasa Indonesia."</strong> Inilah momen politis lahirnya Bahasa Indonesia.</p>
+                        <p class="text-luxury-cream/50 text-xs italic">Bukti: Teks Sumpah Pemuda, karya Muhammad Yamin, Sugondo Joyopuspito</p>
+                    </div>
+                </div>
+
+                <!-- Periode 6 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-luxury-gold text-luxury-900 text-xs font-bold px-3 py-1 rounded-sm">18 AGUSTUS 1945</span>
+                            <h3 class="font-serif text-lg text-luxury-gold">Periode Konstitusional (Bahasa Negara)</h3>
+                        </div>
+                        <p class="text-luxury-cream/70 text-sm leading-relaxed mb-2">Sehari setelah proklamasi, UUD 1945 disahkan. <strong>Pasal 36</strong> menyatakan: "Bahasa negara ialah Bahasa Indonesia." Sejak saat itu, Bahasa Indonesia berkedudukan resmi sebagai bahasa negara di samping bahasa nasional.</p>
+                        <p class="text-luxury-cream/50 text-xs italic">Bukti: UUD 1945 Pasal 36, UU No. 24/2009</p>
+                    </div>
+                </div>
+
+                <!-- Periode 7 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-luxury-gold text-luxury-900 text-xs font-bold px-3 py-1 rounded-sm">1972-SEKARANG</span>
+                            <h3 class="font-serif text-lg text-luxury-gold">Periode Modern (Pembakuan & Pengembangan)</h3>
+                        </div>
+                        <p class="text-luxury-cream/70 text-sm leading-relaxed mb-2">Pergantian ejaan dari <em>Ejaan Van Ophuijsen</em> (1901) → <em>Ejaan Republik</em> (1947) → <em>EYD</em> (1972) → <em>PUEBI</em> (2015) → <em>EYD V</em> (2022). Bahasa Indonesia terus berkembang menyerap istilah asing dan memperkaya kosakata melalui Badan Pengembangan dan Pembinaan Bahasa.</p>
+                        <p class="text-luxury-cream/50 text-xs italic">Bukti: KBBI Edisi V, EYD Edisi V (2022)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengikraran Bahasa Melayu -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">2.3 Pengikraran Bahasa Melayu sebagai Bahasa Indonesia</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Momen pengikraran bahasa Melayu menjadi bahasa Indonesia pada <strong>28 Oktober 1928</strong> merupakan peristiwa monumental yang mengubah peta linguistik Nusantara. Peristiwa ini bukan terjadi secara tiba-tiba, melainkan melalui proses panjang yang melibatkan kesadaran kolektif para pemuda.
+            </p>
+
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border mb-6">
+                <h3 class="font-serif text-xl text-luxury-gold mb-4 text-center">📜 Teks Sumpah Pemuda (Butir Ketiga)</h3>
+                <div class="text-center">
+                    <p class="text-luxury-cream text-lg italic leading-relaxed">"Kami putra dan putri Indonesia<br>menjunjung bahasa persatuan,<br><span class="text-luxury-gold font-bold text-xl">bahasa Indonesia."</span></p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">Tokoh-Tokoh Kunci dalam Peristiwa 1928</h3>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Tokoh</th>
+                            <th class="text-luxury-gold">Peran</th>
+                            <th class="text-luxury-gold">Asal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Sugondo Joyopuspito</strong></td>
+                            <td>Ketua Kongres Pemuda II</td>
+                            <td>Jawa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Muhammad Yamin</strong></td>
+                            <td>Sekretaris, perumus teks Sumpah Pemuda</td>
+                            <td>Sumatera Barat</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Amir Sjarifuddin</strong></td>
+                            <td>Bendahara</td>
+                            <td>Sumatera Utara</td>
+                        </tr>
+                        <tr>
+                            <td><strong>W.R. Supratman</strong></td>
+                            <td>Pencipta lagu Indonesia Raya</td>
+                            <td>Jawa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sultan Takdir Alisjahbana</strong></td>
+                            <td>Pelopor pembaharuan bahasa Melayu</td>
+                            <td>Sumatera Utara</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Yang perlu dicatat: pada momen 1928, <strong>"bahasa Indonesia"</strong> yang diikrarkan sebenarnya masih identik dengan <strong>bahasa Melayu</strong> yang telah mengalami proses politisasi identitas. Penamaan "bahasa Indonesia" adalah sebuah <em>political act</em> — sebuah keputusan visioner untuk memberikan identitas baru bagi bahasa Melayu sebagai simbol persatuan bangsa yang sedang lahir.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Keberterimaan Bahasa Melayu -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">2.4 Faktor-Faktor Keberterimaan Bahasa Melayu</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Mengapa Bahasa Melayu yang dipilih menjadi bahasa persatuan, bukan bahasa Jawa yang penuturnya lebih banyak? Alisjahbana (1976) dan Moeliono (1989) mengidentifikasi beberapa faktor kunci:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">No.</th>
+                            <th class="text-luxury-gold">Faktor</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td><strong>Sudah menjadi lingua franca</strong></td>
+                            <td>Bahasa Melayu telah digunakan selama berabad-abad sebagai bahasa perhubungan di pelabuhan dan pasar Nusantara</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td><strong>Sistem sederhana</strong></td>
+                            <td>Tidak memiliki tingkatan bahasa (<em>undha-usuk</em>) seperti bahasa Jawa/Sunda, sehingga egaliter dan mudah dipelajari</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td><strong>Psikologis masyarakat</strong></td>
+                            <td>Banyak suku yang sudah terbiasa menggunakan bahasa Melayu dalam interaksi antar-suku</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td><strong>Kekayaan sastra</strong></td>
+                            <td>Tradisi sastra Melayu yang kaya (hikayat, syair, pantun) memberikan prestise kultural</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td><strong>Peran media & pendidikan</strong></td>
+                            <td>Surat kabar Melayu (seperti <em>Medan Prijaji</em>) dan sekolah-sekolah Belanda menggunakan bahasa Melayu</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td><strong>Kesepakatan politik</strong></td>
+                            <td>Para pemuda dari berbagai suku secara sukarela sepakat mengangkatnya sebagai bahasa persatuan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Bahasa Melayu dipilih bukan karena dominasi politik, melainkan karena kerendahan hati dan kearifan bersama para pendiri bangsa."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari A. Teeuw (ahli sastra Nusantara)</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kedudukan dan Fungsi -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">2.5 Kedudukan dan Fungsi Bahasa Indonesia</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bahasa Indonesia memiliki <strong>dua kedudukan utama</strong> yang melahirkan <strong>berbagai fungsi</strong> dalam kehidupan berbangsa dan bernegara. Perbedaan antara "kedudukan" dan "fungsi" sering kali membingungkan — berikut penjelasannya:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-3">🏛️ Kedudukan</h3>
+                    <p class="text-luxury-cream/70 text-sm mb-2"><strong>Posisi/status</strong> bahasa dalam masyarakat.</p>
+                    <ul class="text-luxury-cream/60 text-sm space-y-1 list-disc list-inside">
+                        <li>Bahasa Nasional (sejak 1928)</li>
+                        <li>Bahasa Negara (sejak 1945)</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-3">⚙️ Fungsi</h3>
+                    <p class="text-luxury-cream/70 text-sm mb-2"><strong>Peran konkret</strong> yang dimainkan bahasa.</p>
+                    <ul class="text-luxury-cream/60 text-sm space-y-1 list-disc list-inside">
+                        <li>7 fungsi sebagai bahasa nasional</li>
+                        <li>9 fungsi sebagai bahasa negara</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📊 7 Fungsi Bahasa Indonesia sebagai Bahasa Nasional</h3>
+            <p class="text-luxury-cream/70 text-sm mb-3">Berdasarkan hasil Seminar Politik Bahasa Nasional (1975):</p>
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">No.</th>
+                            <th class="text-luxury-gold">Fungsi</th>
+                            <th class="text-luxury-gold">Contoh Konkret</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td>Lambang identitas nasional</td>
+                            <td>Bahasa Indonesia mencerminkan jati diri bangsa</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td>Lambang kebanggaan nasional</td>
+                            <td>Setiap warga negara bangga menggunakan bahasa Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td>Alat pemersatu berbagai masyarakat</td>
+                            <td>Menyatukan 700+ suku bangsa dalam satu komunikasi</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td>Alat perhubungan antarbudaya antardaerah</td>
+                            <td>Orang Aceh berkomunikasi dengan orang Papua</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td>Alat perhubungan tingkat nasional</td>
+                            <td>Komunikasi resmi antar-instansi pemerintah pusat-daerah</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td>Bahasa resmi pendidikan</td>
+                            <td>Pengantar dari TK hingga perguruan tinggi</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7</td>
+                            <td>Bahasa pengembangan IPTEK & budaya</td>
+                            <td>Penulisan jurnal ilmiah, buku teks, karya sastra</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📊 Fungsi Bahasa Indonesia sebagai Bahasa Negara</h3>
+            <p class="text-luxury-cream/70 text-sm mb-3">Berdasarkan UUD 1945 Pasal 36 dan UU No. 24/2009:</p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">No.</th>
+                            <th class="text-luxury-gold">Fungsi</th>
+                            <th class="text-luxury-gold">Dasar Hukum / Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1</td>
+                            <td>Bahasa resmi kenegaraan</td>
+                            <td>Pidato presiden, naskah undang-undang</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2</td>
+                            <td>Bahasa pengantar dalam pendidikan</td>
+                            <td>UUD 1945 Pasal 31; sistem pendidikan nasional</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3</td>
+                            <td>Bahasa administrasi negara</td>
+                            <td>Surat-menyurat resmi, dokumen pemerintahan</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4</td>
+                            <td>Bahasa perhubungan tingkat nasional</td>
+                            <td>Kepolisian, militer, transportasi nasional</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5</td>
+                            <td>Bahasa pengembangan kebudayaan</td>
+                            <td>Seni, sastra, film, media massa nasional</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6</td>
+                            <td>Bahasa pemanfaatan IPTEK</td>
+                            <td>Penulisan jurnal, paten, karya ilmiah</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7</td>
+                            <td>Bahasa media massa</td>
+                            <td>TV nasional, koran, portal berita resmi</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">8</td>
+                            <td>Bahasa peradilan</td>
+                            <td>Putusan hakim, sidang pengadilan</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">9</td>
+                            <td>Bahasa diplomasi internasional</td>
+                            <td>Perjanjian bilateral, forum ASEAN, PBB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konteks Akademik & Profesional -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">2.6 Bahasa Indonesia dalam Konteks Akademik dan Profesional</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Bagi mahasiswa S1 Pendidikan Agama Islam, penguasaan Bahasa Indonesia memiliki relevansi khusus:</p>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🎓 Konteks Akademik</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Menulis makalah, esai, dan skripsi</li>
+                        <li>Presentasi di depan kelas dan seminar</li>
+                        <li>Diskusi ilmiah dengan dosen dan sejawat</li>
+                        <li>Publikasi artikel di jurnal PAI</li>
+                        <li>Mengakses sumber pustaka berbahasa Indonesia</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-900/50 p-4 rounded-sm">
+                    <h4 class="text-luxury-gold font-semibold mb-2">💼 Konteks Profesional</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Menyusun RPP dan modul ajar</li>
+                        <li>Berkomunikasi dengan orang tua murid</li>
+                        <li>Menulis surat lamaran kerja</li>
+                        <li>Wawancara kerja dan dinas</li>
+                        <li>Dakwah dan khutbah berbahasa Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Sejarah pertumbuhan Bahasa Indonesia adalah kisah tentang <strong>kebijaksanaan kolektif</strong> sebuah bangsa yang memilih persatuan di atas kepentingan sempit suku dan daerah. Dari bahasa Melayu Kuno di prasasti Sriwijaya (abad ke-7), melalui fase <em>lingua franca</em> di pelabuhan-pelabuhan Nusantara, hingga diikrarkan sebagai bahasa persatuan pada Sumpah Pemuda 1928 dan dikukuhkan sebagai bahasa negara dalam UUD 1945 — perjalanan ini adalah bukti nyata bahwa bahasa dapat menjadi perekat peradaban.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Sebagai calon pendidik Islam, memahami sejarah ini bukan sekadar pengetahuan kognitif, melainkan <strong>kesadaran kultural dan spiritual</strong>. Bahasa Indonesia adalah <em>amanah</em> yang harus dijaga kemurniannya, dikembangkan kekayaannya, dan digunakan dengan penuh tanggung jawab. Setiap kata yang kita ucapkan dan tulis di ruang kelas akan membentuk cara generasi penerus memahami identitas kebangsaan dan keislaman mereka.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Mari kita junjung bahasa persatuan, bahasa Indonesia — bukan hanya sebagai kewajiban konstitusional, tetapi sebagai manifestasi cinta tanah air (<em>hubbul wathan minal iman</em>) dan wujud syukur atas karunia Allah yang telah menganugerahkan bahasa pemersatu di tengah keragaman Nusantara.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 2</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 1-15)</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset. (Hal. 1-12)</li>
+                <li>Muslich, M. (2012). <em>Bahasa Indonesia pada Era Globalisasi</em>. Jakarta: Bumi Aksara. (Hal. 3-26)</li>
+                <li>Pamungkas, S. (2012). <em>Bahasa Indonesia dalam Berbagai Perspektif</em>. Yogyakarta: Andi Offset. (Hal. 1-17)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Alisjahbana, S. T. (1976). <em>Sejarah Perkembangan dan Pertumbuhan Bahasa Indonesia</em>. Jakarta: Pustaka Jaya.</li>
+                <li>Anderson, B. (2006). <em>Imagined Communities: Reflections on the Origin and Spread of Nationalism</em> (Revised ed.). London: Verso.</li>
+                <li>Arifin, E. Z. & Tasai, S. A. (1992). <em>Komposisi dalam Bahasa Indonesia</em>. Jakarta: Pusat Pembinaan dan Pengembangan Bahasa.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Fishman, J. A. (1972). <em>The Sociology of Language</em>. New York: Newbury House.</li>
+                <li>Holmes, J. (2013). <em>An Introduction to Sociolinguistics</em> (4th ed.). London: Routledge.</li>
+                <li>Moeliono, A. M. (1989). <em>Kedudukan, Fungsi, dan Pembinaan Bahasa Indonesia</em>. Jakarta: Pusat Pembinaan dan Pengembangan Bahasa.</li>
+                <li>Muslich, M. (2012). <em>Bahasa Indonesia pada Era Globalisasi</em>. Jakarta: Bumi Aksara.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.</li>
+                <li>UU No. 24 Tahun 2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 2</h2>
+                <p class="text-luxury-cream/70 text-sm">Sejarah Pertumbuhan Bahasa Indonesia</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Bukti tertua penggunaan Bahasa Melayu Kuno di Nusantara ditemukan pada...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Prasasti Ciaruteun abad ke-5</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Prasasti Kedukan Bukit tahun 683 M</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Prasasti Yupa abad ke-4</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Prasasti Kutai abad ke-5</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Peristiwa bersejarah yang menandai lahirnya Bahasa Indonesia secara politis adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Proklamasi Kemerdekaan 17 Agustus 1945</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Sumpah Pemuda 28 Oktober 1928</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Kongres Bahasa Indonesia I 1938</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Pengesahan UUD 1945</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Bahasa Melayu dipilih sebagai cikal bakal Bahasa Indonesia karena beberapa faktor, <em>kecuali</em>...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Sudah menjadi lingua franca di Nusantara</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Sistemnya sederhana, tidak bertingkat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Jumlah penutur aslinya paling banyak di Indonesia</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Memiliki kekayaan tradisi sastra</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Bahasa Indonesia berkedudukan sebagai bahasa negara sejak...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. 28 Oktober 1928</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. 17 Agustus 1945</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. 18 Agustus 1945 (pengesahan UUD 1945)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. 16 Agustus 1945</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Fungsi Bahasa Indonesia sebagai "alat pemersatu berbagai masyarakat yang berbeda-beda" merupakan fungsi dalam kedudukannya sebagai...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Bahasa negara</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Bahasa nasional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Bahasa daerah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Bahasa asing</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Q.S. Al-Hujurat ayat 13 yang menjadi landasan spiritual Bahasa Indonesia mengandung makna...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Perintah menggunakan satu bahasa saja di dunia</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Keberagaman bangsa dan suku sebagai sunnatullah untuk saling mengenal (ta'aruf)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Larangan menggunakan bahasa daerah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Perintah mempelajari bahasa Arab saja</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Periode Bahasa Melayu sebagai lingua franca di pelabuhan-pelabuhan Nusantara dikenal dengan istilah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Bahasa Melayu Klasik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Bahasa Melayu Pasar (Bazaar Malay)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Bahasa Melayu Tinggi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Bahasa Melayu Jakarta</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Menurut Benedict Anderson, peran utama bahasa dalam pembentukan bangsa adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Sebagai alat perdagangan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Membentuk "imagined community" (komunitas terbayang)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Sebagai alat diplomasi internasional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Sebagai sarana hiburan semata</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Ejaan resmi Bahasa Indonesia yang berlaku saat ini (sejak 2022) adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Ejaan Van Ophuijsen</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Ejaan Republik (Soewandi)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. PUEBI (Pedoman Umum Ejaan Bahasa Indonesia)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. EYD Edisi V (Ejaan Yang Disempurnakan Edisi Kelima)</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Salah satu fungsi Bahasa Indonesia sebagai bahasa negara adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Lambang kebanggaan nasional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Alat perhubungan antarbudaya antardaerah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Bahasa resmi kenegaraan dan administrasi negara</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Lambang identitas nasional</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan periodisasi sejarah pertumbuhan Bahasa Indonesia dari masa Bahasa Melayu Kuno hingga masa modern! Sertakan bukti-bukti sejarah pada setiap periode!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisis mengapa Bahasa Melayu dipilih sebagai cikal bakal Bahasa Indonesia, bukan Bahasa Jawa yang penuturnya lebih banyak! Hubungkan dengan nilai-nilai egaliter dalam Islam!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Jelaskan perbedaan antara "kedudukan" dan "fungsi" Bahasa Indonesia! Berikan masing-masing 3 contoh konkret!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Bagaimana relevansi Q.S. Al-Hujurat ayat 13 dengan keberadaan Bahasa Indonesia sebagai bahasa pemersatu? Jelaskan dari perspektif sosiolinguistik dan teologis!</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Sebagai calon pendidik PAI, rancanglah sebuah strategi konkret untuk menumbuhkan cinta Bahasa Indonesia pada siswa di sekolah tempat Anda akan mengajar kelak!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Prasasti Kedukan Bukit 683 M
+                q2: 'b',  // Sumpah Pemuda 28 Oktober 1928
+                q3: 'c',  // Jumlah penutur asli paling banyak (BUKAN alasan)
+                q4: 'c',  // 18 Agustus 1945 pengesahan UUD 1945
+                q5: 'b',  // Bahasa nasional
+                q6: 'b',  // Keberagaman untuk ta'aruf
+                q7: 'b',  // Bahasa Melayu Pasar
+                q8: 'b',  // Imagined community
+                q9: 'd',  // EYD Edisi V (2022)
+                q10: 'c'  // Bahasa resmi kenegaraan
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

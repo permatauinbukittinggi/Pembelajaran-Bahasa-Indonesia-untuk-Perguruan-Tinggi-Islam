@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 14: Seni Presentasi Ilmiah | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .role-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+            transition: all 0.3s;
+        }
+        .role-card:hover {
+            transform: translateY(-2px);
+            border-color: #D4AF37;
+        }
+        .role-icon {
+            display: inline-block;
+            width: 3.5rem;
+            height: 3.5rem;
+            background: linear-gradient(135deg, #D4AF37, #F3E5AB);
+            color: #0B1120;
+            font-size: 1.75rem;
+            text-align: center;
+            line-height: 3.5rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .tip-card {
+            background: linear-gradient(135deg, rgba(74, 222, 128, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(74, 222, 128, 0.3);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin: 0.5rem 0;
+        }
+        .warning-card {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 14</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Seni <span class="gold-gradient-text">Presentasi Ilmiah</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menguasai seni menyampaikan gagasan ilmiah di hadapan audiens — dari persiapan materi, desain slide, teknik vokal dan bahasa tubuh, hingga peran moderator dan notulis — sebagai wujud kompetensi komunikasi akademik calon pendidik profesional.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="13.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="15.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menulis artikel ilmiah yang brilian saja tidak cukup — jika tidak mampu menyampaikannya di hadapan audiens, gagasan tersebut akan tenggelam dalam kesunyian. <strong>Presentasi ilmiah</strong> adalah jembatan yang menghubungkan temuan peneliti dengan komunitas ilmiah. Ia adalah <strong>seni mengomunikasikan ilmu</strong> secara lisan dengan bantuan media visual, dalam forum akademik seperti seminar, konferensi, atau sidang.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bagi mahasiswa S1 Pendidikan Agama Islam, keterampilan presentasi ilmiah bukan hanya syarat kelulusan, melainkan <strong>kompetensi profesional</strong> yang akan terus digunakan sepanjang karier — mulai dari mempresentasikan Penelitian Tindakan Kelas di forum MGMP, menyampaikan makalah di konferensi nasional, hingga memimpin rapat dewan guru. Seorang guru PAI yang mampu presentasi dengan meyakinkan akan mampu pula membimbing siswa dalam berkomunikasi secara efektif.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) pengertian dan hakikat presentasi ilmiah</strong>, <strong>(2) ciri-ciri presentasi ilmiah</strong>, <strong>(3) persiapan presentasi (3M: Materi, Media, Mental)</strong>, <strong>(4) teknik penyampaian</strong> (vokal, visual, verbal), <strong>(5) peran moderator dan notulis</strong>, dan <strong>(6) penerapan presentasi ilmiah</strong> dalam konteks Pendidikan Agama Islam.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ ۖ وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Serulah (manusia) kepada jalan Tuhanmu dengan hikmah dan pengajaran yang baik, dan berdebatlah dengan mereka dengan cara yang lebih baik..."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. An-Nahl [16]: 125</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini adalah <strong>landasan spiritual presentasi ilmiah</strong> yang paling komprehensif. Allah mengajarkan tiga prinsip komunikasi yang harus dimiliki setiap presenter: <em>al-ḥikmah</em> (kebijaksanaan/kedalaman materi), <em>al-maw'izhah al-ḥasanah</em> (pengajaran yang baik/penyampaian yang menarik), dan <em>mujādalah billatī hiya aḥsan</em> (berdiskusi dengan cara yang terbaik/santun). Dalam konteks presentasi ilmiah, ayat ini menegaskan bahwa presentasi bukan sekadar transfer informasi, melainkan <strong>dakwah intelektual</strong> yang harus dilakukan dengan hikmah, metode yang baik, dan etika yang mulia.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Presentasi Ilmiah</h3>
+                    <p class="text-luxury-cream/70 text-sm">Proses penyampaian gagasan, temuan, atau analisis ilmiah di hadapan audiens akademik secara lisan dengan bantuan media visual, dalam forum resmi seperti seminar, konferensi, atau sidang.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Public Speaking</h3>
+                    <p class="text-luxury-cream/70 text-sm">Seni berbicara di depan umum dengan tujuan menyampaikan pesan secara efektif, meyakinkan, dan memikat audiens.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Moderator</h3>
+                    <p class="text-luxury-cream/70 text-sm">Pemandu jalannya presentasi atau diskusi yang bertugas membuka, mengatur waktu, menjaga kondusivitas, dan menyimpulkan jalannya acara.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Notulis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Pencatat jalannya presentasi/diskusi yang bertugas merekam poin-poin penting, pertanyaan, dan kesimpulan untuk dokumentasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Presentasi yang Gagal Meskipun Isinya Brilian</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa S1 PAI memiliki skripsi yang sangat bagus tentang "Integrasi Nilai Al-Qur'an dalam Pendidikan Karakter". Namun, saat presentasi sidang, ia <strong>membaca slide kata per kata</strong>, tidak melakukan kontak mata dengan penguji, suara pelan dan monoton, slide penuh teks (50 baris per slide), dan tidak mampu menjawab pertanyaan karena gugup. Hasilnya: ia mendapat nilai C meskipun isinya brilian. Penguji memberikan catatan: <em>"Isi penelitian Anda sangat baik, tetapi kemampuan komunikasi Anda belum memadai untuk seorang calon pendidik."</em>
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: <strong>Isi yang brilian tanpa penyampaian yang baik akan sia-sia</strong>. Presentasi ilmiah memerlukan keseimbangan antara <em>substansi</em> (isi) dan <em>retorika</em> (cara penyampaian). Seorang calon pendidik harus menguasai keduanya.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: setiap hari Anda akan berdiri di depan kelas menyampaikan ilmu. Kemampuan presentasi ilmiah yang Anda latih hari ini adalah <strong>praktik langsung dari Q.S. An-Nahl: 125</strong> — menyeru dengan hikmah, pengajaran yang baik, dan debat yang terbaik. Ingatlah bahwa para nabi dan rasul adalah <em>presenter</em> terhebat sepanjang sejarah — mereka menyampaikan kebenaran dengan metode yang memikat hati dan mencerahkan akal. Jadikan setiap presentasi sebagai latihan dakwah intelektual yang membawa kebaikan.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">14.1 Landasan Teoretis Presentasi Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Presentasi ilmiah sebagai praktik komunikasi akademik memiliki landasan teoretis yang kuat dari berbagai disiplin ilmu: retorika, psikologi komunikasi, dan desain multimedia.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">14.1.1 Teori Retorika Aristoteles (Ethos, Pathos, Logos)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Aristoteles (350 SM) dalam <em>Rhetorica</em> merumuskan tiga pilar persuasi yang tetap relevan hingga kini:
+            </p>
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🎭 Ethos</h4>
+                    <p class="text-luxury-cream/70 text-sm">Kredibilitas pembicara — integritas, keahlian, dan karisma yang membuat audiens percaya.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">❤️ Pathos</h4>
+                    <p class="text-luxury-cream/70 text-sm">Daya sentuh emosional — kemampuan menyentuh perasaan audiens agar peduli terhadap topik.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🧠 Logos</h4>
+                    <p class="text-luxury-cream/70 text-sm">Kekuatan logika — argumen yang sistematis, berbasis bukti, dan dapat dipertanggungjawabkan.</p>
+                </div>
+            </div>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Presentasi ilmiah yang efektif memadukan ketiganya: <strong>ethos</strong> (presenter tampil meyakinkan), <strong>pathos</strong> (menyentuh relevansi topik bagi audiens), dan <strong>logos</strong> (argumen berbasis data dan teori).
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">14.1.2 Teori Public Speaking (Olii, 2008; Lucas, 2013)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Helena Olii (2008) dalam <em>Public Speaking</em> dan Stephen Lucas (2013) dalam <em>The Art of Public Speaking</em> merumuskan prinsip-prinsip berbicara di depan umum yang efektif:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Prinsip</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                            <th class="text-luxury-gold">Implementasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kenali Audiens</strong></td>
+                            <td>Pahami latar belakang, minat, dan ekspektasi audiens</td>
+                            <td>Sesuaikan bahasa dan contoh dengan audiens PAI</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kuasai Materi</strong></td>
+                            <td>Pemahaman mendalam membangun kepercayaan diri</td>
+                            <td>Baca ulang artikel minimal 3 kali sebelum presentasi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Struktur yang Jelas</strong></td>
+                            <td>Pembuka, isi, penutup yang terorganisir</td>
+                            <td>Gunakan kerangka IMRAD untuk presentasi artikel</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Latihan Berulang</strong></td>
+                            <td>Practice makes perfect</td>
+                            <td>Latihan minimal 5 kali sebelum hari-H</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kontak Mata</strong></td>
+                            <td>Membangun koneksi dengan audiens</td>
+                            <td>Sapalah audiens secara bergantian setiap 3-5 detik</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Variasi Vokal</strong></td>
+                            <td>Intonasi, volume, dan tempo yang dinamis</td>
+                            <td>Hindari nada monoton; tekankan kata kunci</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">14.1.3 Teori Multimedia Learning (Mayer, 2009)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Richard Mayer (2009) dalam <em>Multimedia Learning</em> merumuskan prinsip desain slide presentasi yang efektif berdasarkan cara otak memproses informasi:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Prinsip Koherensi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Hilangkan elemen yang tidak relevan (teks berlebihan, gambar hiasan, animasi tidak perlu).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Prinsip Signaling</h4>
+                    <p class="text-luxury-cream/70 text-sm">Tandai informasi penting dengan warna, ukuran, atau posisi yang menonjol.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Prinsip Redundansi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Jangan menaruh semua teks di slide + membacakannya bersamaan — audiens akan kewalahan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Prinsip Modalitas</h4>
+                    <p class="text-luxury-cream/70 text-sm">Gunakan kombinasi visual (gambar/grafik) + narasi lisan, bukan teks + narasi.</p>
+                </div>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Presentasi yang baik bukan tentang seberapa banyak yang Anda sampaikan, melainkan seberapa banyak yang audiens pahami dan ingat."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari Prinsip Komunikasi Efektif</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengertian Presentasi Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">14.2 Pengertian dan Hakikat Presentasi Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Presentasi ilmiah</strong> adalah kegiatan menyampaikan gagasan, temuan, atau analisis ilmiah di hadapan audiens akademik secara lisan dengan bantuan media visual (biasanya slide PowerPoint), dalam forum resmi seperti seminar, konferensi, workshop, atau sidang, dengan tujuan untuk mengkomunikasikan, mendiskusikan, dan mendapatkan umpan balik dari sejawat.
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Presentasi Ilmiah</th>
+                            <th class="text-luxury-gold">Presentasi Non-Ilmiah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tujuan</strong></td>
+                            <td>Mengkomunikasikan temuan ilmiah & mendapat umpan balik</td>
+                            <td>Menghibur, memotivasi, atau menjual</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Isi</strong></td>
+                            <td>Berbasis data, teori, dan metode ilmiah</td>
+                            <td>Boleh berdasarkan opini atau pengalaman</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Struktur</strong></td>
+                            <td>Baku (IMRAD atau struktur artikel)</td>
+                            <td>Fleksibel</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bahasa</strong></td>
+                            <td>Baku, formal, denotatif</td>
+                            <td>Bebas, konotatif, ekspresif</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Audiens</strong></td>
+                            <td>Komunitas akademik (dosen, peneliti, mahasiswa)</td>
+                            <td>Umum (masyarakat luas)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sesi Tanya Jawab</strong></td>
+                            <td>Wajib — bagian integral dari presentasi</td>
+                            <td>Opsional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Durasi</strong></td>
+                            <td>15-30 menit (standar akademik)</td>
+                            <td>Sangat bervariasi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Hakikat Presentasi Ilmiah</h4>
+                <p class="text-luxury-cream/70 text-sm">Presentasi ilmiah adalah <strong>versi lisan dari artikel ilmiah</strong>. Jika artikel ilmiah dikomunikasikan melalui tulisan, presentasi ilmiah mengkomunikasikannya melalui lisan + visual. Oleh karena itu, presenter harus mampu <strong>mengonversi</strong> struktur IMRAD (Introduction, Method, Result, Discussion) ke dalam format presentasi yang ringkas, menarik, dan mudah dipahami dalam waktu terbatas.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Ciri-Ciri Presentasi Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">14.3 Ciri-Ciri Presentasi Ilmiah yang Baik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menurut Olii (2008) dan Lucas (2013), presentasi ilmiah yang baik memiliki <strong>delapan ciri utama</strong>:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">1. Berbasis Data & Teori</h3>
+                    <p class="text-luxury-cream/70 text-sm">Setiap pernyataan didukung oleh data, fakta, atau referensi ilmiah yang valid.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">2. Struktur Sistematis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Mengikuti alur yang jelas: pembuka → isi → penutup, atau IMRAD.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">3. Ringkas & Padat</h3>
+                    <p class="text-luxury-cream/70 text-sm">Hanya menyajikan poin-poin esensial, tidak bertele-tele.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">4. Visual yang Efektif</h3>
+                    <p class="text-luxury-cream/70 text-sm">Slide mendukung penyampaian, bukan menjadi naskah yang dibaca.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">5. Penyampaian Meyakinkan</h3>
+                    <p class="text-luxury-cream/70 text-sm">Vokal jelas, kontak mata baik, bahasa tubuh terbuka, percaya diri.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">6. Interaktif</h3>
+                    <p class="text-luxury-cream/70 text-sm">Melibatkan audiens melalui tanya jawab, polling, atau diskusi singkat.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">7. Tepat Waktu</h3>
+                    <p class="text-luxury-cream/70 text-sm">Menghormati alokasi waktu yang diberikan (biasanya 15-30 menit).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">8. Santun & Etis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Menghargai audiens, mencantumkan sumber, tidak menyalahkan pihak lain.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Persiapan Presentasi (3M) -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">14.4 Persiapan Presentasi Ilmiah (Konsep 3M)</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Presentasi yang sukses tidak lahir secara spontan, melainkan melalui <strong>persiapan matang</strong>. Konsep <strong>3M</strong> — <em>Materi, Media, Mental</em> — adalah kerangka persiapan yang komprehensif:
+            </p>
+
+            <!-- Materi -->
+            <div class="role-card">
+                <div class="flex items-start mb-3">
+                    <span class="role-icon">📚</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">M — MATERI</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">Kuasai isi presentasi secara mendalam</p>
+                    </div>
+                </div>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Pahami artikel/karya ilmiah secara utuh</strong> — baca ulang minimal 3 kali</li>
+                    <li><strong>Identifikasi poin kunci</strong> — apa yang <em>harus</em> disampaikan vs. yang <em>bisa</em> dilewati</li>
+                    <li><strong>Susun kerangka presentasi</strong> — konversi struktur IMRAD ke format lisan:
+                        <ul class="ml-6 mt-1 space-y-1 list-[circle]">
+                            <li>Pembuka (10%): Salam, perkenalan, latar belakang, tujuan</li>
+                            <li>Isi (80%): Metode (singkat), Hasil (fokus), Pembahasan (inti)</li>
+                            <li>Penutup (10%): Simpulan, implikasi, saran, terima kasih</li>
+                        </ul>
+                    </li>
+                    <li><strong>Antisipasi pertanyaan</strong> — siapkan jawaban untuk 5-10 pertanyaan potensial</li>
+                    <li><strong>Kuasai referensi</strong> — siap menyebutkan sumber jika ditanya</li>
+                </ul>
+            </div>
+
+            <!-- Media -->
+            <div class="role-card">
+                <div class="flex items-start mb-3">
+                    <span class="role-icon">🎨</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">M — MEDIA</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">Desain slide yang efektif dan menarik</p>
+                    </div>
+                </div>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Prinsip 10-20-30</strong> (Guy Kawasaki): Maksimal 10 slide, durasi 20 menit, font minimal 30 pt</li>
+                    <li><strong>Prinsip 6x6</strong>: Maksimal 6 baris per slide, 6 kata per baris</li>
+                    <li><strong>Visual > Teks</strong>: Gunakan grafik, tabel, diagram, gambar — hindari slide penuh teks</li>
+                    <li><strong>Konsistensi desain</strong>: Gunakan template yang sama, font yang sama, skema warna yang konsisten</li>
+                    <li><strong>One idea per slide</strong>: Setiap slide hanya menyampaikan satu gagasan utama</li>
+                    <li><strong>Nomor halaman & judul</strong>: Memudahkan audiens mengikuti alur</li>
+                </ul>
+                <div class="tip-card mt-3">
+                    <p class="text-luxury-cream/80 text-sm"><strong class="text-green-400">✅ Slide yang Baik:</strong> Judul jelas, 1 gambar/grafik besar, 3-5 poin singkat, font besar (minimal 24 pt), kontras warna tinggi.</p>
+                </div>
+                <div class="warning-card">
+                    <p class="text-luxury-cream/80 text-sm"><strong class="text-red-400">❌ Slide yang Buruk:</strong> 50 baris teks, font kecil, warna tidak kontras, animasi berlebihan, clip art tidak relevan.</p>
+                </div>
+            </div>
+
+            <!-- Mental -->
+            <div class="role-card">
+                <div class="flex items-start mb-3">
+                    <span class="role-icon">🧘</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">M — MENTAL</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">Kesiapan psikologis dan spiritual</p>
+                    </div>
+                </div>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Latihan berulang</strong>: Latihan minimal 5 kali — sendiri, di depan cermin, rekam video, di depan teman</li>
+                    <li><strong>Manajemen grogi</strong>: Teknik pernapasan dalam (4-7-8), visualisasi positif, afirmasi</li>
+                    <li><strong>Persiapan fisik</strong>: Tidur cukup, makan teratur, pakaian rapi dan sesuai konteks</li>
+                    <li><strong>Cek teknis</strong>: Datang lebih awal, cek proyektor, laptop, mikrofon, pointer, file cadangan</li>
+                    <li><strong>Persiapan spiritual</strong>: Berdoa sebelum presentasi, niatkan untuk berbagi ilmu (dakwah intelektual), tawakkal setelah berusaha</li>
+                    <li><strong>Mindset positif</strong>: "Saya menguasai materi ini dan ingin membagikannya" — bukan "Saya harus dinilai bagus"</li>
+                </ul>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Rumus Persiapan Presentasi</h4>
+                <div class="example-box">
+                    <p class="text-luxury-goldLight text-sm">Waktu persiapan ideal = <strong>2 x durasi presentasi</strong></p>
+                    <p class="text-luxury-goldLight text-sm">Jika presentasi 20 menit → siapkan minimal 40 menit (20 menit materi + 20 menit latihan)</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Teknik Penyampaian -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">14.5 Teknik Penyampaian Presentasi (3V)</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menurut penelitian Albert Mehrabian (1971), dampak komunikasi lisan ditentukan oleh tiga komponen: <strong>Visual (55%)</strong>, <strong>Vokal (38%)</strong>, dan <strong>Verbal (7%)</strong>. Meskipun angka ini sering disalahpahami, intinya jelas: <strong>cara Anda menyampaikan sama pentingnya dengan apa yang Anda sampaikan</strong>.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">14.5.1 Visual (Bahasa Tubuh) — 55%</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Teknik Efektif</th>
+                            <th class="text-luxury-gold">Yang Harus Dihindari</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kontak Mata</strong></td>
+                            <td>Sapalah audiens secara bergantian, 3-5 detik per orang</td>
+                            <td>Melihat lantai, langit-langit, atau slide terus-menerus</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Postur Tubuh</strong></td>
+                            <td>Berdiri tegak, bahu terbuka, kaki selebar bahu</td>
+                            <td>Membungkuk, tangan bersedekap, bergeser-geser</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gestur Tangan</strong></td>
+                            <td>Gunakan tangan untuk menekankan poin, gerakan natural</td>
+                            <td>Tangan di saku, memainkan pulpen, gestur berlebihan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ekspresi Wajah</strong></td>
+                            <td>Tersenyum, ekspresi sesuai dengan isi materi</td>
+                            <td>Wajah datar, tidak ada ekspresi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pergerakan</strong></td>
+                            <td>Berpindah posisi secara sengaja untuk menjangkau audiens</td>
+                            <td>Diam di satu titik atau mondar-mandir tanpa tujuan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Penampilan</strong></td>
+                            <td>Pakaian rapi, sesuai konteks formal akademik</td>
+                            <td>Pakaian terlalu santai atau berantakan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">14.5.2 Vokal (Suara) — 38%</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Teknik Efektif</th>
+                            <th class="text-luxury-gold">Yang Harus Dihindari</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Volume</strong></td>
+                            <td>Cukup keras untuk didengar seluruh ruangan</td>
+                            <td>Terlalu pelan (tidak terdengar) atau terlalu keras (memekakkan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Intonasi</strong></td>
+                            <td>Variasi nada untuk menekankan poin penting</td>
+                            <td>Nada monoton (membuat audiens bosan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tempo</strong></td>
+                            <td>Sedang (120-150 kata/menit), perlambat untuk poin penting</td>
+                            <td>Terlalu cepat (audiens tidak跟上) atau terlalu lambat</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jeda (Pauses)</strong></td>
+                            <td>Berhenti 2-3 detik setelah poin penting untuk memberi waktu audiens mencerna</td>
+                            <td>Bicara terus tanpa jeda</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Artikulasi</strong></td>
+                            <td>Pengucapan kata jelas dan tepat</td>
+                            <td>Bergumam, menelan kata, pengucapan tidak jelas</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Filler Words</strong></td>
+                            <td>Minimalkan "ee...", "anu...", "yaitu loh..."</td>
+                            <td>Terlalu banyak kata pengisi yang mengganggu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">14.5.3 Verbal (Isi Pesan) — 7%</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Meskipun persentasenya kecil, isi pesan tetap krusial dalam presentasi ilmiah. Verbal yang efektif mencakup:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">✅ Verbal yang Efektif</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                        <li>Kalimat singkat dan jelas</li>
+                        <li>Diksi akademik yang tepat</li>
+                        <li>Transisi antarbagian yang mulus</li>
+                        <li>Contoh konkret yang relevan</li>
+                        <li>Storytelling singkat untuk ilustrasi</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">❌ Verbal yang Harus Dihindari</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                        <li>Membaca slide kata per kata</li>
+                        <li>Bahasa gaul atau terlalu santai</li>
+                        <li>Istilah teknis tanpa penjelasan</li>
+                        <li>Argumen tanpa bukti</li>
+                        <li>Kalimat terlalu panjang dan rumit</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Peran Moderator dan Notulis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">14.6 Peran Moderator dan Notulis</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Dalam presentasi ilmiah, terdapat tiga peran utama: <strong>presenter</strong> (penyaji), <strong>moderator</strong> (pemandu), dan <strong>notulis</strong> (pencatat). Ketiganya harus bekerja sama untuk memastikan presentasi berjalan lancar dan produktif.
+            </p>
+
+            <!-- Moderator -->
+            <div class="role-card">
+                <div class="flex items-start mb-3">
+                    <span class="role-icon">🎤</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">MODERATOR — Pemandu Jalannya Presentasi</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">"Dirigen" yang mengatur orkestra presentasi</p>
+                    </div>
+                </div>
+                <h4 class="text-luxury-cream font-semibold mt-3 mb-2">Tugas & Fungsi Moderator:</h4>
+                <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                    <li><strong>Membuka acara</strong> — menyampaikan salam, memperkenalkan topik, presenter, dan agenda</li>
+                    <li><strong>Memberikan pengantar</strong> — konteks singkat tentang pentingnya topik</li>
+                    <li><strong>Mengatur waktu</strong> — memastikan presenter tidak melebihi alokasi waktu</li>
+                    <li><strong>Memandu sesi tanya jawab</strong> — mengatur urutan penanya, membatasi waktu pertanyaan, menjaga kondusivitas</li>
+                    <li><strong>Menjadi jembatan</strong> — menjembatani pertanyaan audiens dengan jawaban presenter</li>
+                    <li><strong>Menyimpulkan</strong> — merangkum poin-poin penting di akhir sesi</li>
+                    <li><strong>Menutup acara</strong> — menyampaikan terima kasih dan informasi tindak lanjut</li>
+                </ol>
+                <h4 class="text-luxury-cream font-semibold mt-3 mb-2">Kualitas Moderator yang Baik:</h4>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                    <li>Menguasai topik (minimal secara umum)</li>
+                    <li>Kemampuan komunikasi yang baik</li>
+                    <li>Sikap netral dan adil</li>
+                    <li>Tegas namun santun</li>
+                    <li>Mampu mengelola waktu dengan baik</li>
+                </ul>
+            </div>
+
+            <!-- Notulis -->
+            <div class="role-card">
+                <div class="flex items-start mb-3">
+                    <span class="role-icon">📝</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">NOTULIS — Pencatat Jalannya Presentasi</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">"Sejarawan" yang merekam peristiwa akademik</p>
+                    </div>
+                </div>
+                <h4 class="text-luxury-cream font-semibold mt-3 mb-2">Tugas & Fungsi Notulis:</h4>
+                <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                    <li><strong>Mencatat poin-poin utama</strong> presentasi (gagasan, temuan, argumen kunci)</li>
+                    <li><strong>Merekam pertanyaan audiens</strong> dan jawaban presenter secara ringkas</li>
+                    <li><strong>Mencatat saran & rekomendasi</strong> yang muncul dalam diskusi</li>
+                    <li><strong>Mencatat keputusan/kesimpulan</strong> akhir sesi</li>
+                    <li><strong>Menyusun notulensi resmi</strong> setelah acara selesai</li>
+                    <li><strong>Mendokumentasikan</strong> untuk laporan dan arsip institusi</li>
+                </ol>
+                <h4 class="text-luxury-cream font-semibold mt-3 mb-2">Kualitas Notulis yang Baik:</h4>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                    <li>Kecepatan dan ketepatan menulis/mengetik</li>
+                    <li>Kemampuan menangkap inti pembicaraan</li>
+                    <li>Sistem pencatatan yang terstruktur</li>
+                    <li>Konsentrasi tinggi dan teliti</li>
+                    <li>Mampu menyusun notulensi yang sistematis</li>
+                </ul>
+                <div class="example-box mt-3">
+                    <p class="text-luxury-goldLight text-xs">💡 Format Notulensi Standar:</p>
+                    <p class="text-luxury-cream/70 text-xs mt-1">1. Hari/Tanggal, Waktu, Tempat<br>2. Tema/Judul Presentasi<br>3. Nama Presenter & Moderator<br>4. Jumlah Peserta<br>5. Ringkasan Materi (poin-poin utama)<br>6. Daftar Pertanyaan & Jawaban<br>7. Kesimpulan & Rekomendasi<br>8. Tanda tangan Notulis & Moderator</p>
+                </div>
+            </div>
+
+            <!-- Presenter -->
+            <div class="role-card">
+                <div class="flex items-start mb-3">
+                    <span class="role-icon">🎓</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">PRESENTER — Penyaji Materi</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">"Bintang" utama dalam presentasi ilmiah</p>
+                    </div>
+                </div>
+                <h4 class="text-luxury-cream font-semibold mt-3 mb-2">Tugas & Fungsi Presenter:</h4>
+                <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                    <li><strong>Menyampaikan gagasan/temuan</strong> secara sistematis dan menarik</li>
+                    <li><strong>Mempertahankan argumen</strong> dengan bukti dan teori</li>
+                    <li><strong>Menjawab pertanyaan</strong> audiens dengan santun dan ilmiah</li>
+                    <li><strong>Menghargai kritik</strong> dan masukan dari audiens</li>
+                    <li><strong>Mengakui keterbatasan</strong> penelitian secara jujur</li>
+                    <li><strong>Membangun jejaring</strong> dengan sejawat setelah presentasi</li>
+                </ol>
+            </div>
+
+            <!-- Alur Presentasi -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">📊 Alur Standar Presentasi Ilmiah</h3>
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                <div class="text-center space-y-2">
+                    <div class="role-card">
+                        <p class="text-luxury-gold font-semibold">🎤 MODERATOR MEMBUKA (2-3 menit)</p>
+                        <p class="text-luxury-cream/70 text-xs">Salam → Perkenalan → Pengantar Topik → Agenda</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="role-card">
+                        <p class="text-luxury-gold font-semibold">🎓 PRESENTER MENYAJIKAN (15-20 menit)</p>
+                        <p class="text-luxury-cream/70 text-xs">Pendahuluan → Metode → Hasil → Pembahasan → Simpulan</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="role-card">
+                        <p class="text-luxury-gold font-semibold">💬 SESI TANYA JAWAB (10-15 menit)</p>
+                        <p class="text-luxury-cream/70 text-xs">📝 Notulis mencatat → Moderator mengatur → Presenter menjawab</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="role-card">
+                        <p class="text-luxury-gold font-semibold">🎤 MODERATOR MENUTUP (3-5 menit)</p>
+                        <p class="text-luxury-cream/70 text-xs">Simpulan → Ucapan Terima Kasih → Informasi Tindak Lanjut</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">14.7 Penerapan Presentasi Ilmiah bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, keterampilan presentasi ilmiah akan diterapkan dalam berbagai konteks profesional:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Peran</th>
+                            <th class="text-luxury-gold">Contoh Penerapan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sidang Skripsi S1</td>
+                            <td>Presenter</td>
+                            <td>Mempertahankan skripsi di depan penguji dengan presentasi 20 menit</td>
+                        </tr>
+                        <tr>
+                            <td>Seminar Nasional PAI</td>
+                            <td>Presenter / Peserta</td>
+                            <td>Menyajikan makalah di depan 100+ peserta dari berbagai universitas</td>
+                        </tr>
+                        <tr>
+                            <td>Rapat MGMP PAI</td>
+                            <td>Presenter & Moderator</td>
+                            <td>Mempresentasikan Penelitian Tindakan Kelas di forum guru</td>
+                        </tr>
+                        <tr>
+                            <td>Rapat Dewan Guru</td>
+                            <td>Moderator / Notulis</td>
+                            <td>Memimpin rapat atau mencatat notulensi resmi</td>
+                        </tr>
+                        <tr>
+                            <td>Pelatihan Guru</td>
+                            <td>Narasumber</td>
+                            <td>Menjadi pemateri dalam workshop kurikulum atau metode pembelajaran</td>
+                        </tr>
+                        <tr>
+                            <td>Khutbah & Dakwah</td>
+                            <td>Presenter (konteks religius)</td>
+                            <td>Menyampaikan khutbah Jumat atau tausiyah dengan prinsip retorika yang baik</td>
+                        </tr>
+                        <tr>
+                            <td>Mengajar di Kelas</td>
+                            <td>Presenter harian</td>
+                            <td>Menyampaikan materi PAI dengan teknik presentasi yang menarik</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📝 Contoh Kerangka Presentasi Ilmiah Bertema PAI</h3>
+            <div class="bg-luxury-900/50 p-4 rounded-sm">
+                <p class="text-luxury-gold font-semibold mb-2">Judul: "Pengaruh Metode Diskusi terhadap Hasil Belajar Fiqih Siswa MTs Nurul Huda"</p>
+                <div class="text-luxury-cream/70 text-sm space-y-1">
+                    <p><strong>SLIDE 1: Judul & Identitas</strong> (30 detik)</p>
+                    <p class="ml-4">- Judul, nama penulis, afiliasi, logo institusi</p>
+                    <p><strong>SLIDE 2: Latar Belakang</strong> (2 menit)</p>
+                    <p class="ml-4">- Fenomena: rendahnya hasil belajar Fiqih</p>
+                    <p class="ml-4">- Data awal: rata-rata nilai 65 (di bawah KKM)</p>
+                    <p class="ml-4">- Urgensi: perlunya metode alternatif</p>
+                    <p><strong>SLIDE 3: Tujuan & Novelty</strong> (1 menit)</p>
+                    <p class="ml-4">- Tujuan penelitian</p>
+                    <p class="ml-4">- Kebaruan: konteks MTs di Bukittinggi</p>
+                    <p><strong>SLIDE 4: Kajian Pustaka Singkat</strong> (2 menit)</p>
+                    <p class="ml-4">- Teori konstruktivisme Vygotsky</p>
+                    <p class="ml-4">- Penelitian terdahulu (3-4 studi kunci)</p>
+                    <p><strong>SLIDE 5: Metodologi</strong> (2 menit)</p>
+                    <p class="ml-4">- Pendekatan: kuantitatif eksperimental</p>
+                    <p class="ml-4">- Sampel: 60 siswa (30 eksperimen, 30 kontrol)</p>
+                    <p class="ml-4">- Instrumen: tes hasil belajar (r = 0,85)</p>
+                    <p><strong>SLIDE 6-7: Hasil</strong> (4 menit) — dengan tabel & grafik</p>
+                    <p class="ml-4">- Rata-rata pre-test & post-test</p>
+                    <p class="ml-4">- Hasil uji-t: signifikan (p < 0,05)</p>
+                    <p><strong>SLIDE 8-9: Pembahasan</strong> (5 menit) — inti presentasi</p>
+                    <p class="ml-4">- Interpretasi temuan</p>
+                    <p class="ml-4">- Kaitan dengan teori</p>
+                    <p class="ml-4">- Implikasi bagi guru PAI</p>
+                    <p><strong>SLIDE 10: Simpulan & Saran</strong> (2 menit)</p>
+                    <p class="ml-4">- Jawaban tujuan penelitian</p>
+                    <p class="ml-4">- Rekomendasi praktis</p>
+                    <p class="ml-4">- Saran penelitian lanjutan</p>
+                    <p><strong>SLIDE 11: Terima Kasih & Sesi Tanya Jawab</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Presentasi ilmiah adalah <strong>seni mengomunikasikan ilmu</strong> yang memadukan substansi (isi) dan retorika (cara penyampaian). Delapan ciri presentasi ilmiah yang baik — <strong>berbasis data, struktur sistematis, ringkas, visual efektif, penyampaian meyakinkan, interaktif, tepat waktu, dan santun</strong> — menjadi pedoman dalam setiap presentasi yang kita sampaikan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Konsep <strong>3M (Materi, Media, Mental)</strong> adalah kerangka persiapan yang komprehensif, sementara <strong>3V (Visual, Vokal, Verbal)</strong> adalah kerangka penyampaian yang efektif. Kolaborasi antara <strong>presenter, moderator, dan notulis</strong> memastikan presentasi berjalan lancar dan produktif.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, presentasi ilmiah adalah manifestasi dari Q.S. An-Nahl: 125 — <em>"Serulah kepada jalan Tuhanmu dengan hikmah dan pengajaran yang baik, dan berdebatlah dengan mereka dengan cara yang terbaik."</em> Sebagai calon pendidik PAI, mari kita latih keterampilan presentasi ilmiah sebagai bentuk <strong>dakwah intelektual</strong> — menyampaikan kebenaran dengan metode yang memikat hati dan mencerahkan akal. Karena pada akhirnya, ilmu yang tidak dikomunikasikan adalah ilmu yang terpenjara.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 14</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 229-244)</li>
+                <li>Olii, H. (2008). <em>Public Speaking</em>. Jakarta: Macanan Jaya Cemerlang. (Hal. 79-129)</li>
+                <li>Lucas, S. E. (2013). <em>The Art of Public Speaking</em> (12th ed.). New York: McGraw-Hill.</li>
+                <li>Mayer, R. E. (2009). <em>Multimedia Learning</em> (2nd ed.). Cambridge University Press.</li>
+                <li>Kawasaki, G. (2015). <em>The Art of the Start 2.0</em>. Portfolio/Penguin.</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Aristoteles. (1991). <em>On Rhetoric: A Theory of Civic Discourse</em> (G. A. Kennedy, Trans.). Oxford University Press.</li>
+                <li>Carnegie, D. (1936). <em>How to Win Friends and Influence People</em>. Simon & Schuster.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Kawasaki, G. (2015). <em>The Art of the Start 2.0</em>. Portfolio/Penguin.</li>
+                <li>Lucas, S. E. (2013). <em>The Art of Public Speaking</em> (12th ed.). New York: McGraw-Hill.</li>
+                <li>Mayer, R. E. (2009). <em>Multimedia Learning</em> (2nd ed.). Cambridge University Press.</li>
+                <li>Mehrabian, A. (1971). <em>Silent Messages</em>. Belmont, CA: Wadsworth.</li>
+                <li>Olii, H. (2008). <em>Public Speaking</em>. Jakarta: Macanan Jaya Cemerlang.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Yanda, D. P., & Ramadhanti, D. (2024). E-Modul Pembelajaran Menulis Esai Berbasis Problem Based Learning untuk Perguruan Tinggi. <em>Jurnal Belajar Bahasa</em>, 9(2).</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 14</h2>
+                <p class="text-luxury-cream/70 text-sm">Seni Presentasi Ilmiah</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Q.S. An-Nahl ayat 125 yang menjadi landasan spiritual presentasi ilmiah mengajarkan tiga prinsip komunikasi, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Shidq, Amanah, Istiqamah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Al-ḥikmah (hikmah), al-maw'izhah al-ḥasanah (pengajaran yang baik), dan mujādalah billatī hiya aḥsan (debat yang terbaik)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Sabar, syukur, tawakkal</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Jujur, adil, bijaksana</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Tiga pilar persuasi Aristoteles yang harus dipadukan dalam presentasi ilmiah adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Ethos, Pathos, Logos</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Visual, Vokal, Verbal</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Materi, Media, Mental</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Pembuka, Isi, Penutup</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Menurut penelitian Albert Mehrabian (1971), komponen yang paling besar pengaruhnya dalam komunikasi lisan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Verbal (isi pesan) — 55%</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Vokal (suara) — 55%</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Visual (bahasa tubuh) — 55%</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Semua komponen sama besar</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Konsep 3M dalam persiapan presentasi ilmiah adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Materi, Media, Mental</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Metode, Media, Materi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Motivasi, Media, Mental</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Materi, Metode, Manajemen</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Prinsip 10-20-30 dari Guy Kawasaki untuk presentasi yang efektif berarti...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. 10 slide, 20 menit, font minimal 30 pt</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. 10 menit, 20 slide, font 30 pt</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. 10 audiens, 20 menit, 30 slide</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. 10 pertanyaan, 20 jawaban, 30 menit</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Tugas utama moderator dalam presentasi ilmiah adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Mencatat semua pertanyaan audiens</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Memimpin jalannya presentasi, mengatur waktu, dan memandu sesi tanya jawab</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Menyajikan materi utama</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Menilai kualitas presentasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Notulis dalam presentasi ilmiah bertugas untuk...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Memimpin diskusi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Merekam dan mencatat poin-poin penting, pertanyaan, dan kesimpulan untuk dokumentasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Menjawab pertanyaan audiens</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Membuat slide presentasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Prinsip Koherensi dari Mayer (2009) dalam desain slide presentasi berarti...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Menambahkan banyak animasi agar menarik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Menghilangkan elemen yang tidak relevan untuk menghindari beban kognitif berlebihan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Menggunakan banyak warna yang berbeda</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Menulis semua teks yang akan dibacakan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Durasi ideal presentasi ilmiah standar adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. 5 menit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. 15-30 menit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. 1-2 jam</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Tidak ada batasan waktu</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Seorang presenter membaca slide kata per kata, tidak melakukan kontak mata, dan suara monoton. Kesalahan utama yang dilakukan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Slide terlalu sedikit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Mengabaikan aspek Visual (bahasa tubuh) dan Vokal (intonasi), serta melakukan redundansi (membaca teks yang sudah tertulis)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Materi terlalu sedikit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Audiens terlalu banyak</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan tiga pilar persuasi Aristoteles (Ethos, Pathos, Logos) dan bagaimana ketiganya dipadukan dalam presentasi ilmiah yang efektif! Berikan contoh konkret dalam konteks presentasi artikel ilmiah bertema PAI!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah konsep 3M (Materi, Media, Mental) dalam persiapan presentasi ilmiah! Jelaskan langkah-langkah konkret yang akan Anda lakukan untuk masing-masing aspek sebelum mempresentasikan skripsi Anda kelak!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Bandingkan peran dan fungsi moderator, notulis, dan presenter dalam presentasi ilmiah! Jelaskan bagaimana kolaborasi ketiganya dapat menghasilkan presentasi yang sukses! Berikan contoh skenario konkret dalam sidang skripsi PAI!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Hubungkan Q.S. An-Nahl ayat 125 dengan prinsip-prinsip presentasi ilmiah yang telah dipelajari! Bagaimana ayat tersebut menjadi landasan spiritual bagi seorang calon pendidik Islam dalam menyampaikan gagasan di forum akademik? Rancanglah "Kode Etik Presenter Muslim" yang akan Anda terapkan dalam setiap presentasi Anda!</p>
+                            <textarea id="essay4" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Rancanglah kerangka presentasi ilmiah (10-12 slide) untuk topik "Pengaruh Metode Diskusi terhadap Hasil Belajar Fiqih Siswa MTs"! Tuliskan isi setiap slide secara ringkas, alokasi waktu per bagian, dan teknik penyampaian yang akan Anda gunakan! Jelaskan bagaimana Anda akan mengintegrasikan prinsip 3V (Visual, Vokal, Verbal) dalam presentasi tersebut!</p>
+                            <textarea id="essay5" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Hikmah, pengajaran baik, debat terbaik
+                q2: 'a',  // Ethos, Pathos, Logos
+                q3: 'c',  // Visual 55%
+                q4: 'a',  // Materi, Media, Mental
+                q5: 'a',  // 10 slide, 20 menit, font 30 pt
+                q6: 'b',  // Memimpin & mengatur presentasi
+                q7: 'b',  // Mencatat poin penting untuk dokumentasi
+                q8: 'b',  // Menghilangkan elemen tidak relevan
+                q9: 'b',  // 15-30 menit
+                q10: 'b'  // Mengabaikan Visual & Vokal + redundansi
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

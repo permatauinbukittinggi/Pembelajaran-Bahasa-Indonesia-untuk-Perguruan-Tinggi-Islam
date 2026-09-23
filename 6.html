@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 6: Diksi, Definisi, dan Kamus | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .correct { color: #4ade80; font-weight: 500; }
+        .incorrect { color: #f87171; text-decoration: line-through; }
+        .word-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s;
+        }
+        .word-card:hover {
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 06</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Diksi, Definisi, <br>dan <span class="gold-gradient-text">Kamus</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menguasai seni memilih kata yang tepat, memahami makna secara presisi, dan memanfaatkan kamus sebagai sahabat sejati dalam komunikasi tulis akademik yang elegan dan bermartabat.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="5.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="7.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kata adalah unit terkecil bahasa yang bermakna. Setiap kata menyimpan <strong>makna, nuansa, dan kekuatan</strong> yang dapat mengubah persepsi pembaca. Dalam dunia akademik, pemilihan kata — yang dikenal sebagai <strong>diksi</strong> — bukan sekadar pilihan estetik, melainkan <strong>instrumen presisi intelektual</strong>.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Seorang penulis akademik yang handal mampu membedakan antara "menyatakan" dan "menegaskan", antara "berpikir" dan "merenungkan", antara "masalah" dan "permasalahan". Perbedaan kecil ini dapat mengubah bobot argumen, ketajaman analisis, dan kedalaman makna sebuah tulisan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) konsep dasar diksi</strong>, <strong>(2) pengertian dan jenis-jenis definisi</strong>, <strong>(3) klasifikasi kosakata</strong>, <strong>(4) syarat ketepatan dan kesesuaian diksi</strong>, <strong>(5) hubungan diksi dengan kamus</strong>, dan <strong>(6) pemanfaatan kamus</strong> dalam komunikasi tulis akademik.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا ثُمَّ عَرَضَهُمْ عَلَى الْمَلَائِكَةِ فَقَالَ أَنبِئُونِي بِأَسْمَاءِ هَٰؤُلَاءِ إِن كُنتُمْ صَادِقِينَ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Dan Dia mengajarkan kepada Adam nama-nama (segala sesuatu), kemudian Dia memperlihatkannya kepada para malaikat, lalu Dia berfirman: 'Sebutkan kepada-Ku nama semua (benda) ini, jika kamu benar!'"</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Baqarah [2]: 31</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menegaskan bahwa <strong>pengajaran nama-nama (<em>al-asmā'</em>)</strong> adalah anugerah ilahi pertama kepada manusia. Dalam perspektif linguistik, "nama" adalah kata yang memberikan identitas pada sesuatu — inilah esensi <em>diksi</em> dan <em>definisi</em>. Kemampuan memberi nama dan mendefinisikan sesuatu adalah fondasi ilmu pengetahuan. Ketika kita memilih kata yang tepat untuk mendefinisikan sebuah konsep, kita sedang menjalankan amanah ilmiyah yang diajarkan Allah kepada Adam a.s.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Diksi (Pilihan Kata)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Seni dan keterampilan memilih kata-kata yang tepat untuk mengungkapkan gagasan secara efektif, sesuai konteks, dan bermakna.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Definisi</h3>
+                    <p class="text-luxury-cream/70 text-sm">Penjelasan singkat, padat, dan jelas tentang makna suatu istilah atau konsep, biasanya menggunakan kalimat yang membatasi ruang lingkup maknanya.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kamus (Leksikon)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Buku rujukan yang memuat kosakata suatu bahasa beserta makna, ejaan, pengucapan, dan informasi kebahasaan lainnya, disusun secara alfabetis.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Makna Denotatif vs. Konotatif</h3>
+                    <p class="text-luxury-cream/70 text-sm"><strong>Denotatif</strong> = makna sebenarnya/lugas. <strong>Konotatif</strong> = makna kiasan/asosiatif yang muncul dari pengalaman budaya.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Kekuatan Sebuah Kata</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa PAI menulis esai dengan kalimat: <em>"Guru <span class="incorrect">bilang</span> bahwa pendidikan Islam <span class="incorrect">penting</span> buat <span class="incorrect">anak-anak</span>."</em> Setelah direvisi, kalimatnya menjadi: <em>"Guru <span class="correct">menegaskan</span> bahwa pendidikan Islam <span class="correct">berperan strategis</span> dalam pembentukan karakter <span class="correct">peserta didik</span>."</em>
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Pemilihan kata yang tepat mengubah kalimat biasa menjadi kalimat akademik yang berwibawa. Kata "menegaskan" lebih kuat daripada "bilang"; "berperan strategis" lebih analitis daripada "penting"; "peserta didik" lebih profesional daripada "anak-anak" dalam konteks akademik.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: setiap kata yang Anda pilih di depan kelas, di RPP, atau di karya ilmiah akan membentuk cara berpikir siswa Anda. Ketika Anda memilih kata "menganalisis" daripada "melihat", Anda sedang melatih siswa berpikir kritis. Ketika Anda memilih "mendefinisikan" daripada "menjelaskan", Anda sedang melatih presisi konseptual. Diksi yang tepat adalah cerminan dari kecerdasan linguistik dan tanggung jawab intelektual seorang guru.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">6.1 Landasan Teoretis Diksi</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kajian diksi berakar pada cabang linguistik yang disebut <strong>semantik</strong> (ilmu makna) dan <strong>stilistika</strong> (ilmu gaya bahasa). Pemahaman teoretis ini akan membantu kita memilih kata secara sadar dan bermakna.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.1.1 Teori Diksi (Gorys Keraf)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Gorys Keraf (1990) dalam karyanya yang monumental <em>Diksi dan Gaya Bahasa</em> menegaskan bahwa diksi bukan sekadar pemilihan kata yang "benar", melainkan pemilihan kata yang <strong>tepat dan sesuai</strong>. Ketepatan berarti kata tersebut memiliki makna yang sesuai dengan gagasan yang ingin disampaikan; kesesuaian berarti kata tersebut cocok dengan konteks dan situasi komunikasi.
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek Diksi</th>
+                            <th class="text-luxury-gold">Definisi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ketepatan (Accuracy)</strong></td>
+                            <td>Kesesuaian makna kata dengan gagasan yang ingin disampaikan</td>
+                            <td>"Menganalisis" lebih tepat daripada "melihat" dalam konteks akademik</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesesuaian (Appropriateness)</strong></td>
+                            <td>Kecocokan kata dengan konteks, situasi, dan mitra tutur</td>
+                            <td>"Meninggal" lebih sesuai daripada "mati" dalam konteks resmi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Keharmonisan (Harmony)</strong></td>
+                            <td>Kesesuaian kata dengan kata-kata lain dalam kalimat</td>
+                            <td>"Melaksanakan penelitian" lebih harmonis daripada "membuat penelitian"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kekuatan (Power)</strong></td>
+                            <td>Kemampuan kata memberikan dampak emosional/intelektual</td>
+                            <td>"Menegaskan" lebih kuat daripada "bilang"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.1.2 Teori Semantik (Ferdinand de Saussure)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Ferdinand de Saussure (1916) membedakan antara <strong>signifiant</strong> (penanda/bentuk kata) dan <strong>signifié</strong> (petanda/makna). Dalam konteks diksi, pemahaman ini penting karena satu kata dapat memiliki <strong>berbagai jenis makna</strong>:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Makna Denotatif</h4>
+                    <p class="text-luxury-cream/70 text-sm">Makna sebenarnya/lugas, sesuai kamus. <br><em>Contoh: "Kursi" = tempat duduk.</em></p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Makna Konotatif</h4>
+                    <p class="text-luxury-cream/70 text-sm">Makna kiasan/asosiatif. <br><em>Contoh: "Kursi" = jabatan/kekuasaan.</em></p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Makna Umum (Generik)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Makna luas, mencakup banyak hal. <br><em>Contoh: "Hewan" (umum).</em></p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">Makna Khusus (Spesifik)</h4>
+                    <p class="text-luxury-cream/70 text-sm">Makna sempit, spesifik. <br><em>Contoh: "Kucing", "Harimau" (khusus).</em></p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.1.3 Teori Definisi (Aristoteles)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Aristoteles mengembangkan teori <strong>definisi klasik</strong> yang terdiri dari tiga unsur: <em>genus proximum</em> (kelas terdekat), <em>differentia specifica</em> (pembeda spesifik), dan <em>definiendum</em> (istilah yang didefinisikan).
+            </p>
+            <div class="example-box">
+                <span class="text-luxury-goldLight">Rumus: <strong>Definiendum</strong> = <strong>Genus proximum</strong> + <strong>Differentia specifica</strong></span><br>
+                <span class="text-luxury-goldLight">Contoh: "Manusia" = "Hewan" (genus) + "yang berakal budi" (diferensia)</span>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Kata yang tepat adalah kata yang tidak hanya benar secara makna, tetapi juga tepat secara konteks, harmonis secara struktur, dan kuat secara dampak."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari Prinsip Diksi Gorys Keraf</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengertian Diksi, Definisi, Kamus -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">6.2 Pengertian Diksi, Definisi, dan Kamus</h2>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.2.1 Diksi (Pilihan Kata)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                <strong>Diksi</strong> berasal dari bahasa Latin <em>dictio</em> yang berarti "pengucapan" atau "pilihan kata". Dalam linguistik, diksi merujuk pada:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Pengertian</strong></td>
+                            <td>Seni dan keterampilan memilih kata-kata yang tepat untuk mengungkapkan gagasan secara efektif</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tujuan</strong></td>
+                            <td>Mencapai komunikasi yang efektif, menghindari kesalahpahaman, dan menciptakan gaya bahasa yang khas</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ruang Lingkup</strong></td>
+                            <td>Pilihan kata berdasarkan makna, konteks, situasi, mitra tutur, dan tujuan komunikasi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tingkat</strong></td>
+                            <td>Diksi formal (akademik), semiformal (jurnalistik), dan informal (santai)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.2.2 Definisi</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                <strong>Definisi</strong> adalah penjelasan singkat, padat, dan jelas tentang makna suatu istilah atau konsep. Dalam penulisan akademik, definisi berfungsi untuk:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Fungsi Definisi</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                        <li>Memperjelas makna istilah</li>
+                        <li>Membatasi ruang lingkup pembahasan</li>
+                        <li>Menghindari kesalahpahaman</li>
+                        <li>Menyeragamkan pemahaman pembaca</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Jenis-Jenis Definisi</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                        <li><strong>Definisi nominal</strong>: menjelaskan makna kata</li>
+                        <li><strong>Definisi real</strong>: menjelaskan hakikat benda</li>
+                        <li><strong>Definisi operasional</strong>: menjelaskan cara mengukur</li>
+                        <li><strong>Definisi stipulatif</strong>: menetapkan makna baru</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <span class="text-luxury-goldLight">Contoh definisi operasional:</span><br>
+                <span class="text-luxury-goldLight">"Prestasi belajar" = skor yang diperoleh siswa dari tes tertulis pada akhir semester, diukur dalam skala 0-100.</span>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.2.3 Kamus (Leksikon)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                <strong>Kamus</strong> adalah buku rujukan yang memuat kosakata suatu bahasa beserta informasi kebahasaan lainnya, disusun secara alfabetis. Kamus merupakan <strong>sahabat sejati</strong> setiap penulis akademik.
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis Kamus</th>
+                            <th class="text-luxury-gold">Fungsi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kamus Umum</strong></td>
+                            <td>Memuat kosakata umum suatu bahasa</td>
+                            <td>KBBI (Kamus Besar Bahasa Indonesia)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kamus Istilah</strong></td>
+                            <td>Memuat kosakata bidang tertentu</td>
+                            <td>Kamus Istilah Pendidikan, Kamus Istilah Hukum</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kamus Sinonim</strong></td>
+                            <td>Memuat persamaan kata</td>
+                            <td>Tesaurus Bahasa Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kamus Etimologi</strong></td>
+                            <td>Memuat asal-usul kata</td>
+                            <td>Kamus Etimologi Nusantara</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kamus Dwibahasa</strong></td>
+                            <td>Menerjemahkan antar dua bahasa</td>
+                            <td>Kamus Indonesia-Arab, Indonesia-Inggris</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kamus Elektronis</strong></td>
+                            <td>Kamus digital yang dapat diakses daring</td>
+                            <td>kbbi.kemdikbud.go.id</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Klasifikasi Kosakata -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">6.3 Klasifikasi Kosakata Berdasarkan Diksi</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Untuk memilih diksi yang tepat, kita perlu memahami klasifikasi kosakata berdasarkan berbagai dimensi. Pemahaman ini membantu kita memilih kata yang paling sesuai dengan konteks.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.3.1 Berdasarkan Makna</h3>
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis Makna</th>
+                            <th class="text-luxury-gold">Definisi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Denotatif</strong></td>
+                            <td>Makna sebenarnya/lugas sesuai kamus</td>
+                            <td>"Kursi" = tempat duduk</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Konotatif</strong></td>
+                            <td>Makna kiasan/asosiatif</td>
+                            <td>"Kursi" = jabatan/kekuasaan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Konseptual</strong></td>
+                            <td>Makna yang merujuk pada konsep abstrak</td>
+                            <td>"Keadilan", "demokrasi", "pendidikan"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Referensial</strong></td>
+                            <td>Makna yang merujuk pada objek nyata</td>
+                            <td>"Meja", "buku", "gedung"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.3.2 Berdasarkan Cakupan</h3>
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis</th>
+                            <th class="text-luxury-gold">Definisi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Umum (Generik)</strong></td>
+                            <td>Makna luas, mencakup banyak hal</td>
+                            <td>"Hewan", "tumbuhan", "kendaraan"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Khusus (Spesifik)</strong></td>
+                            <td>Makna sempit, spesifik</td>
+                            <td>"Kucing", "mawar", "mobil"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.3.3 Berdasarkan Tingkat Formalitas</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Tingkat</th>
+                            <th class="text-luxury-gold">Ciri</th>
+                            <th class="text-luxury-gold">Contoh Kata</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Formal/Baku</strong></td>
+                            <td>Digunakan dalam konteks resmi/akademik</td>
+                            <td>"menegaskan", "menganalisis", "peserta didik"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Semiformal</strong></td>
+                            <td>Digunakan dalam konteks jurnalistik/populer</td>
+                            <td>"menyatakan", "memeriksa", "siswa"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Informal</strong></td>
+                            <td>Digunakan dalam percakapan santai</td>
+                            <td>"bilang", "lihat", "anak"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kasar/Vulgar</strong></td>
+                            <td>Tidak sopan, sebaiknya dihindari</td>
+                            <td>"mati" (untuk orang), "bodoh"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.3.4 Berdasarkan Bidang Penggunaan (Register)</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Bidang</th>
+                            <th class="text-luxury-gold">Istilah Khas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Pendidikan</strong></td>
+                            <td>kurikulum, pedagogi, asesmen, kompetensi, RPP</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hukum</strong></td>
+                            <td>gugatan, terdakwa, vonis, banding, kasasi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kedokteran</strong></td>
+                            <td>diagnosis, hipertensi, prognosis, terapi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Agama Islam</strong></td>
+                            <td>taqwa, shidq, amanah, ukhuwah, dakwah</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ekonomi</strong></td>
+                            <td>inflasi, deflasi, fiskal, moneter, likuiditas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Syarat Ketepatan dan Kesesuaian Diksi -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">6.4 Syarat Ketepatan dan Kesesuaian Diksi</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Pemilihan diksi yang baik harus memenuhi dua syarat utama: <strong>ketepatan</strong> (accuracy) dan <strong>kesesuaian</strong> (appropriateness).
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.4.1 Syarat Ketepatan Diksi</h3>
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Syarat</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ketepatan makna</strong></td>
+                            <td>Kata harus memiliki makna yang sesuai dengan gagasan</td>
+                            <td><span class="incorrect">"Guru bilang..."</span> → <span class="correct">"Guru menegaskan..."</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ketepatan konteks</strong></td>
+                            <td>Kata harus cocok dengan konteks pembicaraan</td>
+                            <td>"Meninggal" (resmi) vs "Mati" (kasar)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ketepatan sasaran</strong></td>
+                            <td>Kata harus sesuai dengan target pembaca/pendengar</td>
+                            <td>Bahasa ilmiah untuk dosen, bahasa populer untuk masyarakat umum</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ketepatan nuansa</strong></td>
+                            <td>Kata harus mencerminkan nuansa yang diinginkan</td>
+                            <td>"Menyelidiki" (netral) vs "Menginterogasi" (negatif)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.4.2 Syarat Kesesuaian Diksi</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Syarat</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kesesuaian dengan situasi</strong></td>
+                            <td>Kata harus cocok dengan situasi formal/informal</td>
+                            <td>Formal: "Mohon maaf" vs Informal: "Maaf ya"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesesuaian dengan topik</strong></td>
+                            <td>Kata harus relevan dengan topik yang dibahas</td>
+                            <td>Topik agama: gunakan "umat", "ibadah", bukan "komunitas", "rutinitas"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesesuaian dengan audiens</strong></td>
+                            <td>Kata harus sesuai dengan latar belakang pembaca</td>
+                            <td>Untuk anak-anak: bahasa sederhana; untuk akademisi: bahasa teknis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kesesuaian dengan media</strong></td>
+                            <td>Kata harus sesuai dengan media yang digunakan</td>
+                            <td>Surat resmi: bahasa baku; media sosial: bahasa populer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Contoh Penerapan Ketepatan dan Kesesuaian Diksi</h4>
+                <div class="space-y-2 text-sm">
+                    <p><span class="incorrect">"Saya mau ngomong sama Bapak."</span> → <span class="correct">"Saya ingin berbicara dengan Bapak."</span> (lebih formal)</p>
+                    <p><span class="incorrect">"Masalah ini sangat ribet."</span> → <span class="correct">"Masalah ini sangat kompleks."</span> (lebih akademik)</p>
+                    <p><span class="incorrect">"Dia pintar banget."</span> → <span class="correct">"Dia sangat cerdas."</span> (lebih baku)</p>
+                    <p><span class="incorrect">"Guru itu marah-marah."</span> → <span class="correct">"Guru tersebut menegur dengan tegas."</span> (lebih santun)</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Hubungan Diksi dan Kamus -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">6.5 Hubungan Diksi dan Kamus</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kamus adalah <strong>alat bantu utama</strong> dalam pemilihan diksi. Tanpa kamus, seorang penulis akademik ibarat pelaut tanpa kompas — ia akan tersesat dalam lautan makna kata.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.5.1 Fungsi Kamus dalam Pemilihan Diksi</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">🔍 Verifikasi Makna</h4>
+                    <p class="text-luxury-cream/70 text-sm">Memastikan makna kata yang dipilih sesuai dengan yang dimaksud.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📚 Menemukan Sinonim</h4>
+                    <p class="text-luxury-cream/70 text-sm">Menemukan padanan kata yang lebih tepat atau lebih bervariasi.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">✅ Memastikan Kebakuan</h4>
+                    <p class="text-luxury-cream/70 text-sm">Memastikan kata yang digunakan adalah kata baku sesuai KBBI.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📖 Memperkaya Kosakata</h4>
+                    <p class="text-luxury-cream/70 text-sm">Menambah perbendaharaan kata untuk variasi diksi.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">6.5.2 Cara Memanfaatkan KBBI Daring</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                KBBI Daring (<em>kbbi.kemdikbud.go.id</em>) adalah kamus resmi bahasa Indonesia yang dapat diakses secara gratis. Berikut adalah cara memanfaatkannya secara optimal:
+            </p>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Langkah</th>
+                            <th class="text-luxury-gold">Aksi</th>
+                            <th class="text-luxury-gold">Tujuan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Pencarian</strong></td>
+                            <td>Ketik kata yang ingin dicek di kolom pencarian</td>
+                            <td>Menemukan entri kata</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Verifikasi Ejaan</strong></td>
+                            <td>Periksa ejaan kata (apakah baku atau tidak)</td>
+                            <td>Memastikan keakuratan ejaan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Baca Makna</strong></td>
+                            <td>Baca seluruh makna yang tercantum (bisa lebih dari satu)</td>
+                            <td>Memahami nuansa makna</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Periksa Kelas Kata</strong></td>
+                            <td>Lihat kelas kata (nomina, verba, adjektiva, dll)</td>
+                            <td>Memastikan fungsi gramatikal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Cek Contoh Kalimat</strong></td>
+                            <td>Baca contoh penggunaan dalam kalimat</td>
+                            <td>Memahami konteks penggunaan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. Lihat Sinonim/Antonim</strong></td>
+                            <td>Periksa padanan kata yang disediakan</td>
+                            <td>Memperluas pilihan diksi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Kamus adalah sahabat terbaik seorang penulis. Setiap kali Anda ragu dengan makna sebuah kata, bukalah kamus — jangan mengandalkan ingatan atau asumsi."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Prinsip Penulisan Akademik Profesional</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">6.6 Penerapan Diksi bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, penguasaan diksi akan diterapkan dalam berbagai konteks profesional:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Penerapan Diksi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Penulisan RPP/Modul Ajar</td>
+                            <td>Menggunakan istilah pedagogis yang tepat</td>
+                            <td>"Peserta didik mampu <strong>menganalisis</strong>..." (bukan "melihat")</td>
+                        </tr>
+                        <tr>
+                            <td>Penyampaian Materi di Kelas</td>
+                            <td>Menggunakan bahasa yang jelas dan mudah dipahami</td>
+                            <td>"Mari kita <strong>diskusikan</strong>..." (bukan "bicarakan")</td>
+                        </tr>
+                        <tr>
+                            <td>Komunikasi dengan Orang Tua</td>
+                            <td>Menggunakan bahasa yang santun dan hormat</td>
+                            <td>"<strong>Mohon maaf</strong>, putra Bapak..." (bukan "Maaf ya, anakmu...")</td>
+                        </tr>
+                        <tr>
+                            <td>Penulisan Karya Ilmiah</td>
+                            <td>Menggunakan istilah akademik yang baku</td>
+                            <td>"Penelitian ini <strong>menginvestigasi</strong>..." (bukan "melihat-lihat")</td>
+                        </tr>
+                        <tr>
+                            <td>Dakwah dan Khutbah</td>
+                            <td>Menggunakan bahasa yang menyentuh dan persuasif</td>
+                            <td>"Marilah kita <strong>meningkatkan</strong> ketaqwaan..." (bukan "naikin")</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📊 Tabel Sinonim Akademik untuk Diksi yang Lebih Kaya</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Kata Biasa</th>
+                            <th class="text-luxury-gold">Sinonim Akademik</th>
+                            <th class="text-luxury-gold">Nuansa Makna</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>bilang</td><td>menegaskan, menyatakan, mengemukakan</td><td>Lebih formal dan berwibawa</td></tr>
+                        <tr><td>lihat</td><td>menganalisis, mengamati, menelaah</td><td>Lebih mendalam dan kritis</td></tr>
+                        <tr><td>penting</td><td>strategis, krusial, esensial</td><td>Lebih analitis dan spesifik</td></tr>
+                        <tr><td>buat</td><td>menyusun, merancang, mengembangkan</td><td>Lebih terstruktur dan sistematis</td></tr>
+                        <tr><td>masalah</td><td>permasalahan, isu, tantangan</td><td>Lebih kompleks dan multidimensi</td></tr>
+                        <tr><td>anak</td><td>peserta didik, siswa, murid</td><td>Lebih profesional dalam konteks pendidikan</td></tr>
+                        <tr><td>ajar</td><td>mendidik, membimbing, memfasilitasi</td><td>Lebih holistik dan berpusat pada siswa</td></tr>
+                        <tr><td>tanya</td><td>menginvestigasi, menelaah, mengeksplorasi</td><td>Lebih ilmiah dan sistematis</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Diksi, definisi, dan kamus adalah tiga pilar yang tidak terpisahkan dalam komunikasi tulis akademik. <strong>Diksi</strong> adalah seni memilih kata yang tepat; <strong>definisi</strong> adalah kemampuan membatasi dan memperjelas makna; <strong>kamus</strong> adalah alat bantu yang memastikan ketepatan dan konsistensi.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Penguasaan diksi bukan sekadar keterampilan linguistik, melainkan <strong>kompetensi intelektual</strong> yang membedakan penulis biasa dengan penulis handal. Setiap kata yang kita pilih mencerminkan kedalaman pemikiran, ketajaman analisis, dan tanggung jawab kita terhadap pembaca.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, kemampuan memilih kata yang tepat adalah manifestasi dari anugerah <em>al-asmā'</em> (nama-nama) yang diajarkan Allah kepada Adam a.s. Mari kita gunakan anugerah ini dengan bijak — memilih kata yang tidak hanya benar, tetapi juga tepat, santun, dan bermakna. Jadikan kamus sebagai sahabat sejati dalam setiap tulisan yang kita hasilkan.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 6</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 88-107)</li>
+                <li>Keraf, G. (1990). <em>Diksi dan Gaya Bahasa</em>. Jakarta: Gramedia.</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset. (Hal. 51-56)</li>
+                <li>Moeliono, A. M. (2001). <em>Bentuk dan Pilihan Kata</em>. Jakarta: Depdiknas.</li>
+                <li>Widjono. (2005). <em>Bahasa Indonesia Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Gramedia. (Hal. 123-159)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Alwi, H., dkk. (2000). <em>Tata Bahasa Baku Bahasa Indonesia</em> (Edisi Ketiga). Jakarta: Balai Pustaka.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Keraf, G. (1990). <em>Diksi dan Gaya Bahasa</em>. Jakarta: Gramedia.</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset.</li>
+                <li>Moeliono, A. M. (2001). <em>Bentuk dan Pilihan Kata</em>. Jakarta: Depdiknas.</li>
+                <li>Mufid. (2013). <em>Pedoman Kata Baku dan Tidak Baku</em>. Jakarta: Buku Pintar.</li>
+                <li>Pamungkas, S. (2012). <em>Bahasa Indonesia dalam Berbagai Perspektif</em>. Yogyakarta: Andi Offset.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Widjono, H. S. (2005). <em>Bahasa Indonesia: Mata Kuliah Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Grasindo.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 6</h2>
+                <p class="text-luxury-cream/70 text-sm">Diksi, Definisi, dan Kamus</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Diksi dalam linguistik merujuk pada...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Cara pengucapan kata</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Seni dan keterampilan memilih kata yang tepat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Jumlah kosakata yang dimiliki</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Kemampuan membaca cepat</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Q.S. Al-Baqarah ayat 31 yang menjadi landasan spiritual diksi menceritakan tentang...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Allah mengajarkan nama-nama kepada Adam a.s.</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Perintah membaca Al-Qur'an</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Larangan berbohong</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Perintah menunaikan zakat</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Makna "kursi" dalam kalimat "Ia memperebutkan kursi jabatan" termasuk makna...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Denotatif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Konotatif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Referensial</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Konseptual</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Menurut Gorys Keraf, diksi yang baik harus memenuhi dua syarat utama, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Panjang dan pendek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Ketepatan dan kesesuaian</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Baku dan tidak baku</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Lisan dan tulis</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Kata "peserta didik" lebih tepat digunakan daripada "anak" dalam konteks...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Percakapan sehari-hari di rumah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Penulisan RPP dan modul ajar</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Chat dengan teman sebaya</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Status media sosial pribadi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Kamus yang memuat kosakata bidang tertentu (seperti hukum, kedokteran, pendidikan) disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Kamus umum</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Kamus istilah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Kamus sinonim</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Kamus etimologi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Definisi yang menjelaskan cara mengukur atau mengoperasionalkan suatu konsep disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Definisi nominal</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Definisi real</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Definisi operasional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Definisi stipulatif</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Kalimat berikut yang menggunakan diksi paling tepat dalam konteks akademik adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. "Guru bilang bahwa pendidikan itu penting buat anak-anak."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. "Guru menegaskan bahwa pendidikan berperan strategis dalam pembentukan karakter peserta didik."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. "Guru ngomong kalau sekolah itu keren buat murid-murid."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. "Guru cerita bahwa belajar itu asyik buat anak."</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Sinonim akademik yang paling tepat untuk kata "melihat" dalam konteks penelitian adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Melirik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Menganalisis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Menonton</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Melototi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. KBBI Daring yang menjadi rujukan utama ejaan dan makna kata bahasa Indonesia dapat diakses di...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. kbbi.kemdikbud.go.id</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. wikipedia.org</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. google.com</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. youtube.com</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan perbedaan antara makna denotatif dan konotatif! Berikan masing-masing 3 contoh kata yang memiliki kedua jenis makna tersebut!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah mengapa pemilihan diksi yang tepat sangat penting dalam penulisan karya ilmiah! Hubungkan dengan teori Gorys Keraf tentang ketepatan dan kesesuaian diksi!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Sebutkan dan jelaskan 4 (empat) jenis definisi yang dipelajari dalam bab ini! Berikan contoh konkret untuk masing-masing jenis!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Koreksilah kalimat-kalimat berikut agar diksinya lebih tepat dalam konteks akademik, dan jelaskan alasan perbaikan Anda: <br>(a) "Guru bilang kalau PR itu penting buat anak." <br>(b) "Masalah ini sangat ribet dan bikin pusing." <br>(c) "Dia pintar banget dalam pelajaran agama."</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Sebagai calon guru PAI, rancanglah strategi konkret untuk memperkaya kosakata akademik Anda! Jelaskan bagaimana Anda akan memanfaatkan kamus (KBBI Daring dan kamus lainnya) dalam kegiatan menulis sehari-hari! Hubungkan dengan nilai-nilai Islam tentang pentingnya ilmu dan ketelitian!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Seni dan keterampilan memilih kata yang tepat
+                q2: 'a',  // Allah mengajarkan nama-nama kepada Adam a.s.
+                q3: 'b',  // Konotatif (makna kiasan)
+                q4: 'b',  // Ketepatan dan kesesuaian
+                q5: 'b',  // Penulisan RPP dan modul ajar (konteks akademik)
+                q6: 'b',  // Kamus istilah
+                q7: 'c',  // Definisi operasional
+                q8: 'b',  // Kalimat akademik yang paling tepat
+                q9: 'b',  // Menganalisis (sinonim akademik)
+                q10: 'a'  // kbbi.kemdikbud.go.id
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

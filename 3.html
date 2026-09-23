@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 3: Ragam Bahasa Indonesia | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 03</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Ragam <span class="gold-gradient-text">Bahasa Indonesia</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menelusuri variasi bahasa yang digunakan dalam berbagai situasi komunikasi untuk mencapai efektivitas, kesantunan, dan ketepatan berbahasa sesuai konteks akademik dan profesional.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="2.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="4.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bahasa bukanlah entitas yang statis dan seragam. Seperti air yang mengambil bentuk wadahnya, bahasa berubah dan menyesuaikan diri dengan situasi, tujuan, mitra tutur, dan media yang digunakan. Variasi penggunaan bahasa inilah yang dalam linguistik disebut sebagai <strong>ragam bahasa</strong> (<em>language variety</em>).
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bagi mahasiswa, khususnya calon pendidik Islam, penguasaan ragam bahasa bukan sekadar kemampuan linguistik, melainkan <strong>kompetensi komunikatif</strong>. Seorang guru harus mampu beralih dari ragam bahasa santai saat berinteraksi dengan siswa di luar kelas, ke ragam bahasa ilmiah saat menulis karya tulis, dan ke ragam bahasa yang santun saat berkomunikasi dengan orang tua wali murid.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) konsep dasar ragam bahasa</strong>, <strong>(2) klasifikasi ragam bahasa</strong> (berdasarkan media, waktu, sosial, fungsional, dan pesan), <strong>(3) ciri-ciri ragam bahasa baku</strong>, dan <strong>(4) penerapan ragam bahasa</strong> dalam konteks akademik dan profesional.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَقُولُوا قَوْلًا سَدِيدًا</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Wahai orang-orang yang beriman, bertakwalah kepada Allah dan ucapkanlah perkataan yang benar (lurus/tepat)."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Ahzab [33]: 70</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menjadi landasan spiritual penggunaan ragam bahasa: <em>qaulan sadidan</em> (perkataan yang tepat dan benar) menuntut kita untuk memilih ragam bahasa yang <strong>tepat sasaran</strong>. Berbicara dengan ragam yang salah pada konteks yang salah, meskipun niatnya baik, dapat menimbulkan kesalahpahaman. Ketepatan ragam bahasa adalah manifestasi ketakwaan dalam komunikasi.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Ragam Bahasa</h3>
+                    <p class="text-luxury-cream/70 text-sm">Variasi bahasa yang terjadi karena perbedaan situasi komunikasi, penutur, mitra tutur, media, dan tujuan pembicaraan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Ragam Baku (Standard)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Ragam bahasa yang dilembagakan dan diakui oleh sebagian besar warga masyarakat sebagai bahasa resmi dan model yang baik.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Diglosia</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kondisi masyarakat bahasa yang menggunakan dua ragam bahasa atau lebih secara berdampingan dengan fungsi yang berbeda (ragam tinggi vs. rendah).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Register</h3>
+                    <p class="text-luxury-cream/70 text-sm">Ragam bahasa fungsional yang digunakan oleh kelompok profesi tertentu (misal: bahasa hukum, bahasa jurnalistik, bahasa ilmiah).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Kesalahan Konteks Ragam Bahasa</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa PAI mengirim pesan WhatsApp kepada dosen pembimbing skripsinya: <em>"Pak, makalah saya udah saya kirim ke email bapak ya. Tolong dicek ASAP. Makasih."</em> Dosen merasa tidak dihargai karena penggunaan kata "udah", "bapak" (tanpa huruf kapital), "ASAP" (terlalu kasual/desak), dan "Makasih" (ragam sangat santai).
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Ketidaktepatan pemilihan ragam bahasa (menggunakan ragam santai dalam konteks formal/akademik) dapat merusak citra profesionalisme dan dianggap tidak santun, meskipun tujuannya baik.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik, renungkanlah: apakah Anda mampu menjadi "aktor bahasa" yang luwes? Mampu menggunakan bahasa yang hangat dan akrab saat membimbing siswa, namun tegas, terstruktur, dan baku saat menulis laporan atau berbicara di forum resmi? Kemampuan ini adalah cerminan dari kecerdasan linguistik dan emosional seorang guru.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">3.1 Landasan Teoretis Ragam Bahasa</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kajian ragam bahasa berakar pada cabang linguistik yang disebut <strong>sosiolinguistik</strong>, yang mempelajari hubungan antara bahasa dan masyarakat.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">3.1.1 Teori Variasi Bahasa (Abdul Chaer)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Abdul Chaer (2011) menegaskan bahwa variasi bahasa terjadi karena kegiatan interaksi sosial yang dilakukan oleh masyarakat bahasa yang sangat beragam. Keragaman ini dipengaruhi oleh faktor penutur, mitra tutur, situasi, dan media.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">3.1.2 Teori Kesantunan Berbahasa (Leech & Brown-Levinson)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Geoffrey Leech (1983) dan Brown & Levinson (1987) mengembangkan teori <em>Politeness</em> (kesantunan). Pemilihan ragam bahasa yang tepat adalah bentuk penjagaan <em>face</em> (muka/harga diri) mitra tutur. Menggunakan ragam baku dalam situasi formal adalah strategi kesantunan positif yang menunjukkan penghormatan.
+            </p>
+
+            <div class="quote-block my-6">
+                <p>"Bahasa yang baik dan benar bukan berarti selalu menggunakan bahasa baku, melainkan menggunakan ragam yang <strong>tepat</strong> sesuai dengan situasi dan konteksnya."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Prinsip Utama Sosiolinguistik</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Klasifikasi Ragam Bahasa -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">3.2 Klasifikasi Ragam Bahasa Indonesia</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan RPS, ragam bahasa dapat diklasifikasikan ke dalam lima dimensi utama. Pemahaman terhadap klasifikasi ini akan membantu mahasiswa mengidentifikasi dan memproduksi bahasa yang sesuai konteks.
+            </p>
+
+            <div class="overflow-x-auto mb-8">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Dimensi</th>
+                            <th class="text-luxury-gold">Jenis Ragam</th>
+                            <th class="text-luxury-gold">Ciri & Contoh Penggunaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold" rowspan="2">1. Berdasarkan Media</td>
+                            <td><strong>Ragam Lisan</strong></td>
+                            <td>Memerlukan alat ucap, dipengaruhi intonasi, sering tidak lengkap secara gramatikal. <br><em>Contoh: Diskusi kelas, pidato, percakapan sehari-hari.</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ragam Tulis</strong></td>
+                            <td>Memerlukan alat tulis, terikat ejaan (EYD), struktur lebih lengkap dan eksplisit. <br><em>Contoh: Esai, surat resmi, jurnal ilmiah.</em></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2. Berdasarkan Waktu</td>
+                            <td><strong>Ragam Arkais vs. Kontemporer</strong></td>
+                            <td>Arkais: menggunakan kata-kata lama (hamba, beta, maka). Kontemporer: menggunakan kosakata masa kini. <br><em>Contoh: Teks sastra lama vs. artikel berita modern.</em></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3. Berdasarkan Sosial</td>
+                            <td><strong>Dialek & Sosiolek</strong></td>
+                            <td>Dipengaruhi latar belakang pendidikan, usia, profesi, atau daerah. <br><em>Contoh: Bahasa gaul remaja, bahasa pedagang pasar, dialek Minang/Jawa.</em></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4. Berdasarkan Fungsional (Register)</td>
+                            <td><strong>Ragam Profesi/Bidang</strong></td>
+                            <td>Kosakata khusus yang digunakan oleh kelompok profesi tertentu. <br><em>Contoh: Bahasa hukum (gugatan, terdakwa), bahasa kedokteran (hipertensi, diagnosis).</em></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5. Berdasarkan Pesan</td>
+                            <td><strong>Ragam Komunikasi</strong></td>
+                            <td>Dibedakan berdasarkan tujuan komunikasi: ragam ilmiah, ragam jurnalistik, ragam sastra, ragam dinas. <br><em>Contoh: Skripsi (ilmiah) vs. Cerpen (sastra).</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">3.2.1 Ciri-Ciri Ragam Bahasa Baku</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Dalam konteks akademik dan profesional, ragam bahasa baku adalah standar yang wajib digunakan. Ciri-cirinya meliputi:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">✅ Penggunaan yang Benar</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                        <li>Menurut kaidah tata bahasa baku</li>
+                        <li>Menurut Ejaan Yang Disempurnakan (EYD)</li>
+                        <li>Menurut kamus bahasa baku (KBBI)</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">❌ Penghindaran Unsur Non-Baku</h4>
+                    <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                        <li>Tidak menggunakan kata/kalimat rancu</li>
+                        <li>Tidak menggunakan bahasa gaul/slang</li>
+                        <li>Tidak menggunakan pleonasme (pemborosan kata)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan dalam Konteks Akademik -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">3.3 Penerapan Ragam Bahasa bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, Anda akan menghadapi berbagai situasi yang menuntut peralihan ragam bahasa secara luwes:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Situasi</th>
+                            <th class="text-luxury-gold">Ragam yang Tepat</th>
+                            <th class="text-luxury-gold">Contoh Implementasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Menulis RPP/Modul Ajar</td>
+                            <td>Ragam Tulis Baku Ilmiah</td>
+                            <td>Menggunakan kalimat efektif, istilah pedagogis yang tepat, sesuai EYD.</td>
+                        </tr>
+                        <tr>
+                            <td>Mengajar di Kelas (SMP/SMA)</td>
+                            <td>Ragam Lisan Baku yang Santun & Komunikatif</td>
+                            <td>Intonasi jelas, tidak terlalu kaku, namun tetap menghindari bahasa gaul yang berlebihan.</td>
+                        </tr>
+                        <tr>
+                            <td>Berkomunikasi dengan Orang Tua</td>
+                            <td>Ragam Lisan/Tulis Baku yang Sangat Santun</td>
+                            <td>Menggunakan sapaan hormat (Bapak/Ibu), kalimat permintaan yang halus.</td>
+                        </tr>
+                        <tr>
+                            <td>Menulis Artikel di Media Sosial Sekolah</td>
+                            <td>Ragam Tulis Semi-Baku (Jurnalistik)</td>
+                            <td>Informatif, menarik, namun tetap menjaga etika dan kaidah dasar bahasa.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Ragam bahasa adalah bukti kekayaan dan fleksibilitas Bahasa Indonesia. Kemampuan mengidentifikasi dan menggunakan ragam bahasa yang tepat bukanlah bakat alami, melainkan <strong>keterampilan yang harus dilatih</strong>. Bagi mahasiswa S1 Pendidikan Agama Islam, penguasaan ragam bahasa baku dalam konteks akademik (lisan dan tulis) adalah harga mati, sementara kemampuan beradaptasi dengan ragam lain adalah nilai tambah yang membuat Anda menjadi komunikator yang efektif dan santun.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Ingatlah prinsip <em>qaulan sadidan</em>: perkataan yang benar adalah perkataan yang tidak hanya benar secara kaidah, tetapi juga <strong>tepat secara konteks</strong>. Mari kita asah kepekaan linguistik kita agar setiap kata yang kita ucapkan dan tuliskan memberikan manfaat dan menghargai mitra tutur kita.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 3</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 29-37)</li>
+                <li>Widjono. (2005). <em>Bahasa Indonesia Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Gramedia. (Hal. 31-45)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Alwi, H., dkk. (2000). <em>Tata Bahasa Baku Bahasa Indonesia</em> (Edisi Ketiga). Jakarta: Balai Pustaka.</li>
+                <li>Brown, P., & Levinson, S. C. (1987). <em>Politeness: Some Universals in Language Usage</em>. Cambridge University Press.</li>
+                <li>Chaer, A. (2011). <em>Sosiolinguistik: Perkenalan Awal</em>. Jakarta: Rineka Cipta.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Fishman, J. A. (1972). <em>The Sociology of Language</em>. New York: Newbury House.</li>
+                <li>Leech, G. (1983). <em>Principles of Pragmatics</em>. London: Longman.</li>
+                <li>Pamungkas, S. (2012). <em>Bahasa Indonesia dalam Berbagai Perspektif</em>. Yogyakarta: Andi Offset.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Widjono, H. S. (2005). <em>Bahasa Indonesia: Mata Kuliah Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Grasindo.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 3</h2>
+                <p class="text-luxury-cream/70 text-sm">Ragam Bahasa Indonesia</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Variasi bahasa yang terjadi karena perbedaan situasi komunikasi, penutur, dan media disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Dialek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Ragam bahasa</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Idiolek</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Laras bahasa</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Ragam bahasa yang digunakan dalam situasi resmi, seperti penulisan karya ilmiah atau surat dinas, disebut ragam...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Santai</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Baku (Standard)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Gaul</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Daerah</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Berikut ini yang merupakan ciri ragam bahasa tulis baku, <em>kecuali</em>...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Memperhatikan kaidah Ejaan Yang Disempurnakan (EYD)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Struktur kalimatnya lengkap dan eksplisit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Sangat dipengaruhi oleh intonasi dan ekspresi wajah penutur</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Menggunakan kosakata sesuai Kamus Besar Bahasa Indonesia (KBBI)</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Penggunaan istilah seperti "gugatan", "terdakwa", dan "vonis" merupakan contoh ragam bahasa berdasarkan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Media</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Waktu</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Fungsional (Register)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Sosial</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Q.S. Al-Ahzab ayat 70 memerintahkan umat Islam untuk mengucapkan "qaulan sadidan", yang dalam konteks ragam bahasa bermakna...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Berbicara sebanyak-banyaknya agar jelas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Mengucapkan perkataan yang benar, tepat, dan sesuai konteks</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Hanya menggunakan bahasa Arab dalam setiap situasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Berbicara dengan nada suara yang keras</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Seorang guru yang menggunakan bahasa gaul ("gue", "lo", "baper") saat mengajar di kelas formal telah melakukan kesalahan dalam pemilihan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Ragam bahasa berdasarkan situasi/konteks</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Ejaan huruf kapital</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Ragam bahasa berdasarkan waktu</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Ragam bahasa berdasarkan media tulis</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Ragam bahasa yang digunakan dalam karya sastra (seperti puisi atau cerpen) yang mengutamakan keindahan dan kiasan disebut ragam...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Ilmiah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Jurnalistik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Sastra</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Dinas</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Perbedaan penggunaan kata "saya" (formal) dan "aku" (akrab) menunjukkan variasi ragam bahasa berdasarkan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Media</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Sosial (hubungan antarpembicara)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Waktu</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Pesan komunikasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Manakah di bawah ini yang merupakan contoh kalimat ragam bahasa lisan yang <em>tidak baku</em>?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. "Saya akan mengerjakan tugas tersebut besok pagi."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. "Mereka sedang mendiskusikan masalah itu di perpustakaan."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. "Gue udah bilang ke dia, tapi dia nggak dengerin."</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. "Kami mengharap kehadiran Bapak pada acara tersebut."</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Kemampuan seorang guru untuk beralih dari ragam bahasa santai saat berinteraksi di luar kelas ke ragam bahasa baku saat mengajar disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Kode-mixing</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Alih kode (Code-switching) yang adaptif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Interferensi bahasa</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Diglosia permanen</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan perbedaan mendasar antara ragam bahasa lisan dan ragam bahasa tulis! Berikan masing-masing 2 contoh konkret!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah Studi Kasus yang disajikan di awal bab ini! Mengapa penggunaan ragam bahasa tersebut dianggap tidak tepat, dan bagaimana seharusnya pesan tersebut disampaikan?</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Sebutkan dan jelaskan 5 klasifikasi ragam bahasa berdasarkan RPS yang telah dipelajari!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Bagaimana hubungan antara Q.S. Al-Ahzab ayat 70 (qaulan sadidan) dengan konsep pemilihan ragam bahasa yang tepat dalam Islam?</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Sebagai calon guru PAI, rancanglah strategi Anda untuk mengajarkan siswa SMP agar mampu membedakan dan menggunakan ragam bahasa formal dan informal dengan tepat!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Ragam bahasa
+                q2: 'b',  // Baku (Standard)
+                q3: 'c',  // Sangat dipengaruhi intonasi (ini ciri lisan, bukan tulis)
+                q4: 'c',  // Fungsional (Register)
+                q5: 'b',  // Perkataan yang benar, tepat, dan sesuai konteks
+                q6: 'a',  // Ragam bahasa berdasarkan situasi/konteks
+                q7: 'c',  // Sastra
+                q8: 'b',  // Sosial (hubungan antarpembicara)
+                q9: 'c',  // "Gue udah bilang..." (tidak baku)
+                q10: 'b'  // Alih kode (Code-switching) yang adaptif
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

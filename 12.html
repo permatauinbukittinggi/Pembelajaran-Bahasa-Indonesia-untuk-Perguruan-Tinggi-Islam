@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 12: Integritas & Manajemen Referensi | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .correct { color: #4ade80; font-weight: 500; }
+        .incorrect { color: #f87171; text-decoration: line-through; }
+        .step-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+        }
+        .warning-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 1rem;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 12</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Integritas & <br><span class="gold-gradient-text">Manajemen Referensi</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menegakkan kejujuran intelektual sebagai fondasi karya ilmiah, memahami bahaya plagiarisme, dan menguasai aplikasi Mendeley sebagai alat manajemen referensi yang esensial bagi calon pendidik profesional.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="11.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="13.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Integritas akademik adalah <strong>nyawa dari dunia ilmiah</strong>. Tanpa integritas, karya ilmiah kehilangan maknanya — ia bukan lagi ilmu, melainkan penipuan yang dikemas dalam bahasa akademik. Plagiarisme, fabrikasi data, dan manipulasi sitasi adalah <strong>kanker</strong> yang menggerogoti kepercayaan publik terhadap institusi pendidikan dan penelitian.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Di era digital, plagiarisme menjadi semakin mudah dilakukan — cukup dengan <em>copy-paste</em> dari internet. Namun, teknologi juga menyediakan alat untuk mendeteksi dan mencegahnya. Salah satu alat yang paling powerful adalah <strong>Mendeley</strong>, sebuah aplikasi manajemen referensi yang tidak hanya membantu mengorganisasi sumber pustaka, tetapi juga menghasilkan sitasi dan daftar pustaka secara otomatis sesuai gaya selingkung yang diinginkan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) pengertian integritas akademik</strong>, <strong>(2) pengertian dan jenis-jenis plagiarisme</strong>, <strong>(3) dampak plagiarisme</strong>, <strong>(4) strategi menghindari plagiarisme</strong>, <strong>(5) konsep manajemen referensi</strong>, dan <strong>(6) panduan praktis penggunaan Mendeley</strong> dalam penulisan karya ilmiah.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">وَلَا تَلْبِسُوا الْحَقَّ بِالْبَاطِلِ وَتَكْتُمُوا الْحَقَّ وَأَنتُمْ تَعْلَمُونَ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Dan janganlah kamu campur adukkan yang hak dengan yang batil dan janganlah kamu sembunyikan yang hak itu, sedang kamu mengetahui."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Baqarah [2]: 42</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini adalah <strong>landasan spiritual integritas akademik</strong> yang paling tegas. Allah melarang dua hal: <em>talbīs al-ḥaqq bi al-bāṭil</em> (mencampuradukkan kebenaran dengan kebatilan) dan <em>kitmān al-ḥaqq</em> (menyembunyikan kebenaran). Dalam konteks akademik, plagiarisme adalah bentuk nyata dari kedua larangan ini: mengambil karya orang lain dan mengakuinya sebagai milik sendiri adalah mencampuradukkan yang hak (karya asli orang lain) dengan yang batil (klaim palsu), sekaligus menyembunyikan kebenaran (sumber asli). Setiap muslim, khususnya calon pendidik, wajib menjauhi praktik ini.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Integritas Akademik</h3>
+                    <p class="text-luxury-cream/70 text-sm">Komitmen terhadap kejujuran, keadilan, tanggung jawab, dan kehormatan dalam setiap aktivitas akademik, termasuk penelitian, penulisan, dan pengajaran.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Plagiarisme</h3>
+                    <p class="text-luxury-cream/70 text-sm">Tindakan mengambil gagasan, kata-kata, atau karya orang lain dan menyajikannya sebagai milik sendiri tanpa memberikan atribusi yang layak kepada sumber aslinya.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Manajemen Referensi</h3>
+                    <p class="text-luxury-cream/70 text-sm">Proses mengumpulkan, mengorganisasi, menyimpan, dan menggunakan sumber pustaka secara sistematis untuk mendukung penulisan karya ilmiah.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Sitasi (Citation)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Penyebutan sumber referensi dalam teks karya ilmiah sebagai bentuk pengakuan terhadap gagasan atau temuan orang lain yang digunakan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Skripsi yang Ditarik Kembali</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa S1 PAI berhasil menyelesaikan skripsinya dan lulus dengan nilai A. Dua tahun kemudian, seorang dosen menemukan bahwa <strong>40% isi skripsi</strong> tersebut merupakan hasil <em>copy-paste</em> dari tiga jurnal ilmiah tanpa sitasi yang benar. Setelah ditelusuri menggunakan Turnitin, tingkat kesamaan (similarity index) mencapai 45%. Universitas memutuskan untuk <strong>mencabut gelar sarjana</strong> mahasiswa tersebut dan menghapus skripsinya dari repositori.
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Plagiarisme bukan sekadar pelanggaran akademik — ia adalah <strong>kejahatan intelektual</strong> yang konsekuensinya dapat menghancurkan karier dan reputasi. Gelar yang diperoleh melalui plagiarisme adalah gelar yang bathil. Integritas akademik harus dijaga sejak awal, bukan setelah tertangkap.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: Anda akan menjadi <strong>teladan</strong> bagi siswa Anda. Jika Anda melakukan plagiarisme saat menulis skripsi, bagaimana Anda akan mengajarkan kejujuran kepada siswa Anda kelak? Ingatlah Q.S. Al-Baqarah: 42 — jangan mencampuradukkan yang hak dengan yang batil. Setiap kata yang Anda tulis dalam karya ilmiah harus dapat dipertanggungjawabkan di hadapan Allah dan masyarakat akademik. Integritas bukan beban, melainkan <strong>mahkota kehormatan</strong> seorang ilmuwan muslim.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">12.1 Landasan Teoretis Integritas Akademik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Integritas akademik bukan sekadar aturan institusional, melainkan prinsip yang berakar pada <strong>filsafat etika</strong> dan <strong>nilai-nilai keagamaan</strong>.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.1.1 Teori Etika Akademik (International Center for Academic Integrity)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                International Center for Academic Integrity (ICAI) merumuskan <strong>enam nilai fundamental</strong> integritas akademik:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Nilai</th>
+                            <th class="text-luxury-gold">Definisi</th>
+                            <th class="text-luxury-gold">Padanan dalam Islam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kejujuran (Honesty)</strong></td>
+                            <td>Menyajikan fakta dan data apa adanya</td>
+                            <td><em>Shidq</em> (kejujuran)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kepercayaan (Trust)</strong></td>
+                            <td>Membangun kepercayaan dalam komunitas akademik</td>
+                            <td><em>Amanah</em> (dapat dipercaya)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Keadilan (Fairness)</strong></td>
+                            <td>Memperlakukan semua pihak secara adil</td>
+                            <td><em>Adl</em> (keadilan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rasa Hormat (Respect)</strong></td>
+                            <td>Menghargai gagasan dan karya orang lain</td>
+                            <td><em>Ihtiram</em> (penghormatan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tanggung Jawab (Responsibility)</strong></td>
+                            <td>Bertanggung jawab atas tindakan akademik</td>
+                            <td><em>Mas'uliyyah</em> (tanggung jawab)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Keberanian (Courage)</strong></td>
+                            <td>Berani menegakkan integritas meskipun sulit</td>
+                            <td><em>Syaja'ah</em> (keberanian)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.1.2 Teori Plagiarisme (Pennycook, 1996)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Alastair Pennycook (1996) dalam karyanya <em>Borrowing Others' Words</em> membedakan antara <strong>plagiarisme yang disengaja</strong> (intentional) dan <strong>plagiarisme yang tidak disengaja</strong> (unintentional). Plagiarisme tidak disengaja sering terjadi karena ketidaktahuan mahasiswa tentang cara sitasi yang benar, bukan karena niat jahat.
+            </p>
+
+            <div class="quote-block my-6">
+                <p>"Integritas adalah melakukan hal yang benar, bahkan ketika tidak ada orang yang melihat. Dalam dunia akademik, integritas adalah menulis dengan jujur, bahkan ketika tidak ada Turnitin yang memeriksa."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari C.S. Lewis</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengertian dan Jenis Plagiarisme -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">12.2 Pengertian dan Jenis-Jenis Plagiarisme</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Plagiarisme</strong> berasal dari bahasa Latin <em>plagiarius</em> yang berarti "penculik" atau "perampok". Dalam konteks akademik, plagiarisme adalah tindakan <strong>merampok karya intelektual orang lain</strong> dan menyajikannya sebagai milik sendiri.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.2.1 Jenis-Jenis Plagiarisme</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis</th>
+                            <th class="text-luxury-gold">Definisi</th>
+                            <th class="text-luxury-gold">Contoh</th>
+                            <th class="text-luxury-gold">Tingkat Keparahan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Plagiarisme Langsung</strong> (<em>Direct/Verbatim</em>)</td>
+                            <td>Menyalin kata per kata dari sumber tanpa tanda kutip dan sitasi</td>
+                            <td>Copy-paste paragraf dari jurnal ke skripsi tanpa atribusi</td>
+                            <td class="text-red-400 font-bold">Sangat Tinggi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plagiarisme Mosaik</strong> (<em>Patchwork</em>)</td>
+                            <td>Menggabungkan frasa dari berbagai sumber menjadi satu paragraf tanpa sitasi</td>
+                            <td>Mengambil kalimat dari 3 jurnal berbeda, menggabungkannya, dan mengklaim sebagai tulisan sendiri</td>
+                            <td class="text-red-400 font-bold">Tinggi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plagiarisme Parafrase</strong></td>
+                            <td>Mengubah kata-kata sumber dengan sinonim tanpa mengubah struktur, tanpa sitasi</td>
+                            <td>Mengganti "penting" dengan "krusial" tetapi mempertahankan struktur kalimat asli</td>
+                            <td class="text-yellow-400 font-bold">Sedang-Tinggi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plagiarisme Diri</strong> (<em>Self-Plagiarism</em>)</td>
+                            <td>Menggunakan kembali karya sendiri yang sudah dipublikasikan tanpa menyebutkan sumbernya</td>
+                            <td>Mengirimkan makalah yang sama ke dua jurnal berbeda</td>
+                            <td class="text-yellow-400 font-bold">Sedang</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plagiarisme Tidak Disengaja</strong></td>
+                            <td>Kegagalan memberikan sitasi yang benar karena ketidaktahuan atau kelalaian</td>
+                            <td>Lupa mencantumkan sumber karena terburu-buru</td>
+                            <td class="text-green-400 font-bold">Rendah (namun tetap pelanggaran)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fabrikasi</strong></td>
+                            <td>Membuat data atau hasil penelitian yang tidak nyata</td>
+                            <td>Mengarang data survei yang tidak pernah dilakukan</td>
+                            <td class="text-red-400 font-bold">Sangat Tinggi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Falsifikasi</strong></td>
+                            <td>Memodifikasi data atau hasil penelitian agar sesuai dengan hipotesis</td>
+                            <td>Mengubah angka hasil penelitian agar "signifikan"</td>
+                            <td class="text-red-400 font-bold">Sangat Tinggi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="warning-box my-4">
+                <h4 class="text-red-400 font-semibold mb-2">⚠️ Peringatan Penting</h4>
+                <p class="text-luxury-cream/80 text-sm">Menurut Peraturan Menteri Pendidikan Nasional No. 17 Tahun 2010, plagiarisme di perguruan tinggi dapat dikenakan sanksi mulai dari <strong>teguran tertulis</strong>, <strong>penundaan hak</strong>, <strong>pembatalan nilai</strong>, <strong>pemberhentian sebagai mahasiswa</strong>, hingga <strong>pencabutan gelar akademik</strong>.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Dampak Plagiarisme -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">12.3 Dampak Plagiarisme</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Plagiarisme memiliki dampak yang luas dan merusak, tidak hanya bagi pelaku, tetapi juga bagi institusi dan masyarakat secara keseluruhan.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">👤 Bagi Pelaku</h3>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Pencabutan gelar akademik</li>
+                        <li>Pemberhentian dari institusi</li>
+                        <li>Kehilangan reputasi dan kredibilitas</li>
+                        <li>Sanksi hukum (UU Hak Cipta)</li>
+                        <li>Dosa dan pertanggungjawaban di akhirat</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">🏛️ Bagi Institusi</h3>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Penurunan akreditasi</li>
+                        <li>Kehilangan kepercayaan publik</li>
+                        <li>Penurunan peringkat universitas</li>
+                        <li>Dampak negatif pada alumni lain</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">📚 Bagi Ilmu Pengetahuan</h3>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Polusi literatur ilmiah</li>
+                        <li>Hambatan perkembangan ilmu</li>
+                        <li>Ketidakpercayaan terhadap hasil penelitian</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">👥 Bagi Masyarakat</h3>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li>Lulusan yang tidak kompeten</li>
+                        <li>Kerugian ekonomi (biaya pendidikan sia-sia)</li>
+                        <li>Erosi kepercayaan terhadap pendidikan tinggi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Strategi Menghindari Plagiarisme -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">12.4 Strategi Menghindari Plagiarisme</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menghindari plagiarisme memerlukan <strong>kesadaran, keterampilan, dan kebiasaan</strong>. Berikut adalah strategi praktis yang dapat diterapkan:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Strategi</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                            <th class="text-luxury-gold">Contoh Penerapan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Sitasi yang Benar</strong></td>
+                            <td>Setiap kali menggunakan gagasan, data, atau kata-kata orang lain, cantumkan sumbernya</td>
+                            <td>Menurut Yanda (2024), metode PBL efektif...</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Parafrase yang Tepat</strong></td>
+                            <td>Tulis ulang gagasan orang lain dengan kata-kata dan struktur kalimat Anda sendiri, tetap cantumkan sumber</td>
+                            <td>Membaca paragraf asli, menutupnya, lalu menulis ulang dengan pemahaman sendiri</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Kutipan Langsung</strong></td>
+                            <td>Jika harus menggunakan kata-kata persis dari sumber, gunakan tanda kutip dan cantumkan halaman</td>
+                            <td>"Pendidikan adalah..." (Yanda, 2024, hlm. 15)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Catatan Penelitian</strong></td>
+                            <td>Catat sumber setiap informasi sejak awal penelitian</td>
+                            <td>Menggunakan Mendeley untuk menyimpan referensi sejak awal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Cek Plagiarisme</strong></td>
+                            <td>Gunakan alat deteksi plagiarisme sebelum mengumpulkan karya</td>
+                            <td>Mengecek skripsi dengan Turnitin sebelum sidang</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. Kelola Waktu</strong></td>
+                            <td>Mulai menulis sejak awal, jangan menunda hingga deadline</td>
+                            <td>Membuat jadwal penulisan skripsi per minggu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Teknik Parafrase yang Benar</h4>
+                <div class="example-box">
+                    <p class="text-luxury-goldLight text-xs">📖 Teks Asli: "Pendidikan Islam memiliki peran strategis dalam pembentukan karakter generasi muda di era digital." (Yanda, 2024, hlm. 10)</p>
+                    <p class="text-luxury-cream/60 text-xs mt-2">❌ Parafrase Salah: "Pendidikan Islam mempunyai peran strategis dalam pembentukan karakter generasi muda di era digital." (hanya mengganti 1 kata)</p>
+                    <p class="text-luxury-cream/60 text-xs mt-2">✅ Parafrase Benar: "Di tengah tantangan era digital, pendidikan berbasis nilai-nilai Islam menjadi instrumen krusial untuk membangun kepribadian generasi penerus bangsa (Yanda, 2024)." (struktur dan diksi berbeda, makna sama, sumber dicantumkan)</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Manajemen Referensi -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">12.5 Konsep Manajemen Referensi</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Manajemen referensi</strong> adalah proses sistematis untuk mengumpulkan, mengorganisasi, menyimpan, dan menggunakan sumber pustaka dalam penulisan karya ilmiah. Tanpa manajemen referensi yang baik, penulis akan kesulitan melacak sumber, berisiko melakukan plagiarisme tidak disengaja, dan menghabiskan waktu berjam-jam untuk menyusun daftar pustaka secara manual.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.5.1 Mengapa Manajemen Referensi Penting?</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Mencegah Plagiarisme</h4>
+                    <p class="text-luxury-cream/70 text-sm">Dengan mencatat sumber sejak awal, Anda tidak akan lupa memberikan atribusi.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Menghemat Waktu</h4>
+                    <p class="text-luxury-cream/70 text-sm">Sitasi dan daftar pustaka dihasilkan secara otomatis dalam hitungan detik.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Mengorganisasi Pengetahuan</h4>
+                    <p class="text-luxury-cream/70 text-sm">Semua referensi tersimpan rapi dalam folder dan dapat dicari dengan mudah.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Kolaborasi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Berbagi referensi dengan tim penelitian menjadi mudah dan efisien.</p>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.5.2 Perbandingan Aplikasi Manajemen Referensi</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aplikasi</th>
+                            <th class="text-luxury-gold">Harga</th>
+                            <th class="text-luxury-gold">Kelebihan</th>
+                            <th class="text-luxury-gold">Kekurangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mendeley</strong></td>
+                            <td>Gratis (2 GB storage)</td>
+                            <td>Mudah digunakan, integrasi MS Word, jejaring sosial akademik</td>
+                            <td>Storage terbatas untuk versi gratis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zotero</strong></td>
+                            <td>Gratis (300 MB storage)</td>
+                            <td>Open source, ekstensi browser yang kuat</td>
+                            <td>Storage sangat terbatas</td>
+                        </tr>
+                        <tr>
+                            <td><strong>EndNote</strong></td>
+                            <td>Berbayar (~$250)</td>
+                            <td>Fitur sangat lengkap, standar industri</td>
+                            <td>Mahal, kurva belajar tinggi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>RefWorks</strong></td>
+                            <td>Berbayar (langganan institusi)</td>
+                            <td>Web-based, tidak perlu instalasi</td>
+                            <td>Tergantung langganan institusi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Panduan Praktis Mendeley -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">12.6 Panduan Praktis Penggunaan Mendeley</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Mendeley</strong> adalah aplikasi manajemen referensi gratis yang dikembangkan oleh Elsevier. Mendeley memungkinkan pengguna untuk mengelola referensi, membuat sitasi otomatis, dan berkolaborasi dengan peneliti lain. Berikut adalah panduan langkah demi langkah:
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.6.1 Instalasi dan Pendaftaran</h3>
+            <div class="step-card">
+                <p class="text-luxury-cream/80 text-sm"><strong class="text-luxury-gold">Langkah 1:</strong> Kunjungi <em>www.mendeley.com</em> dan klik "Create Account".</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Langkah 2:</strong> Isi data diri (nama, email, password) dan verifikasi email.</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Langkah 3:</strong> Unduh dan instal <strong>Mendeley Desktop</strong> atau gunakan <strong>Mendeley Reference Manager</strong> (versi terbaru).</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Langkah 4:</strong> Instal <strong>Mendeley Cite</strong> (add-in untuk Microsoft Word) dari Microsoft AppSource.</p>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.6.2 Menambahkan Referensi</h3>
+            <div class="step-card">
+                <p class="text-luxury-cream/80 text-sm"><strong class="text-luxury-gold">Cara 1 — Drag & Drop:</strong> Seret file PDF langsung ke jendela Mendeley. Metadata akan diekstrak otomatis.</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Cara 2 — Web Importer:</strong> Instal ekstensi Mendeley Web Importer di browser. Saat membuka halaman jurnal, klik ikon Mendeley untuk menyimpan referensi.</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Cara 3 — Manual Entry:</strong> Klik "Add Entry Manually" dan isi data (penulis, tahun, judul, jurnal, dll).</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Cara 4 — Import BibTeX/RIS:</strong> Impor file referensi dari database seperti Google Scholar, Scopus, atau PubMed.</p>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.6.3 Membuat Sitasi dan Daftar Pustaka di Microsoft Word</h3>
+            <div class="step-card">
+                <p class="text-luxury-cream/80 text-sm"><strong class="text-luxury-gold">Langkah 1:</strong> Buka Microsoft Word, pastikan add-in Mendeley Cite sudah terinstal.</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Langkah 2:</strong> Letakkan kursor di tempat Anda ingin menyisipkan sitasi.</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Langkah 3:</strong> Klik tab "References" → "Mendeley Cite" → cari referensi yang diinginkan → klik "Insert".</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Langkah 4:</strong> Untuk mengubah gaya sitasi (APA, IEEE, Chicago, dll), klik "Citation Style" → pilih gaya yang diinginkan.</p>
+                <p class="text-luxury-cream/80 text-sm mt-1"><strong class="text-luxury-gold">Langkah 5:</strong> Untuk membuat daftar pustaka otomatis, letakkan kursor di akhir dokumen → klik "Insert Bibliography".</p>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">12.6.4 Gaya Sitasi yang Umum Digunakan</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Gaya Sitasi</th>
+                            <th class="text-luxury-gold">Contoh Sitasi dalam Teks</th>
+                            <th class="text-luxury-gold">Contoh Daftar Pustaka</th>
+                            <th class="text-luxury-gold">Bidang</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>APA (7th ed.)</strong></td>
+                            <td>(Yanda, 2024)</td>
+                            <td>Yanda, D. P. (2024). <em>E-Modul pembelajaran menulis esai</em>. Jurnal Belajar Bahasa, 9(2).</td>
+                            <td>Pendidikan, Psikologi, Sosial</td>
+                        </tr>
+                        <tr>
+                            <td><strong>IEEE</strong></td>
+                            <td>[1]</td>
+                            <td>[1] D. P. Yanda, "E-Modul pembelajaran menulis esai," <em>J. Belajar Bahasa</em>, vol. 9, no. 2, 2024.</td>
+                            <td>Teknik, Komputer</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chicago</strong></td>
+                            <td>(Yanda 2024, 15)</td>
+                            <td>Yanda, Diyan Permata. 2024. "E-Modul Pembelajaran Menulis Esai." <em>Jurnal Belajar Bahasa</em> 9 (2).</td>
+                            <td>Humaniora, Sejarah</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Harvard</strong></td>
+                            <td>(Yanda, 2024)</td>
+                            <td>Yanda, D.P., 2024. E-Modul pembelajaran menulis esai. <em>Jurnal Belajar Bahasa</em>, 9(2).</td>
+                            <td>Umum</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Tips Praktis Mendeley</h4>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li>Buat <strong>folder</strong> untuk setiap mata kuliah atau proyek penelitian.</li>
+                    <li>Gunakan <strong>tag</strong> untuk mengategorisasi referensi berdasarkan topik.</li>
+                    <li>Selalu <strong>verifikasi metadata</strong> yang diekstrak otomatis — sering ada kesalahan pada nama penulis atau tahun.</li>
+                    <li>Gunakan fitur <strong>PDF annotation</strong> untuk menandai bagian penting dalam artikel.</li>
+                    <li>Sinkronisasi secara berkala agar data tersimpan di cloud.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">12.7 Penerapan bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, integritas akademik dan manajemen referensi akan diterapkan dalam berbagai konteks profesional:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Penerapan Integritas & Manajemen Referensi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Penulisan Skripsi S1</td>
+                            <td>Menggunakan Mendeley untuk mengelola referensi; memastikan similarity index < 20%</td>
+                        </tr>
+                        <tr>
+                            <td>Publikasi Artikel Jurnal PAI</td>
+                            <td>Mengikuti gaya selingkung jurnal; mencantumkan semua sumber dengan benar</td>
+                        </tr>
+                        <tr>
+                            <td>Penyusunan RPP/Modul Ajar</td>
+                            <td>Mencantumkan sumber materi yang digunakan; tidak mengcopy-paste dari internet tanpa atribusi</td>
+                        </tr>
+                        <tr>
+                            <td>Membimbing Siswa Menulis</td>
+                            <td>Mengajarkan siswa tentang plagiarisme dan cara sitasi yang benar sejak dini</td>
+                        </tr>
+                        <tr>
+                            <td>Penelitian Tindakan Kelas</td>
+                            <td>Mengelola referensi dengan Mendeley; melaporkan data secara jujur dan transparan</td>
+                        </tr>
+                        <tr>
+                            <td>Pengembangan Karier (S2/S3)</td>
+                            <td>Membangun kebiasaan integritas akademik yang kokoh sebagai fondasi karier akademik</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Integritas akademik adalah <strong>pondasi tak tergoyahkan</strong> dari dunia ilmiah. Plagiarisme dalam segala bentuknya — langsung, mosaik, parafrase, diri sendiri, fabrikasi, maupun falsifikasi — adalah pelanggaran serius yang berdampak merusak bagi pelaku, institusi, ilmu pengetahuan, dan masyarakat.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Manajemen referensi melalui aplikasi seperti <strong>Mendeley</strong> bukan sekadar alat teknis, melainkan <strong>strategi preventif</strong> terhadap plagiarisme tidak disengaja. Dengan mengelola referensi secara sistematis sejak awal penelitian, kita membangun kebiasaan integritas yang akan menjadi karakter profesional sepanjang karier.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, Q.S. Al-Baqarah: 42 adalah peringatan tegas: <em>"Janganlah kamu campur adukkan yang hak dengan yang batil dan janganlah kamu sembunyikan yang hak itu."</em> Plagiarisme adalah bentuk nyata dari larangan ini. Sebagai calon pendidik Islam, mari kita jadikan integritas akademik sebagai <strong>mahkota kehormatan</strong> — menulis dengan jujur, menyitasi dengan benar, dan bertanggung jawab atas setiap kata yang kita tulis. Karena pada akhirnya, setiap huruf akan dipertanggungjawabkan di hadapan Allah Swt.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 12</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Rahardi, K. (2009). <em>Penyuntingan Bahasa Indonesia untuk Karang Mengarang</em>. Jakarta: Erlangga.</li>
+                <li>Sugono, D. (2009). <em>1001 Kesalahan Berbahasa</em>. Jakarta: Akademi Pressindo.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya.</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya.</li>
+                <li>International Center for Academic Integrity. (2021). <em>The Fundamental Values of Academic Integrity</em> (3rd ed.). ICAI.</li>
+                <li>Pennycook, A. (1996). Borrowing others' words: Text, ownership, memory, and plagiarism. <em>TESOL Quarterly</em>, 30(2), 201-230.</li>
+                <li>Peraturan Menteri Pendidikan Nasional Republik Indonesia Nomor 17 Tahun 2010 tentang Pencegahan dan Penanggulangan Plagiat di Perguruan Tinggi.</li>
+                <li>Rahardi, K. (2009). <em>Penyuntingan Bahasa Indonesia untuk Karang Mengarang</em>. Jakarta: Erlangga.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Sugono, D. (2009). <em>1001 Kesalahan Berbahasa</em>. Jakarta: Akademi Pressindo.</li>
+                <li>Yanda, D. P., & Ramadhanti, D. (2024). E-Modul Pembelajaran Menulis Esai Berbasis Problem Based Learning untuk Perguruan Tinggi. <em>Jurnal Belajar Bahasa</em>, 9(2).</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 12</h2>
+                <p class="text-luxury-cream/70 text-sm">Integritas & Manajemen Referensi</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Q.S. Al-Baqarah ayat 42 yang menjadi landasan spiritual integritas akademik melarang dua hal, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Berbohong dan mencuri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Mencampuradukkan yang hak dengan yang batil, dan menyembunyikan kebenaran</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Membunuh dan berzina</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Makan riba dan berjudi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Plagiarisme yang dilakukan dengan menyalin kata per kata dari sumber tanpa tanda kutip dan sitasi disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Plagiarisme mosaik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Plagiarisme langsung (verbatim)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Plagiarisme diri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Falsifikasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Menurut Peraturan Menteri Pendidikan Nasional No. 17 Tahun 2010, sanksi terberat bagi pelaku plagiarisme di perguruan tinggi adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Teguran tertulis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Penundaan hak</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Pencabutan gelar akademik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Denda uang</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Aplikasi manajemen referensi gratis yang dikembangkan oleh Elsevier dan paling banyak digunakan di perguruan tinggi Indonesia adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. EndNote</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Zotero</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Mendeley</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. RefWorks</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Gaya sitasi APA (American Psychological Association) edisi ke-7 umumnya digunakan dalam bidang...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Teknik dan komputer</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Pendidikan, psikologi, dan ilmu sosial</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Hukum dan kedokteran</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Seni dan musik</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Seorang mahasiswa mengambil gagasan dari tiga jurnal berbeda, menggabungkannya menjadi satu paragraf, dan mengklaim sebagai tulisan sendiri. Tindakan ini termasuk jenis plagiarisme...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Plagiarisme langsung</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Plagiarisme mosaik (patchwork)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Self-plagiarism</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Falsifikasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Enam nilai fundamental integritas akademik menurut ICAI adalah kejujuran, kepercayaan, keadilan, rasa hormat, tanggung jawab, dan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Kreativitas</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Keberanian (courage)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Kerendahan hati</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Kecerdasan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Langkah pertama untuk menyisipkan sitasi menggunakan Mendeley di Microsoft Word adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Mengetik sitasi secara manual</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Meletakkan kursor di tempat yang diinginkan, lalu klik References → Mendeley Cite → cari dan insert referensi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Mengirim email ke Mendeley</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Mencetak dokumen terlebih dahulu</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Tindakan membuat data penelitian yang tidak pernah ada disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Plagiarisme</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Falsifikasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Fabrikasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Parafrase</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Parafrase yang benar harus memenuhi syarat berikut, <em>kecuali</em>...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Menggunakan kata-kata dan struktur kalimat sendiri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Tetap mencantumkan sumber asli</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Mempertahankan makna yang sama dengan teks asli</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Hanya mengganti beberapa kata dengan sinonim tanpa mengubah struktur</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan tujuh jenis plagiarisme yang dipelajari dalam bab ini! Berikan contoh konkret untuk masing-masing jenis dalam konteks penulisan skripsi PAI!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Hubungkan Q.S. Al-Baqarah ayat 42 dengan konsep integritas akademik! Bagaimana ayat tersebut melarang plagiarisme secara eksplisit? Jelaskan kaitan antara konsep "talbīs al-ḥaqq bi al-bāṭil" dengan tindakan plagiarisme!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Jelaskan langkah-langkah praktis menggunakan Mendeley untuk mengelola referensi, membuat sitasi, dan menghasilkan daftar pustaka otomatis di Microsoft Word! Sertakan penjelasan tentang cara memilih gaya sitasi APA 7th edition!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Analisislah dampak plagiarisme dari empat perspektif: pelaku, institusi, ilmu pengetahuan, dan masyarakat! Berikan contoh nyata kasus plagiarisme yang pernah terjadi di dunia akademik Indonesia!</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Sebagai calon guru PAI, rancanglah sebuah "Protokol Integritas Akademik Pribadi" yang akan Anda terapkan selama menulis skripsi! Sertakan minimal 5 langkah konkret yang mencakup penggunaan Mendeley, teknik parafrase, dan pengecekan plagiarisme! Hubungkan dengan nilai-nilai Islam tentang shidq dan amanah!</p>
+                            <textarea id="essay5" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Mencampuradukkan hak dengan batil + menyembunyikan kebenaran
+                q2: 'b',  // Plagiarisme langsung (verbatim)
+                q3: 'c',  // Pencabutan gelar akademik
+                q4: 'c',  // Mendeley
+                q5: 'b',  // Pendidikan, psikologi, ilmu sosial
+                q6: 'b',  // Plagiarisme mosaik (patchwork)
+                q7: 'b',  // Keberanian (courage)
+                q8: 'b',  // References → Mendeley Cite → insert
+                q9: 'c',  // Fabrikasi
+                q10: 'd'  // Hanya mengganti beberapa kata (ini bukan parafrase yang benar)
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

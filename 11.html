@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 11: Konsep dan Wujud Karangan Ilmiah | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .structure-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 11</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Konsep dan Wujud <br><span class="gold-gradient-text">Karangan Ilmiah</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Memahami hakikat, ciri, struktur, dan berbagai wujud karangan ilmiah sebagai fondasi utama dalam menulis karya akademik yang objektif, sistematis, dan bertanggung jawab — sebuah amanah intelektual yang diabadikan dalam sumpah Allah atas pena.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="10.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="12.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Karangan ilmiah adalah <strong>puncak dari komunikasi tulis akademik</strong>. Berbeda dengan esai yang bersifat personal dan reflektif, karangan ilmiah menuntut <strong>objektivitas, sistematisasi, dan pertanggungjawaban</strong> terhadap setiap pernyataan yang dibuat. Dalam dunia akademik, karangan ilmiah adalah <strong>mata uang intelektual</strong> — alat utama untuk menyampaikan temuan, gagasan, dan kritik yang dapat diuji kebenarannya.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bagi mahasiswa S1 Pendidikan Agama Islam, pemahaman terhadap konsep dan wujud karangan ilmiah bukan sekadar pengetahuan teoritis, melainkan <strong>keterampilan profesional</strong> yang akan terus digunakan sepanjang karier — mulai dari menyusun skripsi, menulis artikel jurnal, hingga membuat laporan penelitian tindakan kelas. Seorang guru PAI yang memahami karangan ilmiah akan mampu membimbing siswa dalam berpikir kritis dan menulis secara sistematis.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) pengertian dan hakikat karangan ilmiah</strong>, <strong>(2) ciri-ciri karangan ilmiah</strong>, <strong>(3) perbedaan karangan ilmiah dan non-ilmiah</strong>, <strong>(4) wujud/jenis karangan ilmiah</strong>, <strong>(5) struktur umum karangan ilmiah</strong>, dan <strong>(6) penerapan penulisan karangan ilmiah</strong> dalam konteks Pendidikan Agama Islam.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">نٓ وَالْقَلَمِ وَمَا يَسْطُرُونَ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Nun. Demi pena dan apa yang mereka tulis."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Qalam [68]: 1</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Allah Swt. bersumpah dengan <em>al-qalam</em> (pena) dan aktivitas menulis — sebuah isyarat bahwa menulis memiliki kedudukan mulia dalam Islam. Dalam konteks karangan ilmiah, ayat ini menjadi landasan spiritual bahwa menulis karya ilmiah adalah <strong>ibadah intelektual</strong> — sebuah cara menuangkan ilmu, menyebarkan kebenaran, dan meninggalkan warisan pengetahuan bagi generasi mendatang. Setiap kata yang kita tulis dalam karya ilmiah akan dipertanggungjawabkan di hadapan Allah dan masyarakat akademik.</p>
+        </section>
+
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Landasan Spiritual Kedua</p>
+            <p class="ayat-arab">وَكَتَبْنَا لَهُ فِي الْأَلْوَاحِ مِن كُلِّ شَيْءٍ مَّوْعِظَةً وَتَفْصِيلًا لِّكُلِّ شَيْءٍ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Dan telah Kami tuliskan untuknya (Musa) di atas loh-loh (papan tulisan) segala sesuatu sebagai pelajaran dan penjelasan bagi segala sesuatu..."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-A'raf [7]: 154</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menggambarkan tulisan yang bersifat <strong>maw'izhah</strong> (pelajaran) dan <strong>tafṣīl</strong> (penjelasan rinci). Dalam konteks karangan ilmiah, ayat ini mengajarkan bahwa tulisan yang baik harus memiliki dua dimensi: <strong>dimensi edukatif</strong> (memberikan pelajaran) dan <strong>dimensi analitis</strong> (menjelaskan secara rinci dan sistematis). Karangan ilmiah yang ideal adalah karangan yang tidak hanya menyajikan data, tetapi juga memberikan makna dan penjelasan yang mendalam.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Karangan Ilmiah</h3>
+                    <p class="text-luxury-cream/70 text-sm">Karya tulis yang menyajikan gagasan, temuan, atau analisis berdasarkan fakta, data, dan teori yang dapat dipertanggungjawabkan secara ilmiah, disusun secara sistematis sesuai kaidah penulisan ilmiah.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Objektivitas</h3>
+                    <p class="text-luxury-cream/70 text-sm">Prinsip karangan ilmiah yang menuntut penulis untuk menyajikan fakta dan data apa adanya, tanpa dipengaruhi oleh kepentingan pribadi, emosi, atau bias tertentu.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Metodologi</h3>
+                    <p class="text-luxury-cream/70 text-sm">Cara atau metode sistematis yang digunakan dalam penelitian untuk memperoleh data, menganalisis, dan menarik kesimpulan yang valid dan reliabel.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Peer Review</h3>
+                    <p class="text-luxury-cream/70 text-sm">Proses evaluasi karya ilmiah oleh sejawat (ahli di bidang yang sama) sebelum dipublikasikan, untuk menjamin kualitas dan validitas karya tersebut.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Karangan yang Tidak Ilmiah</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa PAI menulis "karya ilmiah" berjudul <em>"Pengaruh Shalat Tahajud terhadap Prestasi Belajar Siswa"</em>. Namun, ia tidak mencantumkan sumber data, tidak menjelaskan metode penelitian, dan kesimpulannya didasarkan pada "pengalaman pribadi" tanpa bukti empiris. Dosen mengembalikan naskah tersebut dengan catatan: <em>"Tulisan Anda menarik, tetapi bukan karya ilmiah — ini adalah opini pribadi yang tidak dapat diuji kebenarannya."</em>
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Karangan ilmiah bukan sekadar tulisan tentang topik keislaman. Ia harus memenuhi <strong>syarat-syarat ilmiah</strong>: berbasis fakta/data, menggunakan metodologi yang jelas, dan dapat dipertanggungjawabkan secara akademik. Tanpa itu, ia hanyalah opini, bukan ilmu.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: setiap karya ilmiah yang Anda tulis adalah <strong>amanah intelektual</strong> yang akan dibaca, dikutip, dan mungkin ditiru oleh orang lain. Jika Anda menulis tanpa dasar yang kuat, Anda sedang menyebarkan ketidaktahuan. Jika Anda menulis dengan integritas, Anda sedang menyebarkan ilmu yang bermanfaat — yang dalam Islam disebut <em>amal jariyah</em>. Ingatlah sumpah Allah dalam Q.S. Al-Qalam: 1 — setiap huruf yang Anda tulis akan dipertanggungjawabkan. Jadikan karya ilmiah Anda sebagai sarana <em>tabyīn</em> (penjelasan kebenaran) yang membawa kebaikan bagi umat.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">11.1 Landasan Teoretis Karangan Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kajian karangan ilmiah berakar pada <strong>filsafat ilmu</strong> dan <strong>epistemologi</strong> — cabang filsafat yang mempelajari hakikat pengetahuan. Pemahaman teoretis ini akan membantu kita menulis karya ilmiah yang tidak hanya benar secara teknis, tetapi juga bermakna secara intelektual.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">11.1.1 Teori Filsafat Ilmu (Jujun S. Suriasumantri)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Jujun S. Suriasumantri (2009) dalam <em>Filsafat Ilmu: Sebuah Pengantar Populer</em> menegaskan bahwa ilmu pengetahuan memiliki tiga komponen utama:
+            </p>
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">1. Ontologi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Apa yang dikaji? (objek kajian)</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">2. Epistemologi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Bagaimana cara memperolehnya? (metode)</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">3. Aksiologi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Untuk apa ilmu itu digunakan? (nilai/kegunaan)</p>
+                </div>
+            </div>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Karangan ilmiah yang baik harus memenuhi ketiga dimensi ini: memiliki objek kajian yang jelas (ontologi), menggunakan metode yang valid (epistemologi), dan memberikan manfaat bagi masyarakat (aksiologi).
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">11.1.2 Teori Komposisi Ilmiah (Hasjim & Tasai)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Nafron Hasjim dan Amran Tasai (1992) dalam <em>Komposisi dalam Bahasa Indonesia</em> menekankan bahwa karangan ilmiah harus memenuhi <strong>prinsip-prinsip komposisi</strong>: kesatuan, koherensi, dan kelengkapan. Setiap bagian karangan harus berfungsi dan saling menopang seperti organ dalam tubuh.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">11.1.3 Teori Etika Akademik</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Dalam tradisi Islam, menulis karya ilmiah berkaitan erat dengan <strong>etika keilmuan</strong> (<em>ādāb al-ʿālim</em>). Imam Al-Ghazali dalam <em>Iḥyāʾ ʿUlūmiddīn</em> menekankan bahwa seorang ilmuwan harus memiliki:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Niat yang Ikhlas</h4>
+                    <p class="text-luxury-cream/70 text-sm">Menulis bukan untuk popularitas, tetapi untuk mencari ridha Allah dan manfaat bagi umat.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">📌 Kejujuran Intelektual</h4>
+                    <p class="text-luxury-cream/70 text-sm">Menyatakan fakta apa adanya, mengakui keterbatasan, dan mencantumkan sumber secara jujur.</p>
+                </div>
+            </div>
+
+            <div class="quote-block my-6">
+                <p>"Ilmu tanpa amal adalah seperti pohon tanpa buah; amal tanpa ilmu adalah seperti tubuh tanpa jiwa. Karangan ilmiah yang sejati memadukan keduanya."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari tradisi keilmuan Islam</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengertian dan Hakikat -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">11.2 Pengertian dan Hakikat Karangan Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Karangan ilmiah</strong> (scientific writing) adalah karya tulis yang menyajikan gagasan, temuan, atau analisis berdasarkan fakta, data, dan teori yang dapat dipertanggungjawabkan secara ilmiah, disusun secara sistematis sesuai kaidah penulisan ilmiah, dan ditujukan kepada komunitas akademik.
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Secara Etimologis</strong></td>
+                            <td>"Karangan" berasal dari kata "karang" (menyusun); "ilmiah" berasal dari kata "ilmu" (pengetahuan sistematis). Jadi, karangan ilmiah = susunan pengetahuan yang sistematis.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secara Terminologis</strong></td>
+                            <td>Karya tulis yang menyajikan pemikiran, temuan, atau analisis berdasarkan metode ilmiah, ditulis dengan bahasa baku, dan ditujukan kepada komunitas akademik.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secara Fungsional</strong></td>
+                            <td>Alat komunikasi akademik untuk menyampaikan gagasan, temuan, atau kritik yang dapat diuji kebenarannya oleh sejawat.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Hakikat Karangan Ilmiah</h4>
+                <p class="text-luxury-cream/70 text-sm">Karangan ilmiah bukan sekadar "tulisan tentang ilmu". Ia adalah <strong>proses intelektual</strong> yang melibatkan: (1) identifikasi masalah, (2) pengumpulan data/fakta, (3) analisis menggunakan teori/metode, (4) penarikan kesimpulan, dan (5) penyajian secara sistematis. Tanpa proses ini, tulisan hanyalah opini, bukan ilmu.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Ciri-Ciri Karangan Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">11.3 Ciri-Ciri Karangan Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menurut Semi (1984) dan Tarigan (1986), karangan ilmiah memiliki <strong>enam ciri utama</strong> yang membedakannya dari jenis tulisan lainnya:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">1. Objektif</h3>
+                    <p class="text-luxury-cream/70 text-sm">Berdasarkan fakta dan data, bukan opini atau perasaan subjektif penulis. Kesimpulan ditarik dari bukti, bukan dari keinginan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">2. Netral</h3>
+                    <p class="text-luxury-cream/70 text-sm">Tidak mengandung unsur pemaksaan kehendak atau penilaian yang bersifat memihak. Penulis bersikap netral dalam menyajikan temuan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">3. Sistematis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Disusun secara berurutan dan saling berkaitan sesuai struktur yang baku. Setiap bagian memiliki fungsi dan tempat yang jelas.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">4. Logis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Argumen dan kesimpulan dapat diterima oleh akal sehat dan sesuai dengan kaidah berpikir yang benar.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">5. Berdasarkan Fakta</h3>
+                    <p class="text-luxury-cream/70 text-sm">Setiap pernyataan harus didukung oleh data, bukti, atau referensi yang valid. Tidak boleh berdasarkan asumsi atau dugaan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">6. Dapat Diuji (Verifikatif)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Temuan dan kesimpulan dapat diuji kebenarannya oleh peneliti lain dengan metode yang sama.</p>
+                </div>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Perbedaan Karangan Ilmiah vs. Non-Ilmiah</h4>
+                <div class="overflow-x-auto">
+                    <table class="text-sm text-luxury-cream/80">
+                        <thead>
+                            <tr>
+                                <th class="text-luxury-gold">Aspek</th>
+                                <th class="text-luxury-gold">Karangan Ilmiah</th>
+                                <th class="text-luxury-gold">Karangan Non-Ilmiah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Dasar</strong></td>
+                                <td>Fakta, data, teori</td>
+                                <td>Opini, perasaan, imajinasi</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Metode</strong></td>
+                                <td>Metodologi ilmiah yang jelas</td>
+                                <td>Tidak ada metode baku</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bahasa</strong></td>
+                                <td>Baku, formal, denotatif</td>
+                                <td>Bebas, konotatif, ekspresif</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Struktur</strong></td>
+                                <td>Baku (pendahuluan, pembahasan, simpulan)</td>
+                                <td>Fleksibel</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sitasi</strong></td>
+                                <td>Wajib mencantumkan sumber</td>
+                                <td>Tidak wajib</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tujuan</strong></td>
+                                <td>Menyampaikan kebenaran ilmiah</td>
+                                <td>Menghibur, menginspirasi, atau mengekspresikan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Wujud/Jenis Karangan Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">11.4 Wujud dan Jenis Karangan Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan tingkat kedalaman dan tujuan penggunaannya, karangan ilmiah dapat dibagi menjadi <strong>beberapa jenis utama</strong>:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis</th>
+                            <th class="text-luxury-gold">Definisi</th>
+                            <th class="text-luxury-gold">Ciri Khas</th>
+                            <th class="text-luxury-gold">Konteks Penggunaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Makalah</strong></td>
+                            <td>Karya ilmiah singkat yang membahas suatu masalah berdasarkan kajian pustaka atau data lapangan</td>
+                            <td>5-15 halaman, struktur sederhana</td>
+                            <td>Tugas kuliah, seminar, konferensi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Artikel Ilmiah</strong></td>
+                            <td>Karya ilmiah yang ditulis untuk dipublikasikan dalam jurnal akademik</td>
+                            <td>15-25 halaman, mengikuti gaya selingkung jurnal</td>
+                            <td>Jurnal nasional/internasional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Skripsi</strong></td>
+                            <td>Karya ilmiah akhir untuk meraih gelar Sarjana (S1)</td>
+                            <td>50-100 halaman, metodologi lengkap</td>
+                            <td>Syarat kelulusan S1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tesis</strong></td>
+                            <td>Karya ilmiah akhir untuk meraih gelar Magister (S2)</td>
+                            <td>80-150 halaman, analisis mendalam</td>
+                            <td>Syarat kelulusan S2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Disertasi</strong></td>
+                            <td>Karya ilmiah akhir untuk meraih gelar Doktor (S3)</td>
+                            <td>150-300 halaman, harus menghasilkan temuan baru</td>
+                            <td>Syarat kelulusan S3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Laporan Penelitian</strong></td>
+                            <td>Dokumentasi lengkap hasil penelitian yang dilakukan</td>
+                            <td>Struktur baku (bab 1-5)</td>
+                            <td>Laporan hibah, penelitian institusional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kertas Kerja</strong></td>
+                            <td>Karya ilmiah yang disajikan dalam diskusi atau lokakarya</td>
+                            <td>Lebih mendalam dari makalah</td>
+                            <td>Workshop, lokakarya, focus group discussion</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Catatan Penting</h4>
+                <p class="text-luxury-cream/70 text-sm">Dalam konteks S1 PAI, mahasiswa akan paling sering menulis <strong>makalah</strong> (tugas kuliah) dan <strong>skripsi</strong> (tugas akhir). Pemahaman terhadap kedua jenis ini sangat krusial. Artikel ilmiah biasanya ditulis setelah lulus, sebagai bagian dari pengembangan karier akademik.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Struktur Karangan Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">11.5 Struktur Umum Karangan Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Setiap karangan ilmiah memiliki <strong>struktur baku</strong> yang terdiri dari tiga bagian utama. Struktur ini bukan sekadar formalitas, melainkan <strong>kerangka logis</strong> yang memudahkan pembaca memahami alur berpikir penulis.
+            </p>
+
+            <!-- Bagian 1: Pendahuluan -->
+            <div class="structure-card">
+                <h3 class="font-serif text-xl text-luxury-gold mb-3">📌 Bagian 1: Pendahuluan (10-15%)</h3>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Pendahuluan berfungsi sebagai <strong>pintu masuk</strong> yang menjelaskan mengapa penelitian ini dilakukan. Ia harus mengandung:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Latar Belakang</strong> — mengapa topik ini penting untuk diteliti</li>
+                    <li><strong>Identifikasi Masalah</strong> — rumusan masalah yang akan dijawab</li>
+                    <li><strong>Batasan Masalah</strong> — ruang lingkup penelitian</li>
+                    <li><strong>Tujuan Penelitian</strong> — apa yang ingin dicapai</li>
+                    <li><strong>Manfaat Penelitian</strong> — kontribusi teoretis dan praktis</li>
+                </ul>
+            </div>
+
+            <!-- Bagian 2: Pembahasan -->
+            <div class="structure-card">
+                <h3 class="font-serif text-xl text-luxury-gold mb-3">📌 Bagian 2: Pembahasan / Isi (70-80%)</h3>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Pembahasan adalah <strong>jantung karangan ilmiah</strong>. Ia harus mengandung:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Kajian Pustaka / Landasan Teori</strong> — teori-teori yang digunakan sebagai pisau analisis</li>
+                    <li><strong>Metodologi Penelitian</strong> — pendekatan, metode, teknik pengumpulan dan analisis data</li>
+                    <li><strong>Hasil Penelitian</strong> — paparan data dan temuan</li>
+                    <li><strong>Pembahasan</strong> — analisis temuan berdasarkan teori, dikaitkan dengan penelitian terdahulu</li>
+                </ul>
+            </div>
+
+            <!-- Bagian 3: Simpulan -->
+            <div class="structure-card">
+                <h3 class="font-serif text-xl text-luxury-gold mb-3">📌 Bagian 3: Simpulan dan Saran (10-15%)</h3>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Simpulan bukan sekadar ringkasan, melainkan <strong>jawaban atas rumusan masalah</strong>. Ia harus mengandung:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Simpulan</strong> — jawaban singkat dan padat atas rumusan masalah</li>
+                    <li><strong>Saran</strong> — rekomendasi untuk penelitian selanjutnya atau implikasi praktis</li>
+                </ul>
+            </div>
+
+            <!-- Visualisasi Struktur -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">📊 Visualisasi Struktur Karangan Ilmiah</h3>
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                <div class="text-center space-y-2">
+                    <div class="structure-card">
+                        <p class="text-luxury-gold font-semibold">📌 PENDAHULUAN (10-15%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Latar Belakang → Identifikasi Masalah → Batasan → Tujuan → Manfaat</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="structure-card">
+                        <p class="text-luxury-gold font-semibold">📌 PEMBAHASAN (70-80%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Kajian Pustaka → Metodologi → Hasil → Pembahasan</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="structure-card">
+                        <p class="text-luxury-gold font-semibold">📌 SIMPULAN & SARAN (10-15%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Jawaban atas Rumusan Masalah → Rekomendasi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Bagian Pelengkap</h4>
+                <p class="text-luxury-cream/70 text-sm mb-2">Selain tiga bagian utama, karangan ilmiah juga dilengkapi dengan:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                    <li><strong>Halaman Judul</strong> — identitas karya</li>
+                    <li><strong>Abstrak</strong> — ringkasan singkat (150-250 kata) dalam bahasa Indonesia dan Inggris</li>
+                    <li><strong>Kata Pengantar</strong> — ucapan syukur dan terima kasih</li>
+                    <li><strong>Daftar Isi, Daftar Tabel, Daftar Gambar</strong></li>
+                    <li><strong>Daftar Pustaka</strong> — sumber rujukan yang digunakan</li>
+                    <li><strong>Lampiran</strong> — data pendukung (kuesioner, transkrip wawancara, dll)</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">11.6 Penerapan Karangan Ilmiah bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, pemahaman terhadap karangan ilmiah akan diterapkan dalam berbagai konteks profesional:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Jenis Karangan</th>
+                            <th class="text-luxury-gold">Contoh Tema</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tugas Kuliah</td>
+                            <td>Makalah</td>
+                            <td>"Implementasi Metode Diskusi dalam Pembelajaran Fiqih di Madrasah"</td>
+                        </tr>
+                        <tr>
+                            <td>Tugas Akhir S1</td>
+                            <td>Skripsi</td>
+                            <td>"Pengaruh Pembelajaran Berbasis Masalah terhadap Kemampuan Berpikir Kritis Siswa pada Mata Pelajaran Akidah Akhlak"</td>
+                        </tr>
+                        <tr>
+                            <td>Publikasi Jurnal</td>
+                            <td>Artikel Ilmiah</td>
+                            <td>"Integrasi Nilai-Nilai Al-Qur'an dalam Pendidikan Karakter di Era Digital"</td>
+                        </tr>
+                        <tr>
+                            <td>Penelitian Tindakan Kelas</td>
+                            <td>Laporan Penelitian</td>
+                            <td>"Peningkatan Motivasi Belajar Siswa melalui Metode Role Playing pada Mata Pelajaran Sejarah Kebudayaan Islam"</td>
+                        </tr>
+                        <tr>
+                            <td>Seminar/Konferensi</td>
+                            <td>Kertas Kerja</td>
+                            <td>"Tantangan Pendidikan Islam dalam Menghadapi Society 5.0"</td>
+                        </tr>
+                        <tr>
+                            <td>Pengembangan Karier (S2/S3)</td>
+                            <td>Tesis / Disertasi</td>
+                            <td>"Model Pembelajaran PAI Berbasis Kearifan Lokal di Sumatera Barat"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📝 Contoh Kerangka Makalah Bertema PAI</h3>
+            <div class="bg-luxury-900/50 p-4 rounded-sm">
+                <p class="text-luxury-gold font-semibold mb-2">Judul: "Implementasi Metode Diskusi dalam Pembelajaran Fiqih di MTs Nurul Huda Bukittinggi"</p>
+                <div class="text-luxury-cream/70 text-sm space-y-1">
+                    <p><strong>BAB I: PENDAHULUAN</strong></p>
+                    <p class="ml-4">1.1 Latar Belakang: Rendahnya partisipasi siswa dalam pembelajaran Fiqih konvensional</p>
+                    <p class="ml-4">1.2 Identifikasi Masalah: Bagaimana meningkatkan partisipasi aktif siswa?</p>
+                    <p class="ml-4">1.3 Tujuan: Mendeskripsikan implementasi metode diskusi dalam pembelajaran Fiqih</p>
+                    <p class="ml-4">1.4 Manfaat: Teoretis (pengembangan metode PAI) dan Praktis (bagi guru dan sekolah)</p>
+                    <p><strong>BAB II: PEMBAHASAN</strong></p>
+                    <p class="ml-4">2.1 Kajian Pustaka: Teori metode diskusi, pembelajaran Fiqih</p>
+                    <p class="ml-4">2.2 Metodologi: Kualitatif deskriptif, teknik observasi dan wawancara</p>
+                    <p class="ml-4">2.3 Hasil: Temuan tentang penerapan metode diskusi di MTs Nurul Huda</p>
+                    <p class="ml-4">2.4 Pembahasan: Analisis temuan berdasarkan teori</p>
+                    <p><strong>BAB III: SIMPULAN DAN SARAN</strong></p>
+                    <p class="ml-4">3.1 Simpulan: Metode diskusi efektif meningkatkan partisipasi siswa</p>
+                    <p class="ml-4">3.2 Saran: Rekomendasi untuk guru PAI dan penelitian selanjutnya</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Karangan ilmiah adalah <strong>puncak dari komunikasi tulis akademik</strong> yang menuntut objektivitas, sistematisasi, dan pertanggungjawaban intelektual. Enam ciri utama karangan ilmiah — <strong>objektif, netral, sistematis, logis, berdasarkan fakta, dan dapat diuji</strong> — menjadi pedoman dalam setiap karya yang kita hasilkan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berbagai wujud karangan ilmiah — <strong>makalah, artikel ilmiah, skripsi, tesis, disertasi, laporan penelitian, dan kertas kerja</strong> — memiliki karakteristik dan konteks penggunaan yang berbeda. Namun, semuanya memiliki struktur yang sama: <strong>pendahuluan, pembahasan, dan simpulan</strong>.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, menulis karangan ilmiah adalah manifestasi dari sumpah Allah dalam Q.S. Al-Qalam: 1 — <em>"Demi pena dan apa yang mereka tulis"</em> — dan perintah Allah dalam Q.S. Al-A'raf: 154 untuk menulis yang bersifat <em>maw'izhah</em> (pelajaran) dan <em>tafṣīl</em> (penjelasan rinci). Sebagai calon pendidik PAI, mari kita asah keterampilan menulis karangan ilmiah — karena dari pena-pena yang tajam akan lahir karya-karya yang mengubah peradaban dan menjadi amal jariyah bagi penulisnya.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 11</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 179-207)</li>
+                <li>Hasjim, N. & Tasai, A. (1992). <em>Komposisi dalam Bahasa Indonesia</em>. Jakarta: Pusat Pembinaan dan Pengembangan Bahasa.</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya. (Hal. 218-226)</li>
+                <li>Chaer, A. <em>Pembinaan Bahasa Indonesia</em>. Jakarta: Rineka Cipta. (Hal. 1-12)</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset. (Hal. 84-143)</li>
+                <li>Suriasumantri, J. S. (2009). <em>Filsafat Ilmu: Sebuah Pengantar Populer</em>. Jakarta: Pustaka Sinar Harapan.</li>
+                <li>Tarigan, D. (1986). <em>Membina Keterampilan Menulis Paragraf dan Pengembangannya</em>. Bandung: Angkasa.</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Al-Ghazali. <em>Iḥyāʾ ʿUlūmiddīn</em>. (Terjemahan Indonesia).</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya.</li>
+                <li>Chaer, A. <em>Pembinaan Bahasa Indonesia</em>. Jakarta: Rineka Cipta.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Hasjim, N. & Tasai, A. (1992). <em>Komposisi dalam Bahasa Indonesia</em>. Jakarta: Pusat Pembinaan dan Pengembangan Bahasa.</li>
+                <li>Pamungkas, S. (2012). <em>Bahasa Indonesia dalam Berbagai Perspektif</em>. Yogyakarta: Andi Offset.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Suriasumantri, J. S. (2009). <em>Filsafat Ilmu: Sebuah Pengantar Populer</em>. Jakarta: Pustaka Sinar Harapan.</li>
+                <li>Tarigan, D. (1986). <em>Membina Keterampilan Menulis Paragraf dan Pengembangannya</em>. Bandung: Angkasa.</li>
+                <li>Widjono. (2005). <em>Bahasa Indonesia Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Gramedia.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 11</h2>
+                <p class="text-luxury-cream/70 text-sm">Konsep dan Wujud Karangan Ilmiah</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Karangan ilmiah adalah karya tulis yang menyajikan gagasan berdasarkan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Opini pribadi penulis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Fakta, data, dan teori yang dapat dipertanggungjawabkan secara ilmiah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Imajinasi dan perasaan penulis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Kutipan dari media sosial</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Q.S. Al-Qalam ayat 1 yang menjadi landasan spiritual karangan ilmiah mengandung makna...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Larangan menulis selain Al-Qur'an</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Allah bersumpah dengan pena dan aktivitas menulis, menunjukkan keagungan aktivitas menulis sebagai ibadah intelektual</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Perintah menggunakan pena tradisional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Larangan menulis dalam bahasa selain Arab</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Berikut ini yang merupakan ciri-ciri karangan ilmiah, <em>kecuali</em>...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Objektif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Sistematis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Subjektif dan berdasarkan perasaan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Dapat diuji kebenarannya</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Karya ilmiah yang ditulis untuk meraih gelar Sarjana (S1) disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Makalah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Artikel ilmiah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Skripsi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Disertasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Struktur umum karangan ilmiah terdiri dari tiga bagian utama, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Abstrak, isi, dan daftar pustaka</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Pendahuluan, pembahasan, dan simpulan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Kata pengantar, isi, dan lampiran</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Latar belakang, teori, dan hasil</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Q.S. Al-A'raf ayat 154 yang menjadi landasan spiritual kedua mengajarkan bahwa tulisan yang baik harus bersifat...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Panjang dan rumit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Maw'izhah (pelajaran) dan tafṣīl (penjelasan rinci)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Singkat dan puitis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Menggunakan bahasa Arab saja</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Perbedaan utama antara karangan ilmiah dan non-ilmiah terletak pada...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Panjang tulisan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Dasar penulisan (fakta/data vs opini/perasaan) dan metodologi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Jenis kertas yang digunakan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Jumlah halaman</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Karya ilmiah yang harus menghasilkan temuan baru (novelty) sebagai syarat kelulusan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Makalah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Skripsi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Tesis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Disertasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Dalam filsafat ilmu, dimensi yang mempelajari "bagaimana cara memperoleh pengetahuan" disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Ontologi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Epistemologi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Aksiologi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Metodologi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Bagian karangan ilmiah yang berisi jawaban atas rumusan masalah secara singkat dan padat adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Latar belakang</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Kajian pustaka</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Simpulan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Metodologi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan enam ciri utama karangan ilmiah! Berikan contoh konkret untuk masing-masing ciri dalam konteks Pendidikan Agama Islam!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah perbedaan mendasar antara karangan ilmiah dan karangan non-ilmiah! Berikan masing-masing 3 contoh karya tulis yang termasuk dalam kedua kategori tersebut!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Bandingkan berbagai jenis karangan ilmiah (makalah, artikel ilmiah, skripsi, tesis, disertasi)! Jelaskan perbedaan utama dari segi panjang, kedalaman analisis, dan tujuan penggunaannya!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Jelaskan struktur umum karangan ilmiah (pendahuluan, pembahasan, simpulan)! Berikan contoh konkret untuk setiap bagian dengan tema "Pengaruh Metode Diskusi terhadap Hasil Belajar Siswa pada Mata Pelajaran Fiqih"!</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Hubungkan Q.S. Al-Qalam ayat 1 dan Q.S. Al-A'raf ayat 154 dengan aktivitas menulis karangan ilmiah! Bagaimana kedua ayat tersebut menjadi landasan spiritual bagi seorang calon pendidik Islam dalam menulis karya ilmiah? Jelaskan bagaimana Anda akan mengimplementasikan nilai-nilai spiritual ini dalam proses menulis skripsi Anda kelak!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Fakta, data, teori yang dapat dipertanggungjawabkan
+                q2: 'b',  // Allah bersumpah dengan pena
+                q3: 'c',  // Subjektif dan berdasarkan perasaan (bukan ciri ilmiah)
+                q4: 'c',  // Skripsi
+                q5: 'b',  // Pendahuluan, pembahasan, simpulan
+                q6: 'b',  // Maw'izhah dan tafṣīl
+                q7: 'b',  // Dasar penulisan dan metodologi
+                q8: 'd',  // Disertasi
+                q9: 'b',  // Epistemologi
+                q10: 'c'  // Simpulan
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

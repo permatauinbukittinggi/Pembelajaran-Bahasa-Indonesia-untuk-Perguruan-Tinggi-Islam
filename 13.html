@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 13: Penyusunan Artikel Ilmiah | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .structure-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+        }
+        .imrad-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(21, 30, 50, 0.6));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+            transition: all 0.3s;
+        }
+        .imrad-card:hover {
+            transform: translateY(-2px);
+            border-color: #D4AF37;
+        }
+        .imrad-letter {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, #D4AF37, #F3E5AB);
+            color: #0B1120;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-align: center;
+            line-height: 3rem;
+            border-radius: 0.25rem;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 13</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Penyusunan <br><span class="gold-gradient-text">Artikel Ilmiah</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menganalisis hakikat, ciri, jenis, dan struktur artikel ilmiah, serta menyusun artikel ilmiah sederhana bertema Pendidikan Agama Islam sesuai kaidah akademik dan gaya selingkung jurnal.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="12.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="14.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Artikel ilmiah adalah <strong>jantung dari komunikasi akademik modern</strong>. Berbeda dengan makalah yang bersifat tugas kelas atau skripsi yang bersifat tugas akhir, artikel ilmiah dirancang khusus untuk <strong>dipublikasikan dalam jurnal akademik</strong> dan dibaca oleh komunitas ilmiah luas. Melalui artikel ilmiah, gagasan, temuan, dan kritik seorang peneliti disampaikan secara sistematis, ringkas, dan padat kepada sejawatnya.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bagi mahasiswa S1 Pendidikan Agama Islam, kemampuan menulis artikel ilmiah bukan hanya keterampilan akademik, melainkan <strong>keterampilan profesional</strong> yang akan menentukan kualitas karier kependidikan dan keilmuan mereka. Seorang guru PAI yang mampu menulis dan mempublikasikan artikel ilmiah akan memiliki kredibilitas lebih tinggi, kontribusi nyata terhadap perkembangan ilmu, dan peluang pengembangan karier yang lebih luas.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) hakikat artikel ilmiah</strong>, <strong>(2) ciri-ciri artikel ilmiah</strong>, <strong>(3) jenis-jenis artikel ilmiah</strong>, <strong>(4) struktur artikel ilmiah (IMRAD)</strong>, <strong>(5) gaya selingkung jurnal</strong>, dan <strong>(6) langkah-langkah praktis menyusun artikel ilmiah</strong> bertema Pendidikan Agama Islam.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">نٓ وَالْقَلَمِ وَمَا يَسْطُرُونَ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Nun. Demi pena dan apa yang mereka tulis."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Qalam [68]: 1</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Allah Swt. bersumpah dengan <em>al-qalam</em> (pena) dan aktivitas menulis — sebuah isyarat bahwa menulis memiliki kedudukan mulia dalam Islam. Dalam konteks artikel ilmiah, ayat ini menjadi landasan spiritual bahwa menulis dan mempublikasikan karya ilmiah adalah <strong>amanah intelektual</strong> — sebuah cara menyebarkan ilmu, meluruskan kesalahpahaman, dan meninggalkan warisan pengetahuan bagi generasi mendatang. Setiap artikel yang kita tulis dengan niat ikhlas dan integritas akan menjadi <em>amal jariyah</em> yang pahalanya terus mengalir meskipun penulis telah tiada.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Artikel Ilmiah</h3>
+                    <p class="text-luxury-cream/70 text-sm">Karya tulis ilmiah yang dirancang untuk dipublikasikan dalam jurnal akademik, berisi gagasan, temuan, atau analisis berdasarkan fakta dan metode ilmiah, ditulis secara ringkas dan sistematis.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">IMRAD</h3>
+                    <p class="text-luxury-cream/70 text-sm">Akronim dari <em>Introduction, Method, Result, And Discussion</em> — struktur standar artikel ilmiah berbasis penelitian yang digunakan oleh mayoritas jurnal internasional dan nasional terakreditasi.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Gaya Selingkung</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kumpulan aturan teknis dan format penulisan yang ditetapkan oleh suatu jurnal, mencakup struktur, sitasi, daftar pustaka, dan format tabel/gambar.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Peer Review</h3>
+                    <p class="text-luxury-cream/70 text-sm">Proses evaluasi artikel ilmiah oleh sejawat (reviewer ahli) sebelum dipublikasikan, untuk menjamin kualitas, validitas, dan kontribusi keilmuan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Artikel yang Ditolak Reviewer</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa S1 PAI menulis artikel berjudul <em>"Pentingnya Pendidikan Karakter di Era Digital"</em> dan mengirimkannya ke jurnal nasional. Artikel tersebut ditolak oleh reviewer dengan catatan: <em>"Artikel ini lebih mirip esai opini daripada artikel ilmiah. Tidak ada metodologi yang jelas, tidak ada data atau temuan yang disajikan, dan struktur tidak mengikuti kaidah IMRAD. Penulis disarankan mempelajari struktur artikel ilmiah sebelum melakukan revisi."</em>
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Artikel ilmiah bukan sekadar tulisan panjang tentang topik keislaman. Ia harus memiliki <strong>struktur baku</strong> (IMRAD), <strong>metodologi yang jelas</strong>, <strong>data/temuan</strong>, dan <strong>analisis yang mendalam</strong>. Memahami perbedaan antara esai, makalah, dan artikel ilmiah adalah langkah pertama menuju publikasi yang sukses.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: menulis artikel ilmiah adalah salah satu bentuk <em>jihad ilmi</em> (perjuangan keilmuan) di era modern. Melalui artikel ilmiah, Anda dapat menyumbangkan pemikiran, meluruskan kesalahpahaman tentang pendidikan Islam, dan memberikan solusi bagi problematika umat. Ingatlah Q.S. Al-Qalam: 1 — setiap huruf yang Anda tulis dalam artikel ilmiah akan dipertanggungjawabkan di hadapan Allah dan komunitas akademik. Jadikan pena Anda sebagai sarana dakwah intelektual yang membawa pencerahan bagi peradaban.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">13.1 Landasan Teoretis Artikel Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Artikel ilmiah sebagai genre tulisan akademik memiliki landasan teoretis yang kuat dalam tradisi keilmuan modern. Pemahaman terhadap landasan ini akan membantu kita menulis artikel yang tidak hanya benar secara teknis, tetapi juga bermakna secara intelektual.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">13.1.1 Teori Komunikasi Ilmiah</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Artikel ilmiah pada hakikatnya adalah <strong>media komunikasi</strong> antara peneliti dengan komunitas ilmiah. Day & Gastel (2012) dalam <em>How to Write and Publish a Scientific Paper</em> menegaskan bahwa tujuan utama artikel ilmiah adalah <strong>menyampaikan temuan baru secara jelas dan meyakinkan</strong> sehingga pembaca dapat memahami, mengevaluasi, dan mereplikasi penelitian tersebut.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">13.1.2 Teori Struktur IMRAD</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Struktur IMRAD dikembangkan pada abad ke-20 sebagai standar penulisan artikel ilmiah berbasis penelitian. Struktur ini mencerminkan <strong>alur berpikir logis</strong> seorang peneliti:
+            </p>
+            <div class="overflow-x-auto mb-4">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Komponen</th>
+                            <th class="text-luxury-gold">Pertanyaan yang Dijawab</th>
+                            <th class="text-luxury-gold">Fungsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Introduction</strong></td>
+                            <td>Mengapa penelitian ini dilakukan?</td>
+                            <td>Menjelaskan latar belakang, masalah, dan tujuan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Method</strong></td>
+                            <td>Bagaimana penelitian dilakukan?</td>
+                            <td>Menjelaskan pendekatan, sampel, instrumen, dan prosedur</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Result</strong></td>
+                            <td>Apa yang ditemukan?</td>
+                            <td>Menyajikan data dan temuan secara objektif</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Discussion</strong></td>
+                            <td>Apa makna temuan tersebut?</td>
+                            <td>Menganalisis, menginterpretasi, dan mengaitkan dengan teori</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">13.1.3 Teori Publikasi Ilmiah (Ziman, 1984)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                John Ziman (1984) dalam <em>An Introduction to Science Studies</em> menegaskan bahwa <strong>ilmu pengetahuan baru menjadi "ilmu" ketika dipublikasikan dan diakui oleh komunitas ilmiah</strong>. Temuan yang hanya tersimpan di laci peneliti bukanlah ilmu — ia baru menjadi ilmu ketika dikomunikasikan melalui artikel ilmiah, dievaluasi melalui peer review, dan diakui oleh sejawat.
+            </p>
+
+            <div class="quote-block my-6">
+                <p>"Penelitian yang tidak dipublikasikan ibarat pohon yang berbuah di hutan tanpa ada yang memetik — buahnya membusuk dan manfaatnya hilang. Artikel ilmiah adalah cara kita memetik buah penelitian dan membagikannya kepada dunia."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari filosofi publikasi ilmiah</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Hakikat Artikel Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">13.2 Hakikat Artikel Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Artikel ilmiah</strong> adalah karya tulis yang dirancang khusus untuk dipublikasikan dalam jurnal akademik, berisi gagasan, temuan, atau analisis berdasarkan fakta dan metode ilmiah, ditulis secara ringkas, sistematis, dan sesuai dengan gaya selingkung jurnal yang dituju.
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Artikel Ilmiah</th>
+                            <th class="text-luxury-gold">Makalah</th>
+                            <th class="text-luxury-gold">Skripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tujuan</strong></td>
+                            <td>Dipublikasikan di jurnal</td>
+                            <td>Tugas kuliah/seminar</td>
+                            <td>Syarat kelulusan S1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Panjang</strong></td>
+                            <td>3.000-8.000 kata</td>
+                            <td>1.500-5.000 kata</td>
+                            <td>15.000-30.000 kata</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Struktur</strong></td>
+                            <td>IMRAD (ketat)</td>
+                            <td>Fleksibel</td>
+                            <td>5 bab baku</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Review</strong></td>
+                            <td>Peer review ketat</td>
+                            <td>Dosen pengampu</td>
+                            <td>Penguji sidang</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pembaca</strong></td>
+                            <td>Komunitas ilmiah luas</td>
+                            <td>Dosen & teman sekelas</td>
+                            <td>Penguji akademik</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kedalaman</strong></td>
+                            <td>Padat & fokus pada kontribusi</td>
+                            <td>Moderat</td>
+                            <td>Sangat mendalam & komprehensif</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Hakikat Artikel Ilmiah</h4>
+                <p class="text-luxury-cream/70 text-sm">Artikel ilmiah bukan sekadar "versi pendek" dari skripsi. Ia adalah <strong>genre tulisan yang unik</strong> dengan konvensi, struktur, dan tujuan yang berbeda. Menulis artikel ilmiah memerlukan <strong>keterampilan khusus</strong>: kemampuan memilah informasi penting dari yang tidak penting, menyajikan temuan secara ringkas namun padat, dan mengikuti gaya selingkung jurnal yang dituju.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Ciri-Ciri Artikel Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">13.3 Ciri-Ciri Artikel Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menurut Day & Gastel (2012) dan Pamungkas (2012), artikel ilmiah memiliki <strong>delapan ciri utama</strong> yang membedakannya dari jenis tulisan lainnya:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">1. Orisinal</h3>
+                    <p class="text-luxury-cream/70 text-sm">Berisi temuan, gagasan, atau analisis baru yang belum pernah dipublikasikan sebelumnya. Bukan duplikasi karya orang lain.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">2. Objektif</h3>
+                    <p class="text-luxury-cream/70 text-sm">Berdasarkan fakta dan data, bukan opini subjektif. Kesimpulan ditarik dari bukti, bukan dari keinginan penulis.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">3. Sistematis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Disusun sesuai struktur baku (IMRAD). Setiap bagian memiliki fungsi dan tempat yang jelas.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">4. Ringkas dan Padat</h3>
+                    <p class="text-luxury-cream/70 text-sm">Setiap kalimat harus berfungsi. Tidak ada kalimat yang sia-sia. Bahasa yang digunakan efisien dan tepat sasaran.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">5. Berdasarkan Metode Ilmiah</h3>
+                    <p class="text-luxury-cream/70 text-sm">Menggunakan metodologi yang jelas dan dapat dipertanggungjawabkan. Pembaca harus dapat mereplikasi penelitian.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">6. Memiliki Kontribusi Ilmiah</h3>
+                    <p class="text-luxury-cream/70 text-sm">Memberikan sumbangan baru terhadap perkembangan ilmu pengetahuan, baik berupa temuan, teori, atau metode baru.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">7. Dapat Diuji (Verifikatif)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Temuan dan kesimpulan dapat diuji kebenarannya oleh peneliti lain dengan metode yang sama.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">8. Mengikuti Gaya Selingkung</h3>
+                    <p class="text-luxury-cream/70 text-sm">Disusun sesuai aturan teknis jurnal yang dituju: struktur, sitasi, daftar pustaka, format tabel/gambar.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Jenis-Jenis Artikel Ilmiah -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">13.4 Jenis-Jenis Artikel Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan jenis kontribusi dan pendekatannya, artikel ilmiah dapat dibagi menjadi <strong>beberapa jenis utama</strong>:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis</th>
+                            <th class="text-luxury-gold">Definisi</th>
+                            <th class="text-luxury-gold">Ciri Khas</th>
+                            <th class="text-luxury-gold">Contoh Tema PAI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Artikel Penelitian</strong></td>
+                            <td>Memaparkan hasil penelitian empiris (kualitatif/kuantitatif)</td>
+                            <td>Struktur IMRAD lengkap, ada data & analisis</td>
+                            <td>"Pengaruh Metode Diskusi terhadap Hasil Belajar Fiqih di MTs Nurul Huda"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Artikel Konseptual</strong></td>
+                            <td>Mengembangkan gagasan, teori, atau konsep baru berdasarkan kajian pustaka</td>
+                            <td>Tidak ada data empiris, analisis teoritis mendalam</td>
+                            <td>"Rekonstruksi Konsep Pendidikan Karakter Berbasis Nilai-Nilai Al-Qur'an"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Artikel Review (Tinjauan)</strong></td>
+                            <td>Merangkum dan menganalisis penelitian-penelitian terdahulu tentang suatu topik</td>
+                            <td>Sintesis literatur, identifikasi research gap</td>
+                            <td>"Tren Penelitian Pendidikan Islam di Indonesia: Systematic Literature Review 2010-2024"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Artikel Studi Kasus</strong></td>
+                            <td>Menganalisis kasus spesifik secara mendalam</td>
+                            <td>Fokus pada satu kasus, analisis kualitatif mendalam</td>
+                            <td>"Implementasi Kurikulum Merdeka di MA Muhammadiyah Bukittinggi: Studi Kasus"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Artikel Best Practice</strong></td>
+                            <td>Memaparkan praktik terbaik dalam pembelajaran atau manajemen pendidikan</td>
+                            <td>Deskriptif-reflektif, ada bukti keberhasilan</td>
+                            <td>"Penerapan Problem Based Learning dalam Pembelajaran Akidah Akhlak: Best Practice di MAN 1 Padang"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Catatan Penting</h4>
+                <p class="text-luxury-cream/70 text-sm">Bagi mahasiswa S1 PAI, <strong>artikel penelitian</strong> adalah jenis yang paling umum ditulis — biasanya dikonversi dari skripsi. <strong>Artikel konseptual</strong> juga cocok bagi yang gemar berpikir teoritis. <strong>Artikel review</strong> cocok bagi yang ingin memetakan perkembangan suatu topik. Pilih jenis yang sesuai dengan kekuatan dan minat Anda.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Struktur Artikel Ilmiah (IMRAD) -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">13.5 Struktur Artikel Ilmiah (IMRAD)</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Struktur <strong>IMRAD</strong> (<em>Introduction, Method, Result, And Discussion</em>) adalah standar internasional untuk artikel ilmiah berbasis penelitian. Struktur ini mencerminkan <strong>alur berpikir logis</strong> seorang peneliti dari awal hingga akhir.
+            </p>
+
+            <!-- Introduction -->
+            <div class="imrad-card">
+                <div class="flex items-start mb-3">
+                    <span class="imrad-letter">I</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">Introduction (Pendahuluan)</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">Mengapa penelitian ini dilakukan?</p>
+                    </div>
+                </div>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Pendahuluan berfungsi sebagai <strong>pintu masuk</strong> yang menjelaskan mengapa penelitian ini penting. Ia harus mengandung:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Latar Belakang</strong> — fenomena/masalah yang melatarbelakangi penelitian</li>
+                    <li><strong>State of the Art</strong> — ringkasan penelitian terdahulu yang relevan</li>
+                    <li><strong>Research Gap</strong> — kesenjangan yang belum terjawab oleh penelitian sebelumnya</li>
+                    <li><strong>Tujuan Penelitian</strong> — apa yang ingin dicapai</li>
+                    <li><strong>Novelty</strong> — kebaruan yang ditawarkan penelitian ini</li>
+                </ul>
+                <div class="example-box mt-3">
+                    <p class="text-luxury-goldLight text-xs">💡 Panjang ideal: 15-20% dari total artikel (sekitar 500-1.000 kata)</p>
+                </div>
+            </div>
+
+            <!-- Method -->
+            <div class="imrad-card">
+                <div class="flex items-start mb-3">
+                    <span class="imrad-letter">M</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">Method (Metode)</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">Bagaimana penelitian dilakukan?</p>
+                    </div>
+                </div>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Metode menjelaskan <strong>cara penelitian dilakukan</strong> sehingga peneliti lain dapat mereplikasi. Ia harus mengandung:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Pendekatan & Jenis Penelitian</strong> — kualitatif/kuantitatif/mixed; deskriptif/eksperimen/PTK</li>
+                    <li><strong>Tempat & Waktu</strong> — lokasi dan periode penelitian</li>
+                    <li><strong>Populasi & Sampel / Subjek Penelitian</strong> — siapa yang diteliti dan bagaimana dipilih</li>
+                    <li><strong>Instrumen Penelitian</strong> — alat pengumpulan data (kuesioner, pedoman wawancara, dll)</li>
+                    <li><strong>Teknik Pengumpulan Data</strong> — observasi, wawancara, angket, dokumentasi</li>
+                    <li><strong>Teknik Analisis Data</strong> — cara data diolah (misal: reduksi data, display data, verifikasi — Miles & Huberman)</li>
+                </ul>
+                <div class="example-box mt-3">
+                    <p class="text-luxury-goldLight text-xs">💡 Panjang ideal: 10-15% dari total artikel (sekitar 300-800 kata)</p>
+                </div>
+            </div>
+
+            <!-- Result -->
+            <div class="imrad-card">
+                <div class="flex items-start mb-3">
+                    <span class="imrad-letter">R</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">Result (Hasil)</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">Apa yang ditemukan?</p>
+                    </div>
+                </div>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Hasil menyajikan <strong>temuan penelitian secara objektif</strong>, tanpa interpretasi. Ia harus mengandung:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Deskripsi Data</strong> — paparan data yang diperoleh</li>
+                    <li><strong>Temuan Utama</strong> — hasil analisis data</li>
+                    <li><strong>Tabel, Grafik, atau Gambar</strong> — visualisasi data yang relevan</li>
+                    <li><strong>Statistik</strong> (untuk kuantitatif) — uji hipotesis, signifikansi, dll</li>
+                </ul>
+                <div class="example-box mt-3">
+                    <p class="text-luxury-goldLight text-xs">💡 Panjang ideal: 20-25% dari total artikel (sekitar 700-1.500 kata)</p>
+                </div>
+            </div>
+
+            <!-- Discussion -->
+            <div class="imrad-card">
+                <div class="flex items-start mb-3">
+                    <span class="imrad-letter">D</span>
+                    <div>
+                        <h3 class="font-serif text-xl text-luxury-gold">Discussion (Pembahasan)</h3>
+                        <p class="text-luxury-cream/60 text-xs italic">Apa makna temuan tersebut?</p>
+                    </div>
+                </div>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Pembahasan adalah <strong>jantung interpretasi</strong> artikel. Di sinilah penulis menunjukkan kedalaman analisis. Ia harus mengandung:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Interpretasi Temuan</strong> — menjelaskan makna temuan</li>
+                    <li><strong>Kaitan dengan Teori</strong> — mengaitkan temuan dengan teori yang digunakan</li>
+                    <li><strong>Kaitan dengan Penelitian Terdahulu</strong> — membandingkan dengan studi sebelumnya (mendukung atau bertentangan)</li>
+                    <li><strong>Implikasi</strong> — dampak temuan terhadap teori dan praktik</li>
+                    <li><strong>Keterbatasan Penelitian</strong> — mengakui kelemahan studi</li>
+                    <li><strong>Rekomendasi</strong> — saran untuk penelitian selanjutnya</li>
+                </ul>
+                <div class="example-box mt-3">
+                    <p class="text-luxury-goldLight text-xs">💡 Panjang ideal: 30-35% dari total artikel (sekitar 1.000-2.000 kata) — bagian paling panjang!</p>
+                </div>
+            </div>
+
+            <!-- Bagian Pelengkap -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">📌 Bagian Pelengkap Artikel Ilmiah</h3>
+            <div class="structure-card">
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Selain empat bagian utama IMRAD, artikel ilmiah juga dilengkapi dengan:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                    <li><strong>Judul</strong> — ringkas, spesifik, menarik (10-15 kata)</li>
+                    <li><strong>Abstrak</strong> — ringkasan singkat (150-250 kata) dalam bahasa Indonesia dan Inggris</li>
+                    <li><strong>Kata Kunci</strong> — 3-5 kata/frasa kunci untuk indexing</li>
+                    <li><strong>Pendahuluan</strong> (Introduction)</li>
+                    <li><strong>Metode</strong> (Method)</li>
+                    <li><strong>Hasil</strong> (Result)</li>
+                    <li><strong>Pembahasan</strong> (Discussion)</li>
+                    <li><strong>Conclusion (Kesimpulan)</strong> — jawaban singkat atas tujuan + implikasi + saran</li>
+                    <li><strong>Acknowledgment (Ucapan Terima Kasih)</strong> — opsional</li>
+                    <li><strong>References (Daftar Pustaka)</strong> — semua sumber yang disitasi</li>
+                </ul>
+            </div>
+
+            <!-- Visualisasi Struktur -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">📊 Visualisasi Struktur Artikel Ilmiah</h3>
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                <div class="text-center space-y-2">
+                    <div class="structure-card">
+                        <p class="text-luxury-gold font-semibold">📌 JUDUL + ABSTRAK + KATA KUNCI</p>
+                        <p class="text-luxury-cream/70 text-xs">Pintu masuk artikel — harus menarik dan informatif</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="imrad-card">
+                        <p class="text-luxury-gold font-semibold">📌 INTRODUCTION (15-20%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Latar Belakang → State of the Art → Research Gap → Tujuan → Novelty</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="imrad-card">
+                        <p class="text-luxury-gold font-semibold">📌 METHOD (10-15%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Pendekatan → Subjek → Instrumen → Pengumpulan Data → Analisis Data</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="imrad-card">
+                        <p class="text-luxury-gold font-semibold">📌 RESULT (20-25%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Deskripsi Data → Temuan Utama → Tabel/Grafik</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="imrad-card">
+                        <p class="text-luxury-gold font-semibold">📌 DISCUSSION (30-35%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Interpretasi → Kaitan Teori → Kaitan Penelitian Terdahulu → Implikasi</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="structure-card">
+                        <p class="text-luxury-gold font-semibold">📌 CONCLUSION + REFERENCES</p>
+                        <p class="text-luxury-cream/70 text-xs">Jawaban Tujuan → Implikasi → Saran → Daftar Pustaka</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Gaya Selingkung -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">13.6 Gaya Selingkung Jurnal</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Gaya selingkung</strong> (author guidelines) adalah aturan teknis yang ditetapkan oleh setiap jurnal. Setiap jurnal memiliki gaya selingkung yang berbeda, dan penulis <strong>wajib</strong> mengikutinya agar artikel tidak ditolak secara administratif.
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Contoh Variasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Format Naskah</strong></td>
+                            <td>Font (Times New Roman/Arial), ukuran (11/12 pt), spasi (1/1.5/2), margin</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Panjang Artikel</strong></td>
+                            <td>3.000-5.000 kata (jurnal nasional), 5.000-8.000 kata (jurnal internasional)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gaya Sitasi</strong></td>
+                            <td>APA 7th, Chicago, IEEE, Harvard, Turabian</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bahasa</strong></td>
+                            <td>Indonesia saja, Inggris saja, atau bilingual (Indonesia + Inggris)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Abstrak</strong></td>
+                            <td>150-250 kata, satu paragraf, struktur IMRAD mini</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jumlah Referensi</strong></td>
+                            <td>Min. 15-30 referensi (jurnal nasional), 30-50 (internasional)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Template</strong></td>
+                            <td>Beberapa jurnal menyediakan template Word/LaTeX yang wajib digunakan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Tips Mengikuti Gaya Selingkung</h4>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                    <li><strong>Unduh template</strong> dari website jurnal sebelum mulai menulis.</li>
+                    <li><strong>Baca 2-3 artikel terbaru</strong> di jurnal tersebut untuk memahami gaya penulisannya.</li>
+                    <li><strong>Gunakan Mendeley</strong> untuk menyesuaikan gaya sitasi secara otomatis.</li>
+                    <li><strong>Periksa checklist</strong> sebelum submit — banyak jurnal menyediakan checklist kelengkapan.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Langkah-Langkah Praktis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">13.7 Langkah-Langkah Praktis Menyusun Artikel Ilmiah</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan praktik terbaik (best practices) penulisan artikel ilmiah, berikut adalah <strong>delapan langkah sistematis</strong> yang dapat diterapkan:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Langkah</th>
+                            <th class="text-luxury-gold">Aktivitas</th>
+                            <th class="text-luxury-gold">Tips Praktis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1. Tentukan Topik & Masalah</td>
+                            <td>Memilih topik yang menarik, relevan, dan memiliki research gap</td>
+                            <td>Baca minimal 10 artikel terbaru di bidang yang diminati</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2. Kaji Literatur</td>
+                            <td>Mempelajari penelitian terdahulu untuk menemukan research gap</td>
+                            <td>Gunakan Mendeley untuk mengelola referensi; buat matriks literatur</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3. Rumuskan Tujuan & Novelty</td>
+                            <td>Menentukan apa yang ingin dicapai dan kebaruan yang ditawarkan</td>
+                            <td>Tulis novelty dalam 1-2 kalimat yang jelas</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4. Pilih Target Jurnal</td>
+                            <td>Menentukan jurnal yang akan dituju berdasarkan scope dan gaya selingkung</td>
+                            <td>Cek SINTA/Scopus; baca author guidelines dengan teliti</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5. Tulis Draft</td>
+                            <td>Menulis artikel sesuai struktur IMRAD</td>
+                            <td>Mulai dari Method & Result (paling mudah), baru Introduction & Discussion</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6. Revisi Mandiri</td>
+                            <td>Memperbaiki struktur, argumen, bahasa, dan ejaan</td>
+                            <td>Baca dengan suara keras; minta umpan balik teman sejawat</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7. Cek Plagiarisme</td>
+                            <td>Memastikan similarity index di bawah batas yang ditentukan jurnal</td>
+                            <td>Gunakan Turnitin/iThenticate; target similarity < 20%</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">8. Submit & Respons Reviewer</td>
+                            <td>Mengirimkan artikel dan merespons masukan reviewer dengan profesional</td>
+                            <td>Buat tabel respons point-by-point untuk setiap komentar reviewer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Tips Menulis Efisien</h4>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                    <li><strong>Jangan menulis berurutan</strong> dari Judul hingga Daftar Pustaka. Mulailah dari bagian yang paling Anda kuasai (biasanya Method & Result).</li>
+                    <li><strong>Tulis dulu, edit kemudian</strong> — jangan terjebak perfeksionisme saat drafting.</li>
+                    <li><strong>Tetapkan target harian</strong> — misal: 300 kata/hari atau 1 paragraf/hari.</li>
+                    <li><strong>Gunakan teknik Pomodoro</strong> — 25 menit menulis, 5 menit istirahat.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">13.8 Penerapan bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, keterampilan menulis artikel ilmiah akan diterapkan dalam berbagai konteks profesional:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Jenis Artikel</th>
+                            <th class="text-luxury-gold">Contoh Tema</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tugas Akhir S1 (Konversi Skripsi)</td>
+                            <td>Artikel Penelitian</td>
+                            <td>"Pengaruh Pembelajaran Berbasis Masalah terhadap Kemampuan Berpikir Kritis Siswa pada Mata Pelajaran Akidah Akhlak"</td>
+                        </tr>
+                        <tr>
+                            <td>Publikasi Jurnal PAI Nasional</td>
+                            <td>Artikel Penelitian / Konseptual</td>
+                            <td>"Integrasi Nilai-Nilai Al-Qur'an dalam Pendidikan Karakter di Era Digital"</td>
+                        </tr>
+                        <tr>
+                            <td>Penelitian Tindakan Kelas</td>
+                            <td>Artikel Best Practice</td>
+                            <td>"Peningkatan Motivasi Belajar Fiqih melalui Metode Role Playing di MTs Nurul Huda"</td>
+                        </tr>
+                        <tr>
+                            <td>Pengembangan Karier (Guru PNS)</td>
+                            <td>Artikel Penelitian / Review</td>
+                            <td>"Tren Penelitian Pendidikan Islam di Sumatera Barat: Systematic Literature Review"</td>
+                        </tr>
+                        <tr>
+                            <td>Konferensi/Seminar Nasional</td>
+                            <td>Artikel Konseptual</td>
+                            <td>"Rekonstruksi Konsep Pendidikan Karakter Berbasis Nilai-Nilai Al-Qur'an di Era Society 5.0"</td>
+                        </tr>
+                        <tr>
+                            <td>Jurnal Internasional</td>
+                            <td>Artikel Penelitian (dalam Bahasa Inggris)</td>
+                            <td>"The Effectiveness of Problem-Based Learning in Islamic Education: A Study in West Sumatra"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📝 Contoh Kerangka Artikel Ilmiah Bertema PAI</h3>
+            <div class="bg-luxury-900/50 p-4 rounded-sm">
+                <p class="text-luxury-gold font-semibold mb-2">Judul: "Pengaruh Metode Diskusi terhadap Hasil Belajar Fiqih Siswa MTs Nurul Huda Bukittinggi"</p>
+                <div class="text-luxury-cream/70 text-sm space-y-1">
+                    <p><strong>Abstrak</strong> (200 kata): Ringkasan latar belakang, metode, hasil, dan kesimpulan.</p>
+                    <p><strong>Kata Kunci</strong>: metode diskusi, hasil belajar, fiqih, MTs.</p>
+                    <p><strong>Introduction</strong> (800 kata):</p>
+                    <p class="ml-4">- Latar belakang: rendahnya hasil belajar Fiqih dengan metode konvensional</p>
+                    <p class="ml-4">- State of the art: penelitian terdahulu tentang metode diskusi</p>
+                    <p class="ml-4">- Research gap: belum ada penelitian di konteks MTs di Bukittinggi</p>
+                    <p class="ml-4">- Tujuan & novelty</p>
+                    <p><strong>Method</strong> (500 kata):</p>
+                    <p class="ml-4">- Pendekatan: kuantitatif eksperimental</p>
+                    <p class="ml-4">- Subjek: 60 siswa kelas VIII (30 eksperimen, 30 kontrol)</p>
+                    <p class="ml-4">- Instrumen: tes hasil belajar (valid & reliabel)</p>
+                    <p class="ml-4">- Analisis: uji-t</p>
+                    <p><strong>Result</strong> (1.000 kata):</p>
+                    <p class="ml-4">- Deskripsi data pre-test & post-test</p>
+                    <p class="ml-4">- Hasil uji-t: t-hitung > t-tabel, sig. < 0,05</p>
+                    <p class="ml-4">- Tabel perbandingan kelas eksperimen vs kontrol</p>
+                    <p><strong>Discussion</strong> (1.500 kata):</p>
+                    <p class="ml-4">- Interpretasi: metode diskusi efektif meningkatkan hasil belajar</p>
+                    <p class="ml-4">- Kaitan dengan teori konstruktivisme Vygotsky</p>
+                    <p class="ml-4">- Kaitan dengan penelitian Yanda & Ramadhanti (2024)</p>
+                    <p class="ml-4">- Implikasi bagi guru PAI</p>
+                    <p><strong>Conclusion</strong> (300 kata):</p>
+                    <p class="ml-4">- Jawaban tujuan: metode diskusi berpengaruh signifikan</p>
+                    <p class="ml-4">- Rekomendasi: guru PAI perlu menerapkan metode diskusi</p>
+                    <p class="ml-4">- Saran: penelitian lanjutan dengan variabel moderating</p>
+                    <p><strong>References</strong>: 20 referensi (buku + jurnal)</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Artikel ilmiah adalah <strong>jantung komunikasi akademik modern</strong> — sarana utama untuk menyampaikan temuan, gagasan, dan kritik kepada komunitas ilmiah. Delapan ciri utama artikel ilmiah — <strong>orisinal, objektif, sistematis, ringkas, berdasarkan metode ilmiah, memiliki kontribusi ilmiah, dapat diuji, dan mengikuti gaya selingkung</strong> — menjadi pedoman dalam setiap artikel yang kita hasilkan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Struktur <strong>IMRAD</strong> (Introduction, Method, Result, And Discussion) adalah kerangka logis yang mencerminkan alur berpikir peneliti dari awal hingga akhir. Memahami struktur ini adalah kunci menulis artikel yang tidak hanya benar secara teknis, tetapi juga meyakinkan secara intelektual.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, menulis artikel ilmiah adalah manifestasi dari sumpah Allah dalam Q.S. Al-Qalam: 1 — <em>"Demi pena dan apa yang mereka tulis"</em> — dan bentuk <em>jihad ilmi</em> di era modern. Sebagai calon pendidik PAI, mari kita asah keterampilan menulis artikel ilmiah — karena dari pena-pena yang tajam akan lahir karya-karya yang mengubah peradaban dan menjadi amal jariyah bagi penulisnya.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 13</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Day, R. A., & Gastel, B. (2012). <em>How to Write and Publish a Scientific Paper</em> (7th ed.). Cambridge University Press.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 179-207)</li>
+                <li>Pamungkas, S. (2012). <em>Bahasa Indonesia dalam Berbagai Perspektif</em>. Yogyakarta: Andi Offset. (Hal. 51-83)</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya. (Hal. 218-245)</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset. (Hal. 84-143)</li>
+                <li>Ziman, J. (1984). <em>An Introduction to Science Studies: The Philosophical and Social Aspects of Science and Technology</em>. Cambridge University Press.</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya.</li>
+                <li>Day, R. A., & Gastel, B. (2012). <em>How to Write and Publish a Scientific Paper</em> (7th ed.). Cambridge University Press.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Hasjim, N. & Tasai, A. (1992). <em>Komposisi dalam Bahasa Indonesia</em>. Jakarta: Pusat Pembinaan dan Pengembangan Bahasa.</li>
+                <li>Pamungkas, S. (2012). <em>Bahasa Indonesia dalam Berbagai Perspektif</em>. Yogyakarta: Andi Offset.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Yanda, D. P., & Ramadhanti, D. (2024). E-Modul Pembelajaran Menulis Esai Berbasis Problem Based Learning untuk Perguruan Tinggi. <em>Jurnal Belajar Bahasa</em>, 9(2).</li>
+                <li>Ziman, J. (1984). <em>An Introduction to Science Studies: The Philosophical and Social Aspects of Science and Technology</em>. Cambridge University Press.</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 13</h2>
+                <p class="text-luxury-cream/70 text-sm">Penyusunan Artikel Ilmiah</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Artikel ilmiah berbeda dari makalah terutama dalam hal...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Panjang artikel</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Tujuan publikasi di jurnal akademik dan proses peer review yang ketat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Jumlah penulis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Jenis kertas yang digunakan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. IMRAD adalah akronim dari struktur artikel ilmiah, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Introduction, Method, Result, And Discussion</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Idea, Material, Research, And Data</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Introduction, Material, Result, And Data</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Idea, Method, Research, And Discussion</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Bagian artikel ilmiah yang menjelaskan "mengapa penelitian ini dilakukan" adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Method</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Result</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Introduction</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Discussion</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Jenis artikel ilmiah yang mengembangkan gagasan atau teori baru berdasarkan kajian pustaka (tanpa data empiris) disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Artikel penelitian</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Artikel konseptual</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Artikel review</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Artikel studi kasus</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Bagian artikel ilmiah yang merupakan "jantung interpretasi" dan biasanya paling panjang (30-35%) adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Introduction</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Method</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Result</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Discussion</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. "Gaya selingkung" dalam konteks artikel ilmiah merujuk pada...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Gaya bahasa penulis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Kumpulan aturan teknis dan format penulisan yang ditetapkan oleh suatu jurnal</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Tema artikel</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Jumlah halaman artikel</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Menurut Day & Gastel (2012), tujuan utama artikel ilmiah adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Menghibur pembaca</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Menyampaikan temuan baru secara jelas dan meyakinkan kepada komunitas ilmiah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Mengumpulkan tugas kuliah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Mempromosikan diri penulis</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Proses evaluasi artikel ilmiah oleh sejawat (ahli di bidang yang sama) sebelum dipublikasikan disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Editing</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Proofreading</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Peer review</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Formatting</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Bagian artikel ilmiah yang menyajikan temuan penelitian secara objektif tanpa interpretasi adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Introduction</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Method</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Result</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Discussion</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Menurut Ziman (1984), ilmu pengetahuan baru menjadi "ilmu" secara utuh ketika...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Ditulis di buku catatan pribadi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Dipublikasikan dan diakui oleh komunitas ilmiah melalui artikel ilmiah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Disimpan di perpustakaan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Dibacakan di depan kelas</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan perbedaan mendasar antara artikel ilmiah, makalah, dan skripsi! Berikan masing-masing 3 contoh konteks penggunaannya dalam dunia Pendidikan Agama Islam!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah struktur IMRAD (Introduction, Method, Result, And Discussion)! Jelaskan fungsi masing-masing bagian dan berikan contoh konkret bertema Pendidikan Agama Islam untuk setiap bagian!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Bandingkan lima jenis artikel ilmiah (artikel penelitian, konseptual, review, studi kasus, dan best practice)! Jelaskan perbedaan utama dari segi tujuan, struktur, dan konteks penggunaannya!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Jelaskan delapan langkah praktis menyusun artikel ilmiah dari awal hingga submit! Berikan tips konkret untuk setiap langkah, khususnya dalam konteks menulis artikel bertema PAI!</p>
+                            <textarea id="essay4" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Hubungkan Q.S. Al-Qalam ayat 1 dengan aktivitas menulis artikel ilmiah! Bagaimana ayat tersebut menjadi landasan spiritual bagi seorang calon pendidik Islam dalam menulis dan mempublikasikan karya ilmiah? Rancanglah sebuah "Protokol Penulisan Artikel Ilmiah Islami" yang akan Anda terapkan dalam menulis artikel ilmiah Anda kelak!</p>
+                            <textarea id="essay5" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Tujuan publikasi di jurnal & peer review
+                q2: 'a',  // Introduction, Method, Result, And Discussion
+                q3: 'c',  // Introduction
+                q4: 'b',  // Artikel konseptual
+                q5: 'd',  // Discussion
+                q6: 'b',  // Aturan teknis jurnal
+                q7: 'b',  // Menyampaikan temuan baru secara jelas
+                q8: 'c',  // Peer review
+                q9: 'c',  // Result
+                q10: 'b'  // Dipublikasikan & diakui komunitas ilmiah
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

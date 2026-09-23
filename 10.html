@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 10: Menulis Esai Akademik | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .essay-structure {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+        }
+        .thesis-box { background-color: rgba(212, 175, 55, 0.2); border-left: 4px solid #D4AF37; padding: 1rem; border-radius: 0.25rem; }
+        .body-box { background-color: rgba(212, 175, 55, 0.1); border-left: 4px solid #F3E5AB; padding: 1rem; border-radius: 0.25rem; }
+        .conclusion-box { background-color: rgba(212, 175, 55, 0.15); border-left: 4px solid #D4AF37; padding: 1rem; border-radius: 0.25rem; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 10</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Menulis <span class="gold-gradient-text">Esai Akademik</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menguasai seni menyusun esai akademik bertema Pendidikan Agama Islam — dari perumusan tesis, pengembangan argumen, hingga penyimpulan yang memikat — sebagai wujud kompetensi menulis calon pendidik profesional.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="9.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← Bab Sebelumnya</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="11.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Esai adalah salah satu bentuk tulisan akademik yang paling banyak digunakan di perguruan tinggi. Berbeda dengan karya ilmiah formal yang kaku, esai menawarkan <strong>fleksibilitas struktur</strong> namun tetap menuntut <strong>ketajaman berpikir</strong> dan <strong>kekuatan argumen</strong>. Melalui esai, seorang penulis tidak hanya menyampaikan informasi, tetapi juga <strong>menegaskan posisi intelektualnya</strong> terhadap suatu isu.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bagi mahasiswa S1 Pendidikan Agama Islam, kemampuan menulis esai bukan sekadar tugas akademik, melainkan <strong>keterampilan profesional</strong> yang akan terus digunakan sepanjang karier — mulai dari menulis artikel di jurnal PAI, menyusun bahan ajar, hingga menyampaikan gagasan dalam forum ilmiah. Seorang guru PAI yang mampu menulis esai dengan baik akan mampu pula membimbing siswa dalam berpikir kritis dan menulis secara sistematis.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) pengertian dan hakikat esai</strong>, <strong>(2) ciri-ciri esai</strong>, <strong>(3) jenis-jenis esai</strong>, <strong>(4) struktur esai akademik</strong>, <strong>(5) langkah-langkah menulis esai</strong>, dan <strong>(6) penerapan penulisan esai</strong> dalam konteks Pendidikan Agama Islam.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">نٓ وَالْقَلَمِ وَمَا يَسْطُرُونَ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Nun. Demi pena dan apa yang mereka tulis."</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Qalam [68]: 1</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Allah Swt. bersumpah dengan <em>al-qalam</em> (pena) dan aktivitas menulis — sebuah isyarat bahwa menulis memiliki kedudukan mulia dalam Islam. Para ulama sepakat bahwa sumpah Allah menunjukkan keagungan objek yang disumpahi. Dalam konteks menulis esai, ayat ini menjadi landasan spiritual bahwa aktivitas menulis adalah <strong>ibadah intelektual</strong> — sebuah cara menuangkan ilmu, menyebarkan kebenaran, dan meninggalkan warisan pengetahuan bagi generasi mendatang. Setiap huruf yang kita tulis dengan niat yang benar akan menjadi amal jariyah.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Esai (Essay)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Karangan prosa yang membahas suatu topik secara subjektif dari sudut pandang pribadi penulis, dengan struktur yang relatif fleksibel namun tetap logis dan koheren.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Tesis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Pernyataan utama yang menjadi inti argumen esai; gagasan yang akan dibuktikan atau dikembangkan melalui paragraf-paragraf penjelas.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Argumen</h3>
+                    <p class="text-luxury-cream/70 text-sm">Alasan logis yang disertai bukti (data, fakta, teori, kutipan) untuk mendukung tesis. Argumen yang kuat adalah fondasi esai akademik.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Struktur Esai</h3>
+                    <p class="text-luxury-cream/70 text-sm">Tiga bagian utama: <strong>Pendahuluan</strong> (pengenalan topik + tesis), <strong>Tubuh Esai</strong> (pengembangan argumen), dan <strong>Kesimpulan</strong> (penegasan + implikasi).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Esai yang Kehilangan Arah</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa PAI diminta menulis esai bertema "Pentingnya Pendidikan Karakter di Era Digital". Ia menulis 10 halaman yang membahas banyak hal: sejarah pendidikan, biografi Ki Hajar Dewantara, teknologi smartphone, media sosial, hingga resep masakan. Namun, ia <strong>tidak memiliki satu tesis yang jelas</strong> dan paragraf-paragrafnya tidak saling menopang. Dosen memberikan nilai C dengan catatan: <em>"Tulisan Anda informatif, tetapi bukan esai — ini adalah kumpulan informasi tanpa arah."</em>
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Esai bukan sekadar tulisan panjang. Ia harus memiliki <strong>satu tesis yang jelas</strong>, <strong>argumen yang terstruktur</strong>, dan <strong>koherensi antarparagraf</strong>. Tanpa tesis, tulisan hanyalah kumpulan informasi; tanpa argumen, ia hanyalah opini; tanpa struktur, ia hanyalah kebingungan.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: menulis esai adalah latihan <em>tabyīn</em> (penjelasan) dan <em>bayān</em> (kejelasan) — dua prinsip komunikasi yang diajarkan Al-Qur'an. Ketika Anda menulis esai tentang pendidikan Islam, Anda sedang menyebarkan kebaikan melalui pena. Ingatlah bahwa pena adalah anugerah Allah yang diabadikan dalam sumpah-Nya (Q.S. Al-Qalam: 1). Jadikan setiap esai yang Anda tulis sebagai sarana dakwah intelektual yang membawa pencerahan bagi pembaca.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">10.1 Landasan Teoretis Esai</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Esai sebagai genre tulisan memiliki sejarah panjang dan landasan teoretis yang kaya. Pemahaman terhadap akar-akar ini akan membantu kita menulis esai yang tidak hanya benar secara struktur, tetapi juga bermakna secara intelektual.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">10.1.1 Sejarah Esai: Dari Montaigne hingga Modern</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Istilah <em>essay</em> berasal dari bahasa Prancis <em>essayer</em> yang berarti "mencoba" atau "berusaha". <strong>Michel de Montaigne</strong> (1533-1592), seorang filsuf Prancis, dianggap sebagai bapak esai modern. Pada tahun 1580, ia menerbitkan <em>Essais</em> — kumpulan tulisan yang merefleksikan pandangannya tentang berbagai topik, dari pendidikan hingga politik.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Di Inggris, <strong>Francis Bacon</strong> (1561-1626) mengembangkan esai yang lebih ringkas dan padat, berfokus pada kebijaksanaan praktis. Sementara di Indonesia, esai berkembang melalui karya-karya <strong>Sutan Takdir Alisjahbana</strong>, <strong>Chairil Anwar</strong>, dan <strong>Mochtar Lubis</strong> yang menggunakan esai sebagai medium kritik sosial dan intelektual.
+            </p>
+
+            <div class="quote-block my-6">
+                <p>"Saya tidak mengajar, saya bercerita. Saya lebih suka dipuji oleh orang bijak daripada dipahami oleh orang bodoh."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Michel de Montaigne, Bapak Esai Modern</p>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">10.1.2 Teori Komposisi Esai (Semi & Tarigan)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                M. Atar Semi (1984) dalam <em>Menulis Efektif</em> menegaskan bahwa esai yang baik harus memenuhi tiga prinsip: <strong>kesatuan</strong> (satu gagasan utama), <strong>koherensi</strong> (keterkaitan antarbagian), dan <strong>kembangan</strong> (pengembangan yang memadai). Djago Tarigan (1986) menambahkan bahwa esai akademik harus memiliki <strong>tesis yang argumentatif</strong> dan <strong>bukti yang valid</strong>.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">10.1.3 Teori Proses Menulis (Flower & Hayes)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Linda Flower dan John Hayes (1981) mengembangkan <strong>model kognitif menulis</strong> yang terdiri dari tiga proses utama:
+            </p>
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">1. Perencanaan</h4>
+                    <p class="text-luxury-cream/70 text-sm">Menggagas, mengorganisasi, dan menetapkan tujuan tulisan.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">2. Penerjemahan</h4>
+                    <p class="text-luxury-cream/70 text-sm">Mengubah gagasan menjadi kalimat dan paragraf.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-4 rounded-sm gold-border">
+                    <h4 class="text-luxury-gold font-semibold mb-2">3. Revisi</h4>
+                    <p class="text-luxury-cream/70 text-sm">Mengevaluasi dan memperbaiki tulisan secara berulang.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengertian Esai -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">10.2 Pengertian dan Hakikat Esai</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Esai</strong> adalah karangan prosa yang membahas suatu topik dari sudut pandang pribadi penulis. Berbeda dengan karya ilmiah formal (seperti skripsi atau jurnal), esai lebih <strong>fleksibel, personal, dan reflektif</strong>, namun tetap menuntut <strong>ketajaman analisis</strong> dan <strong>kekuatan argumen</strong>.
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Esai</th>
+                            <th class="text-luxury-gold">Karya Ilmiah Formal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Sifat</strong></td>
+                            <td>Subjektif, personal, reflektif</td>
+                            <td>Objektif, impersonal, sistematis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Struktur</strong></td>
+                            <td>Fleksibel (pendahuluan, tubuh, kesimpulan)</td>
+                            <td>Baku (bab, subbab, metodologi)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Panjang</strong></td>
+                            <td>500-5000 kata</td>
+                            <td>5000-10000+ kata</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bahasa</strong></td>
+                            <td>Baku namun ekspresif</td>
+                            <td>Baku, formal, teknis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tujuan</strong></td>
+                            <td>Menyampaikan pandangan pribadi</td>
+                            <td>Menyajikan hasil penelitian</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sitasi</strong></td>
+                            <td>Boleh longgar</td>
+                            <td>Wajib ketat dan lengkap</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Hakikat Esai Akademik</h4>
+                <p class="text-luxury-cream/70 text-sm">Esai akademik adalah esai yang ditulis dalam konteks akademik (tugas kuliah, artikel jurnal populer, opini di media) dengan tetap mempertahankan rigor intelektual: memiliki tesis yang jelas, argumen yang didukung bukti, dan bahasa yang baku. Esai akademik adalah <strong>jembatan</strong> antara esai personal dan karya ilmiah formal.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Ciri-Ciri Esai -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">10.3 Ciri-Ciri Esai</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menurut Semi (1984) dan Tarigan (1986), esai yang baik memiliki <strong>lima ciri utama</strong>:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">1. Singkat dan Padat</h3>
+                    <p class="text-luxury-cream/70 text-sm">Esai tidak perlu panjang, tetapi harus <strong>padat makna</strong>. Setiap kalimat harus berfungsi — tidak ada kalimat yang sia-sia.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">2. Lengkap (Tuntas)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Meskipun singkat, esai harus <strong>menuntaskan topik</strong> yang dibahas. Pembaca harus merasa puas setelah membaca.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">3. Langsung pada Inti</h3>
+                    <p class="text-luxury-cream/70 text-sm">Esai tidak bertele-tele. Ia langsung masuk ke pokok persoalan tanpa basa-basi yang tidak perlu.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">4. Mencerminkan Kepribadian Penulis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Esai adalah <strong>cerminan gaya dan pandangan penulis</strong>. Dua penulis yang membahas topik yang sama akan menghasilkan esai yang berbeda.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">5. Bersifat humanis</h3>
+                    <p class="text-luxury-cream/70 text-sm">Esai sering membahas masalah kemanusiaan, pendidikan, sosial, dan budaya — hal-hal yang dekat dengan kehidupan manusia.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">6. Memiliki Tesis yang Jelas</h3>
+                    <p class="text-luxury-cream/70 text-sm">Esai akademik harus memiliki <strong>tesis</strong> — pernyataan utama yang menjadi inti argumen dan dikembangkan di seluruh bagian esai.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Jenis-Jenis Esai -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">10.4 Jenis-Jenis Esai</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan tujuan dan cara pengembangannya, esai dapat dibagi menjadi <strong>lima jenis utama</strong>:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis Esai</th>
+                            <th class="text-luxury-gold">Tujuan</th>
+                            <th class="text-luxury-gold">Ciri Khas</th>
+                            <th class="text-luxury-gold">Contoh Tema PAI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Esai Naratif</strong></td>
+                            <td>Menceritakan peristiwa/pengalaman</td>
+                            <td>Ada tokoh, alur, waktu, tempat</td>
+                            <td>"Pengalaman Saya Mengikuti Pesantren Kilat"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Esai Deskriptif</strong></td>
+                            <td>Menggambarkan objek secara rinci</td>
+                            <td>Detail indrawi, kata sifat yang kaya</td>
+                            <td>"Keindahan Arsitektur Masjid Cordoba"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Esai Ekspositori</strong></td>
+                            <td>Menjelaskan/memaparkan informasi</td>
+                            <td>Faktual, informatif, objektif</td>
+                            <td>"Konsep Tauhid dalam Pendidikan Islam"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Esai Argumentatif</strong></td>
+                            <td>Meyakinkan pembaca akan suatu pendapat</td>
+                            <td>Ada tesis, bukti, analisis, sanggahan</td>
+                            <td>"Pendidikan Karakter Lebih Penting daripada Nilai Akademik"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Esai Persuasif</strong></td>
+                            <td>Mengajak pembaca melakukan sesuatu</td>
+                            <td>Ada ajakan, imbauan, slogan</td>
+                            <td>"Mari Gemar Membaca Al-Qur'an Setiap Hari"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Catatan Penting</h4>
+                <p class="text-luxury-cream/70 text-sm">Dalam konteks akademik, <strong>esai argumentatif</strong> adalah yang paling sering digunakan — karena menuntut mahasiswa untuk tidak hanya menjelaskan, tetapi juga <strong>mempertahankan posisi intelektualnya</strong> dengan argumen yang kuat.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Struktur Esai Akademik -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">10.5 Struktur Esai Akademik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Esai akademik memiliki struktur tiga bagian utama yang saling menopang. Memahami struktur ini adalah kunci menulis esai yang efektif dan meyakinkan.
+            </p>
+
+            <!-- Bagian 1: Pendahuluan -->
+            <div class="essay-structure">
+                <div class="thesis-box mb-4">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-3">📌 Bagian 1: Pendahuluan (10-15% dari total esai)</h3>
+                    <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Pendahuluan berfungsi sebagai <strong>pintu masuk</strong> yang menarik pembaca ke dalam esai. Ia harus mengandung:</p>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li><strong>Hook/Pemikat</strong> — kalimat pembuka yang menarik perhatian (pertanyaan retoris, kutipan, fakta mengejutkan, anekdot)</li>
+                        <li><strong>Latar Belakang</strong> — konteks yang menjelaskan mengapa topik ini penting</li>
+                        <li><strong>Tesis</strong> — pernyataan utama yang menjadi inti argumen esai (biasanya 1-2 kalimat di akhir pendahuluan)</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <p class="text-luxury-goldLight text-xs uppercase tracking-wider mb-2">Contoh Pendahuluan Esai:</p>
+                    <p class="text-luxury-cream/80 text-sm italic">"Di era di mana algoritma media sosial lebih banyak membentuk cara berpikir remaja daripada guru, pendidikan Islam menghadapi tantangan eksistensial. <span class="text-luxury-gold font-semibold">Esai ini berargumen bahwa integrasi nilai-nilai Al-Qur'an dalam pembelajaran PAI bukan sekadar pilihan pedagogis, melainkan keharusan strategis untuk membentuk generasi yang tidak hanya cerdas secara intelektual, tetapi juga kokoh secara moral.</span>"</p>
+                    <p class="text-luxury-cream/50 text-xs mt-2 italic">(Kalimat terakhir adalah <strong>tesis</strong>)</p>
+                </div>
+            </div>
+
+            <!-- Bagian 2: Tubuh Esai -->
+            <div class="essay-structure">
+                <div class="body-box mb-4">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-3">📌 Bagian 2: Tubuh Esai (70-80% dari total esai)</h3>
+                    <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Tubuh esai adalah <strong>jantung argumen</strong>. Setiap paragraf dalam tubuh esai harus:</p>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li><strong>Memiliki satu gagasan utama</strong> yang mendukung tesis</li>
+                        <li><strong>Disertai bukti</strong> (data, fakta, kutipan ahli, contoh konkret)</li>
+                        <li><strong>Memiliki analisis</strong> — bukan sekadar menyajikan bukti, tetapi menjelaskan mengapa bukti itu penting</li>
+                        <li><strong>Berkaitan dengan paragraf lain</strong> melalui kata penghubung (oleh karena itu, selain itu, di samping itu)</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <p class="text-luxury-goldLight text-xs uppercase tracking-wider mb-2">Contoh Paragraf Tubuh Esai:</p>
+                    <p class="text-luxury-cream/80 text-sm italic">"Pertama, integrasi nilai Al-Qur'an dalam PAI mampu membentuk filter moral yang kuat di tengah arus informasi digital. Penelitian Yanda & Ramadhanti (2024) membuktikan bahwa siswa yang mengikuti pembelajaran PAI berbasis ayat Al-Qur'an menunjukkan peningkatan signifikan dalam keterampilan berpikir kritis dan karakter religius. Hal ini sejalan dengan temuan Munirah (2017) yang menunjukkan bahwa model pembelajaran yang mengintegrasikan nilai spiritual mampu meningkatkan keterampilan menulis persuasif siswa. <span class="text-luxury-gold font-semibold">Dengan demikian, bukti empiris menunjukkan bahwa integrasi nilai Al-Qur'an bukan sekadar retorika, melainkan strategi pedagogis yang terbukti efektif.</span>"</p>
+                    <p class="text-luxury-cream/50 text-xs mt-2 italic">(Paragraf ini memiliki <strong>gagasan utama + bukti + analisis</strong>)</p>
+                </div>
+            </div>
+
+            <!-- Bagian 3: Kesimpulan -->
+            <div class="essay-structure">
+                <div class="conclusion-box mb-4">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-3">📌 Bagian 3: Kesimpulan (10-15% dari total esai)</h3>
+                    <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">Kesimpulan bukan sekadar ringkasan, melainkan <strong>penegasan tesis dengan perspektif baru</strong>. Ia harus mengandung:</p>
+                    <ul class="text-luxury-cream/70 text-sm space-y-2 list-disc list-inside">
+                        <li><strong>Restatement tesis</strong> — menyatakan kembali tesis dengan kata-kata berbeda</li>
+                        <li><strong>Sintesis argumen</strong> — merangkum poin-poin utama dari tubuh esai</li>
+                        <li><strong>Implikasi/rekomendasi</strong> — menjelaskan mengapa argumen ini penting dan apa langkah selanjutnya</li>
+                        <li><strong>Closing statement</strong> — kalimat penutup yang berkesan (opsional)</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <p class="text-luxury-goldLight text-xs uppercase tracking-wider mb-2">Contoh Kesimpulan Esai:</p>
+                    <p class="text-luxury-cream/80 text-sm italic">"Dengan demikian, integrasi nilai-nilai Al-Qur'an dalam pembelajaran PAI bukan sekadar nostalgia religius, melainkan strategi pedagogis yang relevan dengan tantangan era digital. Bukti empiris menunjukkan bahwa pendekatan ini mampu membentuk karakter, meningkatkan keterampilan berpikir kritis, dan memperkuat identitas spiritual siswa. Oleh karena itu, guru PAI perlu terus mengembangkan model pembelajaran yang mengintegrasikan ayat-ayat Al-Qur'an secara kontekstual — bukan sebagai pelengkap, melainkan sebagai fondasi pendidikan karakter di abad ke-21."</p>
+                </div>
+            </div>
+
+            <!-- Visualisasi Struktur -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">📊 Visualisasi Struktur Esai</h3>
+            <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                <div class="text-center space-y-2">
+                    <div class="thesis-box">
+                        <p class="text-luxury-gold font-semibold">📌 PENDAHULUAN (10-15%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Hook → Latar Belakang → <strong>Tesis</strong></p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="body-box">
+                        <p class="text-luxury-gold font-semibold">📌 TUBUH ESAI (70-80%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Paragraf 1 (Argumen + Bukti + Analisis)</p>
+                        <p class="text-luxury-cream/70 text-xs">Paragraf 2 (Argumen + Bukti + Analisis)</p>
+                        <p class="text-luxury-cream/70 text-xs">Paragraf 3 (Argumen + Bukti + Analisis)</p>
+                        <p class="text-luxury-cream/70 text-xs">...</p>
+                    </div>
+                    <p class="text-luxury-gold text-2xl">↓</p>
+                    <div class="conclusion-box">
+                        <p class="text-luxury-gold font-semibold">📌 KESIMPULAN (10-15%)</p>
+                        <p class="text-luxury-cream/70 text-xs">Restatement Tesis → Sintesis → Implikasi → Closing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Langkah-Langkah Menulis Esai -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">10.6 Langkah-Langkah Menulis Esai Akademik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Berdasarkan model Flower & Hayes (1981) dan praktik terbaik menulis akademik, berikut adalah <strong>tujuh langkah sistematis</strong> menulis esai:
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Langkah</th>
+                            <th class="text-luxury-gold">Aktivitas</th>
+                            <th class="text-luxury-gold">Tips Praktis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">1. Memahami Tugas</td>
+                            <td>Membaca rubrik penilaian dengan saksama</td>
+                            <td>Tandai kata kunci: tema, panjang, format, batas waktu</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">2. Brainstorming</td>
+                            <td>Menggali gagasan awal tentang topik</td>
+                            <td>Gunakan mind map atau daftar bebas — jangan menyensor diri</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">3. Merumuskan Tesis</td>
+                            <td>Menentukan posisi utama yang akan diperjuangkan</td>
+                            <td>Tesis harus <strong>spesifik, argumentatif, dan dapat dibuktikan</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">4. Menyusun Kerangka</td>
+                            <td>Membuat outline pendahuluan, tubuh, kesimpulan</td>
+                            <td>Setiap paragraf tubuh harus memiliki satu gagasan utama</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">5. Menulis Draft</td>
+                            <td>Mengembangkan kerangka menjadi esai utuh</td>
+                            <td>Tulis dulu, edit kemudian — jangan terjebak perfeksionisme</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">6. Merevisi</td>
+                            <td>Memperbaiki struktur, argumen, dan kohesi</td>
+                            <td>Baca dengan suara keras untuk menemukan bagian yang rancu</td>
+                        </tr>
+                        <tr>
+                            <td class="text-luxury-gold font-bold">7. Menyunting</td>
+                            <td>Memperbaiki ejaan, diksi, dan tata bahasa</td>
+                            <td>Gunakan KBBI Daring dan minta umpan balik teman sejawat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Tips Merumuskan Tesis yang Kuat</h4>
+                <p class="text-luxury-cream/70 text-sm mb-2">Tesis yang baik harus memenuhi tiga kriteria:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside">
+                    <li><strong>Spesifik</strong> — tidak terlalu umum atau terlalu sempit</li>
+                    <li><strong>Argumentatif</strong> — dapat diperdebatkan (bukan fakta yang sudah mapan)</li>
+                    <li><strong>Dapat dibuktikan</strong> — didukung oleh bukti yang valid</li>
+                </ul>
+                <div class="example-box mt-2">
+                    <p class="text-luxury-goldLight text-xs">❌ Lemah: "Pendidikan Islam itu penting." (terlalu umum, tidak argumentatif)</p>
+                    <p class="text-luxury-goldLight text-xs">✅ Kuat: "Integrasi nilai-nilai Al-Qur'an dalam PAI mampu membentuk karakter siswa di era digital lebih efektif daripada pendekatan sekuler." (spesifik, argumentatif, dapat dibuktikan)</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan Kontekstual -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">10.7 Penerapan Penulisan Esai bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, keterampilan menulis esai akan diterapkan dalam berbagai konteks profesional:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Jenis Esai</th>
+                            <th class="text-luxury-gold">Contoh Tema</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tugas Kuliah PAI</td>
+                            <td>Argumentatif</td>
+                            <td>"Relevansi Pendidikan Islam di Era Society 5.0"</td>
+                        </tr>
+                        <tr>
+                            <td>Artikel Jurnal PAI</td>
+                            <td>Argumentatif/Ekspositori</td>
+                            <td>"Model Pembelajaran Fiqih Berbasis Masalah di Madrasah"</td>
+                        </tr>
+                        <tr>
+                            <td>Opini di Media Massa</td>
+                            <td>Persuasif</td>
+                            <td>"Mengapa Pendidikan Karakter Harus Dimulai dari Rumah"</td>
+                        </tr>
+                        <tr>
+                            <td>Bahan Ajar/Modul</td>
+                            <td>Ekspositori</td>
+                            <td>"Konsep Tauhid dan Implementasinya dalam Kehidupan Sehari-hari"</td>
+                        </tr>
+                        <tr>
+                            <td>Refleksi Profesional</td>
+                            <td>Naratif/Deskriptif</td>
+                            <td>"Pengalaman Saya Mengimplementasikan Kurikulum Merdeka di Madrasah"</td>
+                        </tr>
+                        <tr>
+                            <td>Pidato/Khutbah</td>
+                            <td>Persuasif</td>
+                            <td>"Pentingnya Silaturahmi di Era Digital"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📝 Contoh Kerangka Esai Bertema PAI</h3>
+            <div class="bg-luxury-900/50 p-4 rounded-sm">
+                <p class="text-luxury-gold font-semibold mb-2">Judul: "Integrasi Nilai Al-Qur'an dalam PAI: Strategi Membentuk Karakter di Era Digital"</p>
+                <div class="text-luxury-cream/70 text-sm space-y-1">
+                    <p><strong>I. Pendahuluan</strong></p>
+                    <p class="ml-4">- Hook: Data tentang degradasi moral remaja di era digital</p>
+                    <p class="ml-4">- Latar belakang: Tantangan PAI di era disrupsi informasi</p>
+                    <p class="ml-4">- <span class="text-luxury-gold">Tesis: Integrasi nilai Al-Qur'an dalam PAI adalah strategi efektif untuk membentuk karakter siswa di era digital.</span></p>
+                    <p><strong>II. Tubuh Esai</strong></p>
+                    <p class="ml-4">- Paragraf 1: Urgensi pendidikan karakter di era digital (bukti: data BNN, KPAI)</p>
+                    <p class="ml-4">- Paragraf 2: Konsep integrasi nilai Al-Qur'an dalam PAI (bukti: teori, ayat)</p>
+                    <p class="ml-4">- Paragraf 3: Bukti empiris efektivitas pendekatan ini (bukti: penelitian Yanda & Ramadhanti, 2024)</p>
+                    <p class="ml-4">- Paragraf 4: Sanggahan terhadap kritik dan responsnya</p>
+                    <p><strong>III. Kesimpulan</strong></p>
+                    <p class="ml-4">- Restatement tesis</p>
+                    <p class="ml-4">- Sintesis argumen</p>
+                    <p class="ml-4">- Rekomendasi untuk guru PAI</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menulis esai akademik adalah <strong>seni memadukan ketajaman berpikir dengan keindahan bahasa</strong>. Esai yang baik bukan sekadar kumpulan informasi, melainkan sebuah argumen yang terstruktur, didukung bukti, dan disampaikan dengan gaya yang memikat. Melalui struktur tiga bagian — <strong>pendahuluan (tesis), tubuh esai (argumen), dan kesimpulan (implikasi)</strong> — penulis mampu menyampaikan gagasan secara sistematis dan meyakinkan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Tujuh langkah menulis esai — dari memahami tugas hingga menyunting — adalah proses yang harus dilatih secara konsisten. Tidak ada penulis handal yang lahir tanpa latihan. Setiap esai yang kita tulis adalah batu loncatan menuju penguasaan yang lebih matang.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, menulis esai adalah manifestasi dari sumpah Allah dalam Q.S. Al-Qalam: 1 — <em>"Demi pena dan apa yang mereka tulis."</em> Setiap esai yang kita tulis dengan niat yang benar adalah <strong>amal intelektual</strong> yang dapat menjadi warisan kebaikan bagi generasi mendatang. Sebagai calon pendidik PAI, mari kita asah keterampilan menulis esai — karena dari pena-pena yang tajam akan lahir gagasan-gagasan yang mengubah peradaban.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 10</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 133-166)</li>
+                <li>Suladi. (2014). <em>Paragraf</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Tarigan, D. (1986). <em>Membina Keterampilan Menulis Paragraf dan Pengembangannya</em>. Bandung: Angkasa. (Hal. 1-60)</li>
+                <li>Marsa, A. H. (2009). <em>Ayo Mengenal Paragraf</em>. Solo: Wangsa Jatra Lestari. (Hal. 1-59)</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya. (Hal. 82-118)</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset. (Hal. 95-121)</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset. (Hal. 84-143)</li>
+                <li>Widjono. (2005). <em>Bahasa Indonesia Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Gramedia. (Hal. 221-269)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya.</li>
+                <li>Bacon, F. (1597). <em>Essays</em>. London.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Flower, L., & Hayes, J. R. (1981). A cognitive process theory of writing. <em>College Composition and Communication</em>, 32(4), 365-387.</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset.</li>
+                <li>Marsa, A. H. (2009). <em>Ayo Mengenal Paragraf</em>. Solo: Wangsa Jatra Lestari.</li>
+                <li>Montaigne, M. de. (1580). <em>Essais</em>. Bordeaux.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Suladi. (2014). <em>Paragraf</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Tarigan, D. (1986). <em>Membina Keterampilan Menulis Paragraf dan Pengembangannya</em>. Bandung: Angkasa.</li>
+                <li>Widjono, H. S. (2005). <em>Bahasa Indonesia: Mata Kuliah Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Grasindo.</li>
+                <li>Yanda, D. P., & Ramadhanti, D. (2024). E-Modul Pembelajaran Menulis Esai Berbasis Problem Based Learning untuk Perguruan Tinggi. <em>Jurnal Belajar Bahasa</em>, 9(2).</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 10</h2>
+                <p class="text-luxury-cream/70 text-sm">Menulis Esai Akademik</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Istilah "esai" berasal dari bahasa Prancis "essayer" yang berarti...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Menulis dengan indah</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Mencoba atau berusaha</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Mengkritik dengan tajam</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Menceritakan pengalaman</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Q.S. Al-Qalam ayat 1 yang menjadi landasan spiritual menulis esai mengandung makna...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Larangan menulis selain Al-Qur'an</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Allah bersumpah dengan pena dan aktivitas menulis, menunjukkan keagungan aktivitas menulis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Perintah menggunakan pena tradisional</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Larangan menulis dalam bahasa selain Arab</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Tokoh yang dianggap sebagai bapak esai modern adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Francis Bacon</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Michel de Montaigne</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Sutan Takdir Alisjahbana</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Mochtar Lubis</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Bagian esai yang berisi pernyataan utama yang akan diperjuangkan melalui argumen disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Hook</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Tesis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Latar belakang</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Kesimpulan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Esai yang bertujuan meyakinkan pembaca akan kebenaran suatu pendapat dengan menyajikan tesis, bukti, dan analisis disebut esai...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Naratif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Deskriptif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Argumentatif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Persuasif</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Proporsi ideal tubuh esai dalam keseluruhan esai adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. 30-40%</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. 50-60%</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. 70-80%</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. 90-100%</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Berdasarkan model Flower & Hayes (1981), proses menulis terdiri dari tiga tahap utama, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Membaca, menulis, mengedit</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Perencanaan, penerjemahan, revisi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Brainstorming, drafting, publishing</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Pendahuluan, tubuh, kesimpulan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Ciri esai yang baik menurut Semi (1984) dan Tarigan (1986) adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Panjang, rumit, dan menggunakan banyak istilah asing</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Singkat, padat, lengkap, langsung pada inti, dan mencerminkan kepribadian penulis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Hanya berisi data statistik tanpa analisis</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Tidak memiliki struktur yang jelas</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Tesis yang baik harus memenuhi tiga kriteria, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Umum, panjang, dan ambigu</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Spesifik, argumentatif, dan dapat dibuktikan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Singkat, puitis, dan subjektif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Faktual, objektif, dan tidak dapat diperdebatkan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Dalam konteks Pendidikan Agama Islam, jenis esai yang paling sering digunakan untuk tugas akademik adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Esai naratif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Esai deskriptif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Esai argumentatif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Esai persuasif</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan perbedaan mendasar antara esai dan karya ilmiah formal (seperti skripsi atau artikel jurnal)! Berikan masing-masing 3 contoh konteks penggunaannya dalam dunia Pendidikan Agama Islam!</p>
+                            <textarea id="essay1" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah struktur esai akademik (pendahuluan, tubuh esai, kesimpulan)! Jelaskan fungsi masing-masing bagian dan berikan contoh konkret bertema Pendidikan Agama Islam untuk setiap bagian!</p>
+                            <textarea id="essay2" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Bandingkan lima jenis esai (naratif, deskriptif, ekspositori, argumentatif, persuasif)! Berikan masing-masing contoh tema bertema PAI, dan jelaskan konteks profesional mana yang paling tepat menggunakan setiap jenis esai tersebut!</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Rumuskan sebuah tesis yang kuat tentang topik "Pentingnya Pendidikan Karakter di Era Digital"! Jelaskan mengapa tesis Anda memenuhi tiga kriteria tesis yang baik (spesifik, argumentatif, dan dapat dibuktikan)! Kemudian, buatlah kerangka esai (outline) dengan minimal 3 paragraf tubuh yang mendukung tesis tersebut!</p>
+                            <textarea id="essay4" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Hubungkan Q.S. Al-Qalam ayat 1 dengan aktivitas menulis esai akademik! Bagaimana ayat tersebut menjadi landasan spiritual bagi seorang calon pendidik Islam dalam menulis? Jelaskan bagaimana Anda akan mengimplementasikan nilai-nilai spiritual ini dalam proses menulis esai Anda sehari-hari!</p>
+                            <textarea id="essay5" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Mencoba atau berusaha
+                q2: 'b',  // Allah bersumpah dengan pena
+                q3: 'b',  // Michel de Montaigne
+                q4: 'b',  // Tesis
+                q5: 'c',  // Argumentatif
+                q6: 'c',  // 70-80%
+                q7: 'b',  // Perencanaan, penerjemahan, revisi
+                q8: 'b',  // Singkat, padat, lengkap, langsung pada inti
+                q9: 'b',  // Spesifik, argumentatif, dapat dibuktikan
+                q10: 'c'  // Argumentatif
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>

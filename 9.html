@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 9: Pola Pengembangan Paragraf | Pembelajaran Bahasa Indonesia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Luxury Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            900: '#0B1120',
+                            800: '#151E32',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            cream: '#F9F7F2'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B1120; color: #F9F7F2; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+        .form-input {
+            background-color: #151E32;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F9F7F2;
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid rgba(212, 175, 55, 0.2); padding: 12px; text-align: left; }
+        th { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; font-weight: 600; }
+        tr:nth-child(even) { background-color: rgba(21, 30, 50, 0.5); }
+        tr:hover { background-color: rgba(212, 175, 55, 0.05); }
+        .quote-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #F3E5AB;
+        }
+        .ayat-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 229, 171, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+        .ayat-arab { font-size: 1.5rem; line-height: 2.5; color: #F3E5AB; margin-bottom: 1rem; }
+        .example-box {
+            background-color: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #D4AF37;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        .pattern-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(21, 30, 50, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            margin: 0.75rem 0;
+        }
+        .arrow-down { color: #D4AF37; font-size: 1.5rem; text-align: center; margin: 0.5rem 0; }
+        .main-idea { background-color: rgba(212, 175, 55, 0.15); padding: 0.5rem; border-radius: 0.25rem; font-weight: 600; color: #F3E5AB; }
+        .supporting-idea { background-color: rgba(212, 175, 55, 0.05); padding: 0.5rem; border-radius: 0.25rem; color: #F9F7F2; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-luxury-gold rounded-sm flex items-center justify-center">
+                        <span class="text-luxury-900 font-serif font-bold text-lg">B</span>
+                    </div>
+                    <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Beranda</a>
+                    <a href="index.html#daftar-isi" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-luxury-cream/80 hover:text-luxury-gold transition-colors text-sm uppercase tracking-widest">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="pt-32 pb-16 bg-luxury-800/30 border-b border-luxury-gold/20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-luxury-gold text-sm font-semibold tracking-[0.2em] uppercase">Pertemuan 09</span>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-luxury-cream mt-4 mb-6">
+                Pola Pengembangan <br><span class="gold-gradient-text">Paragraf</span>
+            </h1>
+            <p class="text-luxury-cream/70 text-lg max-w-2xl mx-auto leading-relaxed">
+                Menguasai seni menyusun paragraf yang padu, logis, dan sistematis — unit terkecil wacana tulis yang menjadi fondasi bagi esai dan karya ilmiah akademik bertema Pendidikan Agama Islam.
+            </p>
+            <div class="flex justify-center gap-4 mt-8 flex-wrap">
+                <a href="8.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">← UTS</a>
+                <a href="#pendahuluan" class="px-6 py-3 bg-luxury-gold text-luxury-900 rounded-sm hover:bg-luxury-goldLight transition-all text-sm font-semibold">Mulai Membaca</a>
+                <a href="10.html" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">Bab Selanjutnya →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Pendahuluan -->
+        <section id="pendahuluan">
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Pendahuluan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Paragraf adalah <strong>unit terkecil wacana tulis</strong> yang mengandung satu gagasan utama yang dikembangkan melalui gagasan-gagasan pendukung. Dalam hierarki tulisan, paragraf berada di antara kalimat dan karangan — ia adalah <strong>jantung dari sebuah tulisan</strong>. Tulisan yang baik lahir dari paragraf-paragraf yang baik.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Bagi mahasiswa, khususnya calon pendidik Islam, kemampuan menyusun paragraf yang padu dan logis bukan sekadar keterampilan teknis, melainkan <strong>kemampuan berpikir sistematis</strong>. Seorang guru yang mampu menyusun paragraf dengan baik akan mampu pula menyusun RPP, modul ajar, dan karya ilmiah yang terstruktur — yang pada gilirannya akan membentuk cara berpikir siswa yang teratur dan logis.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Bab ini akan menguraikan secara komprehensif: <strong>(1) pengertian paragraf</strong>, <strong>(2) jenis-jenis paragraf</strong>, <strong>(3) persyaratan paragraf yang baik</strong>, <strong>(4) pola pengembangan paragraf</strong> (deduktif, induktif, campuran, dan proses), dan <strong>(5) penerapan pola pengembangan paragraf</strong> dalam konteks Pendidikan Agama Islam.
+            </p>
+        </section>
+
+        <!-- Ayat Al-Qur'an sebagai Integrasi Nilai Islam -->
+        <section class="ayat-box">
+            <p class="text-luxury-gold text-xs uppercase tracking-widest mb-3">📖 Integrasi Nilai Islam</p>
+            <p class="ayat-arab">الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَّا تَرَىٰ فِي خَلْقِ الرَّحْمَٰنِ مِن تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ</p>
+            <p class="text-luxury-cream/80 italic text-sm mb-2">"Yang menciptakan tujuh langit berlapis-lapis. Tidak akan kamu lihat sesuatu yang tidak seimbang pada ciptaan Tuhan Yang Maha Pemurah. Maka lihatlah sekali lagi, adakah kamu lihat sesuatu yang cacat?"</p>
+            <p class="text-luxury-goldLight text-xs">— Q.S. Al-Mulk [67]: 3</p>
+            <p class="text-luxury-cream/60 text-xs mt-3 leading-relaxed">Ayat ini menggambarkan ciptaan Allah yang <strong>berlapis-lapis (ṭibāqan)</strong> dan <strong>sempurna tanpa cacat</strong>. Dalam perspektif kebahasaan, paragraf yang baik harus meneladani prinsip <em>an-naẓm</em> (keteraturan) dan <em>at-tarāī</em> (pelapisan) ini — setiap kalimat tersusun secara sistematis, saling menopang, dan tidak ada bagian yang sia-sia. Paragraf yang baik adalah cerminan dari keindahan keteraturan ciptaan Allah.</p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Konsep Kunci -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-6 flex items-center gap-3">
+                <span class="text-luxury-gold">🔑</span> Konsep Kunci
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Paragraf</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kumpulan kalimat yang tersusun secara padu dan mengembangkan satu gagasan utama (tema) melalui gagasan-gagasan pendukung.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Gagasan Utama (Ide Pokok)</h3>
+                    <p class="text-luxury-cream/70 text-sm">Inti pembicaraan yang menjadi pusat pengembangan paragraf, biasanya termuat dalam kalimat utama.</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kalimat Utama</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kalimat yang mengandung gagasan utama, dapat terletak di awal (deduktif), akhir (induktif), atau keduanya (campuran).</p>
+                </div>
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">Kalimat Penjelas</h3>
+                    <p class="text-luxury-cream/70 text-sm">Kalimat-kalimat yang mengembangkan, merinci, atau memberikan bukti bagi gagasan utama.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="bg-luxury-gold/5 border-l-4 border-luxury-gold p-6 rounded-r-sm">
+            <h3 class="font-serif text-xl text-luxury-gold mb-3">📖 Studi Kasus: Paragraf yang Tidak Padu</h3>
+            <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                Seorang mahasiswa PAI menulis paragraf berikut dalam esainya: <em>"Pendidikan Islam sangat penting di era modern. Rasulullah Saw. adalah teladan utama dalam pendidikan. Teknologi digital telah mengubah cara belajar siswa. Guru harus menguasai ICT. Shalat lima waktu adalah kewajiban setiap muslim. Oleh karena itu, pendidikan karakter harus ditanamkan sejak dini."</em>
+            </p>
+            <p class="text-luxury-goldLight text-sm font-semibold">
+                💡 Pembelajaran: Paragraf di atas <strong>tidak memiliki kesatuan</strong> — ia melompat dari satu topik ke topik lain tanpa koherensi. Kalimat tentang shalat dan teknologi tidak saling menopang. Paragraf yang baik harus memiliki <strong>satu gagasan utama</strong> yang dikembangkan secara konsisten.
+            </p>
+        </section>
+
+        <!-- Refleksi -->
+        <section>
+            <h3 class="font-serif text-xl text-luxury-cream mb-3 flex items-center gap-2">
+                <span>💭</span> Refleksi untuk Mahasiswa
+            </h3>
+            <p class="text-luxury-cream/70 leading-relaxed text-sm">
+                Sebagai calon pendidik Islam, renungkanlah: setiap paragraf yang Anda tulis di RPP, modul ajar, atau karya ilmiah akan dibaca dan dipahami oleh orang lain. Paragraf yang rancu akan menghasilkan pemikiran yang rancu; paragraf yang padu akan melahirkan pemikiran yang jernih. Ingatlah prinsip <em>an-naẓm</em> dari Q.S. Al-Mulk: 3 — susunlah tulisan Anda dengan teratur dan sempurna, tanpa cacat yang merusak makna.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Landasan Teoretis -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">9.1 Landasan Teoretis Paragraf</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Kajian paragraf berakar pada cabang linguistik yang disebut <strong>wacana</strong> (discourse analysis) dan <strong>komposisi</strong>. Pemahaman teoretis ini akan membantu kita menyusun paragraf yang tidak hanya benar secara struktural, tetapi juga efektif secara komunikatif.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">9.1.1 Teori Paragraf (Suladi, 2014)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Suladi (2014) dalam <em>Paragraf</em> menegaskan bahwa paragraf adalah <strong>satuan gramatikal yang terdiri atas beberapa kalimat</strong> yang saling berkaitan untuk mengembangkan satu gagasan utama. Paragraf yang baik harus memenuhi tiga prinsip utama: <strong>kesatuan (unity)</strong>, <strong>kepaduan (coherence)</strong>, dan <strong>kembangan (development)</strong>.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">9.1.2 Teori Komposisi (Tarigan, 1986)</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Djago Tarigan (1986) dalam <em>Membina Keterampilan Menulis Paragraf</em> menekankan bahwa paragraf adalah <strong>unit organik</strong> — setiap kalimat di dalamnya harus berfungsi dan saling menopang seperti organ dalam tubuh. Kalimat yang tidak relevan harus dihilangkan, seperti jaringan yang sakit harus dibuang.
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">9.1.3 Teori Kognitif: Skema Paragraf</h3>
+            <p class="text-luxury-cream/80 leading-relaxed mb-3">
+                Teori skema (Rumelhart, 1980) menjelaskan bahwa pembaca memproses paragraf dengan mengaktifkan <strong>struktur kognitif</strong> yang sudah ada. Paragraf dengan struktur yang jelas (gagasan utama di awal atau akhir) akan lebih mudah diproses oleh pembaca karena sesuai dengan ekspektasi kognitifnya.
+            </p>
+
+            <div class="quote-block my-6">
+                <p>"Paragraf yang baik adalah paragraf yang setiap kalimatnya saling bertanya dan saling menjawab — tidak ada kalimat yang berdiri sendiri dalam kesepian."</p>
+                <p class="text-luxury-cream/60 text-sm mt-2">— Adaptasi dari Prinsip Kepaduan Paragraf</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pengertian Paragraf -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">9.2 Pengertian Paragraf</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                <strong>Paragraf</strong> (dari bahasa Yunani <em>paragraphos</em>: menulis di samping) adalah satuan wacana yang terdiri atas sekumpulan kalimat yang saling berkaitan dalam mengembangkan satu gagasan utama.
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Aspek</th>
+                            <th class="text-luxury-gold">Penjelasan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Secara Tipografis</strong></td>
+                            <td>Paragraf ditandai dengan baris pertama yang menjorok ke dalam (indentasi) atau jarak antarparagraf yang lebih lebar.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secara Semantis</strong></td>
+                            <td>Paragraf mengandung satu gagasan utama yang dikembangkan melalui gagasan-gagasan pendukung.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secara Gramatikal</strong></td>
+                            <td>Paragraf terdiri atas minimal dua kalimat yang saling berkaitan secara kohesif dan koheren.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secara Retoris</strong></td>
+                            <td>Paragraf merupakan satuan pengembang wacana yang memiliki fungsi komunikatif tertentu (menjelaskan, meyakinkan, menceritakan, dll).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-luxury-800/50 p-4 rounded-sm gold-border my-4">
+                <h4 class="text-luxury-gold font-semibold mb-2">💡 Struktur Paragraf</h4>
+                <p class="text-luxury-cream/70 text-sm">Setiap paragraf idealnya terdiri atas:</p>
+                <ul class="text-luxury-cream/70 text-sm space-y-1 list-disc list-inside mt-2">
+                    <li><strong>1 Kalimat Utama</strong> — mengandung gagasan pokok</li>
+                    <li><strong>Beberapa Kalimat Penjelas</strong> — mengembangkan gagasan utama dengan rincian, contoh, data, atau argumen</li>
+                    <li><strong>Kalimat Penegas</strong> (opsional) — menyimpulkan atau mempertegas gagasan utama</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Jenis-Jenis Paragraf -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">9.3 Jenis-Jenis Paragraf</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Paragraf dapat diklasifikasikan berdasarkan berbagai dimensi. Berikut adalah klasifikasi yang paling umum:
+            </p>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">9.3.1 Berdasarkan Sifat Isi (Tujuan Komunikasi)</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis</th>
+                            <th class="text-luxury-gold">Tujuan</th>
+                            <th class="text-luxury-gold">Ciri Khas</th>
+                            <th class="text-luxury-gold">Contoh Konteks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Narasi</strong></td>
+                            <td>Menceritakan peristiwa secara kronologis</td>
+                            <td>Ada tokoh, alur, waktu, tempat</td>
+                            <td>Biografi Rasulullah, sejarah peradaban Islam</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Deskripsi</strong></td>
+                            <td>Menggambarkan objek secara rinci sehingga pembaca seolah melihat, mendengar, atau merasakan</td>
+                            <td>Detail indrawi, kata sifat yang kaya</td>
+                            <td>Deskripsi Masjid Nabawi, suasana Ramadhan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eksposisi</strong></td>
+                            <td>Menjelaskan atau memaparkan informasi secara objektif</td>
+                            <td>Faktual, informatif, tidak memaksakan pendapat</td>
+                            <td>Penjelasan rukun Islam, syarat sah shalat</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Argumentasi</strong></td>
+                            <td> Meyakinkan pembaca akan kebenaran suatu pendapat</td>
+                            <td>Ada tesis, bukti, analisis, kesimpulan</td>
+                            <td>Esai tentang pentingnya pendidikan karakter</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Persuasi</strong></td>
+                            <td>Mengajak pembaca untuk melakukan sesuatu</td>
+                            <td>Ada ajakan, imbauan, slogan</td>
+                            <td>Imbauan gemar membaca Al-Qur'an</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">9.3.2 Berdasarkan Letak Kalimat Utama</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Jenis</th>
+                            <th class="text-luxury-gold">Letak Kalimat Utama</th>
+                            <th class="text-luxury-gold">Pola</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Deduktif</strong></td>
+                            <td>Di awal paragraf</td>
+                            <td>Umum → Khusus</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Induktif</strong></td>
+                            <td>Di akhir paragraf</td>
+                            <td>Khusus → Umum</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Campuran (Deduktif-Induktif)</strong></td>
+                            <td>Di awal dan ditegaskan kembali di akhir</td>
+                            <td>Umum → Khusus → Umum (penegasan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ineratif</strong></td>
+                            <td>Di tengah paragraf</td>
+                            <td>Jarang digunakan dalam tulisan akademik</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Deskriptif/Naratif</strong></td>
+                            <td>Tersirat di seluruh paragraf</td>
+                            <td>Tidak ada kalimat utama eksplisit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Persyaratan Paragraf yang Baik -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">9.4 Persyaratan Paragraf yang Baik</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Menurut Suladi (2014) dan Tarigan (1986), paragraf yang baik harus memenuhi <strong>empat syarat utama</strong>. Pelanggaran terhadap salah satu syarat ini akan menghasilkan paragraf yang lemah atau bahkan tidak valid.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">1. Kesatuan (Unity)</h3>
+                    <p class="text-luxury-cream/70 text-sm mb-2">Semua kalimat dalam paragraf harus membicarakan <strong>satu gagasan utama</strong>. Kalimat yang tidak relevan harus dihilangkan.</p>
+                    <div class="example-box">
+                        <span class="text-luxury-goldLight">✅ Benar: Semua kalimat tentang "manfaat membaca"</span><br>
+                        <span class="text-luxury-goldLight">❌ Salah: Menyisipkan kalimat tentang "olahraga" dalam paragraf tentang "membaca"</span>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">2. Kepaduan (Coherence)</h3>
+                    <p class="text-luxury-cream/70 text-sm mb-2">Kalimat-kalimat harus saling berkaitan secara <strong>harmonis dan logis</strong>. Gunakan kata penghubung (konjungsi) untuk menciptakan kepaduan.</p>
+                    <div class="example-box">
+                        <span class="text-luxury-cream/60">Kata penghubung: oleh karena itu, dengan demikian, selain itu, di samping itu, namun, akan tetapi, selanjutnya.</span>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">3. Kelogisan (Logic)</h3>
+                    <p class="text-luxury-cream/70 text-sm mb-2">Gagasan dalam paragraf harus <strong>dapat diterima oleh akal sehat</strong> dan sesuai dengan kaidah berpikir yang benar.</p>
+                    <div class="example-box">
+                        <span class="text-luxury-goldLight">✅ Logis: "Setiap muslim wajib shalat lima waktu karena itu adalah rukun Islam kedua."</span><br>
+                        <span class="text-luxury-goldLight">❌ Tidak logis: "Karena hari hujan, maka shalat menjadi tidak wajib."</span>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-800/50 p-6 rounded-sm gold-border">
+                    <h3 class="font-serif text-xl text-luxury-gold mb-2">4. Kelengkapan (Completeness)</h3>
+                    <p class="text-luxury-cream/70 text-sm mb-2">Paragraf harus <strong>mengembangkan gagasan utama secara tuntas</strong>. Paragraf yang terlalu pendek (hanya 1-2 kalimat) dianggap belum lengkap.</p>
+                    <div class="example-box">
+                        <span class="text-luxury-cream/60">Idealnya: 1 kalimat utama + 3-5 kalimat penjelas + 1 kalimat penegas (opsional)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Pola Pengembangan Paragraf -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">9.5 Pola Pengembangan Paragraf</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Pola pengembangan paragraf adalah <strong>cara menyusun dan mengembangkan gagasan utama</strong> melalui kalimat-kalimat penjelas. Berdasarkan letak kalimat utama dan alur berpikirnya, terdapat empat pola utama:
+            </p>
+
+            <!-- Pola Deduktif -->
+            <div class="pattern-card">
+                <h3 class="font-serif text-xl text-luxury-gold mb-3">9.5.1 Pola Deduktif (Umum → Khusus)</h3>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                    <strong>Ciri:</strong> Kalimat utama terletak di <strong>awal paragraf</strong>, kemudian dikembangkan dengan kalimat-kalimat penjelas yang bersifat khusus.
+                </p>
+                <div class="example-box">
+                    <p class="main-idea">📌 Kalimat Utama (Umum): "Pendidikan Islam memiliki peran strategis dalam pembentukan karakter generasi muda."</p>
+                    <p class="arrow-down">↓</p>
+                    <p class="supporting-idea">📎 Penjelas 1: "Pertama, pendidikan Islam menanamkan nilai-nilai tauhid yang menjadi fondasi akhlak."</p>
+                    <p class="supporting-idea">📎 Penjelas 2: "Kedua, pendidikan Islam mengajarkan toleransi melalui pemahaman terhadap keragaman."</p>
+                    <p class="supporting-idea">📎 Penjelas 3: "Ketiga, pendidikan Islam membekali siswa dengan keterampilan berpikir kritis melalui kajian kitab klasik."</p>
+                </div>
+                <p class="text-luxury-cream/60 text-xs mt-2 italic">Cocok untuk: Tulisan akademik, esai argumentatif, karya ilmiah.</p>
+            </div>
+
+            <!-- Pola Induktif -->
+            <div class="pattern-card">
+                <h3 class="font-serif text-xl text-luxury-gold mb-3">9.5.2 Pola Induktif (Khusus → Umum)</h3>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                    <strong>Ciri:</strong> Dimulai dengan <strong>fakta-fakta khusus</strong>, kemudian ditarik kesimpulan (kalimat utama) di akhir paragraf.
+                </p>
+                <div class="example-box">
+                    <p class="supporting-idea">📎 Fakta 1: "Banyak siswa yang rajin shalat berjamaah di sekolah menunjukkan perilaku sopan terhadap guru."</p>
+                    <p class="supporting-idea">📎 Fakta 2: "Penelitian menunjukkan bahwa siswa yang aktif mengaji memiliki empati sosial yang lebih tinggi."</p>
+                    <p class="supporting-idea">📎 Fakta 3: "Survei membuktikan bahwa alumni madrasah lebih dominan terlibat dalam kegiatan sosial masyarakat."</p>
+                    <p class="arrow-down">↓</p>
+                    <p class="main-idea">📌 Kalimat Utama (Simpulan): "Dengan demikian, pendidikan Islam berkontribusi signifikan dalam pembentukan karakter sosial yang positif."</p>
+                </div>
+                <p class="text-luxury-cream/60 text-xs mt-2 italic">Cocok untuk: Laporan penelitian, tulisan berbasis data, argumentasi induktif.</p>
+            </div>
+
+            <!-- Pola Campuran -->
+            <div class="pattern-card">
+                <h3 class="font-serif text-xl text-luxury-gold mb-3">9.5.3 Pola Campuran (Deduktif-Induktif)</h3>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                    <strong>Ciri:</strong> Kalimat utama di <strong>awal</strong> (sebagai pengantar), kemudian dikembangkan, dan <strong>ditegaskan kembali di akhir</strong> sebagai penegas.
+                </p>
+                <div class="example-box">
+                    <p class="main-idea">📌 Kalimat Utama (Awal): "Guru PAI profesional harus menguasai empat kompetensi dasar."</p>
+                    <p class="arrow-down">↓</p>
+                    <p class="supporting-idea">📎 Penjelas 1: "Kompetensi pedagogik, kepribadian, sosial, dan profesional merupakan pilar yang saling menopang."</p>
+                    <p class="supporting-idea">📎 Penjelas 2: "Tanpa salah satunya, kualitas pendidikan Islam akan timpang."</p>
+                    <p class="arrow-down">↓</p>
+                    <p class="main-idea">📌 Kalimat Penegas (Akhir): "Oleh karena itu, penguasaan keempat kompetensi tersebut menjadi syarat mutlak bagi guru PAI."</p>
+                </div>
+                <p class="text-luxury-cream/60 text-xs mt-2 italic">Cocok untuk: Tulisan yang ingin memberikan penekanan kuat pada gagasan utama.</p>
+            </div>
+
+            <!-- Pola Proses -->
+            <div class="pattern-card">
+                <h3 class="font-serif text-xl text-luxury-gold mb-3">9.5.4 Pola Proses (Kronologis/Urutan)</h3>
+                <p class="text-luxury-cream/80 text-sm leading-relaxed mb-3">
+                    <strong>Ciri:</strong> Mengembangkan gagasan melalui <strong>urutan tahapan atau langkah-langkah</strong> secara kronologis. Tidak ada kalimat utama eksplisit; gagasan utama tersirat dari alur proses.
+                </p>
+                <div class="example-box">
+                    <p class="supporting-idea">📎 Tahap 1: "Pertama, berwudhu dengan tertib sebagai syarat sah shalat."</p>
+                    <p class="supporting-idea">📎 Tahap 2: "Kedua, menghadap kiblat dan berdiri tegak."</p>
+                    <p class="supporting-idea">📎 Tahap 3: "Ketiga, mengucapkan takbiratul ihram sebagai pembuka shalat."</p>
+                    <p class="supporting-idea">📎 Tahap 4: "Keempat, membaca Al-Fatihah dan ayat Al-Qur'an."</p>
+                    <p class="supporting-idea">📎 Tahap 5: "Kelima, melaksanakan rukun-rukun shalat hingga salam."</p>
+                </div>
+                <p class="text-luxury-cream/60 text-xs mt-2 italic">Cocok untuk: Prosedur, tutorial, penjelasan tata cara ibadah, metode pembelajaran.</p>
+            </div>
+
+            <!-- Tabel Perbandingan -->
+            <h3 class="font-serif text-xl text-luxury-cream mt-8 mb-3">📊 Perbandingan Pola Pengembangan Paragraf</h3>
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Pola</th>
+                            <th class="text-luxury-gold">Letak Kalimat Utama</th>
+                            <th class="text-luxury-gold">Alur Pikir</th>
+                            <th class="text-luxury-gold">Konteks Penggunaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Deduktif</strong></td>
+                            <td>Awal</td>
+                            <td>Umum → Khusus</td>
+                            <td>Esai akademik, karya ilmiah</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Induktif</strong></td>
+                            <td>Akhir</td>
+                            <td>Khusus → Umum</td>
+                            <td>Laporan penelitian, analisis data</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Campuran</strong></td>
+                            <td>Awal & Akhir (penegas)</td>
+                            <td>Umum → Khusus → Umum</td>
+                            <td>Tulisan persuasif, penekanan gagasan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Proses</strong></td>
+                            <td>Tersirat (tidak eksplisit)</td>
+                            <td>Kronologis/urutan</td>
+                            <td>Prosedur, tutorial, tata cara</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Penerapan dalam Konteks PAI -->
+        <section class="bg-luxury-800/30 p-8 rounded-sm gold-border">
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">9.6 Penerapan Pola Paragraf bagi Calon Pendidik PAI</h2>
+            <p class="text-luxury-cream/70 text-sm mb-4">Sebagai calon guru Pendidikan Agama Islam, Anda akan menggunakan berbagai pola paragraf dalam konteks profesional berikut:</p>
+            
+            <div class="overflow-x-auto">
+                <table class="text-sm text-luxury-cream/80">
+                    <thead>
+                        <tr>
+                            <th class="text-luxury-gold">Konteks</th>
+                            <th class="text-luxury-gold">Pola Paragraf yang Tepat</th>
+                            <th class="text-luxury-gold">Contoh Penerapan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Menulis Esai tentang Pendidikan Islam</td>
+                            <td>Deduktif</td>
+                            <td>Menyatakan tesis di awal, lalu mengembangkan dengan argumen dan bukti.</td>
+                        </tr>
+                        <tr>
+                            <td>Laporan Penelitian Tindakan Kelas</td>
+                            <td>Induktif</td>
+                            <td>Menyajikan data hasil observasi, lalu menarik simpulan.</td>
+                        </tr>
+                        <tr>
+                            <td>Modul Ajar tentang Tata Cara Ibadah</td>
+                            <td>Proses</td>
+                            <td>Menjelaskan langkah-langkah shalat, wudhu, atau puasa secara berurutan.</td>
+                        </tr>
+                        <tr>
+                            <td>Surat Edaran kepada Orang Tua</td>
+                            <td>Campuran</td>
+                            <td>Menyatakan tujuan di awal, menjelaskan detail, dan menegaskan kembali di akhir.</td>
+                        </tr>
+                        <tr>
+                            <td>Biografi Tokoh Islam</td>
+                            <td>Narasi</td>
+                            <td>Menceritakan perjalanan hidup tokoh secara kronologis.</td>
+                        </tr>
+                        <tr>
+                            <td>Deskripsi Situs Sejarah Islam</td>
+                            <td>Deskripsi</td>
+                            <td>Menggambarkan suasana Masjid Cordoba atau Istana Alhambra secara detail.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="font-serif text-xl text-luxury-cream mt-6 mb-3">📝 Contoh Paragraf Deduktif Bertema PAI</h3>
+            <div class="example-box">
+                <p class="main-idea">📌 Pendidikan karakter berbasis Al-Qur'an memiliki urgensi yang tinggi di era digital saat ini.</p>
+                <p class="arrow-down">↓</p>
+                <p class="supporting-idea">📎 Pertama, arus informasi yang tidak terkendali menuntut siswa memiliki filter moral yang kuat. Al-Qur'an sebagai sumber nilai menyediakan panduan komprehensif tentang akhlak mulia. Kedua, fenomena perundungan siber (cyberbullying) di kalangan pelajar menunjukkan lemahnya internalisasi nilai-nilai agama. Dengan mengintegrasikan ayat-ayat Al-Qur'an tentang larangan mengolok-olok (Q.S. Al-Hujurat: 11) dan perintah berkata baik, guru PAI dapat membangun benteng moral siswa. Ketiga, penelitian Yanda & Ramadhanti (2024) membuktikan bahwa pembelajaran berbasis masalah yang mengintegrasikan nilai Al-Qur'an mampu meningkatkan keterampilan menulis dan karakter siswa secara simultan.</p>
+                <p class="arrow-down">↓</p>
+                <p class="main-idea">📌 Oleh karena itu, integrasi nilai-nilai Al-Qur'an dalam pendidikan karakter bukan sekadar pilihan, melainkan keharusan yang tidak dapat ditunda.</p>
+            </div>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Kesimpulan -->
+        <section>
+            <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-6">Kesimpulan</h2>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Paragraf adalah jantung dari tulisan akademik. Penguasaan pola pengembangan paragraf — <strong>deduktif, induktif, campuran, dan proses</strong> — merupakan keterampilan fundamental yang membedakan penulis pemula dengan penulis handal. Setiap pola memiliki karakteristik, kekuatan, dan konteks penggunaan yang berbeda.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed mb-4">
+                Empat syarat paragraf yang baik — <strong>kesatuan, kepaduan, kelogisan, dan kelengkapan</strong> — harus dipenuhi secara konsisten. Pelanggaran terhadap salah satu syarat akan menghasilkan paragraf yang lemah dan tidak meyakinkan.
+            </p>
+            <p class="text-luxury-cream/80 leading-relaxed">
+                Dalam perspektif Islam, paragraf yang baik adalah cerminan dari prinsip <em>an-naẓm</em> (keteraturan) yang diajarkan dalam Q.S. Al-Mulk: 3 — tersusun secara sistematis, saling menopang, dan tanpa cacat. Sebagai calon pendidik PAI, mari kita latih keterampilan menyusun paragraf yang padu dan logis, karena dari paragraf-paragraf yang baik akan lahir karya-karya yang mengubah peradaban.
+            </p>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Referensi Utama -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Referensi Utama Bab 9</h2>
+            <ol class="text-luxury-cream/70 text-sm space-y-2 list-decimal list-inside">
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press. (Hal. 133-166)</li>
+                <li>Suladi. (2014). <em>Paragraf</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Tarigan, D. (1986). <em>Membina Keterampilan Menulis Paragraf dan Pengembangannya</em>. Bandung: Angkasa.</li>
+                <li>Marsa, A. H. (2009). <em>Ayo Mengenal Paragraf</em>. Solo: Wangsa Jatra Lestari.</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya. (Hal. 82-118)</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset. (Hal. 84-143)</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset. (Hal. 95-121)</li>
+                <li>Widjono. (2005). <em>Bahasa Indonesia Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Gramedia. (Hal. 221-269)</li>
+            </ol>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- Daftar Pustaka -->
+        <section>
+            <h2 class="font-serif text-2xl font-bold text-luxury-cream mb-4">📚 Daftar Pustaka</h2>
+            <ul class="text-luxury-cream/60 text-sm space-y-2 list-decimal list-inside">
+                <li>Alwi, H., dkk. (2000). <em>Tata Bahasa Baku Bahasa Indonesia</em> (Edisi Ketiga). Jakarta: Balai Pustaka.</li>
+                <li>Atmazaki. (2007). <em>Kiat Mengarang dan Menyunting</em>. Padang: Citra Budaya.</li>
+                <li>Ermanto & Emidar. (2009). <em>Bahasa Indonesia Pengembang Kepribadian di Perguruan Tinggi</em>. Padang: UNP Press.</li>
+                <li>Kusumaningsih, D. (2013). <em>Terampil Berbahasa Indonesia</em>. Yogyakarta: Andi Offset.</li>
+                <li>Marsa, A. H. (2009). <em>Ayo Mengenal Paragraf</em>. Solo: Wangsa Jatra Lestari.</li>
+                <li>Rencana Pembelajaran Semester (RPS) Mata Kuliah Bahasa Indonesia. (2026). FTIK UIN Sjech M. Djamil Djambek Bukittinggi.</li>
+                <li>Rumelhart, D. E. (1980). Schemata: The building blocks of cognition. In R. J. Spiro et al. (Eds.), <em>Theoretical Issues in Reading Comprehension</em>. Lawrence Erlbaum.</li>
+                <li>Semi, M. A. (1984). <em>Menulis Efektif</em>. Padang: Etika Offset.</li>
+                <li>Suladi. (2014). <em>Paragraf</em> [ebook]. Jakarta: Badan Pengembangan dan Pembinaan Bahasa.</li>
+                <li>Tarigan, D. (1986). <em>Membina Keterampilan Menulis Paragraf dan Pengembangannya</em>. Bandung: Angkasa.</li>
+                <li>Widjono, H. S. (2005). <em>Bahasa Indonesia: Mata Kuliah Pengembangan Kepribadian di Perguruan Tinggi</em>. Jakarta: Grasindo.</li>
+                <li>Yanda, D. P., & Ramadhanti, D. (2024). E-Modul Pembelajaran Menulis Esai Berbasis Problem Based Learning untuk Perguruan Tinggi. <em>Jurnal Belajar Bahasa</em>, 9(2).</li>
+            </ul>
+        </section>
+
+        <div class="divider-gold"></div>
+
+        <!-- UJI FORMATIF -->
+        <section id="uji-formatif" class="bg-luxury-800/50 p-8 rounded-sm gold-border">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-luxury-gold mb-2">📋 Uji Formatif 9</h2>
+                <p class="text-luxury-cream/70 text-sm">Pola Pengembangan Paragraf</p>
+                <p class="text-red-400 text-xs mt-2 font-semibold">⚠️ Mohon lengkapi semua data dan jawaban terlebih dahulu sebelum mengirim!</p>
+            </div>
+
+            <form id="formUjian" class="space-y-8">
+                <!-- Data Mahasiswa -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📋 Data Mahasiswa</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Nama Lengkap *</label>
+                            <input type="text" id="nama" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">NIM *</label>
+                            <input type="text" id="nim" required class="form-input w-full p-3 rounded-sm text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Fakultas *</label>
+                            <select id="fakultas" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Fakultas</option>
+                                <option value="FTIK">Fakultas Tarbiyah dan Ilmu Keguruan (FTIK)</option>
+                                <option value="FUSHUM">Fakultas Ushuludin dan Humaniora</option>
+                                <option value="FEBI">Fakultas Ekonomi dan Bisnis Islam</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-luxury-cream/70 text-xs uppercase tracking-wider mb-1">Semester *</label>
+                            <select id="semester" required class="form-input w-full p-3 rounded-sm text-sm">
+                                <option value="">Pilih Semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">✍️ Bagian A – Pilihan Ganda (Skor: 10/soal)</h3>
+                    
+                    <div class="space-y-4 text-luxury-cream/80 text-sm">
+                        <!-- Soal 1 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">1. Paragraf adalah satuan wacana yang terdiri atas sekumpulan kalimat yang saling berkaitan untuk mengembangkan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="a" class="accent-luxury-gold"> a. Beberapa gagasan utama sekaligus</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="b" class="accent-luxury-gold"> b. Satu gagasan utama melalui gagasan-gagasan pendukung</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="c" class="accent-luxury-gold"> c. Kalimat-kalimat yang berdiri sendiri</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q1" value="d" class="accent-luxury-gold"> d. Kata-kata sulit dalam kamus</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">2. Q.S. Al-Mulk ayat 3 yang menjadi landasan spiritual paragraf yang baik mengajarkan tentang...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="a" class="accent-luxury-gold"> a. Larangan menulis paragraf panjang</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="b" class="accent-luxury-gold"> b. Prinsip keteraturan (an-naẓm) dan kesempurnaan ciptaan tanpa cacat, yang menjadi analogi paragraf yang baik</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="c" class="accent-luxury-gold"> c. Perintah menggunakan bahasa Arab dalam tulisan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q2" value="d" class="accent-luxury-gold"> d. Larangan menulis tentang langit</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">3. Perhatikan paragraf berikut: "Banyak fakta yang menunjukkan pentingnya pendidikan Islam. Siswa yang rajin mengaji memiliki empati tinggi. Alumni madrasah dominan terlibat dalam kegiatan sosial. Penelitian membuktikan korelasi positif antara pendidikan agama dan karakter. Dengan demikian, pendidikan Islam berkontribusi signifikan dalam pembentukan karakter positif." Paragraf tersebut menggunakan pola...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="a" class="accent-luxury-gold"> a. Deduktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="b" class="accent-luxury-gold"> b. Induktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="c" class="accent-luxury-gold"> c. Campuran</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q3" value="d" class="accent-luxury-gold"> d. Proses</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">4. Syarat paragraf yang menyatakan bahwa semua kalimat harus membicarakan satu gagasan utama disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="a" class="accent-luxury-gold"> a. Kepaduan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="b" class="accent-luxury-gold"> b. Kelogisan</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="c" class="accent-luxury-gold"> c. Kesatuan (unity)</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q4" value="d" class="accent-luxury-gold"> d. Kelengkapan</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">5. Paragraf yang menjelaskan tata cara shalat secara berurutan (berwudhu → menghadap kiblat → takbiratul ihram → membaca Al-Fatihah → ...) menggunakan pola pengembangan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="a" class="accent-luxury-gold"> a. Deduktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="b" class="accent-luxury-gold"> b. Induktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="c" class="accent-luxury-gold"> c. Campuran</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q5" value="d" class="accent-luxury-gold"> d. Proses</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">6. Jenis paragraf yang bertujuan menceritakan peristiwa secara kronologis dengan tokoh, alur, waktu, dan tempat disebut paragraf...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="a" class="accent-luxury-gold"> a. Deskripsi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="b" class="accent-luxury-gold"> b. Narasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="c" class="accent-luxury-gold"> c. Eksposisi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q6" value="d" class="accent-luxury-gold"> d. Argumentasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">7. Perhatikan paragraf berikut: "Pendidikan Islam memiliki peran strategis dalam pembentukan karakter. Pertama, ia menanamkan nilai tauhid. Kedua, ia mengajarkan toleransi. Ketiga, ia membekali siswa dengan keterampilan berpikir kritis." Paragraf ini menggunakan pola...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="a" class="accent-luxury-gold"> a. Deduktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="b" class="accent-luxury-gold"> b. Induktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="c" class="accent-luxury-gold"> c. Campuran</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q7" value="d" class="accent-luxury-gold"> d. Proses</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">8. Paragraf yang baik harus memiliki "kepaduan" (coherence), yang berarti...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="a" class="accent-luxury-gold"> a. Semua kalimat membicarakan satu gagasan utama</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="b" class="accent-luxury-gold"> b. Kalimat-kalimat saling berkaitan secara harmonis dan logis melalui penggunaan konjungsi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="c" class="accent-luxury-gold"> c. Paragraf memiliki minimal 10 kalimat</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q8" value="d" class="accent-luxury-gold"> d. Paragraf tidak memiliki gagasan utama</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">9. Paragraf yang bertujuan meyakinkan pembaca akan kebenaran suatu pendapat dengan menyajikan tesis, bukti, dan analisis disebut paragraf...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="a" class="accent-luxury-gold"> a. Narasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="b" class="accent-luxury-gold"> b. Deskripsi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="c" class="accent-luxury-gold"> c. Argumentasi</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q9" value="d" class="accent-luxury-gold"> d. Persuasi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="bg-luxury-900/50 p-4 rounded-sm">
+                            <p class="font-semibold mb-3">10. Seorang guru PAI menulis modul ajar tentang tata cara wudhu. Pola pengembangan paragraf yang paling tepat digunakan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="a" class="accent-luxury-gold"> a. Deduktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="b" class="accent-luxury-gold"> b. Induktif</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="c" class="accent-luxury-gold"> c. Campuran</label>
+                                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="q10" value="d" class="accent-luxury-gold"> d. Proses</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="space-y-6">
+                    <h3 class="font-serif text-xl text-luxury-cream border-b border-luxury-gold/30 pb-2">📝 Bagian B – Essay (Skor: Menunggu Penilaian Dosen)</h3>
+                    <p class="text-luxury-cream/60 text-xs mb-4">Jawablah pertanyaan berikut dengan jelas, sistematis, dan menggunakan bahasa Indonesia yang baik dan benar.</p>
+                    
+                    <div class="space-y-6 text-luxury-cream/80 text-sm">
+                        <div>
+                            <p class="font-semibold mb-2">1. Jelaskan perbedaan mendasar antara pola pengembangan paragraf deduktif, induktif, campuran, dan proses! Berikan masing-masing contoh konkret bertema Pendidikan Agama Islam!</p>
+                            <textarea id="essay1" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">2. Analisislah paragraf berikut berdasarkan empat syarat paragraf yang baik (kesatuan, kepaduan, kelogisan, kelengkapan): "Pendidikan Islam sangat penting. Rasulullah adalah teladan. Teknologi telah mengubah dunia. Guru harus menguasai ICT. Shalat adalah rukun Islam kedua. Oleh karena itu, pendidikan karakter harus ditanamkan sejak dini." Identifikasi kesalahannya dan tulislah ulang paragraf tersebut menjadi paragraf yang baik!</p>
+                            <textarea id="essay2" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">3. Jelaskan hubungan antara Q.S. Al-Mulk ayat 3 dengan prinsip penyusunan paragraf yang baik! Bagaimana konsep "an-naẓm" (keteraturan) dan "ṭibāqan" (berlapis-lapis) dapat diterapkan dalam menulis paragraf akademik?</p>
+                            <textarea id="essay3" rows="3" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">4. Sebagai calon guru PAI, Anda diminta menulis esai tentang "Pentingnya Pendidikan Karakter di Era Digital". Rancanglah kerangka paragraf (minimal 3 paragraf) dengan menggunakan kombinasi pola deduktif dan induktif! Tuliskan kalimat utama setiap paragraf!</p>
+                            <textarea id="essay4" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">5. Bandingkan paragraf narasi, deskripsi, eksposisi, argumentasi, dan persuasi! Berikan masing-masing contoh singkat bertema Pendidikan Agama Islam, dan jelaskan konteks profesional mana yang paling tepat menggunakan setiap jenis paragraf tersebut!</p>
+                            <textarea id="essay5" rows="4" class="form-input w-full p-3 rounded-sm text-sm" placeholder="Ketik jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Tombol Aksi -->
+                <div class="pt-6 border-t border-luxury-gold/30 space-y-4">
+                    <div id="hasilNilai" class="hidden bg-luxury-gold/10 border border-luxury-gold p-4 rounded-sm text-center">
+                        <h4 class="font-serif text-xl text-luxury-gold mb-2">📊 Hasil Uji Formatif</h4>
+                        <p class="text-luxury-cream text-lg font-semibold">Bagian A (Pilihan Ganda): <span id="skorPG" class="text-luxury-gold">0</span> / 100</p>
+                        <p class="text-luxury-cream/70 text-sm mt-2">Bagian B (Essay): <span class="text-luxury-gold">Menunggu penilaian manual oleh dosen</span></p>
+                        <p class="text-luxury-cream/60 text-xs mt-1">Total Skor Sementara: <span id="skorTotal" class="font-bold">0</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <button type="button" onclick="hitungNilai()" class="px-6 py-3 bg-luxury-gold text-luxury-900 font-bold rounded-sm hover:bg-luxury-goldLight transition-all shadow-glow">
+                            ✉️ KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="window.print()" class="px-6 py-3 border border-luxury-gold/50 text-luxury-gold rounded-sm hover:bg-luxury-gold/10 transition-all text-sm font-semibold">
+                            📥 UNDUH PDF (Print)
+                        </button>
+                        <button type="reset" class="px-6 py-3 border border-luxury-cream/30 text-luxury-cream/70 rounded-sm hover:bg-luxury-cream/10 transition-all text-sm font-semibold">
+                            🔄 MULAI ULANG
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-900 border-t border-luxury-gold/20 py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-6 h-6 bg-luxury-gold rounded-sm flex items-center justify-center">
+                    <span class="text-luxury-900 font-serif font-bold text-xs">B</span>
+                </div>
+                <span class="font-serif text-lg font-semibold text-luxury-cream">Bahasa Indonesia Akademik</span>
+            </div>
+            <p class="text-luxury-cream/40 text-sm">&copy; 2026 Diyan Permata Yanda, M.Pd. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-luxury-cream/30 text-xs mt-1">FTIK UIN Sjech M. Djamil Djambek Bukittinggi</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Uji Formatif -->
+    <script>
+        function hitungNilai() {
+            // Validasi Data Mahasiswa
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            if (!nama || !nim) {
+                alert('⚠️ Mohon lengkapi Nama dan NIM terlebih dahulu!');
+                return;
+            }
+
+            // Kunci Jawaban Pilihan Ganda
+            const kunciJawaban = {
+                q1: 'b',  // Satu gagasan utama melalui gagasan pendukung
+                q2: 'b',  // Prinsip keteraturan dan kesempurnaan
+                q3: 'b',  // Induktif (khusus → umum, simpulan di akhir)
+                q4: 'c',  // Kesatuan (unity)
+                q5: 'd',  // Proses
+                q6: 'b',  // Narasi
+                q7: 'a',  // Deduktif (kalimat utama di awal)
+                q8: 'b',  // Kalimat saling berkaitan harmonis
+                q9: 'c',  // Argumentasi
+                q10: 'd'  // Proses (tata cara wudhu)
+            };
+
+            let skorPG = 0;
+            let semuaTerjawab = true;
+
+            // Hitung Skor PG
+            for (let i = 1; i <= 10; i++) {
+                const jawaban = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!jawaban) {
+                    semuaTerjawab = false;
+                } else if (jawaban.value === kunciJawaban[`q${i}`]) {
+                    skorPG += 10;
+                }
+            }
+
+            if (!semuaTerjawab) {
+                const lanjutkan = confirm('⚠️ Anda belum menjawab semua soal Pilihan Ganda. Yakin ingin mengirim dan melihat hasil sementara?');
+                if (!lanjutkan) return;
+            }
+
+            // Validasi Essay
+            let essayTerisi = true;
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`essay${i}`).value.trim().length < 10) {
+                    essayTerisi = false;
+                }
+            }
+
+            if (!essayTerisi) {
+                alert('💡 Perhatian: Jawaban Essay tampak terlalu pendek atau kosong. Pastikan Anda telah menjawab dengan memadai untuk penilaian dosen.');
+            }
+
+            // Tampilkan Hasil
+            document.getElementById('skorPG').textContent = skorPG;
+            document.getElementById('skorTotal').textContent = skorPG;
+            document.getElementById('hasilNilai').classList.remove('hidden');
+            
+            // Scroll ke hasil
+            document.getElementById('hasilNilai').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Simulasi notifikasi sukses
+            setTimeout(() => {
+                alert(`✅ Jawaban berhasil diproses!\n\nNama: ${nama}\nNIM: ${nim}\nSkor Pilihan Ganda: ${skorPG}/100\n\nCatatan: Bagian Essay akan dinilai secara manual oleh dosen pengampu.`);
+            }, 500);
+        }
+    </script>
+</body>
+</html>
